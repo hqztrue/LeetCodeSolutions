@@ -1,0 +1,45 @@
+% Modified based on Xiaoming Sun's template
+\documentclass{article}
+\usepackage{amsmath,amsfonts,amsthm,amssymb}
+\usepackage{setspace}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\usepackage{extramarks}
+\usepackage{chngpage}
+\usepackage{soul,color}
+\usepackage{graphicx,float,wrapfig}
+\usepackage[colorlinks,linkcolor=blue]{hyperref}
+\usepackage{parskip}
+\setlength{\parindent}{0cm}
+
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Begin edit from here
+naive:\\
+$O(n^2)$ by hashing.\\
+$O(n^2)$ deterministic: after sorting, enumerate the first number, find the pair of second and third number by monotone pointers.\\
+
+
+for real numbers:\\
+deterministic $O((n^2/\log^2 n)(\log\log n)^{O(1)})$, Chan \cite{chan2018more}.\\
+
+for integers:\\
+$O((n^2/\log^2 n)(\log\log n)^2)$ \cite{baran2008subquadratic}, via hashing techniques.\\
+
+
+\bibliographystyle{plain}
+\bibliography{references}
+
+
+%\Acknowledgements{Thank XXX XX 2007010002 for the discussion about ...}
+%\begin{thebibliography}{}
+%\bibitem{}{Discrete Mathematics: Elementary and Beyond}
+%\end{thebibliography}
+% End edit to here
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

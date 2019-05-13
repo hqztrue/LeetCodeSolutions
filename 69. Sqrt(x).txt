@@ -1,0 +1,11 @@
+n-bit integers:
+Newton's method, proof needs error analysis. O(n log n).
+note. bit complexity?
+
+32-bit integers (i.e. fits in a word, w=32):
+binary search. O(w).
+Newton's method. O(log w).
+
+float:
+Fast inverse square root. https://en.wikipedia.org/wiki/Fast_inverse_square_root
+

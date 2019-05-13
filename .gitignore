@@ -2,3 +2,11 @@
 *.c
 *.java
 *.py
+
+*.aux
+*.bbl
+*.blg
+*.log
+*.out
+*.bak
+materials
