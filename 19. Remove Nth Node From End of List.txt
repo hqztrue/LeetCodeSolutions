@@ -1,0 +1,2 @@
+simulation. O(n).
+one pass: point the (n+1)-th to the (n-1)-th from the end of list.

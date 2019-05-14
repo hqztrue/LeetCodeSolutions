@@ -1,0 +1,5 @@
+simulation. O(n).
+
+note. if the two sorted lists are represented as finger search trees, with size n and m (n<=m), can merge in O(n log (m/n)) time.
+https://chaoxuprime.com/posts/2014-11-22-applications-of-finger-tree.html
+

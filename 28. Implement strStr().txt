@@ -1,0 +1,3 @@
+pattern matching. assume string has length n.
+1. KMP. O(n).
+2. Rabin-Karp. O(n) randomized.

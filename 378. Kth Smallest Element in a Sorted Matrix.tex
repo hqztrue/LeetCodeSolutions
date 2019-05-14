@@ -37,13 +37,16 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Begin edit from here
 
-divide and conquer, compare the middle elements of two arrays, and recurse. $O(\log(n+m))$.
+1. Given a value $x$, we can know the rank of $x$ in the matrix in $O(n)$ time, by monotone pointers. Using binary search (on $n^2$ elements), the running time is $O(n\log U)$ or $O(n\log n)$.\\
+2. $O(\min(k,m))$ if it's a $n\times m$ matrix and $n\leq m$.\\ \url{https://chaoxuprime.com/posts/2014-04-02-selection-in-a-sorted-matrix.html}\\
 
-in general, finding the $t$-th largest element in the union of $k$ sorted array with respective sizes $n_1,\ldots,n_k$ takes time:\\
-1. $O(\sum^k_{i=1}\log{n_i})$ \cite{frederickson1984generalized}.\\
-\url{https://cstheory.stackexchange.com/questions/20944/select-in-union-of-sorted-arrays-already-known/20955#20955}.\\
-2. let $p=\min\{k,t\}$, the running time is $\Theta(k+p\log \frac{t}{p})$ \cite{mirzaian1985selection}.\\
-i.e. if $t\geq k$, $O(k\log\frac{t}{k})$. if $t<k$, $O(k)$.\\
+for small $k$:\\
+3. put the first element in each row into a heap, whenever we pop, add the next element in the corresponding row. $O(k\log n)$.\\
+4. $O(\sqrt k\log k)$. The crucial observation is that there are $xy$ elements smaller than entry $(x,y)$, so the possible region for the solution can be divided into $2\sqrt k$ rows and columns (i.e. row/columns $1,\dots,\sqrt k$). use results on selection in union of sorted arrays.\\
+see reference for 4. median of two sorted arrays.\\
+
+note. is \cite{frederickson1993optimal} useful to get $O(k)$?\\
+
 
 \bibliographystyle{plain}
 \bibliography{references}
