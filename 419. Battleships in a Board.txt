@@ -1,0 +1,1 @@
+the endpoints of battleships can be detected locally. O(n^2) time, O(1) space.

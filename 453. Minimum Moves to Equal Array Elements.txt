@@ -1,0 +1,1 @@
+each move decreases an element by 1. make each element equal to the min element. O(n).

@@ -1,0 +1,2 @@
+use a state machine, or implement mod 3 in parallel for each bit, by bit operations. O(n).
+

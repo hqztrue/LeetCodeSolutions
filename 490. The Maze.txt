@@ -1,0 +1,1 @@
+4n^2 states, BFS. O(n^2).

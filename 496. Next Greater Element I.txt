@@ -1,0 +1,2 @@
+use hashing to find the corresponding places, then use monotone stack. O(n).
+

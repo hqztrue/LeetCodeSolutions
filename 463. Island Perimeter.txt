@@ -1,0 +1,1 @@
+deciding whether a cell is on the boundary is local. O(n^2).
