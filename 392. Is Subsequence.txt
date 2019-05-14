@@ -1,0 +1,5 @@
+O(n).
+see 028. Implement strStr().
+
+follow up: Aho-Corasick automation/suffix tree.
+

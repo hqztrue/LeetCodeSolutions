@@ -1,0 +1,2 @@
+O(n), monotone pointer.
+see 001. Two Sum.

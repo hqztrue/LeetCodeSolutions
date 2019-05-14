@@ -1,0 +1,1 @@
+greedy, try to match s[i] with s[n-1-i]. O(n).

@@ -1,0 +1,4 @@
+deterministic O(n), use group of 5 elements and recurse.
+nth_element(C++).
+
+also randomized O(n), quick select.

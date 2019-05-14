@@ -1,0 +1,1 @@
+binary search, according to the length of prefix (odd/even). O(log n) time, O(1) space.

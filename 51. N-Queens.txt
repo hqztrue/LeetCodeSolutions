@@ -1,0 +1,4 @@
+dfs. speedup by bit operations.
+
+hardness results:
+reference: Complexity of n-Queens Completion.

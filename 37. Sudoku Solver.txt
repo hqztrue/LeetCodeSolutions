@@ -1,0 +1,4 @@
+dfs. dancing links.
+
+NP-complete:
+https://en.wikipedia.org/wiki/Mathematics_of_Sudoku

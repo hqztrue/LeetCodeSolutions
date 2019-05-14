@@ -1,0 +1,24 @@
+O(log w).
+inline uint reverse_bits(uint x){
+	x=((x>>1)&0x55555555)|((x<<1)&0xaaaaaaaa);
+	x=((x>>2)&0x33333333)|((x<<2)&0xcccccccc);
+	x=((x>>4)&0x0f0f0f0f)|((x<<4)&0xf0f0f0f0);
+	x=((x>>8)&0x00ff00ff)|((x<<8)&0xff00ff00);
+	return (x>>16)|(x<<16);
+}
+
+
+use preprocessing:
+inline uint reverse_bits1(uint x){
+	static const unsigned char bit_rev_tab[256]={
+		#define R2(n) n,n+2*64,n+1*64,n+3*64
+		#define R4(n) R2(n),R2(n+2*16),R2(n+1*16),R2(n+3*16)
+		#define R6(n) R4(n),R4(n+2*4),R4(n+1*4),R4(n+3*4)
+		R6(0),R6(2),R6(1),R6(3)
+		#undef R2
+		#undef R4
+		#undef R6
+	};
+	//bit_rev_tab[0]=0; for (int i=0;i<256;++i)bit_rev_tab[i]=((i&1)<<7)+(bit_rev_tab[i>>1]>>1);
+	return (bit_rev_tab[x&0xff]<<24)|(bit_rev_tab[(x>>8)&0xff]<<16)|(bit_rev_tab[(x>>16)&0xff]<<8)|(bit_rev_tab[x>>24]);
+}

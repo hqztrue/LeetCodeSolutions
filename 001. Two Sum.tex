@@ -39,12 +39,14 @@
 
 1. hashing. $O(n)$ expected.\\
 
-2. reduce to distinct element.\\
+%2. reduce to the integer element distinctness problem. Let the sum we want be $c$, for each value $x$, add a new value $c-x$. (special case is $x=c/2$)\\
 
-3. reduce to integer sorting. after sorting, only need $O(n)$ by monotone pointers.\\
+2. reduce to integer sorting. after sorting, only need $O(n)$ time by monotone pointers.\\
 for integer sorting:\\
 $O(n\sqrt{\log\log n})$ randomized \cite{han2002sorting}.\\
 $O(n\log \log n)$ deterministic \cite{han2002deterministic}.\\
+
+3. for the lower bound, $\Omega(n\log n)$ in the degree-$d$ algebraic decision tree model \cite{Chan2004RefinedUA}.\\
 
 
 
