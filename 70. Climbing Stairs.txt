@@ -1,0 +1,1 @@
+fibonacci number. O(log n) by power of transition matrix, assume the result fits in a word.
