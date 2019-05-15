@@ -1,0 +1,2 @@
+1. use sum. O(1).
+2. use xor. O(1).

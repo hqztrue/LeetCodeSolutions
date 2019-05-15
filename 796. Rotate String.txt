@@ -1,0 +1,2 @@
+1. minimum representation of strings. O(n).
+2. use KMP to find B in A+A. O(n).

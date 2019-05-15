@@ -1,0 +1,1 @@
+O(1). only x=i^2 are on, because for each d|x, d and x/d will cancel out if d\neq (x/d). the answer is floor(sqrt(n)).

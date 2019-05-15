@@ -1,0 +1,2 @@
+O(1), return true.
+proof. the first player can force the second player to either choose all odd piles or all even piles.

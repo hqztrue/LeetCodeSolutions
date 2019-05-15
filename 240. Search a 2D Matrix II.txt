@@ -1,1 +1,0 @@
-O(n+m) by monotone pointer. easy to construct ¦¸(min(n,m)) lower bound.

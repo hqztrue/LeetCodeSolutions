@@ -1,0 +1,2 @@
+DP. f[i] denote the number of ways to decode prefix i.
+

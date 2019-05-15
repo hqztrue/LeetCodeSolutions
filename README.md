@@ -14,7 +14,7 @@ For strings, let |¦²| denote the alphabet size, and we usually assume |¦²| is mu
 Here are a list of problems for which I don't know the current best algorithm. If a problem is open but the algorithm I list here is (almost) the current best, it is viewed as "solved" and therefore not listed below.
 
 1. Two Sum
-378. Kth Smallest Element in a Sorted Matrix
+
 
 
 

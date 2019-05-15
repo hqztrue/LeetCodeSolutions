@@ -1,0 +1,1 @@
+O(1). is power of 2, and =1 (mod 3).

@@ -1,0 +1,8 @@
+find the LCP of the binary representations of m and n.
+
+
+int rangeBitwiseAnd(int m, int n) {
+    if (m==n)return m;
+    int x=32-__builtin_clz(m^n);
+    return m>>x<<x;
+}

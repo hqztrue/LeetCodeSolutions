@@ -1,0 +1,1 @@
+during the first pass, know x^y. x and y differ in at least one bit, according to that bit divide the array into two parts containing either x or y. O(n) time, O(1) space.

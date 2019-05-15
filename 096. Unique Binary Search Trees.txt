@@ -1,0 +1,1 @@
+Catalan Number, C(2n,n)/(n+1). O(n) if the number fits in a word.
