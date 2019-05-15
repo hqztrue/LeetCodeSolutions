@@ -1,0 +1,1 @@
+greedy, use stack to maintain an increasing sequence from left to right. O(n).

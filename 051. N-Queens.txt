@@ -1,4 +1,4 @@
 dfs. speedup by bit operations.
 
-hardness results:
+hardness results: NP-Complete and #P-Complete.
 reference: Complexity of n-Queens Completion.
