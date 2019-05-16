@@ -1,0 +1,2 @@
+walking down on an implicit Trie, can know the size of a given subtree in O(1). O(log n).
+

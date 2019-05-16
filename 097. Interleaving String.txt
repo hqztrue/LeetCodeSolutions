@@ -1,3 +1,0 @@
-DP, f[i][j] denote whether s1[1..i] and s2[1..j] and interleave to get s3[1..i+j]. f[i][j]=(s1[i]==s3[i+j])&&f[i-1][j]||(s2[j]==s3[i+j])&&f[i][j-1]. O(n^2).
-O(n^2/log n) by method of four russians. divide the n*n DP matrix into blocks of size t*t, where t=O(log n).
-O(n^2/w) by bit packing.

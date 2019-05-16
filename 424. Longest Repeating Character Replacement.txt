@@ -1,0 +1,1 @@
+use double pointers for each character separately. O(n).

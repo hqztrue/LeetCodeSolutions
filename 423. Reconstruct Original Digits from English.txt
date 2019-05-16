@@ -1,0 +1,4 @@
+consider the matrix: rows are 0-9, columns are a-z. this matrix has full rank. linear algebra. O(n).
+e.g.
+for zero, it's the only word has letter 'z'.
+for two, it's the only word has letter 'w'.

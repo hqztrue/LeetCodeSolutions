@@ -1,0 +1,1 @@
+hash+bucket. O(1) per operation.

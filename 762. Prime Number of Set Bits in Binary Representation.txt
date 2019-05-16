@@ -1,0 +1,2 @@
+counting on trie. there are w/log w primes to consider. fix a node i, it corresponds to a binary prefix, let f[i][j] denote the number of solutions in the subtree i if we can add arbitrary suffix to i, which is a combination number and can query in O(1) after preprocessing. we need to consider O(w) such nodes. total time O(w^2/log w).
+

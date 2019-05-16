@@ -1,0 +1,1 @@
+use bucket. O(n) time. store a[i] in a[a[i]]. O(1) extra space.

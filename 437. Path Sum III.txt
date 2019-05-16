@@ -1,0 +1,2 @@
+dfs, use hashing to store all prefix sums on the path from the root to the current node. O(n).
+

@@ -1,0 +1,2 @@
+use bucket to count. O(n).
+without extra space: try to store a[i] in a[a[i]].

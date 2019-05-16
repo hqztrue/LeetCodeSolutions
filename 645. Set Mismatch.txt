@@ -1,0 +1,2 @@
+combination of two problems:
+first use xor to find the duplicate, then find the missing. O(n).

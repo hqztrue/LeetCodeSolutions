@@ -1,0 +1,1 @@
+sliding window. let cnt(c,s) denote the number of times that letter c appear in s, each step we move right, use O(1) to maintain \sum_c |cnt(c,s[i..i+|p|-1])-cnt(c,p)|, we find an anagram iff this value is 0. O(n).
