@@ -1,3 +1,6 @@
 fix the left endpoint l, if we expand the right endpoint r, the result will only change at most w times, each time change at least one bit from 0 to 1.
 let c[l][r] denote the bitwise OR of A[l]...A[r]. Fix l, there are only O(w) different c[l][r]s. also c[l-1][r]=c[l][r]|A[l-1]. use O(w) to transit from c[l][*] to c[l-1][*]. finally remove the duplicates by hashing.
 O(nw).
+
+lower bound: construct an example with \Theta(nw) distinct results? Then it's the lower bound for all algorithms that need to remove the duplicates by enumerating them.
+

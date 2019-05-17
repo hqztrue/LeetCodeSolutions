@@ -1,7 +1,7 @@
-*.cpp
-*.c
-*.java
-*.py
+# *.cpp
+# *.c
+# *.java
+# *.py
 
 *.aux
 *.bbl
@@ -10,4 +10,5 @@
 *.out
 *.bak
 materials
+template*
 *.tex

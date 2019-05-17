@@ -1,0 +1,85 @@
+\documentclass{article}
+\usepackage{amsmath,amsfonts,amsthm,amssymb}
+\usepackage{setspace}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\usepackage{extramarks}
+\usepackage{chngpage}
+\usepackage{soul,color}
+\usepackage{graphicx,float,wrapfig}
+\usepackage[colorlinks,linkcolor=blue]{hyperref}
+\usepackage{parskip}
+\setlength{\parindent}{0cm}
+
+% In case you need to adjust margins:
+\topmargin=-0.45in      %
+\evensidemargin=0in     %
+\oddsidemargin=0in      %
+\textwidth=6.5in        %
+\textheight=9.0in       %
+\headsep=0.25in         %
+
+\newcommand{\Answer}{\ \\\textbf{Answer:} }
+\newcommand{\Proof}{\ \\\textbf{Proof:} }
+\newcommand{\Acknowledgements}[1]{\ \\{\bf Acknowledgements:} #1}
+\newcommand{\Infer}{\Longrightarrow}
+\newcommand{\ud}{\mathrm{d}}
+\newcommand{\Reduce}{\Longleftarrow}
+\newcommand{\Endproof}{\hfill $\Box$ \\}
+\newcommand{\T}{\mathrm{T}}
+\newcommand{\E}{\mathbb{E}}
+\newcommand{\Real}{\mathbb{R}}
+\newcommand*\circled[1]{\tikz[baseline=(char.base)]{\node[shape=circle,draw,inner sep=2pt] (char) {#1};}}
+
+\usepackage{listings}
+\usepackage{xcolor}
+\lstset{
+numbers=left,
+framexleftmargin=10mm,
+frame=none,
+backgroundcolor=\color[RGB]{245,245,244},
+keywordstyle=\bf\color{blue},
+identifierstyle=\bf,
+numberstyle=\color[RGB]{0,192,192},
+commentstyle=\it\color[RGB]{0,96,96},
+stringstyle=\rmfamily\slshape\color[RGB]{128,0,0},
+showstringspaces=false
+}
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Begin edit from here
+
+1. counting for each bit. $O(nw)$.\\
+2. for each bit, count the number of $0$s and $1$s in the array, which needs $O(\log n)$ bits of space to store if the array has length $n$. assume word operation is $O(1)$ after preprocessing (the word operations we want: (1) add two $w_1$-bit numbers, (2) padding, i.e. pad $w_1$ bits with leading $0$ to get $w_2$ bits), the counting for each bit can be performed in parallel by word operations.\\
+Use divide and conquer to perform counting, let $f(n)$ denote the running time to get the count for each bit when the array has length $n$. merge the results for two arrays with length $\frac{n}{2}$ needs $O(w\cdot \log n)$ bits, i.e. $O(\log n)$ word operations.\\
+$f(n)=2f(n/2)+O(\log n)$, i.e. $f(n)=\sum_{i=0}^{\log n}2^{\log n-i}\cdot i=O(n)$.\\
+total time $O(n)$.\\
+
+actually if we represent the counters by $O(\log n)$ words, where the $j$-th bit of the $i$-th word represent the $i$-th bit of the $j$-th counter, we can construct the word operations we want by $O(1)$ basic word operations. The following implementation uses the logarithmic method \cite{bentley1980decomposable} to reduce the space complexity to $O(\log^2 n)$.\\
+
+%\begin{lstlisting}[language={C++}]
+%/* helloworld.c */
+%#include<stdio.h>
+%int main(){
+%    printf("Hello World\n");
+%    return 0;
+%}
+%\end{lstlisting}
+
+
+\bibliographystyle{plain}
+\bibliography{references}
+
+
+%\Acknowledgements{Thank XXX XX 2007010002 for the discussion about ...}
+%\begin{thebibliography}{}
+%\bibitem{}{Discrete Mathematics: Elementary and Beyond}
+%\end{thebibliography}
+% End edit to here
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
