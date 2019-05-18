@@ -1,0 +1,1 @@
+greedy+math, always assign task with the largest frequency first. O(n).

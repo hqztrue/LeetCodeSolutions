@@ -11,5 +11,6 @@
 *.bak
 materials
 template*
+!template.cpp
 *.tex
 *.sav

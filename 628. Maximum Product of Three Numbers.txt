@@ -1,0 +1,1 @@
+O(n), distinguish between positive and negative cases.

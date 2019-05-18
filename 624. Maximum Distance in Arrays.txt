@@ -1,0 +1,1 @@
+O(n). for each array, record its max and min, also record the max and min over all other arrays (by prefix max).

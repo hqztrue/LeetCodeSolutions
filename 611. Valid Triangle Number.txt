@@ -1,0 +1,1 @@
+O(n^2) by double pointers, enumerate one number.

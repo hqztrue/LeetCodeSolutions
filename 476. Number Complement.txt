@@ -1,0 +1,1 @@
+O(1), __builtin_clz (C++).

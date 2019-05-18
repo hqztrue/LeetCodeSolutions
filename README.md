@@ -18,6 +18,7 @@ problem id marked with leading space indicates there's good evidence that it is 
 
 1. Two Sum
 421. Maximum XOR of Two Numbers in an Array
+611. Valid Triangle Number
  898. Bitwise ORs of Subarrays
 
 
