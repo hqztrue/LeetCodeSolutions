@@ -1,0 +1,4 @@
+we can uniquely construct the string S in O(n). total time O(n).
+https://en.wikipedia.org/wiki/Kolakoski_sequence
+
+note. can we divide S into parts, and precompute a table containing the results for each breakpoint of S?

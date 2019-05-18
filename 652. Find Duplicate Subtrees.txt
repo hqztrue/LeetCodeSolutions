@@ -1,0 +1,2 @@
+tree hashing, () representation. O(n).
+also deterministic O(n) by suffix tree.

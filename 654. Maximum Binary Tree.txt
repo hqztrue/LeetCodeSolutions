@@ -1,0 +1,2 @@
+1. Cartesian Tree, O(n).
+2. find the max by RMQ in O(1) (technically this is a circular argument) and recurse on two subtrees. O(n).

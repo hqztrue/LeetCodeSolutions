@@ -1,0 +1,7 @@
+1. after each insertion, the rank of the median will change by O(1). max heap+min heap. O(log n).
+2. van Emde Boas tree/y-fast Trie. O(log log W).
+
+lower bound: we can reduce sorting to this, by repeatedly adding -inf and querying the median.
+
+follow up: use bucket.
+

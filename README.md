@@ -14,13 +14,13 @@ For strings, let $|\Sigma|$ denote the alphabet size, and we usually assume $|\S
 ## Unsolved Problems
 Here are a list of problems for which I don't know the current best algorithm. If a problem is open but the algorithm I list here is (almost) the current best, it is viewed as "solved" and therefore not listed below.
 
-problem id marked with leading space indicates there's good evidence that it is hard to improve.
+problem id marked with leading ~ indicates there's good evidence that it is hard to improve.
 
 * 1. Two Sum
 *  234. Palindrome Linked List
 * 421. Maximum XOR of Two Numbers in an Array
 * 611. Valid Triangle Number
-*  898. Bitwise ORs of Subarrays
+* ~898. Bitwise ORs of Subarrays
 
 
 
