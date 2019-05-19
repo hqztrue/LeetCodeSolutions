@@ -1,1 +1,3 @@
 flood fill. O(nm).
+
+There's an algorithm that uses O(n) bits of space. see https://cs.stackexchange.com/questions/74797/counting-islands-in-boolean-matrices

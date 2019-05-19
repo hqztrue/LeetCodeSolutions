@@ -1,0 +1,5 @@
+DP, let f[i][j] denote the number of distinct subsequences of s[1..i] which equals t[1..j]. if s[i]==t[j], f[i][j]=f[i-1][j]+f[i-1][j-1], o.w. f[i][j]=f[i-1][j]. time O(n^2). space O(n) by rolling array.
+the running time is also \sum_{i,j}I[s[i]==t[j]].
+
+note. if we know the number is within int, is the running time better?
+
