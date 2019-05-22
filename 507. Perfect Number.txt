@@ -1,0 +1,4 @@
+1. after we factor n, it's easy to compute the sum of all its positive divisors.
+2. even perfect numbers have the form q(q+1)/2, where q is a prime of the form 2^p-1 for prime p. It is not known whether there are any odd perfect numbers. so we only need a primality test for even perfect numbers.
+https://en.wikipedia.org/wiki/Perfect_number
+

@@ -1,0 +1,5 @@
+1. rejection sampling, using hashing (or bucket). when n-|B|=¦¸(n), expected number of call is O(n/(n-|B|))=O(1). otherwise we can store all numbers not in the blacklist. O(n) time in total.
+2. we can use binary search in O(log n) to determine the i-th number in the whitelist, so we only need 1 rand call to get i. O(n log n).
+
+
+note. the verification for the randomness of your output performed by the judger is very weak. If you always output the same value, it will get rejected, but other slightly cleverer deterministic process can get accepted, e.g. always output the next value in the whitelist. Therefore, many accepted solutions are actually not uniform at random (or not i.i.d).

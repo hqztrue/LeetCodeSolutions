@@ -1,0 +1,1 @@
+prefix sum mod k, hashing. O(n).

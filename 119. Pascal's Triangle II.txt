@@ -1,0 +1,3 @@
+combination numbers. O(n) (assume the result is within a word).
+
+note. if we want the result mod a prime p (or some composite number), it is also solvable.

@@ -1,0 +1,1 @@
+tree DP, for each node x and each of its child y, record the maximum path sum from x to a descendant of x through y. merge the results of two children of x. O(n).

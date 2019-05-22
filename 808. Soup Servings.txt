@@ -1,0 +1,5 @@
+DP. O(n^2).
+notice that the result is monotone increasing in n. Therefore fix the error threshold, if n is large enough the result is 1.
+
+
+
