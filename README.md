@@ -11,6 +11,8 @@ In some problems we will use the word RAM model, where the assumption is each wo
 
 For strings, let $|\Sigma|$ denote the alphabet size, and we usually assume $|\Sigma|$ is much smaller than n. If the input is a set of strings, we will use L to denote the total length of them, and n is the number of strings. If the input is a single string, we use n to denote its length.
 
+If the input is an n*m matrix, we usually use n to denote max(n,m) for simplicity.
+
 For space complexity, we use the definition which is in analogy to the following: for a TM with a (read-only) input tape, an output tape and work tapes, only the number of memory cells on work tapes counts. Here we assume the input is read-only, and for space complexity, we only count the number of memory cells on which we write. Note that this is different from the (relatively weaker) LeetCode definition, which usually allows in-place modifications to the memory cells containing the inputs. We call that definition "additional space complexity".
 
 ## Unsolved Problems

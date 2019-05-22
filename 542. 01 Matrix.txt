@@ -1,0 +1,1 @@
+bfs, starting from the 0s. O(n^2).
