@@ -1,0 +1,2 @@
+offline, use priority queue. the naive implementation is O(n log n). priority queue can be reduced to sorting, see 502. IPO.
+

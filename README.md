@@ -9,7 +9,7 @@ For most problems we consider here, the only thing we want to optimize is the ru
 ### Notations
 In some problems we will use the word RAM model, where the assumption is each word has w bits and can store integers up to size W=2^w. In practice (i.e. 32-bit machines), w=32 and W=2^32. We assume the word length is $w=\Omega(\log n)$. By setting $w=\delta_0\log n$ for a sufficiently small constant $\delta_0>0$, we can simulate nonstandard word operations on $w$-bit words in $O(1)$ time by table lookup, with $n^{O(\delta_0)}=o(n)$ preprocessing time. If possible, I will try to construct the nonstandard word operations we want by basic word operations (e.g. & | ~).
 
-For strings, let $|\Sigma|$ denote the alphabet size, and we usually assume $|\Sigma|$ is much smaller than n. If the input is a set of strings, we will use L to denote the total length of them, and n is the number of strings. If the input is a single string, we use n to denote its length.
+For strings, let |\Sigma| denote the alphabet size (i.e. |\Sigma|=26 for lowercase letters), and we usually assume |\Sigma| is much smaller than n. In some cases, we further make the (non-theory) assumption that |\Sigma|<=w (since 26<32). If the input is a set of strings, we will use L to denote the total length of them, and n is the number of strings. If the input is a single string, we use n to denote its length.
 
 If the input is an n*m matrix, we usually use n to denote max(n,m) for simplicity.
 
@@ -23,6 +23,7 @@ Problem ID marked with leading ~ indicates there's good evidences that the algor
 1 Two Sum  
 +116 Populating Next Right Pointers in Each Node  
 ~234 Palindrome Linked List  
+318 Maximum Product of Word Lengths  
 421 Maximum XOR of Two Numbers in an Array  
 611 Valid Triangle Number  
 ~898 Bitwise ORs of Subarrays  

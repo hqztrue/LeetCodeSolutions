@@ -1,1 +1,2 @@
-LCS. O(n).
+LCS.
+for the LCS algorithms, see 097. Interleaving String.
