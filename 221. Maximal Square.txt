@@ -1,0 +1,2 @@
+see the reference for 085. Maximal Rectangle. O(n^2).
+

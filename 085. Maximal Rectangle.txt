@@ -1,0 +1,5 @@
+DP. O(n^2).
+
+reference: 浅谈用极大化思想解决最大子矩形问题.
+https://wenku.baidu.com/view/728cd5126edb6f1aff001fbb.html
+

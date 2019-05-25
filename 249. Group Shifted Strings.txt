@@ -1,0 +1,2 @@
+shift to ensure the first character is 'a'. Trie. O(L).
+

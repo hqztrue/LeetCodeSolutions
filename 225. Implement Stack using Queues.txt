@@ -1,0 +1,5 @@
+use 1 queue. push is O(n), other operations O(1). (or O(1) push, O(n) pop and top).
+
+note. if we use O(log n) queues, we can implement each operation in amortized O(log n).
+similar to the logarithmic method, for each s=2^i, we maintain a constant number of queues of size s, and we always ensure the first queue has size 1. queues closer to the top of the stack have smaller sizes. in total we have O(log n) queues, maintain pointers of them by a queue (since we cannot use array). we can prove O(log n) by amortized analysis.
+

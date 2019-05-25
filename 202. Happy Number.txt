@@ -1,0 +1,2 @@
+in a round, n is transformed into at most 81 log n, in O(log n) time. in total O(log^* n) rounds, O(log n) time.
+

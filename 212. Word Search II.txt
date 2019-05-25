@@ -1,0 +1,4 @@
+dfs.
+
+lower bound: this problem is NP-hard. because the same letter cell may not be used more than once, we can reduce hamiltonian path on an n*m board with obstacles to this problem.
+

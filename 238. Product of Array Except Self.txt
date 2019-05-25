@@ -1,0 +1,1 @@
+left to right, right to left. O(n).

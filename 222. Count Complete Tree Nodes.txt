@@ -1,0 +1,3 @@
+the tree has height O(log n). binary search. O(log^2 n).
+
+\Omega(log^2 n) lower bound is easy.

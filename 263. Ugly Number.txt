@@ -1,0 +1,5 @@
+divide by 2,3,5.
+1. naive, divide step by step. O(log n).
+2. binary search on the number of 2,3,5, the number of occurrence is at most O(log n). O(log log n).
+3. use __builtin_ctz to remove power of 2. there are O(log^2 n) ugly numbers, can precompute and construct a hash table. O(1) query, O(log^2 n) preprocessing.
+

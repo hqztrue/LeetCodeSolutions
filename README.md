@@ -22,7 +22,9 @@ Problem ID marked with leading ~ indicates there's good evidences that the algor
 
 1 Two Sum  
 +116 Populating Next Right Pointers in Each Node  
++225 Implement Stack using Queues  
 ~234 Palindrome Linked List  
+~264 Ugly Number II  
 318 Maximum Product of Word Lengths  
 421 Maximum XOR of Two Numbers in an Array  
 611 Valid Triangle Number  

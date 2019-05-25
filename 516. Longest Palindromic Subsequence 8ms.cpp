@@ -37,30 +37,14 @@ struct BitSet{
 		memcpy(a,y.a,sizeof(uint)*size);
 		return *this;
 	}
-	BitSet<S> operator |(const BitSet<S> &y){return BitSet<S>(*this)|=y;}
-	BitSet<S> operator &(const BitSet<S> &y){return BitSet<S>(*this)&=y;}
-	BitSet<S> operator ^(const BitSet<S> &y){return BitSet<S>(*this)^=y;}
-	BitSet<S> operator +(const BitSet<S> &y){
-		BitSet<S> res; uint t=0;
-		register uint *p=a,*r=res.a,*end=a+size; const register uint *q=y.a;
-		while (p!=end){
-			register uint p1=*p; *r=p1+*q+t;
-			t=(*r<p1)||(p1+t<t);
-			++p; ++q; ++r;
-		}
-		return res;
-	}
-	BitSet<S> operator -(const BitSet<S> &y){
-		BitSet<S> res; uint t=0;
-		register uint *p=a,*r=res.a,*end=a+size; const register uint *q=y.a;
-		while (p!=end){
-			register uint p1=*p; *r=p1-*q-t;
-			t=(*r>p1)||(p1+t<t);
-			++p; ++q; ++r;
-		}
-		return res;
-	}
-	BitSet<S> operator ~(){return BitSet<S>(*this).flip();}
+	BitSet<S> operator |(const BitSet<S> &y)const{return BitSet<S>(*this)|=y;}
+	BitSet<S> operator &(const BitSet<S> &y)const{return BitSet<S>(*this)&=y;}
+	BitSet<S> operator ^(const BitSet<S> &y)const{return BitSet<S>(*this)^=y;}
+	BitSet<S> operator +(const BitSet<S> &y)const{return BitSet<S>(*this)+=y;}
+	BitSet<S> operator -(const BitSet<S> &y)const{return BitSet<S>(*this)-=y;}
+	BitSet<S> operator <<(int x)const{return BitSet<S>(*this)<<=x;}
+	BitSet<S> operator >>(int x)const{return BitSet<S>(*this)>>=x;}
+	BitSet<S> operator ~()const{return BitSet<S>(*this).flip();}
 	BitSet<S>& operator =(const char *s){
 		memset(a,0,sizeof(uint)*size);
 		for (int i=0;i<S;++i){
@@ -102,8 +86,6 @@ struct BitSet{
 		memset(a+size-shift,0,sizeof(uint)*shift);
 		return *this;
 	}
-	BitSet<S> operator <<(int x)const{return BitSet<S>(*this)<<=x;}
-	BitSet<S> operator >>(int x)const{return BitSet<S>(*this)>>=x;}
 	BitSet<S>& operator |=(const BitSet<S> &y){
 		register uint *startA=a;const register uint *startB=y.a,*endA=a+size;
 		while (startA!=endA){*startA|=*startB;++startA;++startB;}
@@ -118,7 +100,7 @@ struct BitSet{
 			*p2|=*q2; p2+=4; q2+=4;
 			*p3|=*q3; p3+=4; q3+=4;
 		}
-		for (int i=0;i<(size&3);++i)*p0++=*q0++;
+		for (int i=0;i<(size&3);++i)*p0++|=*q0++;
 		return *this;
 	}*/
 	BitSet<S>& operator &=(const BitSet<S> &y){
@@ -129,6 +111,24 @@ struct BitSet{
 	BitSet<S>& operator ^=(const BitSet<S> &y){
 		register uint *startA=a;const register uint *startB=y.a,*endA=a+size;
 		while (startA!=endA){*startA^=*startB;++startA;++startB;}
+		return *this;
+	}
+	BitSet<S>& operator +=(const BitSet<S> &y){
+		register uint t=0,*p=a,*end=a+size; const register uint *q=y.a;
+		while (p!=end){
+			register uint p1=*p; *p=p1+*q+t;
+			t=(*p<p1)||(p1+t<t);
+			++p; ++q;
+		}
+		return *this;
+	}
+	BitSet<S>& operator -=(const BitSet<S> &y){
+		register uint t=0,*p=a,*end=a+size; const register uint *q=y.a;
+		while (p!=end){
+			register uint p1=*p; *p=p1-*q-t;
+			t=(*p>p1)||(p1+t<t);
+			++p; ++q;
+		}
 		return *this;
 	}
 	operator bool(){return count()>0;}
@@ -186,6 +186,5 @@ public:
         return row[(m-1)&1].count();
     }
 };
-
 
 

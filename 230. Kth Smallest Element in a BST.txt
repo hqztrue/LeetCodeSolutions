@@ -1,0 +1,3 @@
+O(k).
+
+note. O(log n) if the size of each node is known.
