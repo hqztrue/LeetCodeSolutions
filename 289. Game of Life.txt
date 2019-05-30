@@ -1,0 +1,1 @@
+the update rule is local. O(n*m) time, O(1) space.

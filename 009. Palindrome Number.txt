@@ -1,0 +1,3 @@
+O(log n).
+
+note. for binary integer, can reduce to reverse integer. O(log log n). otherwise we need number base conversion.

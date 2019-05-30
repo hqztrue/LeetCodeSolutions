@@ -1,1 +1,3 @@
 dfs. O(n).
+
+can do O(1) space.

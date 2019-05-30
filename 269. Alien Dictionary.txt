@@ -1,0 +1,1 @@
+after removing the LCP between two strings, we can get an order of two letters. topological sort.
