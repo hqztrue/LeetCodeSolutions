@@ -1,0 +1,1 @@
+only use 2 or 3, have math formula. assume pow() is O(1), time O(1).

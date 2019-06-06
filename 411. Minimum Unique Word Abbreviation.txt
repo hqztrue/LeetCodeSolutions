@@ -1,0 +1,3 @@
+for a string s with length n, there's a 1-1 correspondence between a subset of s (which can be represented by a number in 0..2^n-1) and an abbreviation of s, by replacing letters in the subset with numbers. enumerate the subset in the order of 0..2^n-1, by amortized analysis, in total O(2^n) bits will change. use string hashing to store the abbreviations, for each change of bit, we need O(1) to update the hash value. finally enumerate all subsets and use a hash table containing the abbreviations of other strings to find the result. time O(\sum_i 2^{n_i}).
+
+

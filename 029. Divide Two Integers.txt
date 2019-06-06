@@ -1,0 +1,2 @@
+1. like big integer division, use - to implement long division. O(log W).
+2. use Newton's method, avoid division. O(log log W).

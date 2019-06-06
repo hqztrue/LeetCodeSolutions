@@ -1,0 +1,2 @@
+first find the closest, then expand towards left and right. O(height+k).
+

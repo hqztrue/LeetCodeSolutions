@@ -1,0 +1,1 @@
+consider x-axis and y-axis separately, find weighted median. O(n).

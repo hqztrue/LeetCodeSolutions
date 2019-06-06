@@ -7,7 +7,7 @@ Here are *theoretical solutions* for some interesting LeetCode problems, aiming 
 For most problems we consider here, the only thing we want to optimize is the running time. Sometimes we will optimize on the space complexity as well. Lower bound will be provided, if the optimality of our algorithm is not obvious. If the main source of hardness of a problem is its coding complexity rather than its algorithm (e.g. simulation problems), we will skip the solution here.
 
 ### Notations
-In some problems we will use the word RAM model, where the assumption is each word has w bits and can store integers up to size W=2^w. In practice (i.e. 32-bit machines), w=32 and W=2^32. We assume the word length is $w=\Omega(\log n)$. By setting $w=\delta_0\log n$ for a sufficiently small constant $\delta_0>0$, we can simulate nonstandard word operations on $w$-bit words in $O(1)$ time by table lookup, with $n^{O(\delta_0)}=o(n)$ preprocessing time. If possible, I will try to construct the nonstandard word operations we want by basic word operations (e.g. & | ~).
+In some problems we will use the word RAM model, where the assumption is each word has w bits and can store integers up to size W=2^w. In practice (i.e. 32-bit machines), w=32 and W=2^32. We assume the word length is w=\Omega(\log n), and the following basic word operations in the multiplicative instruction set can be executed in O(1): +, -, (*), &, |, ^, ~, <<, >>. By setting w'=\delta_0\log n for a sufficiently small constant \delta_0>0, we can simulate nonstandard word operations on w'-bit words in O(1) time by table lookup, with n^{O(\delta_0)}=o(n) preprocessing time.
 
 For strings, let |\Sigma| denote the alphabet size (i.e. |\Sigma|=26 for lowercase letters), and we usually assume |\Sigma| is much smaller than n. In some cases, we further make the (non-theory) assumption that |\Sigma|<=w (since 26<32). If the input is a set of strings, we will use L to denote the total length of them, and n is the number of strings. If the input is a single string, we use n to denote its length.
 
@@ -27,8 +27,11 @@ Problem ID marked with leading ~ indicates there's good evidences that the algor
 264 Ugly Number II  
 318 Maximum Product of Word Lengths  
 ~375 Guess Number Higher or Lower II  
+~403 Frog Jump  
 421 Maximum XOR of Two Numbers in an Array  
+~483 Smallest Good Base  
 611 Valid Triangle Number  
+~762 Prime Number of Set Bits in Binary Representation  
 ~898 Bitwise ORs of Subarrays  
 
 

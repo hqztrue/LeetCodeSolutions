@@ -1,2 +1,2 @@
-bit operation. O(log w).
+bit operation. O(log log W).
 

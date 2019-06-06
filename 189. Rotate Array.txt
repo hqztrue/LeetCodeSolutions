@@ -1,0 +1,1 @@
+reverse subarray 3 times. O(n) time, O(1) extra space.

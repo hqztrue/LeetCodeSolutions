@@ -1,0 +1,1 @@
+the positions that using <=i steps can reach is a prefix of the array. greedy. O(n).

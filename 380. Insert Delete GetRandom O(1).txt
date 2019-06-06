@@ -1,0 +1,1 @@
+hash, store all elements in an array, which supports getrandom in O(1). O(1) for each operation.

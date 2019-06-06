@@ -1,0 +1,2 @@
+calculate the minimum number is O(n).
+O(#results) time to output the results: first cancel out matching parentheses, the remaining unmatched parentheses is like )))...(((. find the split point between ) and ( in the unmatched parentheses, dfs in both sides.

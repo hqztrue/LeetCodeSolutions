@@ -1,0 +1,1 @@
+first for each string s, change it into s$s by connecting it with its copy by $. then connect all strings by # to get s_1$s_1#s_2$s_2#s_3$s_3... use suffix tree, for each query with prefix p and suffix q, search for q$p. in total O(L).

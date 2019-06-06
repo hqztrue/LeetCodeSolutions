@@ -1,0 +1,1 @@
+similar to bucket sort, the bucket size is (max-min)/d. only need to store the min&max elements in each bucket, then find the answer by scanning consecutive nonempty buckets. O(n).
