@@ -1,0 +1,2 @@
+1. fast exponentiation. O(log n).
+2. Newton's method.
