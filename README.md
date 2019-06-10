@@ -21,7 +21,10 @@ Here are a list of problems for which I don't know the current best algorithm. I
 Problem ID marked with leading ~ indicates there's good evidences that the algorithm we provide is hard to improve. Leading + indicates the original problem is solved, but there exists some interesting follow-up questions.
 
 1 Two Sum  
+~7 Reverse Integer  
+~10 Regular Expression Matching  
 +116 Populating Next Right Pointers in Each Node  
+211 Add and Search Word - Data structure design  
 +225 Implement Stack using Queues  
 ~234 Palindrome Linked List  
 264 Ugly Number II  

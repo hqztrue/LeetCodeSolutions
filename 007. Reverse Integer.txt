@@ -1,2 +1,5 @@
-O(1) under some assumptions, after preprocessing.
+1. process for each digit. O(log n).
+2. in O(log^\eps n) time we can preprocess the reverse of O(log log n) bits and query in O(1). O(log n/log log n).
+note. for binary integer, reverse integer is O(log log n) by divide and conquer. otherwise we may need number base conversion.
+after preprocessing in O(n^eps), we can reverse integer in O(1).
 

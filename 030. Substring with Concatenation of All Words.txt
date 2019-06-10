@@ -1,0 +1,1 @@
+let the length of each word be m, assume the start position mod m=i (enumerate 0<=i<m), we need to consider n/m words, use hashing+sliding window+bucket counters. we need O(1) to compute the hash value for a substring. in total m*O(n/m)=O(n).

@@ -1,0 +1,4 @@
+1. linked list. O(1) for addAtHead, addAtTail, O(n) for get, addAtIndex, deleteAtIndex.
+2. blocked linked list. O(sqrt(n)) per operation.
+
+note. skiplist/balanced tree is better, O(log n) per operation.

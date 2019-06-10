@@ -1,0 +1,7 @@
+split the pattern p by '*', and get some substrings. for each substring, greedily match it with the first match after the current position in the input string s. use Aho-Corasick Automaton. O(n).
+see hdu3901 http://acm.hdu.edu.cn/showproblem.php?pid=3901.
+
+
+note. there are many incorrect solutions for this problem on the internet, e.g. use kmp and claim the running time is O(n).
+also, some solutions on LeetCode claim O(n+m) by bit-manipulation, which is actually the special case for O(nm/w) when n<=w.
+

@@ -1,0 +1,4 @@
+simulation.
+
+note. does the length of the sequence grow exponentially?
+

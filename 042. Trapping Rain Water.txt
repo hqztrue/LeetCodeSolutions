@@ -1,0 +1,1 @@
+for each position, record the highest height on its left and on its right. O(n).

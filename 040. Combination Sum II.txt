@@ -1,0 +1,4 @@
+subset sum.
+dfs.
+
+note. if we only need to decide whether can sum to target or not, can use power series+FFT.

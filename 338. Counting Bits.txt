@@ -1,1 +1,18 @@
-DP, c[i]=c[i&(i-1)]+1. O(n).
+1. DP, c[i]=c[i&(i-1)]+1. O(n).
+2. count bits for each number separately.
+O(log log W) divide and conquer algorithm for each number:
+inline int count_bits(uint x){
+	x=(x&0x55555555)+((x&0xaaaaaaaa)>>1);
+	x=(x&0x33333333)+((x&0xcccccccc)>>2);
+	x=(x&0x0f0f0f0f)+((x&0xf0f0f0f0)>>4);
+	x=(x&0x00ff00ff)+((x&0xff00ff00)>>8);
+	return (x&0x0000ffff)+(x>>16);
+}
+this can be improved to O(log log log W):
+inline int count_bits1(uint x){
+	x-=((x>>1)&0x55555555);
+	x=(x&0x33333333)+((x>>2)&0x33333333);
+	return ((x+(x>>4)&0xF0F0F0F)*0x1010101)>>24;
+}
+there are at most O(w)=O(log W) bits, which can be stored in a counter with O(log log W) bits. use divide and conquer in O(log log log W) to compute w/log w counters in parallel. finally perform a multiplication (convolution) to sum up those counters and get the final result. each counter has O(log log W) bits, so during the convolution the sums on different positions will not affect each other.
+
