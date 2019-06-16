@@ -1,0 +1,2 @@
+1. replace each element a_i with min(a_i,n), and sort the new list by integer sorting (counting sort). O(n).
+2. select median and recurse on half. O(n).

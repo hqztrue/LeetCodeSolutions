@@ -9,6 +9,7 @@
 *.log
 *.out
 *.bak
+*.exe
 materials
 template*
 !template.cpp

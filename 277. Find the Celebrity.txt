@@ -1,0 +1,1 @@
+query whether i knows j. if i knows j, i is not celebrity, otherwise if i does not know j, j is not celebrity. O(n).

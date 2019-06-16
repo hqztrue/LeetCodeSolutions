@@ -1,0 +1,1 @@
+calculate digit by digit, use floyd cycle detection (or hashing) to detect whether the fractional part is repeating.

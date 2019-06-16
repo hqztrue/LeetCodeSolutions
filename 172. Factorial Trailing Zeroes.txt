@@ -1,0 +1,2 @@
+count the number of 5. O(log n).
+use method of four russians. O(log n/log log n).

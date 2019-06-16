@@ -5,3 +5,16 @@ int _IO=[](){
     return 0;
 }();
 
+//fastIO
+
+
+//main
+int _main=[](){
+	FILE *fout=fopen("./user.out","w");
+	
+	exit(0);
+    return 0;
+}();
+
+
+
