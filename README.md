@@ -38,5 +38,6 @@ Problem ID marked with leading ~ indicates there's good evidences that the algor
 ~762 Prime Number of Set Bits in Binary Representation  
 ~898 Bitwise ORs of Subarrays  
 
-
+## Miscellaneous Topics
+Get your hands dirty: [miscellaneous_topics.pdf](https://github.com/hqztrue/LeetCodeSolutions/blob/master/miscellaneous_topics.pdf)
 
