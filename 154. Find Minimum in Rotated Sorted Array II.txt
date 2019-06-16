@@ -1,0 +1,3 @@
+O(n).
+
+lower bound O(n), we have n-1 1s and one 0.
