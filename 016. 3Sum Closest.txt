@@ -1,0 +1,3 @@
+O(n^2) by sorting+monotone pointers.
+lower bound: this problem is 3sum-hard. see 015. 3Sum.
+

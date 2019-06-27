@@ -1,0 +1,1 @@
+let f[i] denote whether the prefix s[1..i] can be segmented into a sequence of dictionary words. use Aho-Corasick automation to compute f. at each position, we need to walk to the root according to the failure pointers, and there are at most O(sqrt(L)) steps, where L is the total length of the dictionary. O(n*sqrt(L)).

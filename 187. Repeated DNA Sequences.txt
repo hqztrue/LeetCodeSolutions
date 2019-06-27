@@ -1,1 +1,1 @@
-suffix tree. O(n).
+suffix tree/hashing. O(n).

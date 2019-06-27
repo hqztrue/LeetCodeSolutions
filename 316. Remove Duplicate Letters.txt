@@ -1,0 +1,1 @@
+greedy, use stack. O(n).

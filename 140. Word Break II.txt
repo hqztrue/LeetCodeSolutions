@@ -1,0 +1,1 @@
+use dfs to output the solutions. O(n*sqrt(L)+#solutions). see 139. Word Break.

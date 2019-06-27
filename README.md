@@ -20,24 +20,27 @@ Here are a list of problems for which I don't know the current best algorithm. I
 
 Problem ID marked with leading ~ indicates there's good evidences that the algorithm we provide is hard to improve. Leading + indicates the original problem is solved, but there exists some interesting follow-up questions.
 
-1 Two Sum  
 ~7 Reverse Integer  
 ~10 Regular Expression Matching  
 +116 Populating Next Right Pointers in Each Node  
+~139 Word Break  
 211 Add and Search Word - Data structure design  
 +225 Implement Stack using Queues  
 ~234 Palindrome Linked List  
 264 Ugly Number II  
+291 Word Pattern II  
 ~302 Smallest Rectangle Enclosing Black Pixels  
+317 Shortest Distance from All Buildings  
 318 Maximum Product of Word Lengths  
+322 Coin Change  
 ~375 Guess Number Higher or Lower II  
 ~403 Frog Jump  
-421 Maximum XOR of Two Numbers in an Array  
 ~483 Smallest Good Base  
-611 Valid Triangle Number  
 ~762 Prime Number of Set Bits in Binary Representation  
 ~898 Bitwise ORs of Subarrays  
 
+
 ## Miscellaneous Topics
 Get your hands dirty: [miscellaneous_topics.pdf](https://github.com/hqztrue/LeetCodeSolutions/blob/master/miscellaneous_topics.pdf)
+
 

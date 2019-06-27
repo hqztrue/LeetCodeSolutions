@@ -1,0 +1,1 @@
+(comparison based) sort, the compare function is s1+s2>s2+s1, use suffix tree to compare in O(1). O(n log n+L).

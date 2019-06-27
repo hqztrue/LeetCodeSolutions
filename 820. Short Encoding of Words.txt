@@ -1,0 +1,1 @@
+a string can encode all of its suffix. use suffix tree to remove suffixes. O(L).

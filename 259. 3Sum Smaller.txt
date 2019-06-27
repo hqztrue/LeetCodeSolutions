@@ -1,0 +1,5 @@
+O(n^2).
+lower bound: this problem is 3sum-hard, because we can reduce 3sum to this, by counting the number of triples with sum<0, negate the array and again count the number of triples with sum<0. therefore we can get the number of triples with sum=0.
+see 015. 3Sum.
+
+note. if the range of the numbers is O(U), we can solve the tripartite version in O(n+U log U) by FFT.

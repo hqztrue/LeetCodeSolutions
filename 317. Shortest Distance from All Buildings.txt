@@ -1,0 +1,1 @@
+for each building, bfs from it as the source. then enumerate the position of the house in O(nm). O(n^2*m^2).

@@ -1,2 +1,2 @@
-O(1). __builtin_popcount (C++).
-
+1. __builtin_popcount (C++). O(1).
+2. O(log^* W) in word RAM.

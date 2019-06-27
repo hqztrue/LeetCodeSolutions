@@ -1,13 +1,13 @@
-//IO
-int _IO=[](){
-    std::ios::sync_with_stdio(0);
-    cin.tie(0); //cout.tie(0);
-    return 0;
-}();
+class Solution {
+public:
+    vector<int> countBits(int num) {
+        return vector<int>();
+    }
+};
 
 //fastIO
 namespace Read{
-	const int S=1000000;
+	const int S=3000000;
 	char _str[S],*p=_str;
 	inline void read(int &x){
 	    bool sign=0; x=0; while (*p<'0'||*p>'9')if (*p++=='-')sign=1;
@@ -41,7 +41,7 @@ namespace Read{
 	inline bool read_next_digit(){while (*p&&(*p<'0'||*p>'9'))++p; return *p!=0;}
 	void read_init(){fread(p,1,S,stdin);}
 	
-	const int S1=1000000;
+	const int S1=3000000;
 	char _buf[15],_out[S1],*o=_out;
 	inline void print(int x,char c=0){
 		char *b=_buf;
@@ -67,16 +67,21 @@ namespace Read{
 }
 using namespace Read;
 
+const int N=100005;
+int c[N];
 //main
 int _main=[](){
 	//FILE *fout=fopen("./user.out","w");
+	int cur=0; c[0]=0;
 	while (1){
-		if (!read_next('['))break;
-		
+		if (!read_next_digit())break;
+		int n; read(n);
+		for (int i=cur+1;i<=n;++i)c[i]=c[i>>1]+(i&1);
+		cur=max(cur,n);
+		print(c,n+1);
 	} 
 	exit(0);
     return 0;
 }();
-
 
 
