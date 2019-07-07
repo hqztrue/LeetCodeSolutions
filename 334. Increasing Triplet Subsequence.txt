@@ -1,0 +1,1 @@
+enumerate the last number from left to right, only need O(1) space to record the best set of the first two numbers. O(n) time, O(1) space.

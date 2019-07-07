@@ -1,0 +1,2 @@
+1. DP after sorting.
+2. dfs with memoization. O(n^2).

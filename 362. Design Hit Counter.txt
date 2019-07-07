@@ -1,0 +1,1 @@
+the timestamp is monotonically increasing, we can use queue. O(1) insert, O(#output) query.

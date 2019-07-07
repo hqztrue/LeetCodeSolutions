@@ -11,7 +11,9 @@ In some problems we will use the word RAM model, where the assumption is each wo
 
 For strings, let |\Sigma| denote the alphabet size (i.e. |\Sigma|=26 for lowercase letters), and we usually assume |\Sigma| is much smaller than n. In some cases, we further make the (non-theory) assumption that |\Sigma|<=w (since 26<32). If the input is a set of strings, we will use L to denote the total length of them, and n is the number of strings. If the input is a single string, we use n to denote its length.
 
-If the input is an n*m matrix, we usually use n to denote max(n,m) for simplicity.
+For graph, let n denote the number of vertices and m denote the number of edges.
+
+If the input is an n*m matrix, we sometimes use a single parameter n to denote max(n,m) for simplicity.
 
 For space complexity, we use the definition which is in analogy to the following: for a TM with a (read-only) input tape, an output tape and work tapes, only the number of memory cells on work tapes counts. Here we assume the input is read-only, and for space complexity, we only count the number of memory cells on which we write. Note that this is different from the (relatively weaker) LeetCode definition, which usually allows in-place modifications to the memory cells containing the inputs. We call that definition "additional space complexity".
 
@@ -33,8 +35,10 @@ Problem ID marked with leading ~ indicates there's good evidences that the algor
 317 Shortest Distance from All Buildings  
 318 Maximum Product of Word Lengths  
 322 Coin Change  
+368 Largest Divisible Subset  
 ~375 Guess Number Higher or Lower II  
 ~403 Frog Jump  
+~464 Can I Win  
 ~483 Smallest Good Base  
 ~762 Prime Number of Set Bits in Binary Representation  
 ~898 Bitwise ORs of Subarrays  

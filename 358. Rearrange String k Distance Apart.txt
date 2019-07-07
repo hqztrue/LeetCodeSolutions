@@ -1,0 +1,1 @@
+at each step, choose the most frequent letter, using heap (bucket). O(n).

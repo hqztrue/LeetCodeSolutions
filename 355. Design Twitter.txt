@@ -1,0 +1,7 @@
+suppose we want to get k=10 tweets.
+maintain a follow graph.
+O(1) for post/follow/unfollow.
+O(n+k log n) for getNewsFeed, by constructing a heap in O(n) and query k minimum tweets.
+
+note. if we know more about the parameters (n,k,#followers...) we may use better algorithms.
+

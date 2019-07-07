@@ -1,0 +1,2 @@
+between two CopyAll operations, if we use x Paste operations, we are changing m 'A's to m*x 'A's.
+use a greedy strategy, reduce to integer factorization of n. see 492. Construct the Rectangle.

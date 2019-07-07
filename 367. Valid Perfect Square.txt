@@ -1,0 +1,2 @@
+1. sqrt (Newton's method).
+2. binary search.

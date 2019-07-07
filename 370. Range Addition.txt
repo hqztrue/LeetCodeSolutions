@@ -1,0 +1,1 @@
+offline, interval add is equivalent to two prefix adds, mark the endpoints. O(n).

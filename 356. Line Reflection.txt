@@ -1,0 +1,1 @@
+find the position of the vertical line by averging leftmost and rightmost. use hashing. O(n).

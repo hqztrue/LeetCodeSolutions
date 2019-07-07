@@ -1,0 +1,1 @@
+reduce to the partial sums problem/offline dominance (or orthogonal range) counting in 2D. there are O(n) useful integer coordinate values. see 315. Count of Smaller Numbers After Self.

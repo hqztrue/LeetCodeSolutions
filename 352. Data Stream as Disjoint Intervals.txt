@@ -1,0 +1,6 @@
+store the current intervals in increasing order. between two queries, put all added numbers into an unordered vector. when we query, first sort all newly added numbers, then simplify to intervals by merging with the old intervals. we need amortized O(sort(n)/n) (wlog assume sort(n), i.e. the time for sorting n numbers is monotone increasing) for each add, and O(1) for each output number.
+
+the lower bound is sorting complexity, so this is optimal.
+
+note. if the output intervals can be unordered, then we can use hashing to maintain the endpoints of intervals, and get expected amortized O(1) per add/output number. to ensure the output complexity, we need to dynamically adjust the hashtable size according to the number of elements in the hash table.
+

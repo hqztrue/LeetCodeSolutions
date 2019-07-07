@@ -1,0 +1,2 @@
+perform a linear scan, record the largest digit. O(log n).
+

@@ -1,1 +1,1 @@
-reduce to integer factorization.
+reduce to integer factorization. see 492. Construct the Rectangle.

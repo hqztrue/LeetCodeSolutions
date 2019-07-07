@@ -1,0 +1,1 @@
+the resulting array is first monotone decreasing (increasing) then monotone increasing (decreasing). O(n).

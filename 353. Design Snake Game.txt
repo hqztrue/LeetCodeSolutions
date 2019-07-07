@@ -1,0 +1,1 @@
+record the position of the snake.

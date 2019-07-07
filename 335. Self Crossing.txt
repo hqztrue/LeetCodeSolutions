@@ -1,0 +1,5 @@
+there are no crossings only if
+1) the path goes "inward",
+2) the path goes "outward",
+3) first goes "outward", then goes "inward".
+O(n) time, O(1) extra space.

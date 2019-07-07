@@ -1,0 +1,3 @@
+assume choose n integers, total=m.
+DP, f[S] denote if set S is chosen, whether the next player (which player is determined by |S| mod 2) can win.
+O(n*2^n).
