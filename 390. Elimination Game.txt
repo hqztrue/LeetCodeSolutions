@@ -1,0 +1,6 @@
+1. recursion, O(log n).
+2. math, O(1).
+https://leetcode.com/problems/elimination-game/discuss/87159/O(1)java-solution-with-detailed-explanation(actually-lots-of-math-derivation)
+
+
+

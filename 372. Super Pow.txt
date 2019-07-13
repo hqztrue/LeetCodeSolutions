@@ -1,0 +1,2 @@
+fast exponentiation. Let M=1337, b>>M, we can shrink b to O(M) by Euler's theorem.
+

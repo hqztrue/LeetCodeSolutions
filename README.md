@@ -34,7 +34,7 @@ Problem ID marked with leading ~ indicates there's good evidences that the algor
 ~302 Smallest Rectangle Enclosing Black Pixels  
 317 Shortest Distance from All Buildings  
 318 Maximum Product of Word Lengths  
-322 Coin Change  
+~322 Coin Change  
 368 Largest Divisible Subset  
 ~375 Guess Number Higher or Lower II  
 ~403 Frog Jump  

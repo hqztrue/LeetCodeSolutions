@@ -1,0 +1,2 @@
+first find the k-th smallest sum in o(k), then output all k smaller sums in O(k). see 378. Kth Smallest Element in a Sorted Matrix.
+
