@@ -1,0 +1,1 @@
+prefix sum for i*A[i]. O(n).

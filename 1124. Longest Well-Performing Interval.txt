@@ -1,0 +1,1 @@
+set a[i]=1 if day i is a tiring day, otherwise a[i]=0. let s[i] be the prefix sum of a[]. we want to find max (i-j) where 2(s[i]-s[j])>i-j, i.e. 2s[i]-i>2s[j]-j. use radix sort. O(n).

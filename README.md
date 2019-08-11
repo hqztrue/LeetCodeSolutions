@@ -37,6 +37,7 @@ Problem ID marked with leading ~ indicates there's good evidences that the algor
 ~322 Coin Change  
 368 Largest Divisible Subset  
 ~375 Guess Number Higher or Lower II  
+395 Longest Substring with At Least K Repeating Characters  
 ~403 Frog Jump  
 ~464 Can I Win  
 ~483 Smallest Good Base  

@@ -1,0 +1,1 @@
+DP. let f[i] denote the number of distinct subsequences in 1..i, and let j<i be the maximum number s.t. s[j]=s[i]. if j exists, f[i]=2*f[i-1]-f[j], o.w. f[i]=2*f[i-1]. O(n).

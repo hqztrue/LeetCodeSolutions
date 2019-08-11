@@ -1,0 +1,1 @@
+dfs, left-child right-sibling binary tree. O(n).

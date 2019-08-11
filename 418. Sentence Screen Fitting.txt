@@ -1,0 +1,1 @@
+Let L be the total length of the words. for each row, find the end position of that row in the sentence in O(1). the same position will repeat after O(L) rows. O(L).

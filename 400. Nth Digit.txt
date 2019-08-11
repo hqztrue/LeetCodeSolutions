@@ -1,0 +1,2 @@
+counting. the number will have O(log n) digits. O(log n). we can also use O(1) log/pow/divisions.
+
