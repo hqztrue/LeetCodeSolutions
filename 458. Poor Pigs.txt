@@ -1,0 +1,1 @@
+the strategy is k-ary search. only need to compute a logrithm. O(1).

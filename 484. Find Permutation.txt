@@ -1,0 +1,1 @@
+greedy. start from 1,...,n, scan from left to right, reverse each subarray with consecutive Ds. O(n).

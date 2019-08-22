@@ -1,0 +1,1 @@
+let k be the number of strings. 2D knapsack. O(nmk).

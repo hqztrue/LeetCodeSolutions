@@ -1,0 +1,3 @@
+Find the minimum i s.t. |s1^i|>=|s2|, then s2 should be a substring of s3=s1^{i+1}. We only need to find the maximum occurrence of s2 in [s1,n1]. For j=1,...,|s3|, if (s3+s3)[j,j+|s2|-1]=s2, add an edge between j and j+|s2|. use string hashing to check this. then run bfs. O(|s1|+|s2|).
+
+

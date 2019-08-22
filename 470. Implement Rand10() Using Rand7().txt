@@ -1,0 +1,3 @@
+use Rand7()*Rand7(), and use rejection sampling. expected O(1).
+for the average number of Rand7() calls, the information-theoretic lower bound is log_7 10, and we can get arbitrarily close by using large integers (find a power of 7 close to a power of 10).
+

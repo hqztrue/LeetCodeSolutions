@@ -1,0 +1,1 @@
+matrix multiplication+fast exponentiation. O(log n).

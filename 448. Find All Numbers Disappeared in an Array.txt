@@ -1,0 +1,1 @@
+counting. O(n) time, O(1) additional space.

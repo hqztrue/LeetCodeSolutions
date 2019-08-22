@@ -1,0 +1,2 @@
+precompute a table.
+

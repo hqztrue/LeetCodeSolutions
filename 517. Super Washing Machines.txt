@@ -1,0 +1,2 @@
+consider the number of operations needed for each washing machine individually. O(n).
+
