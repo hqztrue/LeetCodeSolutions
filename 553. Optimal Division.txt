@@ -1,0 +1,2 @@
+greedy, the maximum result is (x_1*x_3*...*x_n)/x_2. O(n).
+

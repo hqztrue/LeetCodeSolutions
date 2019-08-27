@@ -1,0 +1,2 @@
+suffix tree, for each suffix, find the longest prefix of it that is contained in dict. O(L).
+
