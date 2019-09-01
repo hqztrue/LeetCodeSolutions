@@ -1,0 +1,1 @@
+trie. when the user typed a new sentence with length m, we only need O(m) to maintain the trie. O(L).

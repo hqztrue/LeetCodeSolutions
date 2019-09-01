@@ -1,0 +1,1 @@
+find the rank of x, use selection. O(n)+sort(k).

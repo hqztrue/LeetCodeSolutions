@@ -1,3 +1,0 @@
-O(1) per add, O(n) per find, using two sum.
-
-lower bound: using O(n) operations we can solve 3sum.

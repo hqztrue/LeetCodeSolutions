@@ -1,0 +1,2 @@
+math formula. see https://en.wikipedia.org/wiki/Derangement.
+
