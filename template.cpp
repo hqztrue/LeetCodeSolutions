@@ -13,6 +13,15 @@ namespace Read{
 		bool sign=0; x=0; while (*p<'0'||*p>'9')if (*p++=='-')sign=1;
 		while (*p>='0'&&*p<='9')x=x*10+*p++-48;if (sign)x=-x;
 	}
+	inline void read(double &x){
+		bool sign=0; x=0; while (*p<'0'||*p>'9')if (*p++=='-')sign=1;
+		while (*p>='0'&&*p<='9')x=x*10+*p++-48;
+		if (*p=='.'){
+			double tmp=1; ++p;
+			while (*p>='0'&&*p<='9')tmp*=0.1,x+=tmp*(*p++-48);
+		}
+		if (sign)x=-x;
+	}
 	inline void read(char *s){
 		while (*p<'0'||*p>'z')p++;
 		while (*p>='0'&&*p<='z')*s++=*p++;

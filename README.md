@@ -4,7 +4,7 @@ LeetCode
 ## Introduction
 Here are *theoretical solutions* for some interesting LeetCode problems, aiming for the *best* running time. The author is a TCS student who no longer remember how to code, so if you are looking for *code implementations*... sorry, this is the wrong place.
 
-For most problems we consider here, the only thing we want to optimize is the running time. Sometimes we will optimize on the space complexity as well. Lower bound will be provided, if the optimality of our algorithm is not obvious. If the main source of hardness of a problem is its coding complexity rather than its algorithm (e.g. simulation problems), we will skip the solution here.
+For most problems we consider here, the only thing we want to optimize is the running time. Randomization is usually allowed. Sometimes we will optimize on the space complexity as well. Lower bound will be provided, if the optimality of our algorithm is not obvious. If the main source of hardness of a problem is its coding complexity rather than its algorithm (e.g. simulation problems), we will skip the solution here.
 
 ### Notations
 In some problems we will use the word RAM model, where the assumption is each word has w bits and can store integers up to size W=2^w. In practice (i.e. 32-bit machines), w=32 and W=2^32. We assume the word length is w=\Omega(\log n), and the following basic word operations in the multiplicative instruction set can be executed in O(1): +, -, (*), &, |, ^, ~, <<, >>. By setting w'=\delta_0\log n for a sufficiently small constant \delta_0>0, we can simulate nonstandard word operations on w'-bit words in O(1) time by table lookup, with n^{O(\delta_0)}=o(n) preprocessing time.
