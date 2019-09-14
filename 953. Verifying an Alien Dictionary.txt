@@ -1,0 +1,1 @@
+simulation, directly compare strings. O(L).

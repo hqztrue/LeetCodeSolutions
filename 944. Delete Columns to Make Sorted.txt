@@ -1,0 +1,1 @@
+delete columns that are not in non-decreasing sorted order. O(nm).
