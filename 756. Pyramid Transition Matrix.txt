@@ -1,0 +1,5 @@
+dfs.
+
+
+note. is this NP-hard? seems like this can simulate an NTM with n input cells and takes at most n steps.
+

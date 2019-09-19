@@ -1,3 +1,0 @@
-Let n denote the length of the input string, m denote the number of strings in the dictionary, and L denote the total length of the dictionary.
-1. DP. O(nm).
-2. let f[i] denote whether the prefix s[1..i] can be segmented into a sequence of dictionary words. use Aho-Corasick automation to compute f. at each position, we need to walk to the root according to the failure pointers, and there are at most O(min(m,sqrt(L))) steps. O(n*min(m,sqrt(L))).

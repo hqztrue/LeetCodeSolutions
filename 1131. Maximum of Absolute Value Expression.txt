@@ -1,0 +1,2 @@
+there are only 4 cases to remove the absolute operation. then we can solve in O(n).
+

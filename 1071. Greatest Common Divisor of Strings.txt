@@ -1,0 +1,2 @@
+easy to prove if the result exists, it is the gcd of the string lengths. O(n).
+
