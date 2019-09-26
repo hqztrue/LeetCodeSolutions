@@ -1,0 +1,2 @@
+scan from left to right. at any time, the number of possible unpaired '(' is a range, and can be maintained by case-by-case analysis. O(n).
+

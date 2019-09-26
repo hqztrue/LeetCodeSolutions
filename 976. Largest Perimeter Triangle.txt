@@ -1,0 +1,5 @@
+greedy, O(n) after sorting. O(sort(n)).
+
+note. the smallest perimeter triangle is also solvable in O(n log n), using monotone queues.
+
+
