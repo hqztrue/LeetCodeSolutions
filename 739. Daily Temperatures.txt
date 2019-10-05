@@ -1,0 +1,1 @@
+monotone queue. O(n).

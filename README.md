@@ -25,7 +25,6 @@ Problem ID marked with leading ~ indicates there's good evidences that the algor
 ~7 Reverse Integer  
 ~10 Regular Expression Matching  
 +116 Populating Next Right Pointers in Each Node  
-211 Add and Search Word - Data structure design  
 +225 Implement Stack using Queues  
 ~234 Palindrome Linked List  
 264 Ugly Number II  
@@ -44,6 +43,7 @@ Problem ID marked with leading ~ indicates there's good evidences that the algor
 ~762 Prime Number of Set Bits in Binary Representation  
 ~898 Bitwise ORs of Subarrays  
 ~1027 Longest Arithmetic Sequence  
+~1074 Number of Submatrices That Sum to Target  
 
 ## Miscellaneous Topics
 Get your hands dirty: [miscellaneous_topics.pdf](https://github.com/hqztrue/LeetCodeSolutions/blob/master/miscellaneous_topics.pdf)

@@ -1,0 +1,2 @@
+enumerate the top edge and the bottom edge in O(n^2), then solve the 1D case in O(n). O(n^3).
+

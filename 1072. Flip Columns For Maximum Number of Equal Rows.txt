@@ -1,0 +1,3 @@
+if we want row i to have all values equal, there are only two flip possibilities. hashing. O(n^2).
+
+

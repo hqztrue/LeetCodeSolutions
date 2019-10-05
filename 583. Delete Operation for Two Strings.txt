@@ -1,2 +1,3 @@
 LCS.
-for the LCS algorithms, see 097. Interleaving String.
+for the LCS algorithms, see 516. Longest Palindromic Subsequence.
+
