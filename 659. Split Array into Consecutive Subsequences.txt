@@ -1,2 +1,3 @@
 greedy. scan from left to right, for each value v, maintain the length of sequences ending at v. when we add a[i], greedily add it to the end of the shortest sequence ending at a[i]-1 (if there exist such sequence). O(n).
 
+remark. this solution does not require the array being sorted in ascending order.
