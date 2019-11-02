@@ -10,6 +10,7 @@
 *.out
 *.bak
 *.exe
+*.bat
 materials
 template*
 !template.cpp
