@@ -1,5 +1,0 @@
-1. prefix sum+binary search. O(n log n).
-2. offline, generate all samples in a batch. reduce to sorting.
-3. use the alias method. O(n) preprocessing, O(1) per query. https://en.wikipedia.org/wiki/Alias_method
-
-

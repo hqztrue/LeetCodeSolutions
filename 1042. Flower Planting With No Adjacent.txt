@@ -1,0 +1,2 @@
+Theorem: we can find a (жд+1)-coloring of a graph in O(n), where жд is the maximum degree, by coloring sequentially.
+

@@ -1,0 +1,1 @@
+when K>=2, we can sort the string by bubble sort (this is used only for the proof; any sorting algorithm can be used in our algorithm, e.g. radix sort). when K=1, the result is the minimum representation of the string. O(n).

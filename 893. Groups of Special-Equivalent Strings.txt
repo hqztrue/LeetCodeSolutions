@@ -1,0 +1,2 @@
+hashing by counting the number of occurrences of each character at odd/even index. O(n).
+

@@ -26,14 +26,14 @@ Problem ID marked with leading ~ indicates there's good evidences that the algor
 ~10 Regular Expression Matching  
 +116 Populating Next Right Pointers in Each Node  
 +225 Implement Stack using Queues  
-~234 Palindrome Linked List  
++234 Palindrome Linked List  
 264 Ugly Number II  
 291 Word Pattern II  
 ~302 Smallest Rectangle Enclosing Black Pixels  
 317 Shortest Distance from All Buildings  
 318 Maximum Product of Word Lengths  
 368 Largest Divisible Subset  
-~375 Guess Number Higher or Lower II  
+~375 Guess Number Higher or Lower II (DP)  
 395 Longest Substring with At Least K Repeating Characters  
 ~403 Frog Jump  
 ~464 Can I Win  
@@ -42,7 +42,9 @@ Problem ID marked with leading ~ indicates there's good evidences that the algor
 548 Split Array with Equal Sum  
 ~762 Prime Number of Set Bits in Binary Representation  
 ~898 Bitwise ORs of Subarrays  
-~1027 Longest Arithmetic Sequence  
+~1027 Longest Arithmetic Sequence (DP)  
+~1039 Minimum Score Triangulation of Polygon (DP)  
+~1043 Partition Array for Maximum Sum (DP)  
 ~1074 Number of Submatrices That Sum to Target  
 
 ## Miscellaneous Topics
