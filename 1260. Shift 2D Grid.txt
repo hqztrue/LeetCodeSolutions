@@ -1,0 +1,1 @@
+combine the shifts. O(nm).
