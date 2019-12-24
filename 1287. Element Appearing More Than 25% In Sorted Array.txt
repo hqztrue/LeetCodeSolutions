@@ -1,0 +1,5 @@
+1. linear scan, O(n).
+2. there are only O(1) candidates at the quantile positions, O(log n) by binary search, assuming the input is already stored in an array.
+
+remark. O(n) even if the array is not sorted.
+

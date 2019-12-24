@@ -46,6 +46,7 @@ Problem ID marked with leading ~ indicates there's good evidences that the algor
 ~1039 Minimum Score Triangulation of Polygon (DP)  
 ~1043 Partition Array for Maximum Sum (DP)  
 ~1074 Number of Submatrices That Sum to Target  
+1293 Shortest Path in a Grid with Obstacles Elimination  
 
 ## Miscellaneous Topics
 Get your hands dirty: [miscellaneous_topics.pdf](https://github.com/hqztrue/LeetCodeSolutions/blob/master/miscellaneous_topics.pdf)

@@ -12,7 +12,9 @@
 *.exe
 *.bat
 materials
+others
 template*
 !template.cpp
 *.tex
 *.sav
+

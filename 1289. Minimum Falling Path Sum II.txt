@@ -1,0 +1,2 @@
+DP, f[i][j] denote the minimum sum of a falling path with non-zero shifts ending at (i,j). O(nm).
+

@@ -1,0 +1,4 @@
+balanced tree. O(log n) per operation.
+
+remark: O(log n/log w)?
+

@@ -1,0 +1,1 @@
+consider odd and even. O(n).
