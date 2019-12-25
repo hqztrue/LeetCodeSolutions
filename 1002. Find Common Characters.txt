@@ -1,0 +1,1 @@
+counting. O(n).

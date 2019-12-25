@@ -1,0 +1,2 @@
+only the numbers that are on both the front and the back of some card are unavoidable. O(n).
+

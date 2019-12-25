@@ -1,0 +1,4 @@
+1. enumerate each possible square. O(n^3).
+2. compute the result for each diagonal, using monotone queue, and transform the optimization problem into a decision problem, where the answer is monotone increasing. O(n^2).
+see my zhihu post https://zhuanlan.zhihu.com/p/99225931/.
+

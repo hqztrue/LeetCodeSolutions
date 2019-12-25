@@ -1,0 +1,3 @@
+each iteration greedily find the first match between the left and the right. O(n).
+proof. let A, B, C and D denote substrings, if A=A, and AB=CA, then B=DA and C=AD, we can match AB=ADA using three pairs.
+
