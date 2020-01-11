@@ -1,0 +1,5 @@
+greedy. going from y to x:
+if y is odd, y+=1
+if y is even, y/=2.
+O(log n).
+

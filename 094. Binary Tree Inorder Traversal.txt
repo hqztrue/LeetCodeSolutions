@@ -1,1 +1,3 @@
-O(n).
+1. dfs. O(n).
+2. Morris traversal. O(1) additional space.
+

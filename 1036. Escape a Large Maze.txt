@@ -1,0 +1,1 @@
+find all connected hole boundaries using hashing. O(n).

@@ -1,0 +1,2 @@
+this reduces to LCS. see 516. Longest Palindromic Subsequence.
+

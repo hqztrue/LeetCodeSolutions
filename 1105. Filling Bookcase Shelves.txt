@@ -1,0 +1,9 @@
+this problem is [USACO12OPEN]Bookshelf and BZOJ 2678.
+http://www.usaco.org/index.php?page=viewproblem2&cpid=138
+1. let f[i] denote the optimal height for books 1~i, f[i] is monotone increasing, and g[j]=max(h[j],...,h[i]) is monotone decreasing in j when i is fixed. g can be divided into several segments of the same value. when we add i+1, we need to merge a few segments at the end of g, and insert a new segment. in total we need O(n) such operations. use segment tree to maintain. O(n log n).
+http://www.usaco.org/current/data/sol_bookshelf_gold.html
+2. we only need to maintain a queue supporting deletion from both sides and insertion to the back. use monotone queue. O(n).
+http://kczno1.blog.uoj.ac/blog/2967
+
+
+

@@ -1,0 +1,2 @@
+prefix xor sum. O(n).
+
