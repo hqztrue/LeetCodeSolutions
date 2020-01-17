@@ -37,12 +37,10 @@ Problem ID marked with leading ~ indicates there's good evidences that the algor
 395 Longest Substring with At Least K Repeating Characters  
 ~403 Frog Jump  
 ~464 Can I Win  
-~472 Concatenated Words  
 ~483 Smallest Good Base  
 548 Split Array with Equal Sum  
 ~762 Prime Number of Set Bits in Binary Representation  
 ~898 Bitwise ORs of Subarrays  
-~1027 Longest Arithmetic Sequence (DP)  
 ~1039 Minimum Score Triangulation of Polygon (DP)  
 ~1043 Partition Array for Maximum Sum (DP)  
 ~1074 Number of Submatrices That Sum to Target  

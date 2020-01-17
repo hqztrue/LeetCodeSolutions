@@ -1,0 +1,1 @@
+let array p denote the prefix sum. scan from left to right, use monotone queue to maintain an increasing subsequence of p. after checking index i, we can pop elements on the left with value <=p[i]-k in the monotone queue. O(n).

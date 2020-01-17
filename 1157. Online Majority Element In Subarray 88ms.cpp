@@ -1,3 +1,6 @@
+//#pragma GCC optimize("Ofast")
+//#pragma GCC target("avx,avx2,fma")
+
 //IO
 int _IO=[](){
 	std::ios::sync_with_stdio(0);

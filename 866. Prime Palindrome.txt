@@ -1,0 +1,3 @@
+1. enumerate each palindrome in increasing order and test whether it's a prime. for a random generated n, this (roughly) takes O(poly(log n)) time. the worst-case analysis is harder.
+2. precompute a table. the table has size (roughly) sqrt(n)/log n.
+

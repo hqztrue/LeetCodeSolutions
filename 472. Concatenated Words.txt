@@ -1,1 +1,3 @@
-this is harder than 139. Word Break.
+this is the word break problem with multiple queries, so it is at least as hard as 139. Word Break.
+
+
