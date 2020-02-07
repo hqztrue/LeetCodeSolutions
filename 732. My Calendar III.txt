@@ -1,0 +1,2 @@
+segment tree (balanced tree). O(n log n).
+

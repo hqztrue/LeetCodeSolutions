@@ -1,0 +1,5 @@
+this is related to 750. number of corner rectangles.
+1. O(n^{3/2}).
+2. O(n^{4/3})?
+
+
