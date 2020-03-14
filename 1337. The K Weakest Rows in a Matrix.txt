@@ -1,0 +1,2 @@
+O(nm).
+apart from the time for reading the input, we need O(n+k log(n/k)) time. by modifing the k-th element algorithm and use binary search to count the number of soldiers in a row (this takes O(log(n/k)) time on average by Jensen's inequality). We can compare two rows in O(1) time, if we already know the number of soldiers in either of them.

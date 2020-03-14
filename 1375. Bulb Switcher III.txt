@@ -1,0 +1,1 @@
+record the maximum id of the turned on lights. O(n).

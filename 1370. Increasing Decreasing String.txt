@@ -1,0 +1,1 @@
+bucket sort, maintain nonempty buckets by linked list. O(n).

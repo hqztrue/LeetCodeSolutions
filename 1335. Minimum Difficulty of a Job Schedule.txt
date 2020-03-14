@@ -1,0 +1,2 @@
+DP, let f(l,r)=min{a_l,\dots,a_r}, fix r, f(l,r) looks like a staircase. let F[i][j] denote the optimal solution to divide the first i tasks into j days. for every j, use monotone stack to maintain the minimum of F at each level of the staircase. O(nd).
+

@@ -1,0 +1,1 @@
+popcount. O(1) under certain assumptions.

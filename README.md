@@ -42,6 +42,8 @@ Problem ID marked with leading ~ indicates there's good evidences that the algor
 ~1043 Partition Array for Maximum Sum (DP)  
 ~1074 Number of Submatrices That Sum to Target  
 1293 Shortest Path in a Grid with Obstacles Elimination  
+~1334 Find the City With the Smallest Number of Neighbors at a Threshold Distance  
+~1335 Minimum Difficulty of a Job Schedule  
 
 ## Miscellaneous Topics
 Get your hands dirty: [miscellaneous_topics.pdf](https://github.com/hqztrue/LeetCodeSolutions/blob/master/miscellaneous_topics.pdf)

@@ -1,0 +1,2 @@
+if the input string is a palindrome, then we need one operation, otherwise we can use two operations, removing all a's in the first step and remove all b's in the second step.
+

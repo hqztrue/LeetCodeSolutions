@@ -1,0 +1,4 @@
+The seats on even and odd columns form a bipartite graph, and we only need to compute the maximum independent set, or equivalently bipartite matching. There are O(nm) nodes and O(nm) edges, so the running time is O(|V|^0.5*|E|)=O(n^1.5*m^1.5).
+
+this is Google Code Jam 2008 Round 3 Problem C - No Cheating https://code.google.com/codejam/contest/32002/dashboard#s=p2
+

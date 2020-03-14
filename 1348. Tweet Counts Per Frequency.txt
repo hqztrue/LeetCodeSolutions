@@ -1,0 +1,1 @@
+reduce to the partial-sums problem. O(n log n/log log n). see 307. Range Sum Query - Mutable.
