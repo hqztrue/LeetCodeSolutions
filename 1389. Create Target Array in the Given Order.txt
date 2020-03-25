@@ -1,0 +1,4 @@
+1. online: reduce to the partial sums problem, O(n log n/log log n). see 315. Count of Smaller Numbers After Self.
+2. offline: reduce to offline dominance counting in 2D, for each index[i], count the number of indices less or equal to it that appears in the array index after it. O(n sqrt(log n)).
+
+

@@ -1,0 +1,2 @@
+1. DP. O(nk).
+2. generating function, compute \prod(p_i*x+(1-p_i))[x^k]. FFT+divide and conquer. O(n log^2 n).

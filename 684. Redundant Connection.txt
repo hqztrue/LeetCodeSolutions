@@ -1,0 +1,4 @@
+1. use dfs to find the unique cycle. O(n).
+2. Actually we can solve a more general problem in O(n+m) time: given a graph, find all edges that could be a non-tree edge.
+Use dfs to arbitrarily find a spanning tree. For each non-tree edge (u,v), use O(n)-O(1) LCA to find the LCA t of u and v, and mark all edges on the path from u to t and from v to t, using +1/-1 prefix sum tag. Finally perform another dfs and use the tags to find all tree edges that can be contained in a cycle.
+

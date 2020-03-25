@@ -1,0 +1,2 @@
+dfs. the output complexity is O(n*4^n).
+

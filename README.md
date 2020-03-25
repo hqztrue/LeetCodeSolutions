@@ -28,6 +28,7 @@ Problem ID marked with leading ~ indicates there's good evidences that the algor
 +234 Palindrome Linked List  
 264 Ugly Number II  
 ~302 Smallest Rectangle Enclosing Black Pixels  
+306 Additive Number  
 317 Shortest Distance from All Buildings  
 368 Largest Divisible Subset  
 ~375 Guess Number Higher or Lower II (DP)  
@@ -40,6 +41,7 @@ Problem ID marked with leading ~ indicates there's good evidences that the algor
 ~898 Bitwise ORs of Subarrays  
 ~1039 Minimum Score Triangulation of Polygon (DP)  
 ~1043 Partition Array for Maximum Sum (DP)  
+1057 Campus Bikes  
 ~1074 Number of Submatrices That Sum to Target  
 1293 Shortest Path in a Grid with Obstacles Elimination  
 ~1334 Find the City With the Smallest Number of Neighbors at a Threshold Distance  

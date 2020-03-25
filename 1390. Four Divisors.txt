@@ -1,0 +1,3 @@
+a valid integer is either or the form pq (p\neq q), or p^3, where p and q are primes. reduce to integer factorization.
+
+remark. it is conjectured that this is not easier than integer factorization. see 829. Consecutive Numbers Sum.

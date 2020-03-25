@@ -1,0 +1,1 @@
+fix the engineer i in the team with the minimum efficiency, we can greedily choose k engineers with the maximum speeds and with efficiency larger or equal than i. reduce to sorting. O(sort(n)).

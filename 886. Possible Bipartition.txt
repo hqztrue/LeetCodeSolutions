@@ -1,0 +1,1 @@
+check whether the graph is bipartite. dfs. O(n+m).

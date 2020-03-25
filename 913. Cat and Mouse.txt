@@ -1,0 +1,2 @@
+game theory, DP in topological order. let f[i][j][0..1] denote the outcome of the game when the mouse is at i and the cat is at j, and the next move is by mouse/cat. O(nm).
+

@@ -1,0 +1,2 @@
+divide each grid into 3*3 grids, dfs. O(n^2).
+

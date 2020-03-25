@@ -1,0 +1,1 @@
+flatten and rebuild. O(n).
