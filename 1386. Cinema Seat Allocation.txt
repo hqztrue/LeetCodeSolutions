@@ -1,0 +1,1 @@
+the rows are independent, use hashing to find nonempty rows. O(k).

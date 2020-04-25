@@ -1,0 +1,2 @@
+simulation. the running time is still open, see the 3n+1 conjecture https://en.wikipedia.org/wiki/Collatz_conjecture.
+
