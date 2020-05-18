@@ -1,0 +1,2 @@
+1. suffix tree. O(n).
+2. minimum representation. O(n).

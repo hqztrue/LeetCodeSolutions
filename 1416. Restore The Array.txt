@@ -1,0 +1,1 @@
+DP, use suffix tree to determine the range of the transitions. O(n).

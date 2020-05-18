@@ -9,7 +9,7 @@ public:
         D[0]=0;
         for (int i=1;i<=t;++i){
             D[i]=inf;
-            for (int j=0;j<min((int)ceil(3.*u*u/i),n);++j)
+            for (int j=0;j<min((int)ceil(2.*u*u/i),n);++j)
                 if (v[j]<=i)D[i]=min(D[i],D[i-v[j]]+1);
         }
         return D[t]<inf?D[t]:-1;
