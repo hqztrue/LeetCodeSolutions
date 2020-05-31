@@ -1,0 +1,4 @@
+DP. O(n^2).
+
+to do: shave logs and prove Omega(n^{2-eps}) hardness?
+

@@ -31,21 +31,26 @@ Problem ID marked with leading ~ indicates there's good evidences that the algor
 306 Additive Number  
 317 Shortest Distance from All Buildings  
 368 Largest Divisible Subset  
-~375 Guess Number Higher or Lower II (DP)  
 395 Longest Substring with At Least K Repeating Characters  
 ~403 Frog Jump  
 ~464 Can I Win  
 ~483 Smallest Good Base  
 548 Split Array with Equal Sum  
+~741 Cherry Pickup  
 ~762 Prime Number of Set Bits in Binary Representation  
 ~898 Bitwise ORs of Subarrays  
-~1039 Minimum Score Triangulation of Polygon (DP)  
-~1043 Partition Array for Maximum Sum (DP)  
 1057 Campus Bikes  
 ~1074 Number of Submatrices That Sum to Target  
 1293 Shortest Path in a Grid with Obstacles Elimination  
 ~1334 Find the City With the Smallest Number of Neighbors at a Threshold Distance  
 ~1335 Minimum Difficulty of a Job Schedule  
+
+DP:
+375 Guess Number Higher or Lower II  
+1039 Minimum Score Triangulation of Polygon  
+1043 Partition Array for Maximum Sum  
+1467 Probability of a Two Boxes Having The Same Number of Distinct Balls  
+
 
 ## Miscellaneous Topics
 Get your hands dirty: [miscellaneous_topics.pdf](https://github.com/hqztrue/LeetCodeSolutions/blob/master/miscellaneous_topics.pdf)

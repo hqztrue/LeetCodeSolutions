@@ -1,0 +1,2 @@
+DP. wlog assume k<=n. let f[i][j][t] denote the probability of placing all balls of the first i colors into the boxes, box 1 has j balls, and box 1 has t more distinct balls than box 2. O(\sum_{i=1}^k n*k*balls[i])=O(kn^2).
+

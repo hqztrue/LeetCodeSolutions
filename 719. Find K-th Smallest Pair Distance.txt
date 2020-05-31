@@ -1,2 +1,5 @@
 this can be reduced to 378. Kth Smallest Element in a Sorted Matrix, after sorting. O(sort(n))+O(n).
 
+remark. when k=1, the problem can be solved in O(n) time, by reducing to the closest pair problem.
+
+

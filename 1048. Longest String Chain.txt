@@ -1,0 +1,2 @@
+DP+hashing, try to delete a letter from word2. O(L).
+

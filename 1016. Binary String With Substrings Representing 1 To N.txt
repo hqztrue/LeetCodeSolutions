@@ -1,0 +1,3 @@
+We have n=O(L), by counting the number of substrings with length log n.
+1. Use compressed trie. O(L).
+2. It suffices to check substrings with length log n and log n-1.
