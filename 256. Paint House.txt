@@ -1,0 +1,4 @@
+DP. O(n).
+
+for the general case using k colors, see 265. Paint House II.
+

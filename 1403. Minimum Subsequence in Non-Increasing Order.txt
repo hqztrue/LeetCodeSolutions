@@ -1,0 +1,2 @@
+reduce to kth_element. O(n).
+

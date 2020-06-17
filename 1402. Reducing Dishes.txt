@@ -1,0 +1,2 @@
+greedy, the satisfaction level must be monotone increasing, so the optimal solution must be a suffix of the array after sorting. we can perform binary search for the index of the first dish, so we can reduce to kth_element. O(n).
+

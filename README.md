@@ -45,7 +45,7 @@ Problem ID marked with leading ~ indicates there's good evidences that the algor
 ~1334 Find the City With the Smallest Number of Neighbors at a Threshold Distance  
 ~1335 Minimum Difficulty of a Job Schedule  
 
-DP:
+DP:  
 375 Guess Number Higher or Lower II  
 1039 Minimum Score Triangulation of Polygon  
 1043 Partition Array for Maximum Sum  

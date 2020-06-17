@@ -1,0 +1,1 @@
+greedy, always select a whole input string. use suffix tree to verify containment. O(L).

@@ -1,0 +1,1 @@
+let f[i][j][k] denote the minimum cost of painting the first i houses, having j neighborhoods, and house i is painted with color k. we can compress the third dimension, by recording the minimum and second minimum of f[i][j][.]. O(mn+mt).
