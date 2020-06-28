@@ -47,6 +47,7 @@ Problem ID marked with leading ~ indicates there's good evidences that the algor
 
 DP:  
 375 Guess Number Higher or Lower II  
+688 Knight Probability in Chessboard  
 1039 Minimum Score Triangulation of Polygon  
 1043 Partition Array for Maximum Sum  
 1467 Probability of a Two Boxes Having The Same Number of Distinct Balls  

@@ -94,12 +94,6 @@ struct Hash{
 			if (i->first==x)return &i->second;
 		return NULL;
 	}
-	void add(const Tkey &x,int &s){
-		size_t x1=gethash(x)%P;
-		for (node *i=v[x1];i;i=i->next)
-			if (i->first==x){s+=i->second; return;}
-		//Tvalue *null=NULL;return *null;
-	}
 	iterator find(const Tkey &x){
 		size_t x1=gethash(x)%P;
 		for (node *i=v[x1];i;i=i->next)

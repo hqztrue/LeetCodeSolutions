@@ -1,0 +1,2 @@
+prefix sum, hashing, enumerate the break point. O(n).
+

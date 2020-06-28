@@ -1,0 +1,2 @@
+two pointers+monotone queue. O(n).
+
