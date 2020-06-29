@@ -58,20 +58,20 @@ struct List{
 /**
  * Definition for singly-linked list.
  * struct ListNode {
- *     int val;
- *     ListNode *next;
- *     ListNode(int x) : val(x), next(NULL) {}
+ *	   int val;
+ *	   ListNode *next;
+ *	   ListNode(int x) : val(x), next(NULL) {}
  * };
  */
 class Solution {
 public:
-    ListNode* insertionSortList(ListNode* head) {
+	ListNode* insertionSortList(ListNode* head) {
 		l.clear(); s1=1;
-        for (ListNode *p=head;p;p=p->next)l.insert(p->val);
+		for (ListNode *p=head;p;p=p->next)l.insert(p->val);
 		List::node *p1=l.head->next;
 		for (ListNode *p=head;p;p=p->next,p1=p1->next)p->val=p1->key;
 		return head;
-    }
+	}
 };
 
 

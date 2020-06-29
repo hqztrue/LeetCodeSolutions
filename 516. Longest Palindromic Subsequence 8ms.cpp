@@ -169,12 +169,11 @@ int a[N],b[N];
 BitSet<N> row[2],X,Y;
 unordered_map<int,vector<int> > S;
 unordered_map<int,BitSet<N> > match;
-
 class Solution {
 public:
-    int longestPalindromeSubseq(string s) {
+	int longestPalindromeSubseq(string s) {
 		int n=s.size(),m=n;
-        S.clear();match.clear();row[1].reset();
+		S.clear();match.clear();row[1].reset();
 		for (int i=0;i<n;++i)a[i]=int(s[i]),S[a[i]].push_back(i);
 		for (int i=0;i<m;++i)b[i]=int(s[n-1-i]);
 		for (int i=0;i<m;++i)if (match.find(b[i])==match.end()){
@@ -183,8 +182,7 @@ public:
 		}
 		for (int i=0,now=0;i<m;++i,now^=1)
 			X=(row[now^1]|match[b[i]]).set(n,1),row[now]=(X&((X-(row[now^1]<<1).set(0,1))^X)).set(n,0);
-        return row[(m-1)&1].count();
-    }
+		return row[(m-1)&1].count();
+	}
 };
-
 

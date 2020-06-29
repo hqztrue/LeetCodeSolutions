@@ -130,24 +130,24 @@ struct LinearDisjointSet{
 LinearDisjointSet<N> D;
 class Solution {
 public:
-    vector<int> avoidFlood(vector<int>& rains) {
-        int n=rains.size(),*a=&rains[0]-1;
-        vector<int> res(n); Hash<int,int> H;
+	vector<int> avoidFlood(vector<int>& rains) {
+		int n=rains.size(),*a=&rains[0]-1;
+		vector<int> res(n); Hash<int,int> H;
 		D.init(n);
-        for (int i=1;i<=n;++i)
-        	if (a[i]){
-        		D.del(i); res[i-1]=-1;
-        		int *p=H.find_(a[i]);
-        		if (p){
-        			int j=D.find(*p);
-        			if (j>i)return vector<int>();
-        			res[j-1]=a[i]; D.del(j); *p=i;
-        		}
-        		else H.insert(a[i],i);
+		for (int i=1;i<=n;++i)
+			if (a[i]){
+				D.del(i); res[i-1]=-1;
+				int *p=H.find_(a[i]);
+				if (p){
+					int j=D.find(*p);
+					if (j>i)return vector<int>();
+					res[j-1]=a[i]; D.del(j); *p=i;
+				}
+				else H.insert(a[i],i);
 			}
 			else res[i-1]=1;
-        return res;
-    }
+		return res;
+	}
 };
 
 //IO
@@ -156,5 +156,4 @@ int _IO=[](){
 	cin.tie(0); //cout.tie(0);
 	return 0;
 }();
-
 

@@ -17,7 +17,7 @@ struct BitSet{
 	uint *a;int size,S;
 	void reset(){memset(a,0,sizeof(uint)*size);}
 	void init(){a=pool1;pool1+=size;reset();}  //a=new uint[size];
-    BitSet(){}
+	BitSet(){}
 	BitSet(int S_):S(S_),size(get_size(S_)){init();}
 	//BitSet(uint x):size(get_size(S)){reset();a[0]=x;}
 	BitSet(const BitSet &x){*this=x;}
@@ -206,41 +206,41 @@ BitSet a[CH],b[L1][1<<L];
 bool cmp(const string &s1,const string &s2){return s1.size()>s2.size();}
 class Solution {
 public:
-    int maxProduct(vector<string> &v){
-        int n=v.size(),ans=0;
-        sort(v.begin(),v.end(),cmp);
-        for (int i=0;i<n;++i){
-            int t=0;
-            for (int j=0;j<v[i].size();++j)t|=1<<(v[i][j]-'a');
-            mask[i]=t; len[i]=v[i].size();
-        }
-        for (int i=0;i<CH;++i){
-        	a[i]=BitSet(n);
-        	for (int j=0;j<n;++j)
+	int maxProduct(vector<string> &v){
+		int n=v.size(),ans=0;
+		sort(v.begin(),v.end(),cmp);
+		for (int i=0;i<n;++i){
+			int t=0;
+			for (int j=0;j<v[i].size();++j)t|=1<<(v[i][j]-'a');
+			mask[i]=t; len[i]=v[i].size();
+		}
+		for (int i=0;i<CH;++i){
+			a[i]=BitSet(n);
+			for (int j=0;j<n;++j)
 				if (mask[j]&(1<<i))a[i].set(j,1);
-        }
-        for (int i1=0;i1<L1;++i1){
-        	b[i1][0]=BitSet(n);
-        	for (int j=1;j<(1<<L);++j){
-        		int k=__builtin_clz(j),t=31-k;
-        		if (i1*L+t<CH)b[i1][j]=b[i1][j-(1<<t)]|a[i1*L+t];
-        	}
-        }
-        for (int i=0;i<n;++i){
-        	BitSet res=b[0][mask[i]&((1<<L)-1)];
-	        for (int i1=1;i1<L1;++i1)res|=b[i1][(mask[i]>>(L*i1))&((1<<L)-1)];
-	        res.flip();
-	        int t=res.ctz();
-	        if (t<n)ans=max(ans,len[i]*len[t]);
-	    }
-        return ans;
-    }
+		}
+		for (int i1=0;i1<L1;++i1){
+			b[i1][0]=BitSet(n);
+			for (int j=1;j<(1<<L);++j){
+				int k=__builtin_clz(j),t=31-k;
+				if (i1*L+t<CH)b[i1][j]=b[i1][j-(1<<t)]|a[i1*L+t];
+			}
+		}
+		for (int i=0;i<n;++i){
+			BitSet res=b[0][mask[i]&((1<<L)-1)];
+			for (int i1=1;i1<L1;++i1)res|=b[i1][(mask[i]>>(L*i1))&((1<<L)-1)];
+			res.flip();
+			int t=res.ctz();
+			if (t<n)ans=max(ans,len[i]*len[t]);
+		}
+		return ans;
+	}
 };
-
 
 //IO
 int _IO=[](){
-    std::ios::sync_with_stdio(0);
-    cin.tie(0); cout.tie(0);
-    return 0;
+	std::ios::sync_with_stdio(0);
+	cin.tie(0); cout.tie(0);
+	return 0;
 }();
+

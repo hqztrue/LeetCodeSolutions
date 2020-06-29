@@ -132,7 +132,7 @@ class Solution {
 public:
 	int s[N]; ll s1[N];
 	Solution(){M.build(N,10007);};
-    int numFactoredBinaryTrees(vector<int>& A) {
+	int numFactoredBinaryTrees(vector<int>& A) {
 		M.clear();
 		sort(A.begin(),A.end());
 		int n=A.size(),max=A[n-1]; ll ans=0;
@@ -148,10 +148,9 @@ public:
 				int *p=M.find_(A[i]*A[i]);
 				if (p)s1[*p]+=mul_mod_int_asm(s[i],s[i],P);
 			}
-            ans+=s[i];
+			ans+=s[i];
 		}
-        return ans%P;
-    }
+		return ans%P;
+	}
 };
-
 

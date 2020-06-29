@@ -2,8 +2,8 @@ const int N=100005,inf=~0u>>1;
 int a[N],b[N],d[N];
 class Solution {
 public:
-    int minDays(vector<int> &v, int m, int k) {
-        int n=v.size(),l=0,l1,t,s,c,ans=-1; if (m*k>n)return -1;
+	int minDays(vector<int> &v, int m, int k) {
+		int n=v.size(),l=0,l1,t,s,c,ans=-1; if (m*k>n)return -1;
 		for (int i=0;i<n;++i)a[l]=v[i],b[l++]=1;
 		for (int i=0;i<=n;++i)d[i]=i/k;
 		while (1){
@@ -38,7 +38,7 @@ public:
 				if (!l1)return ans;
 			}
 		}
-    }
+	}
 };
 
 //IO
@@ -47,3 +47,4 @@ int _IO=[](){
 	cin.tie(0); //cout.tie(0);
 	return 0;
 }();
+

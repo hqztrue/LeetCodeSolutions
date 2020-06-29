@@ -1,0 +1,7 @@
+we only need to compute the transitive closure.
+1. \tilde{O}(nm) (O(nm/w)) by bit packing.
+2. O(qm) by dfs.
+3. O(n^\omega) by reducing to matrix multiplication.
+
+can we get faster running time when q is small?
+

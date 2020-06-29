@@ -1,0 +1,2 @@
+reducing to sorting, enumerate the maximum value, use two pointers. O(sort(n)).
+

@@ -1,8 +1,8 @@
 class Solution {
 public:
-    vector<int> countBits(int num) {
-        return vector<int>();
-    }
+	vector<int> countBits(int num) {
+		return vector<int>();
+	}
 };
 
 //fastIO
@@ -10,13 +10,13 @@ namespace Read{
 	const int S=3000000;
 	char _str[S],*p=_str;
 	inline void read(int &x){
-	    bool sign=0; x=0; while (*p<'0'||*p>'9')if (*p++=='-')sign=1;
-	    while (*p>='0'&&*p<='9')x=x*10+*p++-48;if (sign)x=-x;
+		bool sign=0; x=0; while (*p<'0'||*p>'9')if (*p++=='-')sign=1;
+		while (*p>='0'&&*p<='9')x=x*10+*p++-48;if (sign)x=-x;
 	}
 	inline void read(char *s){
-	    while (*p<'0'||*p>'z')p++;
-	    while (*p>='0'&&*p<='z')*s++=*p++;
-	    *s=0;
+		while (*p<'0'||*p>'z')p++;
+		while (*p>='0'&&*p<='z')*s++=*p++;
+		*s=0;
 	}
 	inline void read_arr(int a[],int &n){
 		n=0; while (*p++!='[');
@@ -81,7 +81,6 @@ int _main=[](){
 		print(c,n+1);
 	} 
 	exit(0);
-    return 0;
+	return 0;
 }();
-
 

@@ -1,6 +1,3 @@
-//#pragma GCC optimize("Ofast")
-//#pragma GCC target("avx,avx2,fma")
-
 //IO
 int _IO=[](){
 	std::ios::sync_with_stdio(0);
@@ -78,13 +75,13 @@ class MajorityChecker {
 public:
 	int *a;
 	MajorityChecker(vector<int>& arr) {
-        a=&arr[0]; register int *a=this->a; n=arr.size();
+		a=&arr[0]; register int *a=this->a; n=arr.size();
 		for (register int i=0;i<n;++i)V[a[i]].clear();
 		for (register int i=0;i<n;++i)V[a[i]].push_back(i);
-    }
-    int query(int left, int right, int threshold) {
+	}
+	int query(int left, int right, int threshold) {
 		register int *a=this->a;
-        const int M=8;  //20
+		const int M=8;  //20
 		for (register int i=0;i<M;++i){
 			register int t=left+_rand()%(right-left+1);
 			Vector<int> &v=V[a[t]];
@@ -92,7 +89,6 @@ public:
 			if (p1<v.End&&*p1<=right)return a[t];
 		}
 		return -1;
-    }
+	}
 };
-
 

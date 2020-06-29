@@ -2,8 +2,8 @@ const int N=205;
 int l[N][N],r[N][N],t[N][N],b[N][N],L[N],R[N];
 class Solution {
 public:
-    int largest1BorderedSquare(vector<vector<int>>& grid) {
-        int n=grid.size(),m=grid[0].size();
+	int largest1BorderedSquare(vector<vector<int>>& grid) {
+		int n=grid.size(),m=grid[0].size();
 		for (int i=0;i<n;++i){
 			l[i][0]=grid[i][0];
 			for (int j=1;j<m;++j)l[i][j]=grid[i][j]?l[i][j-1]+1:0;
@@ -47,7 +47,6 @@ public:
 			}
 		}
 		return ans*ans;
-    }
+	}
 };
-
 

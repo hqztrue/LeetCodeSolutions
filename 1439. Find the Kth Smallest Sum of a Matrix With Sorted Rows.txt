@@ -1,0 +1,5 @@
+1. binary search+dfs. compress degree-1 nodes in the dfs tree by preprocessing: for each row i, precompute a sorted array of a[j][1]-a[j][0] (j>i), then we can scan the array to find the children of the dfs tree when we reach row i. we will pay O(d) time at a node with degree d>=2, so each dfs takes O(k) time. total running time O(k log k+nm).
+2. use heap to find the k smallest sums. O(kn^2 log k+nm).
+
+when k is large, can the running time be sublinear in k?
+

@@ -33,32 +33,31 @@ void *calc(void *args){
 }
 class Solution {
 public:
-    int maxProduct(vector<string> &v){
-        int n=v.size(),ans=0;
-        for (int i=0;i<n;++i){
-            int t=0;
-            for (int j=0;j<v[i].size();++j)t|=1<<(v[i][j]-'a');
-            mask[i]=t; len[i]=v[i].size();
-        }
-        pthread_t p[NUM_THREADS];
-        for (int i=0;i<NUM_THREADS;++i){
-            int l=n/NUM_THREADS*i,r;
-            if (i==NUM_THREADS-1)r=n;
-            else r=n/NUM_THREADS*(i+1);
-            d[i]=new thread_data(l,r,0,n,i);
-            int ret=pthread_create(&p[i],NULL,calc,(void*)d[i]);
-            if (ret){
-                printf("error\n");
-                exit(-1);
-            }
-        }
-        void *status;
-        for (int i=0;i<NUM_THREADS;++i){
-            pthread_join(p[i],&status);
-            ans=max(ans,d[i]->ans);
-        }
-        return ans;
-    }
+	int maxProduct(vector<string> &v){
+		int n=v.size(),ans=0;
+		for (int i=0;i<n;++i){
+			int t=0;
+			for (int j=0;j<v[i].size();++j)t|=1<<(v[i][j]-'a');
+			mask[i]=t; len[i]=v[i].size();
+		}
+		pthread_t p[NUM_THREADS];
+		for (int i=0;i<NUM_THREADS;++i){
+			int l=n/NUM_THREADS*i,r;
+			if (i==NUM_THREADS-1)r=n;
+			else r=n/NUM_THREADS*(i+1);
+			d[i]=new thread_data(l,r,0,n,i);
+			int ret=pthread_create(&p[i],NULL,calc,(void*)d[i]);
+			if (ret){
+				printf("error\n");
+				exit(-1);
+			}
+		}
+		void *status;
+		for (int i=0;i<NUM_THREADS;++i){
+			pthread_join(p[i],&status);
+			ans=max(ans,d[i]->ans);
+		}
+		return ans;
+	}
 };
-
 

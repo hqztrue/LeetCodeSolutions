@@ -164,11 +164,10 @@ int a[N],b[N],n,m;
 BitSet<N> row[2],X,Y;
 map<int,vector<int> > S;
 map<int,BitSet<N> > match;
-
 class Solution {
 public:
-    int minDistance(string A, string B) {
-    	n=A.size(); m=B.size(); S.clear();match.clear();row[1].reset();
+	int minDistance(string A, string B) {
+		n=A.size(); m=B.size(); S.clear();match.clear();row[1].reset();
 		for (int i=0;i<n;++i)a[i]=A[i]-'a',S[a[i]].push_back(i);
 		for (int i=0;i<m;++i)b[i]=B[i]-'a';
 		for (int i=0;i<m;++i)if (match.find(b[i])==match.end()){
@@ -178,13 +177,13 @@ public:
 		for (int i=0,now=0;i<m;++i,now^=1)
 			X=(row[now^1]|match[b[i]]).set(n,1),row[now]=(X&((X-(row[now^1]<<1).set(0,1))^X)).set(n,0);
 		return n+m-2*row[(m-1)&1].count();
-    }
+	}
 };
-
 
 //IO
 int _IO=[](){
-    std::ios::sync_with_stdio(0);
-    cin.tie(0); cout.tie(0);
-    return 0;
+	std::ios::sync_with_stdio(0);
+	cin.tie(0); cout.tie(0);
+	return 0;
 }();
+

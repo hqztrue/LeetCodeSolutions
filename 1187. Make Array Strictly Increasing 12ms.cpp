@@ -2,8 +2,8 @@ const int N=2005,inf=~0u>>1;
 int _f[N*2],_g[N*2],nxt[N];
 class Solution {
 public:
-    int makeArrayIncreasing(vector<int>& a, vector<int>& b) {
-        int n=a.size(),*f0=_f,*f1=_f+n+1,*g0=_g,*g1=_g+n+1,len=1,ans=-1;
+	int makeArrayIncreasing(vector<int>& a, vector<int>& b) {
+		int n=a.size(),*f0=_f,*f1=_f+n+1,*g0=_g,*g1=_g+n+1,len=1,ans=-1;
 		sort(b.begin(),b.end()); b.resize(unique(b.begin(),b.end())-b.begin());
 		for (int i=0;i<a.size();++i)
 			nxt[i]=upper_bound(b.begin(),b.end(),a[i])-b.begin();
@@ -24,7 +24,6 @@ public:
 		for (int i=0;i<=n;++i)
 			if (f0[i]<inf){ans=i;break;}
 		return ans;
-    }
+	}
 };
-
 

@@ -34,7 +34,7 @@ struct get_array{
 template<int Add>
 struct get_array<N,Add>{
 	static inline void compute(){
-        v.resize(N); p=&v[0];
+		v.resize(N); p=&v[0];
 		get_array<N/2,Add>::compute();
 		get_array<N/2,Add+1>::compute();
 	}
@@ -47,12 +47,12 @@ struct get_array<1,Add>{
 };
 class Solution {
 public:
-    Solution(){
-        get_array<N,0>::compute();
-    }
-    vector<int>& countBits(int num) {
+	Solution(){
+		get_array<N,0>::compute();
+	}
+	vector<int>& countBits(int num) {
 		int *p=(int*)(&v); *(p+2)=*p+4*(num+1); *(p+4)=*p+4*(num+1);
 		return v;
-    }
+	}
 };
 

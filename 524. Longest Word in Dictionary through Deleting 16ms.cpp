@@ -2,8 +2,8 @@ const int N=1005,CH=26;
 int q[CH][N],q1[CH],d1[N];
 class Solution {
 public:
-    string findLongestWord(string s, vector<string>& d) {
-        int n=s.size(),m=d.size();
+	string findLongestWord(string s, vector<string>& d) {
+		int n=s.size(),m=d.size();
 		for (int i=0;i<CH;++i)q1[i]=0;
 		for (int i=0;i<m;++i){
 			int c=d[i][0]-'a';
@@ -23,6 +23,6 @@ public:
 		for (int i=0;i<m;++i)
 			if ((d1[i]==d[i].size())&&(d[i].size()>ans.size()||d[i].size()==ans.size()&&d[i]<ans))ans=d[i];
 		return ans;
-    }
+	}
 };
 

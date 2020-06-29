@@ -127,24 +127,24 @@ str_set::hasher h = str_set().hash_function();
 //std::hash<std::string> h;
 
 class Solution {
-    vector<string> results;
-    Hash<int> dict;
-    int min_len;
-    bool isConcatenated(const string &word){
-        if (dict.count(h(word))) return true;
-        for (int i =  min_len; i < word.size() - min_len + 1 ; ++ i)
-            if (dict.count(h(word.substr(0, i))) > 0 && isConcatenated(word.substr(i, word.size() - i)))return true;
-        return false;
-    }
+	vector<string> results;
+	Hash<int> dict;
+	int min_len;
+	bool isConcatenated(const string &word){
+		if (dict.count(h(word))) return true;
+		for (int i =  min_len; i < word.size() - min_len + 1 ; ++ i)
+			if (dict.count(h(word.substr(0, i))) > 0 && isConcatenated(word.substr(i, word.size() - i)))return true;
+		return false;
+	}
 public:
-    vector<string> findAllConcatenatedWordsInADict(vector<string>& words) {
+	vector<string> findAllConcatenatedWordsInADict(vector<string>& words) {
 		dict.clear();
-        sort(words.begin(), words.end(), [](const string &lhs, const string &rhs){return lhs.size() < rhs.size();});
-        min_len = max(1, (int)words.front().size());
-        for (int i = 0; i < words.size(); dict.insert(h(words[i++])))
-            if (words[i].size() >= min_len * 2 && isConcatenated(words[i]))
-                results.push_back(words[i]);
-        return results;
-    }
+		sort(words.begin(), words.end(), [](const string &lhs, const string &rhs){return lhs.size() < rhs.size();});
+		min_len = max(1, (int)words.front().size());
+		for (int i = 0; i < words.size(); dict.insert(h(words[i++])))
+			if (words[i].size() >= min_len * 2 && isConcatenated(words[i]))
+				results.push_back(words[i]);
+		return results;
+	}
 };
 

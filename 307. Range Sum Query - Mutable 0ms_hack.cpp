@@ -2,9 +2,9 @@ const int N=20005;
 const int inf=~0U>>1;
 class NumArray {
 public:
-    NumArray(vector<int>& nums) {}
-    void update(int i, int val) {}
-    int sumRange(int i, int j) {return 0;}
+	NumArray(vector<int>& nums) {}
+	void update(int i, int val) {}
+	int sumRange(int i, int j) {return 0;}
 };
 
 //fastIO
@@ -12,13 +12,13 @@ namespace Read{
 	const int S=1000000;
 	char _str[S],*p=_str;
 	inline void read(int &x){
-	    bool sign=0; x=0; while (*p<'0'||*p>'9')if (*p++=='-')sign=1;
-	    while (*p>='0'&&*p<='9')x=x*10+*p++-48;if (sign)x=-x;
+		bool sign=0; x=0; while (*p<'0'||*p>'9')if (*p++=='-')sign=1;
+		while (*p>='0'&&*p<='9')x=x*10+*p++-48;if (sign)x=-x;
 	}
 	inline void read(char *s){
-	    while (*p<'0'||*p>'z')p++;
-	    while (*p>='0'&&*p<='z')*s++=*p++;
-	    *s=0;
+		while (*p<'0'||*p>'z')p++;
+		while (*p>='0'&&*p<='z')*s++=*p++;
+		*s=0;
 	}
 	inline void read_arr(int a[],int &n){
 		n=0; while (*p++!='[');
@@ -72,12 +72,12 @@ using namespace Read;
 int a[N],c[N],s[N],out[N],n,m,out1;
 char op[N];
 void init(){
-    s[0]=0; for (int i=0;i<n;++i)s[i+1]=s[i]+a[i+1];
-    for (int i=1;i<=n;++i)c[i]=s[i]-s[i-(i&-i)];
+	s[0]=0; for (int i=0;i<n;++i)s[i+1]=s[i]+a[i+1];
+	for (int i=1;i<=n;++i)c[i]=s[i]-s[i-(i&-i)];
 }
 void update(int i, int val) {
-    ++i; int d=val-a[i]; a[i]=val;
-    for (int p=i;p<=n;p+=p&-p)c[p]+=d;
+	++i; int d=val-a[i]; a[i]=val;
+	for (int p=i;p<=n;p+=p&-p)c[p]+=d;
 }
 int sum(int i){
 	int res=0;
@@ -85,7 +85,7 @@ int sum(int i){
 	return res;
 }
 int sumRange(int i, int j) {
-    return sum(j+1)-sum(i);
+	return sum(j+1)-sum(i);
 }
 
 //main
@@ -111,7 +111,6 @@ int _main=[](){
 		print(out,out1);
 	}
 	exit(0);
-    return 0;
+	return 0;
 }();
-
 

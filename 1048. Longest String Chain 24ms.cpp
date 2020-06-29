@@ -120,8 +120,8 @@ const uint P=10007; //Pinv=2942140583u
 vector<char*> v[L+1];
 class Solution {
 public:
-    int longestStrChain(vector<string>& words) {
-        int n=words.size(),ans=0;
+	int longestStrChain(vector<string>& words) {
+		int n=words.size(),ans=0;
 		for (int i=1;i<=L;++i)v[i].clear();
 		for (int i=0;i<n;++i)v[words[i].size()].push_back(&words[i][0]);
 		Hash<int,int> H;
@@ -136,7 +136,7 @@ public:
 				if (H.find_(h))t=max(t,H[h]);
 				H[h+s[0]*g]=t+1; ans=max(ans,t);
 			}
-        return ans+1;
-    }
+		return ans+1;
+	}
 };
 

@@ -128,12 +128,12 @@ public:
 	vector<int> findNumOfValidWords(vector<string>& words, vector<string>& puzzles) {
 		vector<int> res(puzzles.size());
 		//cnt.clear();
-        int *m=V;
+		int *m=V;
 		for (string &s:words){
 			int v=0;
 			for (char &c:s)v|=1<<(c-'a');
 			++cnt[v];
-            *m++=v;
+			*m++=v;
 		}
 		int n1=0;
 		for (string &str:puzzles){
@@ -141,12 +141,11 @@ public:
 			for (int i=1;i<7;++i)v|=1<<(str[i]-'a');
 			for (register int u=v;u;u=(u-1)&v)
 				s+=cnt[u|v1];
-                //cnt.add(u|v1,s);
+				//cnt.add(u|v1,s);
 			res[n1++]=s;
 		}
-        for (int *i=V;i!=m;++i)cnt[*i]=0;
+		for (int *i=V;i!=m;++i)cnt[*i]=0;
 		return res;
 	}
 };
-
 
