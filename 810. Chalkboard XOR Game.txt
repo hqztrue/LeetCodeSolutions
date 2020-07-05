@@ -1,0 +1,2 @@
+whenever there are >=2 numbers and the current total xor is non-zero (denote by s), we can always take out a number (not equal to s) while keeping the total xor non-zero. O(n).
+

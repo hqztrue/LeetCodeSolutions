@@ -1,0 +1,4 @@
+1. binary search. O(nm log (nm)).
+2. compute prefix sum. for each diagonal, use the two pointer technique. O(nm).
+3. compute prefix sum. we can transform the optimization problem to a decision problem, deciding whether there exist a solution with side length opt+1 that have upper-left corner at (i,j). O(nm).
+

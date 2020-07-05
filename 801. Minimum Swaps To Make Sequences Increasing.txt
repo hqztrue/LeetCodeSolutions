@@ -1,0 +1,2 @@
+DP, at each index i there are only 2 possibilities. O(n).
+

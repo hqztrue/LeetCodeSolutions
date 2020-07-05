@@ -1,0 +1,2 @@
+find strongly connected components and shrink to DAG. O(n+m).
+

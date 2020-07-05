@@ -1,6 +1,0 @@
-1. process for each digit. O(log W).
-2. in O(log^\eps W) time we can preprocess the reverse of O(log log W) bits and query in O(1). O(log W/log log W).
-
-note. for binary integer, reverse integer is O(log log W) by divide and conquer. otherwise we may need number base conversion.
-after preprocessing in O(W^eps), we can reverse integer in O(1).
-

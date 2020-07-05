@@ -1,0 +1,11 @@
+1. enumerate all substrings and use hashing. O(n^2).
+2. for each suffix run kmp, then use trie to remove duplicates. O(n^2).
+3. consider a substring x on an edge u->v of the suffix tree. there exist substring xx, iff there exist two suffixes i and j being the children of v and |i-j|=d(x). then we only need to compute {|i-j| | i,j\in T(v)}, which can be efficiently merged from the children of v using bit packing. merging two subtrees with size a and b (wlog assume a<=b) takes time O(min{ab,an/w,n log n}) (by brute force, bit packing, or FFT).
+to analyze the total running time, let's call a subtree with size <=n/w "small", otherwise large. there are 3 cases of merging:
+case 1. small+small. we bound the running time by O(ab), and charge to the minimal "large" subtree containing those two subtrees. there are O(w) distinct minimal "large" subtrees, each has total running time O((n/w)^2) charged to it, so in total O(n^2/w).
+case 2. small+large. we bound the running time by O(an/w). for each element in the small subtree, this case can happen at most once. so the total running time in this case is O(n^2/w).
+case 3. large+large. we bound the running time by O(n log n). there are only O(w) of these merges, so in total O(nw log n).
+in conclusion, the total running time is O(n^2/w).
+
+remark. can we improve case 2 by a special case of (min,+)-convolution, and get truly subquadratic time?
+

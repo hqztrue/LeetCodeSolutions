@@ -1,0 +1,4 @@
+offline, add bricks in reverse order. whenever we add a brick, use dfs to find new bricks connected to the top. O(nm).
+
+remark. this is a special case of the single source bottleneck shortest path problem in undirected graphs, which can be solved in randomized O(nm) time by reducing to minimum spanning tree \cite{karger1995randomized}.
+

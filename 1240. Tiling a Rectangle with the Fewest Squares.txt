@@ -1,0 +1,6 @@
+this is NPC?
+
+solution table: http://int-e.eu/~bf3/squares/
+
+related paper: Walters M. Rectangles as sums of squares[J]. Discrete mathematics, 2009, 309(9): 2913-2921.
+

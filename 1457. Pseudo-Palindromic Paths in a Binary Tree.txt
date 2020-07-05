@@ -1,0 +1,2 @@
+dfs+counting. O(n).
+

@@ -1,0 +1,4 @@
+find two parallel edges using hashing. for an edge pq, use its slope and the y-coordinate of the intersection point between the lines pq' and x=0 during hashing, where pq' is perpendicular to pq. O(n^2).
+
+remark. some algorithms in the discussion forum use hashing to find two diagonals that have equal length and share the same middle point. 
+

@@ -22,7 +22,6 @@ Here are a list of problems for which I don't know the current best algorithm. I
 
 Problem ID marked with leading ~ indicates there's good evidences that the algorithm we provide is hard to improve. Leading + indicates the original problem is solved, but there exists some interesting follow-up questions.
 
-~7 Reverse Integer  
 +116 Populating Next Right Pointers in Each Node  
 +225 Implement Stack using Queues  
 +234 Palindrome Linked List  
@@ -42,8 +41,10 @@ Problem ID marked with leading ~ indicates there's good evidences that the algor
 1057 Campus Bikes  
 ~1074 Number of Submatrices That Sum to Target  
 1293 Shortest Path in a Grid with Obstacles Elimination  
+1316 Distinct Echo Substrings  
 ~1334 Find the City With the Smallest Number of Neighbors at a Threshold Distance  
 ~1335 Minimum Difficulty of a Job Schedule  
+1439 Find the Kth Smallest Sum of a Matrix With Sorted Rows  
 
 DP:  
 375 Guess Number Higher or Lower II  

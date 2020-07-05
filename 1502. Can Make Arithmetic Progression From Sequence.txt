@@ -1,0 +1,2 @@
+after finding the minimum and maximum, we know the difference between two consecutive elements. use hashing (or bucket counting) to verify. O(n).
+

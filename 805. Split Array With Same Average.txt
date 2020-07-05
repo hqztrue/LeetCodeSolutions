@@ -1,0 +1,5 @@
+we can reduce subset sum to this problem, so it's NP-hard.
+on the other hand, the average of B and C must be equal to the average of A, which we denote by v. substract each a[i] by v, and we only need to decide whether there's a subset with sum 0. (using this trick, we don't need to worry about the cardinality of the subset.)
+O(subset sum complexity).
+e.g. DP. O(nU/w).
+
