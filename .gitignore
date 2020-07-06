@@ -15,6 +15,7 @@ materials
 others
 template*
 !template.cpp
+cite_test*
 *.tex
 *.sav
 
