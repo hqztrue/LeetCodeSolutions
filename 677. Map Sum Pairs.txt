@@ -1,0 +1,2 @@
+use trie, when we insert a string, update the counters on the path. O(L).
+

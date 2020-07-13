@@ -1,0 +1,5 @@
+1. binary search+two pointers. O(n log W) or O(n log n).
+2. reduce to the generalization of 004. Median of Two Sorted Arrays. O(n log n).
+3. reduce to 378. Kth Smallest Element in a Sorted Matrix (a[i][j] denote the sum in interval [i,j]). O(n).
+
+

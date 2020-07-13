@@ -1,0 +1,3 @@
+this problem is NPC, because we can reduce subset sum to it.
+bitmask DP.
+

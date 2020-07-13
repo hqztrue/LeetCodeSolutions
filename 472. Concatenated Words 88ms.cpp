@@ -120,31 +120,49 @@ struct Hash{
 	}*/
 };
 
+#include<ext/hash_map>
+using namespace __gnu_cxx;
+#include<ext/pb_ds/assoc_container.hpp>
+#include<ext/pb_ds/hash_policy.hpp>
+using namespace __gnu_pbds;
+#include<tr1/unordered_map>
+using namespace tr1;
 //Gethash<string> h;
-typedef std::unordered_set<std::string> str_set;
-str_set::hasher h = str_set().hash_function();
+//typedef std::unordered_set<std::string> str_set;
+//str_set::hasher h=str_set().hash_function();
 //unordered_set<string>::hasher h;
-//std::hash<std::string> h;
+std::hash<std::string> h;
+
+typedef long long ll;
+string _s;
+ll _s_mem=*((ll*)&_s);
+string& substr(const string &s,int p,int l){  //dangerous
+	*((ll*)&_s)=(ll)(&s[0]+p);
+	((int*)&_s)[2]=l;
+	return _s;
+}
+struct zzy{~zzy(){*((ll*)&_s)=_s_mem;}}zzy;
 
 class Solution {
-	vector<string> results;
-	Hash<int> dict;
-	int min_len;
-	bool isConcatenated(const string &word){
-		if (dict.count(h(word))) return true;
-		for (int i =  min_len; i < word.size() - min_len + 1 ; ++ i)
-			if (dict.count(h(word.substr(0, i))) > 0 && isConcatenated(word.substr(i, word.size() - i)))return true;
-		return false;
+	vector<string> res;
+	Hash<int> H;
+	//gp_hash_table<int,int> H;
+	int lmin;
+	bool check(const string &_w){
+		string w; *(&w)=*(&_w);
+		if (H.find_(h(w)))return 1;
+		for (int i=lmin;i<w.size()-lmin+1;++i)
+			if (H.find_(h(substr(w,0,i)))&&check(substr(w,i,w.size()-i)))return 1;
+		return 0;
 	}
 public:
-	vector<string> findAllConcatenatedWordsInADict(vector<string>& words) {
-		dict.clear();
-		sort(words.begin(), words.end(), [](const string &lhs, const string &rhs){return lhs.size() < rhs.size();});
-		min_len = max(1, (int)words.front().size());
-		for (int i = 0; i < words.size(); dict.insert(h(words[i++])))
-			if (words[i].size() >= min_len * 2 && isConcatenated(words[i]))
-				results.push_back(words[i]);
-		return results;
+	vector<string> findAllConcatenatedWordsInADict(vector<string>& w) {
+		H.clear();
+		sort(w.begin(),w.end(),[](const string &l,const string &r){return l.size()<r.size();});
+		lmin=max(1,(int)w.front().size());
+		for (int i=0;i<w.size();H.insert(h(w[i++])))
+			if (w[i].size()>=lmin*2&&check(w[i]))res.push_back(w[i]);
+		return res;
 	}
 };
 

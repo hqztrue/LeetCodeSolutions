@@ -1,0 +1,2 @@
+segment tree, support two operations: 1) cover an interval with value x, and 2) query the maximum within an interval. O(n log n).
+

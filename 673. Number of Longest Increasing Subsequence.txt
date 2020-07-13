@@ -1,0 +1,4 @@
+O(n log n).
+
+remark. shave log log?
+

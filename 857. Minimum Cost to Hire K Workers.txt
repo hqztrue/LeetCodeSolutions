@@ -1,0 +1,2 @@
+sorting according to wage/quality, then greedy, use heap. O(sort(n)).
+

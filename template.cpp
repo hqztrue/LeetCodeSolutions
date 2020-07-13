@@ -155,9 +155,8 @@ struct Hash{
 	Tvalue& insert(const pair<Tkey,Tvalue> &p){return insert(p.first,p.second);}
 	void erase(const Tkey &x){
 		size_t x1=gethash(x)%P;
-		for (node *i=v[x1],*pre=0;i;pre=i,i=i->next)if (i->first==x){
+		for (node *i=v[x1],*pre=0;i;pre=i,i=i->next)if (i->first==x)
 			if (!pre)v[x1]=i->next;else pre->next=i->next;
-		}
 	}
 	void erase(iterator x){
 		if (x.j==v[x.i])v[x.i]=x->next;

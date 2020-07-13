@@ -9,7 +9,9 @@ For most problems we consider here, the only thing we want to optimize is the ru
 ### Notations
 In some problems we will use the word-RAM model, where the assumption is each word has w bits and can store integers up to size W=2^w. In practice (i.e. 32-bit machines), w=32 and W=2^32. We assume the word length is w=\Omega(\log n), and the following basic word operations in the multiplicative instruction set can be executed in O(1): +, -, (*), &, |, ^, ~, <<, >>. By setting w'=\delta_0\log n for a sufficiently small constant \delta_0>0, we can simulate nonstandard word operations on w'-bit words in O(1) time by table lookup, with n^{O(\delta_0)}=o(n) preprocessing time. Theoretically speaking, you can always implement algorithms in the word-RAM model in codes.
 
-For strings, let |\Sigma| denote the alphabet size (i.e. |\Sigma|=26 for lowercase letters), and we usually assume |\Sigma| is much smaller than n. In some cases, we further make the (non-theory) assumption that |\Sigma|<=w (since 26<32). If the input is a set of strings, we will use L to denote the total length of them, and n is the number of strings. If the input is a single string, we use n to denote its length.
+For string, let |\Sigma| denote the alphabet size (i.e. |\Sigma|=26 for lowercase letters), and we usually assume |\Sigma| is much smaller than n. In some cases, we further make the (non-theory) assumption that |\Sigma|<=w (since 26<32). If the input is a set of strings, we will use L to denote the total length of them, and n is the number of strings. If the input is a single string, we use n to denote its length.
+
+For tree, let h denote the height.
 
 For graph, let n denote the number of vertices and m denote the number of edges.
 
@@ -45,6 +47,7 @@ Problem ID marked with leading ~ indicates there's good evidences that the algor
 ~1334 Find the City With the Smallest Number of Neighbors at a Threshold Distance  
 ~1335 Minimum Difficulty of a Job Schedule  
 1439 Find the Kth Smallest Sum of a Matrix With Sorted Rows  
+1510 Stone Game IV  
 
 DP:  
 375 Guess Number Higher or Lower II  

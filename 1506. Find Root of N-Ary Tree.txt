@@ -1,0 +1,2 @@
+compute the sum of children values. O(n).
+

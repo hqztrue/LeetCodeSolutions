@@ -1,0 +1,2 @@
+binary search, increase the size exponentially. O(log n).
+

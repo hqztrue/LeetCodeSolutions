@@ -1,4 +1,0 @@
-this is the word break problem with multiple queries, so it is at least as hard as 139. Word Break. using the algorithm for word break, we can get \tilde{O}(n^{4/3}) running time.
-
-
-

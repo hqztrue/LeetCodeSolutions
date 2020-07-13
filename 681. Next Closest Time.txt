@@ -1,0 +1,2 @@
+eumerate. O(1).
+
