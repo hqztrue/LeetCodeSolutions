@@ -1,7 +1,0 @@
-greedy, at each round, suppose we can swap k times, find the minimum number among the first k+1 numbers, and delete it (i.e. swap it to the beginning).
-1. use segment tree to maintain. O(n log n).
-remark. we can shave a log log factor.
-2. use heap. initially put the first k+1 elements into the heap. at each round, find the minimum number, delete it, and use rank operation to compute the number of swaps. O(sort(n)+n log n/log w)=O(n log n/log w). \cite{dietz1989optimal}
-3. after sorting, reduce to offline orthogonal range counting. O(sort(n)+n\sqrt{log n})=O(n\sqrt{log n}). \cite{chan2010counting}
-4. O(n|\Sigma|).
-
