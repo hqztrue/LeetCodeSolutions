@@ -1,0 +1,2 @@
+use monotone queue to find the sliding window minimum. O(n).
+

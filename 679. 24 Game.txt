@@ -1,0 +1,4 @@
+consider the general problem of deciding whether we can use n numbers to get t.
+1. dfs. O(n!*c^n), where c is a constant. the most clever dfs algorithm has running time equal to the total number of essentially different formulas, which is \Theta(\frac{1}{n}\cdot (\frac{n}{0.4388})^n). http://oeis.org/A140606
+2. the problem can be solved in o(n!) time. see my solution for "J and 24 game". O(\frac{1}{n^{1.5}}\cdot 2.498^n\cdot n^{\frac{2}{3}n}).
+

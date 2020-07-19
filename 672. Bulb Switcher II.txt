@@ -1,0 +1,2 @@
+for each operation, flipping twice is the same as not flipping. O(1).
+

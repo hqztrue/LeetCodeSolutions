@@ -1,0 +1,4 @@
+1. for unbounded alphabet size:
+for each label, build a virtual tree of that label, using O(n)-O(1) LCA. O(n).
+2. easy to get O(n log n) or O(n|∑|).
+

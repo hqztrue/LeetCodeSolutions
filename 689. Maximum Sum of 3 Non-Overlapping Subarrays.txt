@@ -1,0 +1,2 @@
+enumerate the middle subarray. O(n).
+
