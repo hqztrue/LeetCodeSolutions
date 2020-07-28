@@ -1,0 +1,3 @@
+heap. total time O(sort(n)).
+we can reduce sorting to this problem, by forming a stream with n elements followed by n infinities, and setting k=n, so this is tight.
+

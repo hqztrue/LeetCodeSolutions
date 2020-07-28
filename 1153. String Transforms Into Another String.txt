@@ -1,0 +1,2 @@
+if the transformation exists, then there is a mapping from chars in str1 to chars in str2. if there exists an unused char in str2, then we can use it as a temporary variable to swap the chars. otherwise it's impossible. O(n).
+

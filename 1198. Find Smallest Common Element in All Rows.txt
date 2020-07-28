@@ -1,0 +1,2 @@
+for each i, mark the common elements between row i and row 1. O(nm).
+

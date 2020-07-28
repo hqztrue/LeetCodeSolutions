@@ -1,0 +1,2 @@
+switch from left to right. O(n).
+

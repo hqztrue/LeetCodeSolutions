@@ -1,0 +1,2 @@
+hashing or minimum representation. O(nm).
+

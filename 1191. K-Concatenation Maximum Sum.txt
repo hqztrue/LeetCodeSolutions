@@ -1,0 +1,2 @@
+copy the array twice and use DP. if the array has sum>0, then we can greedily use its copies. O(n).
+

@@ -1,0 +1,2 @@
+this is a prefix code, so we can scan from left to right and uniquely decode. O(n).
+

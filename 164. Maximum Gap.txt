@@ -1,4 +1,4 @@
 similar to bucket sort, let the bucket size be (max-min)/n. there are O(n) buckets. only need to store the min&max elements in each bucket, then find the answer by scanning consecutive nonempty buckets. O(n).
 
-remark. we can also find the minimum gap in randomized O(n) time, by reducing to 2D closest point, and use the randomized incremental algorithm.
+remark. we can also find the minimum gap in randomized O(n) time, by reducing to 2D closest point, and use the randomized incremental algorithm. see 1200. Minimum Absolute Difference.
 

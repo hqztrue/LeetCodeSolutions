@@ -1,0 +1,2 @@
+use heap, repeatedly merge the two blocks that take the minimum time. O(sort(n)).
+
