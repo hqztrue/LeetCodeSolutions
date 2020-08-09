@@ -1,0 +1,4 @@
+Let m denote the number of cuts, and let a[1..m] be the sorted order of cuts.
+1. DP, let f[i][j] denote the minimum cost to cut a[i..j]. O(n^3). use quadrangle inequality, O(n^2).
+2. when we perform the operations in reverse order, this is exactly the merge stones problem. O(n log n). https://en.wikipedia.org/wiki/Garsia%E2%80%93Wachs_algorithm
+see uva 10003.

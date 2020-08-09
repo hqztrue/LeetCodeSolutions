@@ -1,0 +1,2 @@
+simple math formula using popcount. O(1).
+

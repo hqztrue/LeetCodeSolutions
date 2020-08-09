@@ -1,0 +1,2 @@
+L and R can't pass through each other. O(n).
+

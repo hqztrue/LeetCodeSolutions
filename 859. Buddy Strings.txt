@@ -1,0 +1,2 @@
+find the (at most 2) different places. O(n).
+

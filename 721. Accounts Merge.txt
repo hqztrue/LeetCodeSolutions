@@ -1,0 +1,2 @@
+Trie+dfs. O(L). And sorting the strings takes O(n sqrt(log log n)+L) time \cite{han2002integer}.
+

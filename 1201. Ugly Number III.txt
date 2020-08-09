@@ -1,0 +1,3 @@
+binary search, use inclusion-exclusion principle to count the numbers. O(log n).
+note. the definition of ugly number is different from 264. Ugly Number II.
+

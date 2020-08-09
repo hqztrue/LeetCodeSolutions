@@ -1,0 +1,4 @@
+This is the weighted LCS problem (or heaviest common subsequence).
+1. DP. O(n^2).
+shaving logs?
+

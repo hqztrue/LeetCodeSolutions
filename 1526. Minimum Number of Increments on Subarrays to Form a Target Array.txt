@@ -1,0 +1,2 @@
+scan from left to right, use stack to transform the array to a tree structure. O(n).
+

@@ -1,4 +1,0 @@
-note: a subarray is required to be contiguous.
-1. binary search+hashing. O(n log n).
-2. suffix tree. O(n).
-

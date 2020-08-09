@@ -1,0 +1,2 @@
+DP, let f[i] denote the maximum number of non-empty non-overlapping subarrays in a[1..i]. We either do not choose a subarray ending at index i, or we do so and greedily choose the rightmost valid starting position. O(n).
+

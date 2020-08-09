@@ -1,4 +1,5 @@
 1. for unbounded alphabet size:
 for each label, build a virtual tree of that label, using O(n)-O(1) LCA. O(n).
-2. easy to get O(n log n) or O(n|∑|).
+2. dfs, record the counter of the current label when we enter or leave each node. O(n).
+3. easy to get O(n log n) or O(n|∑|).
 

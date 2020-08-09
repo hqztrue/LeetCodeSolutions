@@ -1,0 +1,2 @@
+It suffices to consider the case that the ghosts directly go to the target. O(n).
+

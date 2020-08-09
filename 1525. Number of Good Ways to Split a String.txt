@@ -1,0 +1,2 @@
+enumerate all splits. O(n).
+

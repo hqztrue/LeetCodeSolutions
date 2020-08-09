@@ -1,0 +1,3 @@
+1. DP. O(nk).
+2. greedy. in each round, select the gas station with the largest amount of gas that we currently can reach. use priority queue. O(sort(n)).
+

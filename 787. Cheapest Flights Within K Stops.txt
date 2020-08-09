@@ -1,0 +1,2 @@
+1. DP, d[i][j] denote the shortest path to i with j edges, using bfs. O(mk).
+

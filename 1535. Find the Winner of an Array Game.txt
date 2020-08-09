@@ -1,0 +1,2 @@
+simulation. the game will terminate before we find the largest integer, so the running time is O(n).
+

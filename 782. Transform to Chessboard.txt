@@ -1,0 +1,2 @@
+a key property is that any row must be equal to the first row or its inverse. so we only need to compute the minimum row swaps to correctly arrange the first column. O(n^2).
+

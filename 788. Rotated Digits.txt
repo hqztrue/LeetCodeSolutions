@@ -1,0 +1,2 @@
+counting (DP on digits). O(log n).
+

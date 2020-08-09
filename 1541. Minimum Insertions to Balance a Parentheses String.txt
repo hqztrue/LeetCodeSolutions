@@ -1,0 +1,2 @@
+stack, greedy. O(n).
+

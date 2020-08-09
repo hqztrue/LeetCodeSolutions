@@ -1,0 +1,2 @@
+from top to the bottom, greedily find the closest valid row. O(n^2).
+

@@ -39,6 +39,7 @@ Problem ID marked with leading ~ indicates there's good evidences that the algor
 548 Split Array with Equal Sum  
 ~741 Cherry Pickup  
 ~762 Prime Number of Set Bits in Binary Representation  
+787 Cheapest Flights Within K Stops  
 ~898 Bitwise ORs of Subarrays  
 1057 Campus Bikes  
 ~1074 Number of Submatrices That Sum to Target  
@@ -48,10 +49,13 @@ Problem ID marked with leading ~ indicates there's good evidences that the algor
 ~1335 Minimum Difficulty of a Job Schedule  
 1439 Find the Kth Smallest Sum of a Matrix With Sorted Rows  
 1510 Stone Game IV  
+1542 Find Longest Awesome Substring  
 
 DP:  
+087 Scramble String  
 375 Guess Number Higher or Lower II  
 688 Knight Probability in Chessboard  
+730 Count Different Palindromic Subsequences  
 1039 Minimum Score Triangulation of Polygon  
 1043 Partition Array for Maximum Sum  
 1463 Cherry Pickup II  

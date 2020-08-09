@@ -1,0 +1,6 @@
+1. enumerate i, then enumerate j. the range of k is an interval after sorting a[j+1..n]. use two pointers. O(n^2).
+2. for simplicity, we only consider the case a[i]<=a[j]<=a[k] here (and c>=b). the other cases are similar. enumerate j, maintain a[1..j-1] and a[j+1..n] in sorted order using balanced trees.
+Case 1. a[j]-a[i]<=c-b, then the constraint is a[k]-a[j]<=b. the range of i and j are intervals in the balanced trees, and we can separate the variable.
+Case 2. a[j]-a[i]>c-b, then the constraint is a[k]<=a[i]+c. for each i, maintain the number of possible k's (k>j) that satisfy a[k]<=a[i]+c. whenever we increase j by 1, we need to perform an interval +1 operation in the balanced tree.
+the total running time is O(n log n).
+

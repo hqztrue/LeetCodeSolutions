@@ -1,0 +1,2 @@
+For each index, the set of rotations that it can contribute 1 point to is a consecutive interval. O(n).
+

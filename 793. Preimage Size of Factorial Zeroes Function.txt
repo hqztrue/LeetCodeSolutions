@@ -1,0 +1,3 @@
+f(x) is monotone increasing, and f(x)=\sum_i \lfloor x/5^i\rfloor. binary search. O(log n).
+O(1)?
+
