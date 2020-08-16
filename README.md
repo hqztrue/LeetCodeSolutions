@@ -51,11 +51,13 @@ Problem ID marked with leading ~ indicates there's good evidences that the algor
 1510 Stone Game IV  
 1542 Find Longest Awesome Substring  
 
-DP:  
+DP/counting:  
 087 Scramble String  
 375 Guess Number Higher or Lower II  
+629 K Inverse Pairs Array  
 688 Knight Probability in Chessboard  
 730 Count Different Palindromic Subsequences  
+903 Valid Permutations for DI Sequence  
 1039 Minimum Score Triangulation of Polygon  
 1043 Partition Array for Maximum Sum  
 1463 Cherry Pickup II  

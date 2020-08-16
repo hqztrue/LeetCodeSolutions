@@ -1,0 +1,2 @@
+case-by-case study, and reduce to 164. Maximum Gap. O(n).
+

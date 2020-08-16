@@ -1,0 +1,2 @@
+find the maximum and minimum. O(n).
+

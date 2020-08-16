@@ -1,0 +1,2 @@
+DP, let f[i][j] denote the number of possible solutions for p[i..n] when p[i]=j, using numbers 1~n-i+1. O(n^2).
+
