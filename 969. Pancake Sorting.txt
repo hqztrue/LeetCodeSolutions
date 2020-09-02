@@ -1,0 +1,4 @@
+1. For each number, we can use 2 flips to order it correctly, in total O(n) flips. use balanced tree, O(n log n).
+2. We can use O(1) flips to swap two numbers, without affecting the order of any other number. O(n).
+https://leetcode.com/problems/pancake-sorting/discuss/494417/Dew-It-or-True-O(n)-or-Explained-with-Diagrams
+

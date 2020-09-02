@@ -1,0 +1,2 @@
+DP on kmp automaton. f[i][j][k] denote the number of solutions when the length of the string is i, the current state on kmp automaton is j, and k represents whether the current state is a prefix of s1 or s2. O(n*m*|Σ|) or O(n*m).
+

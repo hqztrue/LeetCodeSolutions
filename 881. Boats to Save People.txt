@@ -1,0 +1,2 @@
+reduce to sorting, two pointers. O(sort(n)).
+

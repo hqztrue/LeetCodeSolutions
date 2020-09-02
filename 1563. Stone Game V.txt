@@ -1,0 +1,2 @@
+DP, prefix max, compute the median of each a[i..j] in amortized O(1) time. O(n^2).
+

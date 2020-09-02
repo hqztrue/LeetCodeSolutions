@@ -1,0 +1,2 @@
+The answer is either 1 or 2 (because we can always change 2 cells to disconnect a corner). O(nm).
+

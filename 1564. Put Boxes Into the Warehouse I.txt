@@ -1,0 +1,2 @@
+greedy, push the boxes in increasing order. O(sort(n)).
+

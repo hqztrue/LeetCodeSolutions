@@ -60,8 +60,11 @@ DP/counting:
 903 Valid Permutations for DI Sequence  
 1039 Minimum Score Triangulation of Polygon  
 1043 Partition Array for Maximum Sum  
+1397 Find All Good Strings  
+1444 Number of Ways of Cutting a Pizza  
 1463 Cherry Pickup II  
 1467 Probability of a Two Boxes Having The Same Number of Distinct Balls  
+1563 Stone Game V  
 
 
 ## Miscellaneous Topics

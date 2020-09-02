@@ -1,0 +1,2 @@
+The root is the first element. F(x)=C(size(l)+size(r),size(l))*F(l)*F(r). Factorial mod P can be preprocessed. O(n).
+

@@ -1,0 +1,2 @@
+greedy. for i=0,2,...2n-2, if row[i] and row[i+1] are not couple, swap row[i]'s couple to row[i+1]. O(n).
+
