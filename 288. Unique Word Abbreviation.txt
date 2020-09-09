@@ -1,1 +1,2 @@
-hashing.
+hashing. O(L).
+

@@ -124,7 +124,7 @@ struct Hash{
 			return *this;
 		}
 		iterator operator --(int){iterator res=*this;--*this;return res;}
-		node* operator ->(){return j;}
+		node* operator ->()const{return j;}
 		inline friend bool operator ==(const iterator &x,const iterator &y){return x.i==y.i&&x.j==y.j;}
 		inline friend bool operator !=(const iterator &x,const iterator &y){return x.i!=y.i||x.j!=y.j;}
 		bool operator !(){return i==H->P;}
@@ -146,13 +146,13 @@ struct Hash{
 	Hash(size_t len=3,size_t p=5){build(len,p);}
 	void clear(){len=0;memset(v,0,sizeof(node*)*P);}
 	//void clear(){free();build(3,5);}
-	Tvalue& insert(const Tkey &x,const Tvalue &y=0){
+	Tvalue& insert(const Tkey &x,const Tvalue &y=Tvalue()){
 		//if (&find_(x)){Tvalue *null=NULL;return *null;}
 		if (len==max_size)Grow();size_t x1=gethash(x)%P;
 		key[++len]=node(x,y,v[x1]);v[x1]=key+len;
 		return key[len].second;
 	}
-	void insert_(const Tkey &x,const Tvalue &y=0){
+	void insert_(const Tkey &x,const Tvalue &y=Tvalue()){
 		size_t x1=gethash(x)%P;
 		for (node *i=v[x1];i;i=i->next)
 			if (i->first==x){i->second=y; return;}

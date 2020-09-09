@@ -1,1 +1,2 @@
-for each word, use hashing to record the places it appears as a list. for each query on strings s1 and s2, suppose s1 appears x times and s2 appears y times, wlog assume x<=y, the running time is O(x log(y/x)) by merging two lists using binary search (and search for pred/succ).
+for each word, use hashing/trie to record the places it appears as a list. for each query on strings s1 and s2, suppose s1 appears x times and s2 appears y times, wlog assume x<=y, the running time is O(x log(y/x)) by merging two lists using binary search (and search for pred/succ). Alternatively, we can get O(x log log n) running time using vEB tree.
+

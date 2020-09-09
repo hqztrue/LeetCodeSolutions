@@ -1,1 +1,1 @@
-consider x-axis and y-axis separately, find weighted median. O(n).
+consider x-axis and y-axis separately, find weighted median. O(#people)=O(nm).
