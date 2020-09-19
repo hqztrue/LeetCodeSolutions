@@ -1,0 +1,2 @@
+The prefix and suffix should be non-decreasing. Use two pointers. O(n).
+

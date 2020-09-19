@@ -1,2 +1,0 @@
-simulation, use union-find data structure to maintain the connected components. for each connected component, maintain a list containing its boundary. O(nm¦Á(nm)).
-

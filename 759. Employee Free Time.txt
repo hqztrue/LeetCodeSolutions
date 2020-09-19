@@ -1,0 +1,2 @@
+reduce to sorting. O(sort(n)).
+

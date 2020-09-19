@@ -1,0 +1,2 @@
+DP, f[i][j][0..1] denote the number of routes to get to location i with j fuel remaining, and the last step is moving left/right. O(n*fuel+sort(n)).
+

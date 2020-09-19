@@ -1,0 +1,2 @@
+The remaining graph consists of a spanning tree of Alice and a spanning tree of Bob, in total 2(n-1) edges (can be shared). Greedily use the type 3 edges as many as possible, i.e. compute a maximal (=maximum) spanning forest using only type 3 edges, by dfs. O(n+m).
+

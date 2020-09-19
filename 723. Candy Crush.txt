@@ -1,0 +1,4 @@
+simulation. O(n^2 m).
+
+better running time?
+

@@ -1,2 +1,4 @@
 hashing or minimum representation. O(nm).
 
+this is IOI 98 Starry Night. http://olympiads.win.tue.nl/ioi/ioi98/contest/day1/starry/starry.html
+

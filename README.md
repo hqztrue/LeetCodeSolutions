@@ -37,6 +37,7 @@ Problem ID marked with leading ~ indicates there's good evidences that the algor
 ~464 Can I Win  
 ~483 Smallest Good Base  
 548 Split Array with Equal Sum  
+727 Minimum Window Subsequence  
 ~741 Cherry Pickup  
 ~762 Prime Number of Set Bits in Binary Representation  
 787 Cheapest Flights Within K Stops  
@@ -65,6 +66,7 @@ DP/counting:
 1463 Cherry Pickup II  
 1467 Probability of a Two Boxes Having The Same Number of Distinct Balls  
 1563 Stone Game V  
+1575 Count All Possible Routes  
 
 
 ## Miscellaneous Topics

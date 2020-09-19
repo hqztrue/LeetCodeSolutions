@@ -1,0 +1,2 @@
+merge indices with the same height. O(n).
+

@@ -1,0 +1,2 @@
+DP, fast exponentiation using transition matrix. O(log n).
+

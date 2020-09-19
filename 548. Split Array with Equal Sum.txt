@@ -1,3 +1,0 @@
-meet in the middle. O(n^2).
-
-lower bound?

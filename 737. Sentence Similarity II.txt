@@ -1,0 +1,2 @@
+use dfs to construct the connectivity graph. O(L).
+
