@@ -195,6 +195,27 @@ struct Hash{
 	}*/
 };
 
+//fast hash
+namespace Hash{
+	typedef unsigned int uint;
+	const uint S=24,S1=32-S,M=1996090921;
+	struct node{
+		int x,y,t;
+	}h[(1<<S)+1005];
+	int T=1;
+	void insert(int x,int y){
+		node *p=h+((uint)x*M>>S1);
+		for (;p->t==T;++p)
+			if (p->x==x){p->y=y; return;}
+		p->t=T; p->x=x; p->y=y;
+	}
+	int* find(int x){
+		for (node *p=h+((uint)x*M>>S1);p->t==T;++p)
+			if (p->x==x)return &p->y;
+		return 0;
+	}
+} using namespace Hash;
+
 //main
 int _main=[](){
 	//FILE *fout=fopen("./user.out","w");

@@ -1,0 +1,2 @@
+for each index, compute the number of requests covering it using prefix sum. greedy, reduce to sorting. O(sort(n)).
+

@@ -1,6 +1,7 @@
+typedef long long ll;
 namespace Hash{
 	typedef unsigned int uint;
-	const uint S=15,S1=32-S,M=1996090921;
+	const uint S=17,S1=32-S,M=1996090921;
 	struct node{
 		int x,y,t;
 	}h[(1<<S)+1005];
@@ -8,7 +9,7 @@ namespace Hash{
 	void insert(int x,int y){
 		node *p=h+((uint)x*M>>S1);
 		for (;p->t==T;++p)
-			if (p->x==x)return;
+			if (p->x==x){p->y=y; return;}
 		p->t=T; p->x=x; p->y=y;
 	}
 	int* find(int x){
@@ -19,16 +20,16 @@ namespace Hash{
 } using namespace Hash;
 class Solution {
 public:
-	int maxSubArrayLen(vector<int>& a, int k) {
-		int n=a.size(),s=0,res=0;
-		++T; insert(0,-1);
-		for (int i=0;i<n;++i){
-			s+=a[i];
-			int *p=find(s-k);
-			if (p)res=max(res,i-*p);
-			insert(s,i);
+	int minSubarray(vector<int>& a, int p) {
+		int n=a.size(),res=n; ll s=0;
+		for (int i=0;i<n;++i)s+=a[i];
+		s%=p; ++T; insert(0,-1);
+		for (int i=0,t=0;i<n;++i){
+			t=(t+a[i])%p; insert(t,i);
+			int *q=find(t<s?t-s+p:t-s);
+			if (q)res=min(res,i-*q);
 		}
-		return res;
+		return res>=n?-1:res;
 	}
 };
 
@@ -38,4 +39,5 @@ int _IO=[](){
 	cin.tie(0); //cout.tie(0);
 	return 0;
 }();
+
 
