@@ -1,0 +1,2 @@
+for each index i, find the first index j>i s.t. a[j]>a[i], using monotonic stack. O(n).
+

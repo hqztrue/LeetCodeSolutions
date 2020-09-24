@@ -1,0 +1,2 @@
+let n denote |target| and m denote |source|. greedily find the next character. O((n+m) log |∑|) using persistent BST to record the next occurrence of each character c at position i of source.
+

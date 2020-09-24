@@ -1,3 +1,0 @@
-1. mincost flow with upper and lower flow bounds. O(mincost-flow(n,n^2)).
-2. This is the minimum cost edge cover problem for bipartite graph (with non-negative weights), which can be reduced to minimum cost bipartite perfect matching. O(n^3) using KM, or $\tilde{O}(m^{10/7}\log W)$ \cite{cohen2017negative}.
-

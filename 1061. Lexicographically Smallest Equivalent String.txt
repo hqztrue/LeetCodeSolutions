@@ -1,0 +1,2 @@
+finding connected component. O(n).
+

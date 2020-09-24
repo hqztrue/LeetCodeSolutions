@@ -1,0 +1,2 @@
+dynamic 2D orthogonal range counting. O(n log^2 n/log w).
+

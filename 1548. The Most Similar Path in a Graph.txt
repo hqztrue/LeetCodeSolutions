@@ -1,0 +1,4 @@
+let L denote targetPath.length.
+1. let d[i][j] denote the minimum edit distance between a path ending at i with length j and targetPath. shortest path, bfs. O(mL).
+2. use bit packing. O(mL/w).
+
