@@ -1,0 +1,2 @@
+dfs. O(1) per update, O(n) per query.
+

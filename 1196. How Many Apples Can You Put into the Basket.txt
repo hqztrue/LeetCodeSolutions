@@ -1,0 +1,2 @@
+binary search, similar to nth_element. O(n).
+

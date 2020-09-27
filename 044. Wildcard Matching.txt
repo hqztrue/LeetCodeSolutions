@@ -1,5 +1,6 @@
-split the pattern p by '*', and get some substrings. for each substring, greedily match it with the first match after the current position in the input string s. use Aho-Corasick Automaton. O(n).
+split the pattern p by '*', and get some substrings. for each substring, greedily match it with the first match after the current position in the input string s. use Aho-Corasick Automaton. O(n). O((# of '*')*n)?
 see hdu3901 http://acm.hdu.edu.cn/showproblem.php?pid=3901.
+\cite{rahman2006finding,bille2012string}.
 
 
 note. there are many incorrect solutions for this problem on the internet, e.g. use kmp and claim the running time is O(n).

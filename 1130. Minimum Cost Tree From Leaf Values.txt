@@ -1,0 +1,2 @@
+reduce to the following problem: for each element, find the next element greater than it on the left and on the right, using stack. O(n).
+

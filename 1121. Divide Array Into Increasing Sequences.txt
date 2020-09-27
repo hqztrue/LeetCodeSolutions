@@ -1,0 +1,2 @@
+There exists a solution iff the maximum occurrence of a number times k<=n. O(n).
+
