@@ -11,6 +11,7 @@
 *.bak
 *.exe
 *.bat
+*.synctex.gz
 materials
 others
 template*
