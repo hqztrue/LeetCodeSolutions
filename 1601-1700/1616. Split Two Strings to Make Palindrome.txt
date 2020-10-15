@@ -1,0 +1,2 @@
+greedy/hashing/manacher, O(n).
+

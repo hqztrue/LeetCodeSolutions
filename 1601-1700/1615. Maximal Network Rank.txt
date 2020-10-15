@@ -1,0 +1,2 @@
+The rough idea is to find the two nodes with the largest and second largest degree. But if they are directly connected, the answer will decrease by one. So if there's only one node with the largest degree, then we must select it; otherwise check whether all nodes with the largest degree form a complete graph. O(n+m).
+
