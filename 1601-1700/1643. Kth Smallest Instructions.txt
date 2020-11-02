@@ -1,0 +1,2 @@
+DP. O(nm) assuming k can be stored in a word.
+

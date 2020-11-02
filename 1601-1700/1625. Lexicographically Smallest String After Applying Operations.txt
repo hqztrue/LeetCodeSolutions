@@ -1,0 +1,2 @@
+Consider the case that b is odd (the even case is easier). Enumerate each possible starting position i, we must set s[i] and s[i+1] to the smallest possible number by adding multiples of a, so the offsets for the even and odd indices are fixed. We can compare two starting positions in O(1) time using suffix tree on a new string t, where t[i]=s[i]-s[i-2]. O(n).
+

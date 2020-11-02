@@ -1,0 +1,2 @@
+find connected components, trie. O(length of output).
+

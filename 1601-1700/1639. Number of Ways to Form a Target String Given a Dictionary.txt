@@ -1,0 +1,2 @@
+DP, let f[i][j] denote the number of ways to form target[1..i] using the first j characters in words. O(nm).
+

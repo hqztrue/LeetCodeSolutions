@@ -1,0 +1,2 @@
+Find the window with maximum number of 1's in it. O(n).
+

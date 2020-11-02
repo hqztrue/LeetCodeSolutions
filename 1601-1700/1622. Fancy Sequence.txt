@@ -1,0 +1,2 @@
+maintain ax+b, use multiplicative inverse. O(log n) for getIndex, and O(1) for other operation.
+

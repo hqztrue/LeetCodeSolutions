@@ -1,2 +1,2 @@
-trie.
+trie. O(L).
 

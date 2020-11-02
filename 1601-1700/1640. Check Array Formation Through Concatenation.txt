@@ -1,0 +1,4 @@
+O(n).
+
+remark. the problem is harder (NP-hard?) if the integers are not distinct.
+

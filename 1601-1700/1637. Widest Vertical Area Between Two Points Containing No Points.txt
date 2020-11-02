@@ -1,0 +1,2 @@
+find the largest gap in 1D, using randomized incremental construction. expected O(n).
+

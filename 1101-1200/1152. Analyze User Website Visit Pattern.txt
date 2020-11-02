@@ -1,0 +1,5 @@
+1. enumerate all tuples. O(n^3+L).
+2. enumerate the first two websites, and maintain the frequency of the third website in amortized O(1) time. O(n^2+L).
+
+lower bound?
+

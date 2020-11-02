@@ -1,0 +1,3 @@
+DP, use matrix multiplication for transition. O(log n).
+The answer is C(n+k-1,k-1). O(1).
+

@@ -1,4 +1,3 @@
 balanced tree. O(log n) per operation.
-
-remark: O(log n/log w)?
+when the range of score is large, this running time matches the lower bound in the cell-probe model, because we can reduce the online partial-sums problem to this problem \cite{puaatracscu2004tight}.
 

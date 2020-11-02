@@ -1,0 +1,2 @@
+sort the elements in each row and column, and form a DAG. topological sort. O(sort(nm)).
+

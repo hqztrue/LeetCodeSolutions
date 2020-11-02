@@ -1,1 +1,2 @@
 three monotone pointers. O(n).
+
