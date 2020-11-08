@@ -1,0 +1,5 @@
+O(n).
+
+remark. we can get O(n^eps) space and O(n) time, by n^c-ary divide and conquer.
+lower bound for space complexity: https://cs.stackexchange.com/questions/68769/print-the-nodes-of-an-immutable-single-linked-list-in-reverse-order \cite{coppersmith2002almost}.
+

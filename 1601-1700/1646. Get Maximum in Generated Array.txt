@@ -1,0 +1,2 @@
+This is the Stern-Brocot sequence (http://oeis.org/A002487), and the prefix maximum is http://oeis.org/A270362.
+

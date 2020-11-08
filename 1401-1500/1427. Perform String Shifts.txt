@@ -1,0 +1,2 @@
+take the sum. O(n).
+

@@ -1,0 +1,3 @@
+let n denote the size of the grid and m denote the number of ships.
+binary search. O(m log n).
+
