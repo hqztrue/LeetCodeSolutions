@@ -50,10 +50,13 @@ Problem ID marked with leading ~ indicates there's good evidences that the algor
 ~1335 Minimum Difficulty of a Job Schedule  
 1439 Find the Kth Smallest Sum of a Matrix With Sorted Rows  
 1510 Stone Game IV  
+1538 Guess the Majority in a Hidden Array  
 1542 Find Longest Awesome Substring  
 1548 The Most Similar Path in a Graph  
 1630 Arithmetic Subarrays  
 1638 Count Substrings That Differ by One Character  
+1659 Maximize Grid Happiness  
+
 
 DP/counting:  
 087 Scramble String  

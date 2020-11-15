@@ -1,0 +1,2 @@
+amortized O(1).
+

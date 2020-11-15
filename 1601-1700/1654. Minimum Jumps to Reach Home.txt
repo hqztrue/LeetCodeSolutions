@@ -1,0 +1,2 @@
+bfs, we only need to consider the first S positions, where S=O(x+a+b+max(forbidden)). O(S).
+

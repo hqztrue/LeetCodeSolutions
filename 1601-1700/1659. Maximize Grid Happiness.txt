@@ -1,0 +1,5 @@
+let k be the upper bound on the number of introverts and extroverts.
+1. set-based dynamic programming, transit per grid cell. 3^m*k^2*n*m.
+
+polynomial time algorithm?
+
