@@ -1,3 +1,0 @@
-greedy, push the boxes in increasing order to the rightmost possible position. O(sort(n)).
-proof. suppose in the optimal solution there exist a pair of boxes with height h_i>h_j and i<j. Then swapping them will not make the solution worse.
-

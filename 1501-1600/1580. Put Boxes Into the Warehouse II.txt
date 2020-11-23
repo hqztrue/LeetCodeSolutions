@@ -1,2 +1,0 @@
-The actual height of a room is the max of the prefix min and the suffix min. The prefix min is monotone decreasing, and the suffix min is monotone increasing. Greedily push the boxes in increasing order to the lowest possible position. O(sort(n)).
-

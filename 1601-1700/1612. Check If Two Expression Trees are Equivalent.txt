@@ -1,0 +1,3 @@
+1. counting the number of occurrences of each variable. O(n).
+2. random evaluation. O(n).
+

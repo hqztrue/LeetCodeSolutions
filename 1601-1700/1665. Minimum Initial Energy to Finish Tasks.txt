@@ -1,0 +1,2 @@
+sort by minimum-actual in decreasing order, then greedily complete the rightmost task at the end. O(sort(n)).
+

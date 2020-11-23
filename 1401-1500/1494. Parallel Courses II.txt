@@ -1,5 +1,0 @@
-This problem is NPC.
-bitmask DP.
-
-remark. the test cases are weak, and many of the "polynomial time" algorithms in the discussion forum are incorrect.
-

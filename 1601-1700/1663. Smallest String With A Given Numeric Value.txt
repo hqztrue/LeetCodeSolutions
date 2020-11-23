@@ -1,0 +1,2 @@
+greedily increment the rightmost character. O(n).
+

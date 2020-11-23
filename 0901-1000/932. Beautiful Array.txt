@@ -1,0 +1,2 @@
+divide and conquer. put all even numbers on the left half, and all odd numbers on the right half, then recurse. O(n).
+
