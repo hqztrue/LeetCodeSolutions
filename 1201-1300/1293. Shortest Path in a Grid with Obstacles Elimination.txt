@@ -1,3 +1,1 @@
-dijkstra (bfs). O(nmk).
-
-
+dijkstra (bfs). O(nm*min(m+n, k)).
