@@ -1,4 +1,4 @@
 dijkstra (bfs). O(nm*min(k,n+m)), because we can wlog assume k<=n+m.
 
-remark. this is a special case (unweighted, planar) of the bicriteria s,t-path problem.
+remark. this is a special case (unweighted, planar) of the bicriteria s,t-path problem. Maybe we can prove some lower bound?
 

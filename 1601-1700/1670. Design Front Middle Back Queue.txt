@@ -1,0 +1,2 @@
+linked list. O(1) per operation.
+

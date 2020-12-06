@@ -1,0 +1,4 @@
+We can easily compute the concatenation of 2^i...2^{i+1}-1 using math formula. O(log^2 n). (the bottleneck is computing (2^i-1)^{-1} mod P)
+
+https://stackoverflow.com/questions/64450456/concatenation-of-binary-representation-of-first-n-positive-integers-in-ologn-t
+

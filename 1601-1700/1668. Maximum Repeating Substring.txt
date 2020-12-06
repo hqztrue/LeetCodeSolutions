@@ -1,0 +1,2 @@
+kmp, find all occurrences of word. O(n).
+
