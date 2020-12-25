@@ -56,6 +56,7 @@ Problem ID marked with leading ~ indicates there's good evidences that the algor
 1630 Arithmetic Subarrays  
 1638 Count Substrings That Differ by One Character  
 1659 Maximize Grid Happiness  
+~1681 Minimum Incompatibility  
 
 
 DP/counting:  
@@ -67,12 +68,14 @@ DP/counting:
 903 Valid Permutations for DI Sequence  
 1039 Minimum Score Triangulation of Polygon  
 1043 Partition Array for Maximum Sum  
+1269 Number of Ways to Stay in the Same Place After Some Steps  
 1397 Find All Good Strings  
 1444 Number of Ways of Cutting a Pizza  
 1463 Cherry Pickup II  
 1467 Probability of a Two Boxes Having The Same Number of Distinct Balls  
 1563 Stone Game V  
 1575 Count All Possible Routes  
+1690 Stone Game VII  
 
 
 ## Miscellaneous Topics

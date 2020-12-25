@@ -1,0 +1,4 @@
+The problem can be solved by DP. Let's start with a simple solution.
+Let f[i] denote the largest score we can get when we end at position i. The transition is f[i]=max_{i-k<=j<=i-1} f[j]+nums[i]. The final output is f[n-1]. The running time is O(n^2).
+Now we further improve the running time. Use a monotone queue to maintain max_{i-k<=j<=i-1} f[j]. The running time is O(n).
+

@@ -1,2 +1,0 @@
-hashing. O(n).
-

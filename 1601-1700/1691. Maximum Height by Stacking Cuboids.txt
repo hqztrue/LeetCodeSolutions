@@ -1,0 +1,2 @@
+sorting according to max(w,l,h), then compute 2D LIS. O(n log^2 n).
+

@@ -1,0 +1,5 @@
+Each subset can be viewed as an interval, we can prove that intervals cannot partially intersect.
+1. subset DP, let f[i][j] denote the minimum sum of incompatibilities when we distribute subset i, at most one subset is not full and starting at j. We add the subsets in the order of increasing right endpoint, so the last subset ends at the maximum element in i. O(2^n*n^2).
+
+Remark. is this problem NP-hard? If we don't require the subsets be of equal size, then the problem can be solved by DP.
+

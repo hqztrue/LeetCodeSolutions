@@ -1,0 +1,2 @@
+First repeatedly go towards the target until we go pass it. Then we need at most 2 more moves, and flip at most 2 previous moves, depending whether the difference is even or odd. O(1).
+

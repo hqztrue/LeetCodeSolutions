@@ -10,7 +10,7 @@ size_t get_hash(vector<int> &v){
 		for (int j=0;j<u.size();++j)res=((long long)res*M+u[j])%P;
 	}*/
 	sort(v.begin(),v.end());
-    for (int j=0;j<v.size();++j)res=((long long)res*M+v[j])%P;
+	for (int j=0;j<v.size();++j)res=((long long)res*M+v[j])%P;
 	return ((long long)res*M+n)%P;
 }
 struct point{

@@ -6,13 +6,13 @@ public:
 		int n=a.size(),ma=0,mi=inf;
 		int vmin[W+1],vmax[W+1],can[W+1];
 		for (int i=0;i<=W;++i)vmin[i]=inf,vmax[i]=0,can[i]=1;
-        for (int i=0;i<n;++i)b[i]=a[i]&1?a[i]*2:a[i];
+		for (int i=0;i<n;++i)b[i]=a[i]&1?a[i]*2:a[i];
 		for (int i=0;i<n;++i)a[i]>>=__builtin_ctz(a[i]),ma=max(ma,a[i]);
 		int c=__builtin_clz(ma);
 		for (int i=0;i<n;++i){
 			a[i]<<=__builtin_clz(a[i])-c;
 			if (a[i]>ma)a[i]>>=1;
-            a[i]=min(a[i],b[i]);
+			a[i]=min(a[i],b[i]);
 			mi=min(mi,a[i]);
 		}
 		int ans=ma-mi;

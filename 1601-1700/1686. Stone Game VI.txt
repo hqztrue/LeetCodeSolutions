@@ -1,0 +1,2 @@
+They will greedily take the stones according to a[i]+b[i] in decreasing order. O(sort(n)).
+

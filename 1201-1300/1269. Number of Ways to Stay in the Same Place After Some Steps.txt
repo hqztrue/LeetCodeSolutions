@@ -1,0 +1,3 @@
+Let n denote the number of steps and let m denote the array length.
+DP. O(n*min(n,m)).
+

@@ -127,8 +127,8 @@ public:
 		for (int i=1;i<n;++i)s[i]+=s[i-1];
 		for (int i=n-2;i;--i)M[mp(s[n-1]-s[i],a[i])]=i;
 		auto minmax=minmax_element(a.begin(),a.end());
-        int minv=*minmax.first,maxv=*minmax.second;
-        int mins=(s[n-1]-3*maxv)/4,maxs=(s[n-1]-3*minv)/4;
+		int minv=*minmax.first,maxv=*minmax.second;
+		int mins=(s[n-1]-3*maxv)/4,maxs=(s[n-1]-3*minv)/4;
 		for (int i=1;i<n-5;++i){
 			int s1=s[i-1];
 			if (s1<mins||s1>maxs)continue;

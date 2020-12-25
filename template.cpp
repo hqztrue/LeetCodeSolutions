@@ -203,13 +203,13 @@ namespace Hash{
 		int x,y,t;
 	}h[(1<<S)+1005];
 	int T=1;
-	void insert(int x,int y){
+	inline void insert(int x,int y){
 		node *p=h+((uint)x*M>>S1);
 		for (;p->t==T;++p)
 			if (p->x==x){p->y=y; return;}
 		p->t=T; p->x=x; p->y=y;
 	}
-	int* find(int x){
+	inline int* find(int x){
 		for (node *p=h+((uint)x*M>>S1);p->t==T;++p)
 			if (p->x==x)return &p->y;
 		return 0;

@@ -13,9 +13,9 @@ int interpolation_search(int a[],int n,int x){
 }
 class Solution {
 public:
-    int search(vector<int>& nums, int t) {
-        int n=nums.size(),p=interpolation_search(&nums[0]-1,n,t);
-        return p<=n&&nums[p-1]==t?p-1:-1;
-    }
+	int search(vector<int>& nums, int t) {
+		int n=nums.size(),p=interpolation_search(&nums[0]-1,n,t);
+		return p<=n&&nums[p-1]==t?p-1:-1;
+	}
 };
 

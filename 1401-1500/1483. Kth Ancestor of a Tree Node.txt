@@ -1,2 +1,0 @@
-This is the level ancestor problem. O(n) preprocessing, O(1) query.
-

@@ -1,0 +1,2 @@
+partition the numbers into consecutive intervals, then run DP. O(n).
+

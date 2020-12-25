@@ -1,0 +1,2 @@
+we can prove that the answer is the maximum digit. O(n).
+

@@ -1,0 +1,2 @@
+the answer is n-1. O(1).
+

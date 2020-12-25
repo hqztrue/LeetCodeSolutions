@@ -1,0 +1,2 @@
+count the number of x-y pairs and y-x pairs. O(n).
+

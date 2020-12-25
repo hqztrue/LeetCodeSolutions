@@ -1,0 +1,2 @@
+find connected component. O(nm).
+
