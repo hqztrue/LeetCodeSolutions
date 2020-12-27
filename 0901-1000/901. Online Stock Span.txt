@@ -1,0 +1,2 @@
+monotone stack. amortized O(1).
+

@@ -57,6 +57,7 @@ Problem ID marked with leading ~ indicates there's good evidences that the algor
 1638 Count Substrings That Differ by One Character  
 1659 Maximize Grid Happiness  
 ~1681 Minimum Incompatibility  
+~1707 Maximum XOR With an Element From Array  
 
 
 DP/counting:  

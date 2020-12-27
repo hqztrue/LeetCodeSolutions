@@ -1,0 +1,3 @@
+1. use a trie, dynamically insert the numbers in increasing order (or use a static one, and record the minimum number in each subtree). O(n log W).
+2. dynamically insert after sorting, and set the branching factor of the trie to be b=O(log n). O(sort(n)+n log W/log b)=O(n log W/log log n).
+

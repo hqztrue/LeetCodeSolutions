@@ -1,0 +1,2 @@
+for each character, count its maximum frequency in a word of B. O(L).
+

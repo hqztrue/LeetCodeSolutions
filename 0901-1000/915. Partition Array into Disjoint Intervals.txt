@@ -1,0 +1,2 @@
+prefix min/max. O(n).
+

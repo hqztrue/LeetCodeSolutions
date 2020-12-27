@@ -1,0 +1,2 @@
+inclusion-exclusion. let f[i] denote the number of valid playlists using at most i songs, we can compute f[i] by a math formula A(n,k)*(n-k)^{l-k} in O(log n) time (using fast exponentiation), or amortized O(1) time, by precomputing the (l-k)-th power of each prime <=n. O(n).
+

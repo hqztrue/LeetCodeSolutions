@@ -1,0 +1,2 @@
+sliding window, maintain the position of the middle 1. O(n).
+

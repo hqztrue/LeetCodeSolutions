@@ -1,0 +1,2 @@
+dynamic list indexing. O(n log n/log w) \cite{dietz1989optimal}.
+

@@ -1,0 +1,2 @@
+O(n). simpler than 1353. Maximum Number of Events That Can Be Attended (no need to sort).
+

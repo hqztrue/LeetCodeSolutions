@@ -400,6 +400,24 @@ struct BitSet{
 	#undef get_size
 };
 
+template<int N>
+struct LinearDisjointSet{
+	int f[N/W+2]; uint c[N/W+2];
+	void init(int n){for (int i=0;i<=n/W+1;++i)f[i]=i,c[i]=~0;}
+	int _find(int x){
+		if (f[x]==x)return x;
+		return f[x]=_find(f[x]);
+	}
+	void _del(int x){f[x]=x+1;}
+	int find(int x){
+		int y=x/W,z=x%W; uint t=c[y]>>z<<z;
+		if (t)return y*W+__builtin_ctz(t);
+		y=_find(y+1); return y*W+__builtin_ctz(c[y]);
+	}
+	void del(int x){int y=x/W;c[y]&=~(1u<<x%W);if (!c[y])_del(y);}
+};
+LinearDisjointSet<N> D;
+
 void radix_sort(int A[],int l,int r){  //a[i]>=0
 	//const int base=65535,W=16;
 	const int base=2047,W=11;

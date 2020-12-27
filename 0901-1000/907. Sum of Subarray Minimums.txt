@@ -1,0 +1,2 @@
+for each element, count the number of subarrays that has it as the minimum, using monotone stack. O(n).
+
