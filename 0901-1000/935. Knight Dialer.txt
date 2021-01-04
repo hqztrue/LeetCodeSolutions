@@ -1,0 +1,2 @@
+DP, use matrix and fast exponentiation. O(log n).
+

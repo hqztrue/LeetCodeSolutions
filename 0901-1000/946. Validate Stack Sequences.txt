@@ -1,0 +1,2 @@
+note that the values are unique. simulation. O(n).
+

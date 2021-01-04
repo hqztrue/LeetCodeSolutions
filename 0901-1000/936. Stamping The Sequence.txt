@@ -1,0 +1,4 @@
+note that we are not required to optimize the number of moves.
+use greedy, remove the stamps in reverse order. whenever we find a match, we can remove that substring and replace it by '?'s.
+for a fast implementation, we first find the leftmost full match, it will split the target into two parts. for the left part, the next match must be a prefix of stamp, and we can repeatedly do this until we remove the left part. the right part is of the form ?...?t, and we repeatedly remove a prefix of t that matches with a suffix of stamp. we then find the next full match, which again split t into two parts. the left part is of the form ?...?r?...?. we then repeatedly remove a suffix of r, until r matches a substring of stamp. use string hashing to compare two strings. O(n).
+

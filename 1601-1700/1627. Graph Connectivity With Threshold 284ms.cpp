@@ -8,11 +8,12 @@ void dfs(int x){
 		if (k<=t)break;
 		if (!v[k])dfs(k);
 	}
-	if (x>t)
-	for (int j=1;j<=p1;++j){
-		int k=x*p[j];
-		if (k>n)break;
-		if (!v[k])dfs(k);
+	if (x>t){
+		for (int j=1;j<=p1;++j){
+			int k=x*p[j];
+			if (k>n)break;
+			if (!v[k])dfs(k);
+		}
 	}
 }
 class Solution {

@@ -1,0 +1,2 @@
+the integers are distinct. find the maximum of the first n-k+1 numbers. O(n).
+

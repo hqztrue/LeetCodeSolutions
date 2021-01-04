@@ -1,0 +1,2 @@
+Eulerian path, there always exist a solution. O(output).
+

@@ -62,6 +62,7 @@ Problem ID marked with leading ~ indicates there's good evidences that the algor
 
 DP/counting:  
 087 Scramble String  
+312 Burst Balloons  
 375 Guess Number Higher or Lower II  
 629 K Inverse Pairs Array  
 688 Knight Probability in Chessboard  

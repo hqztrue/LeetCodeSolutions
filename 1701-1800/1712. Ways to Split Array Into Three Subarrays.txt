@@ -1,0 +1,2 @@
+enumerate the first split, use monotone pointers to maintain the range of the second split. O(n).
+

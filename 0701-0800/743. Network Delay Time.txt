@@ -1,0 +1,2 @@
+compute eccentricity, using shortest path in weighted directed graphs. O(m+n log log n) \cite{thorup2004integer}.
+

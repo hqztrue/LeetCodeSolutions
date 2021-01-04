@@ -1,0 +1,2 @@
+LCS. the numbers in target are distinct, so we can reduce to LIS. O(n log log n) \cite{fredman1975computing}.
+

@@ -1,0 +1,2 @@
+DP, let f[i][j] denote the maximum coins we can collect by busting [i,j]. O(n^3).
+

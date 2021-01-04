@@ -1,0 +1,2 @@
+greedily flip the leftmost 1. O(n).
+
