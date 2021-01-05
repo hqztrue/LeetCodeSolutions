@@ -64,6 +64,8 @@ DP/counting:
 087 Scramble String  
 312 Burst Balloons  
 375 Guess Number Higher or Lower II  
+514 Freedom Trail  
+546 Remove Boxes  
 629 K Inverse Pairs Array  
 688 Knight Probability in Chessboard  
 730 Count Different Palindromic Subsequences  
@@ -83,4 +85,7 @@ DP/counting:
 ## Miscellaneous Topics
 Get your hands dirty: [miscellaneous_topics.pdf](https://github.com/hqztrue/LeetCodeSolutions/blob/master/miscellaneous_topics.pdf)
 
+
+## Stargazers over time
+[![Stargazers over time](https://starchart.cc/hqztrue/LeetCodeSolutions.svg)](https://starchart.cc/hqztrue/LeetCodeSolutions)
 

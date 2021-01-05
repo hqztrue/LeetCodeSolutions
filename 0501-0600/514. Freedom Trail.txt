@@ -1,0 +1,3 @@
+Let n denote the length of the ring, and m denote the length of the key.
+DP. O(nm).
+
