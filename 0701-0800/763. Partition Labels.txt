@@ -1,0 +1,2 @@
+In the first pass record the rightmost position of each character, then in the second pass greedily split. O(n).
+

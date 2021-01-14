@@ -1,2 +1,5 @@
-The root is the first element. F(x)=C(size(l)+size(r),size(l))*F(l)*F(r). Factorial mod P can be preprocessed. O(n).
+The root is the first element. F(x)=C(size(l)+size(r),size(l))*F(l)*F(r). Factorial mod P can be preprocessed in O(n) time.
+We can build the tree in O(n) time, by deleting the nodes in reverse order and merge the deleted intervals using doubly linked list. O(n).
+
+https://leetcode.com/problems/number-of-ways-to-reorder-array-to-get-same-bst/discuss/839559/O(N)-simpleandfast
 

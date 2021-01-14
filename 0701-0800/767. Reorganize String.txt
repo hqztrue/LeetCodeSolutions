@@ -1,0 +1,2 @@
+first fill the even positions using the high frequency character, then fill the odd positions. O(n).
+

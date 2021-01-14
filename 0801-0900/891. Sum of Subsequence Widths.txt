@@ -1,1 +1,2 @@
-sorting. O(sort(n)).
+O(n) after sorting. O(sort(n)).
+

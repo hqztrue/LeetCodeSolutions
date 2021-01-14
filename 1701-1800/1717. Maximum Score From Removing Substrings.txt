@@ -1,0 +1,2 @@
+greedily remove the substring with the larger score, using stack. O(n).
+

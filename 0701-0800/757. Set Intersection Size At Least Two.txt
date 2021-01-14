@@ -1,0 +1,2 @@
+This is the 1D multi-hitting set problem. Use greedy, wlog assume that no interval contain another, and sort the intervals according to left endpoint in increasing order. Process the intervals one by one, greedily choose the rightmost points that fulfill the requirement. O(sort(n)).
+

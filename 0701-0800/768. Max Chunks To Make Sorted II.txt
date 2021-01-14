@@ -1,0 +1,2 @@
+greedy, we can split at a point if the left max <= the right min. O(n).
+

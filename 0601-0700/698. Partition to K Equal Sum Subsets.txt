@@ -1,3 +1,4 @@
-this problem is NPC, because we can reduce subset sum to it.
-bitmask DP.
+This problem is NPC, because we can reduce subset sum to it.
+1. bitmask DP, let ave=(sum_{0<=i<=n-1} nums[i])/k and let f[i] denote whether we can partition the subset i to floor((sum_{j\in i} nums[j])/ave) full subsets and another partial subset. O(2^n*n).
+2. This is a special case of the bin packing problem. O(2^{(1-\sigma_k)n}) randomized. \cite{nederlof2021faster}.
 

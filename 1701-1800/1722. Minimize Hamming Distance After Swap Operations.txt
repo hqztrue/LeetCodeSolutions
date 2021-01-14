@@ -1,0 +1,2 @@
+find connected components, and greedily match within each connected components. O(n+m).
+

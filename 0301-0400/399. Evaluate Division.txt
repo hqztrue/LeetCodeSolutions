@@ -1,1 +1,2 @@
-dfs, find connecting component. O(n).
+dfs, find connected component. O(n).
+
