@@ -2,12 +2,10 @@ LeetCode
 ========
 
 ## Introduction
-Here are *theoretical solutions* for some interesting LeetCode problems, aiming for the *best* running time. The author is a TCS student who no longer frequently write codes, so if you are looking for *code implementations*... sorry, this might be the wrong place. There's one exception though: if an algorithm with good theoretical guarantee is also practical enough to *strictly* beat 100% of the submissions, I will consider to implement it. See figs/ for a list of them.
+Here are *theoretical solutions* for some interesting LeetCode problems, aiming for the *best* running time. The author is a TCS student who no longer frequently write codes, so if you are looking for *code implementations*... sorry, this might be the wrong place. There's one exception though: if an algorithm with good theoretical guarantee is also practical enough to *strictly* beat 100% of the submissions, I will consider to implement it. See [figs/](https://github.com/hqztrue/LeetCodeSolutions/blob/master/figs/) for a list of them.
 
 p.s. If one doesn't like my coding style, he can use the following code formatting tools:
-https://codebeautify.org/cpp-formatter-beautifier
-http://format.krzaq.cc/
-https://github.com/akof1314/CoolFormat
+https://codebeautify.org/cpp-formatter-beautifier, http://format.krzaq.cc/, or https://github.com/akof1314/CoolFormat
 
 For most problems we consider here, the only thing we want to optimize is the running time. Randomization is usually allowed. Sometimes we will optimize on the space complexity as well. Lower bound will be provided, if the optimality of our algorithm is not obvious. If the main source of hardness of a problem is its coding complexity rather than its algorithm (e.g. simulation problems), we will skip the solution here.
 
@@ -16,9 +14,9 @@ In some problems we will use the word-RAM model, where the assumption is each wo
 
 For string, let |\Sigma| denote the alphabet size (i.e. |\Sigma|=26 for lowercase letters), and we usually assume |\Sigma| is much smaller than n. In some cases, we further make the (non-theory) assumption that |\Sigma|<=w (since 26<32). If the input is a set of strings, we will use L to denote the total length of them, and n is the number of strings. If the input is a single string, we use n to denote its length.
 
-For tree, let h denote the height.
+For trees, let h denote the height.
 
-For graph, let n denote the number of vertices and m denote the number of edges.
+For graphs, let n denote the number of vertices and m denote the number of edges.
 
 If the input is an n*m matrix, we sometimes use a single parameter n to denote max(n,m) for simplicity.
 
@@ -26,8 +24,6 @@ For space complexity, we use the definition which is in analogy to the following
 
 ## Unsolved Problems
 Here are a list of problems for which I don't know the current best algorithm. If a problem is open but the algorithm I provide here is (almost) the current best, it is viewed as "solved" and therefore not listed below. Some NP-hard problems are also not included.
-
-Problem ID marked with leading ~ indicates there's good evidences that the algorithm we provide is hard to improve. Leading + indicates the original problem is solved, but there exists some interesting follow-up questions.
 
 [open_problems.txt](https://github.com/hqztrue/LeetCodeSolutions/blob/master/open_problems.txt)
 
