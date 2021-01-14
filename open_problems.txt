@@ -1,0 +1,57 @@
++116 Populating Next Right Pointers in Each Node  
++225 Implement Stack using Queues  
++234 Palindrome Linked List  
+264 Ugly Number II  
+~302 Smallest Rectangle Enclosing Black Pixels  
+306 Additive Number  
+317 Shortest Distance from All Buildings  
+368 Largest Divisible Subset  
+395 Longest Substring with At Least K Repeating Characters  
+~403 Frog Jump  
+~464 Can I Win  
+~483 Smallest Good Base  
+548 Split Array with Equal Sum  
+727 Minimum Window Subsequence  
+~741 Cherry Pickup  
+~762 Prime Number of Set Bits in Binary Representation  
+787 Cheapest Flights Within K Stops  
+~898 Bitwise ORs of Subarrays  
+1057 Campus Bikes  
+~1074 Number of Submatrices That Sum to Target  
+~1293 Shortest Path in a Grid with Obstacles Elimination  
+1316 Distinct Echo Substrings  
+~1334 Find the City With the Smallest Number of Neighbors at a Threshold Distance  
+~1335 Minimum Difficulty of a Job Schedule  
+1439 Find the Kth Smallest Sum of a Matrix With Sorted Rows  
+1510 Stone Game IV  
+1538 Guess the Majority in a Hidden Array  
+1542 Find Longest Awesome Substring  
+1548 The Most Similar Path in a Graph  
+1630 Arithmetic Subarrays  
+1638 Count Substrings That Differ by One Character  
+1659 Maximize Grid Happiness  
+~1681 Minimum Incompatibility  
+~1707 Maximum XOR With an Element From Array  
+
+
+DP/counting:  
+087 Scramble String  
+312 Burst Balloons  
+375 Guess Number Higher or Lower II  
+514 Freedom Trail  
+546 Remove Boxes  
+629 K Inverse Pairs Array  
+688 Knight Probability in Chessboard  
+730 Count Different Palindromic Subsequences  
+903 Valid Permutations for DI Sequence  
+1039 Minimum Score Triangulation of Polygon  
+1043 Partition Array for Maximum Sum  
+1269 Number of Ways to Stay in the Same Place After Some Steps  
+1397 Find All Good Strings  
+1444 Number of Ways of Cutting a Pizza  
+1463 Cherry Pickup II  
+1467 Probability of a Two Boxes Having The Same Number of Distinct Balls  
+1563 Stone Game V  
+1575 Count All Possible Routes  
+1690 Stone Game VII  
+
