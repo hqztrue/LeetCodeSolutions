@@ -1,0 +1,2 @@
+Suppose the optimal submatrix contains the i-th row. Each column can be mapped to an interval containing the i-th row. After sorting the intervals (using radix sort for all intervals of all rows), we can find the optimal solution using two pointers in O(n) time. O(nm).
+

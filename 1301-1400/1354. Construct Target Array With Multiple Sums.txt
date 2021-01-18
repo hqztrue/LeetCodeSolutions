@@ -1,0 +1,2 @@
+The numbers we generate is always monotone increasing, so if we work backwards, the currently largest number must be what we choose in the last round, and we can know its value in the previous round: let the current sum be s and the largest value be m, the previous value of the largest value should be m%(s-m) (repeat until it is no longer the largest). We need to perform O(log U) rounds, and we can construct the heap in O(n) time, so the total running time is O(n+log n log U).
+

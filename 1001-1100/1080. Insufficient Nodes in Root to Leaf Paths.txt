@@ -1,0 +1,2 @@
+record the maximum root to leaf path in each subtree. O(n).
+

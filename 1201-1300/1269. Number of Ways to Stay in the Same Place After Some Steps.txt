@@ -1,3 +1,4 @@
 Let n denote the number of steps and let m denote the array length.
-DP. O(n*min(n,m)).
+1. DP. O(n*min(n,m)).
+2. If we cannot stay in the same place: DP. O(n). https://www.zhihu.com/question/346654767/answer/1110765408
 

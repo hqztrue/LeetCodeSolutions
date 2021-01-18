@@ -1,1 +1,4 @@
-O(n).
+The common assumption is n! can be stored in a word.
+1. O(n log n) or O(n log n/log log n), using Dietz's ranking data structure.
+2. O(n). \cite{myrvold2001ranking} for some ordering, and \cite{marevs2007linear} for lexicographic ordering.
+

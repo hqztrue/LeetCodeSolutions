@@ -1,2 +1,4 @@
-DP, O(nm^2).
+1. DP, O(nm^2).
+2. Reduce to the problem of finding two vertex-disjoint paths in a nonnegatively-weighted directed graph, by replacing each node with a node with weight being the number of cherries and a node with weight 0. Use Suurballe's algorithm and perform two rounds of dijkstra. O(nm log (nm)).
+https://en.wikipedia.org/wiki/Suurballe%27s_algorithm
 
