@@ -1,0 +1,4 @@
+Let q denote the number of friendships. First delete all pairs of friends that already can communicate with each other, using set disjointness in O(nq) time. Enumerate the language we teach and compute in O(m+q) time. Alternatively, the optimal solution should be the most popular language. O(n(m+q)).
+
+remark. is the problem easier than set disjointness (because for a fixed set we only need to detect whether it's disjoint from all neighboring sets)? Can we do faster when the input is sparse?
+

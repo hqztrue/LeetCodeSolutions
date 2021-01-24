@@ -1,0 +1,2 @@
+The room is large enough, and the optimal way is to build a pyramid. O(1).
+

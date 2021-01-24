@@ -1,0 +1,2 @@
+decode in O(nm) time, then find k-th. O(nm).
+

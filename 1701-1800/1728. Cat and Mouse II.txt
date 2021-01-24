@@ -1,3 +1,5 @@
 let l denote max(capJump,mouseJump).
-DP, let f[i1][j1][i2][j2][0..1] denote whether the mouse can win when the mouse is at (i1,j1), the cat is at (i2,j2), and mouse/cat moves first. Furthermore, if the mouse can win, record the minimum number of steps for the mouse to reach the food. Use bfs to compute f, and if the cat can force the game state enter a loop, cat wins. O(n^2m^2*l). We can further optimize the O(l) term using data structures.
+DP, let f[i1][j1][i2][j2][0..1] denote whether the mouse can win when the mouse is at (i1,j1), the cat is at (i2,j2), and mouse/cat moves first. (Furthermore, if the mouse can win, record the minimum number of steps for the mouse to reach the food.) Use bfs to compute f (start from the end states and search backwards), and if the cat can force the game state enter a loop, cat wins. O(n^2m^2*l). We can further optimize the O(l) term using data structures.
+
+remark. mouse may visit a place twice in the optimal solution.
 

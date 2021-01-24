@@ -1,0 +1,2 @@
+prefix/suffix xor sum. suppose we want to know perm[i], we can group the other elements into pairs because n is odd. O(n).
+

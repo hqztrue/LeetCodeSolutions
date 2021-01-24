@@ -1,2 +1,3 @@
 reduce to sorting, two pointers. O(sort(n)).
+we can also use 1D range reporting \cite{mortensen2005dynamic} and query in O(log log w) time, but the preprocessing time is not faster than sorting.
 

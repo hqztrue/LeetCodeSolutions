@@ -1,8 +1,0 @@
-1. The operations are of the form $ax+b$, we can maintain them using multiplicative inverse. $O(\log P)$ for getIndex, and $O(1)$ for other operation, or $O(\log P)$ for append, and $O(1)$ for other operation.\\
-2. Segment tree. $O(\log n)$ for getIndex, and $O(1)$ for other operation.\\
-3. Union find, and only use path compression. $O(n \log n)$.\\
-4. We also want to use union by rank in the union find data structure, but if we union in the reverse direction, we need to compute multiplicative inverse, which is costly. As a solution, let $b$ be a parameter to be set later, we divide the input stream into blocks with size $b$. After reading each block, we can compute the multiplicative inverse in $O(\log P)$ time, and we can for each element in the block compute the merge of operations from it to the end of the block, in $O(b)$ time total. Represent each block with a single node in the union find structure. As long as $b\geq \log\log n$, the union-find data structure has running time $O(n\alpha(n,\frac{n}{b}))=O(n\alpha(n,\frac{n}{\log\log n}))=O(n)$. For queries in the (partial) last block, we can recursively use an algorithm with running time $O(\log b)$. (can we bootstrap?) Set $b=\frac{log P}{\log\log P}$ (which always $\geq \log\log n$, because $P\geq n$, otherwise we can compute multiplicative inverse in amortized $O(1)$ time), the total running time is $O(n\log\log P)$.\\
-
-Remark. improvable to $O(n\alpha(n))$?\\
-Is the running time of union-find data structure improvable in this case?\\
-
