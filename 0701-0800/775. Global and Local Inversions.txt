@@ -1,0 +1,2 @@
+check whether every global inversion is a local inversion, and we can test whether there exist some i s.t. |A[i]-i|>1. O(n).
+

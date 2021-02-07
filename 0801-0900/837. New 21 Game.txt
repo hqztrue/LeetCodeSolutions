@@ -1,0 +1,4 @@
+Wlog assume K<=N<=K+W.
+1. DP, let f[i] denote the probability of ending with <=N points when we currently have i points. suffix sum. O(K).
+2. This is a linear recurrence. O(M(W) log N)=O(W log W log N) \cite{bostan2021simple}.
+

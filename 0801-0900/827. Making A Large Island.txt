@@ -1,0 +1,2 @@
+dfs, find connected components. O(nm).
+

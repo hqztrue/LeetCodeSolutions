@@ -1,0 +1,2 @@
+We must change each A[i][0] to 1. Enumerate whether the first column will be flipped, the rest of the solution can be easily determined. O(nm).
+

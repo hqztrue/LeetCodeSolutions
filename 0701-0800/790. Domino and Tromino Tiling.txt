@@ -1,0 +1,2 @@
+linear recurrence, use matrix multiplication. O(log n).
+

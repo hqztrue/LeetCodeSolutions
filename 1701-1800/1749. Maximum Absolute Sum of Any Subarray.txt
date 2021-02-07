@@ -1,0 +1,2 @@
+either the maximum sum or the minimum sum. O(n).
+

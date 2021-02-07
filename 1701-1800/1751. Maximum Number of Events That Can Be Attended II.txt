@@ -1,0 +1,2 @@
+DP, let f[i][j] denote the maximum sum to attend j events before time i. O(nk+sort(n)).
+

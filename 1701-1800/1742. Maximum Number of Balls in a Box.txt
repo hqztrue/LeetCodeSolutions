@@ -1,0 +1,4 @@
+digits DP. Let f[i][j] denote the number of numbers in [0,10^i-1] that has sum j, we have j=O(log n). O(log^2 n).
+
+remark. the optimal sum should concentrate on the middle, so we can further improve the running time.
+

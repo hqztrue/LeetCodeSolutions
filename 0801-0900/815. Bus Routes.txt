@@ -1,0 +1,2 @@
+bfs, for each route create a new super node (or hyperedge). O(n).
+

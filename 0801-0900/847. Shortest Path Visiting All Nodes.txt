@@ -1,0 +1,2 @@
+Reduce to the metric TSP problem, where the distances satisfy the triangle inequality. O(2^n*n^2) by DP.
+

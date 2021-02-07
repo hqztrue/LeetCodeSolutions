@@ -1,0 +1,3 @@
+greedy, always take the larger string. O(n+m).
+Proof. suppose the two strings first differ at position i, and s1<s2. If a solution reaches the i-th character of s1 first, then we can symmetrically reach the i-th character of s2 first, and make answer non-decreasing.
+

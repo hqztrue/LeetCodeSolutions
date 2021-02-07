@@ -1,0 +1,3 @@
+Let m denote the number of crimes and p=minProfit.
+DP, let f[i][j][k] denote the number of ways to use the first i crimes, j members and get k profit. O(nmp).
+

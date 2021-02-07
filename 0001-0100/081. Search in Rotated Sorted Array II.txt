@@ -1,4 +1,3 @@
 O(n).
-O(n) lower bound: n-1 elements are 0, another one element is either 0 or 1. if we search for 1, need to look at each element.
-
+Omega(n) lower bound: n-1 elements are 0, another one element is either 0 or 1. if we search for 1, need to look at each element.
 

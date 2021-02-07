@@ -1,0 +1,2 @@
+count each character separately. O(n).
+

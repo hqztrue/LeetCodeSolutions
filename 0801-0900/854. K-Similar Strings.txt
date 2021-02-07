@@ -1,0 +1,2 @@
+This problem is NP-hard \cite{amir2007cost}.
+

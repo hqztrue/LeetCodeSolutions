@@ -1,0 +1,4 @@
+subset sum.
+1. O(sort(2^{n/2})) by meet in the middle, or O(2^{n/2}) by bichromatic closest pair in 1D, via randomized incremental construction.
+2. \tilde{O}(U).
+
