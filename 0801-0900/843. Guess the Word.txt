@@ -1,0 +1,5 @@
+We can use dfs to find an approximate solution that is good enough in the worst case for a fixed input.
+There are some other heuristics.
+
+Remark. in the worst case it may take more than 10 guesses, but for a random input the success probability is close to 1.
+

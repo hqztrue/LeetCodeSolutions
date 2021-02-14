@@ -1,3 +1,10 @@
+/***************************************************
+Author: hqztrue
+https://github.com/hqztrue/LeetCodeSolutions
+Complexity: 
+If you find this solution helpful, plz give a star:)
+***************************************************/
+
 //IO
 int _IO=[](){
 	ios::sync_with_stdio(0);

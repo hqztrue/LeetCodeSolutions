@@ -2,7 +2,7 @@ LeetCode
 ========
 
 ## Introduction
-Here are *theoretical solutions* for some interesting LeetCode problems, aiming for the *best* running time. The author is a TCS student who no longer frequently write codes, so if you are looking for *code implementations*... sorry, this might be the wrong place. There's one exception though: if an algorithm with good theoretical guarantee is also practical enough to *strictly* beat 100% of the submissions, I will consider to implement it. See [figs/](https://github.com/hqztrue/LeetCodeSolutions/blob/master/figs/) for a list of them.
+Here are *theoretical solutions* for some interesting LeetCode problems, aiming for the *best* running time. [The author](https://leetcode.com/hqztrue/) is a TCS student who no longer frequently write codes, so if you are looking for *code implementations*... sorry, this might be the wrong place. There's one exception though: if an algorithm with good theoretical guarantee is also practical enough to *strictly* beat 100% of the submissions, I will consider to implement it. See [figs/](https://github.com/hqztrue/LeetCodeSolutions/blob/master/figs/) for a list of them.
 
 p.s. If one doesn't like my coding style, he can use the following code formatting tools:
 https://codebeautify.org/cpp-formatter-beautifier, http://format.krzaq.cc/, or https://github.com/akof1314/CoolFormat

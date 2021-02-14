@@ -1,4 +1,4 @@
 subset sum.
-1. O(sort(2^{n/2})) by meet in the middle, or O(2^{n/2}) by bichromatic closest pair in 1D, via randomized incremental construction.
+1. O(sort(2^{n/2})) by meet in the middle, or O(2^{n/2}) by bichromatic closest pair in 1D, via randomized incremental construction. We can also get O(2^{n/2}) by generating a sorted list of subset sums, using merging sort.
 2. \tilde{O}(U).
 

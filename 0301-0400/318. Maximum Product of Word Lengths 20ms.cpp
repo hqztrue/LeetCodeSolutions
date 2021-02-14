@@ -8,7 +8,8 @@
 #include<vector>
 #include<string>
 using namespace std;
-unsigned long long _pool[15000005],*pool1=_pool;
+#define register
+unsigned long long _pool[1000005],*pool1=_pool;  //15000005
 struct BitSet{
 	#define W 6
 	#define mask 63

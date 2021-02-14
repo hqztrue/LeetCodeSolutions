@@ -1,0 +1,2 @@
+O(log n/log w) per operation \cite{dietz1989optimal}.
+

@@ -1,0 +1,2 @@
+There are only O(1) possibility. O(log n).
+
