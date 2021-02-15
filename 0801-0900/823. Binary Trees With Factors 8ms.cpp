@@ -1,10 +1,3 @@
-//IO
-int _IO=[](){
-	std::ios::sync_with_stdio(0);
-	cin.tie(0); //cout.tie(0);
-	return 0;
-}();
-
 template<class T>
 struct Gethash{
 	size_t operator ()(const T &x)const{return x;}
@@ -153,4 +146,11 @@ public:
 		return ans%P;
 	}
 };
+
+//IO
+int _IO=[](){
+	std::ios::sync_with_stdio(0);
+	cin.tie(0); //cout.tie(0);
+	return 0;
+}();
 

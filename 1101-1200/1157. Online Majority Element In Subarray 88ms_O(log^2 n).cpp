@@ -1,10 +1,4 @@
-//IO
-int _IO=[](){
-	std::ios::sync_with_stdio(0);
-	cin.tie(0); //cout.tie(0);
-	return 0;
-}();
-
+#define register
 template<class T>
 struct Vector{
 	typedef T* it;typedef it iterator;
@@ -67,7 +61,7 @@ template<> Vector<long long>::Vector(int n){
 	memset(Mem,0,sizeof(long long)*n);
 }
 
-const int N=20005,S=150;
+const int N=20005;
 int n;
 Vector<int> V[N];
 inline int _rand(){static unsigned int x=31253125;x+=(x<<4)+1;x&=0x7fffffff;return x;}  //x+=(x<<4)+(x<<21)+1;
@@ -81,7 +75,7 @@ public:
 	}
 	int query(int left, int right, int threshold) {
 		register int *a=this->a;
-		const int M=8;  //20
+		const int M=8;  //O(log n)
 		for (register int i=0;i<M;++i){
 			register int t=left+_rand()%(right-left+1);
 			Vector<int> &v=V[a[t]];
@@ -91,4 +85,11 @@ public:
 		return -1;
 	}
 };
+
+//IO
+int _IO=[](){
+	std::ios::sync_with_stdio(0);
+	cin.tie(0); //cout.tie(0);
+	return 0;
+}();
 
