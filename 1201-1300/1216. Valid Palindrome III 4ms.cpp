@@ -1,18 +1,3 @@
-#include<stdio.h>
-#include<stdlib.h>
-#include<string.h>
-#include<time.h>
-#include<math.h>
-#include<iostream>
-#include<algorithm>
-#include<map>
-#include<vector>
-//#include<ext/hash_map>
-using namespace std;
-//using namespace __gnu_cxx;
-#if __cplusplus>199711L  //c++11
-#include<unordered_map>
-#endif
 const int N=1005;
 template<int S>
 struct BitSet{
