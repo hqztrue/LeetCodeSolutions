@@ -9,17 +9,17 @@ public:
 		for (int i=0;i<n;++i)ma=max(ma,a[i]>>__builtin_ctz(a[i]));
 		int low=ma,c=__builtin_clz(ma);
 		for (int i=0;i<n;++i){
-			int &t=a[i]; t<<=t&1; 
+			int &t=a[i]; t<<=t&1;
 			if (t>=ma){
 				t>>=c-__builtin_clz(t);
-                t>>=t>ma;
+				t>>=t>ma;
 				b[b1++]=t;
 			}
 			else low=min(low,t);
 			mi=min(mi,t);
 		}
 		int ans=ma-mi,i0=low==mi?32:__builtin_clz(low-mi);
-        b[b1++]=low;
+		b[b1++]=low;
 		for (int i=0;i<b1;++i)if (b[i]<=low){
 			int j=b[i]==mi?32:__builtin_clz(b[i]-mi);
 			vmin[j]=min(vmin[j],b[i]); vmax[j]=max(vmax[j],b[i]);
@@ -39,5 +39,4 @@ int _IO=[](){
 	cin.tie(0); //cout.tie(0);
 	return 0;
 }();
-
 

@@ -21,7 +21,7 @@ namespace Hash{
 class Solution {
 public:
 	int tupleSameProduct(vector<int>& a) {
-		int n=a.size(),ans=0; ++T; 
+		int n=a.size(),ans=0; ++T;
 		for (int *i=&a[0],*end=i+n;i!=end;++i)
 			for (int *j=i+1;j!=end;++j)insert(*i*(*j));
 		for (int *i=&a[0],*end=i+n;i!=end;++i)
@@ -30,5 +30,4 @@ public:
 		return ans*4;
 	}
 };
-
 

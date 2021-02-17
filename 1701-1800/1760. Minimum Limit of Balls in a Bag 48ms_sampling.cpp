@@ -54,11 +54,11 @@ public:
 		}
 		int s1=n; d=l; for (int i=0;i<n;++i)a[i]-=1,s1+=a[i]/d;
 		assert(s1<=t);
-        if (t-s1>delta*2){
-            s1=n; d=l-1; for (int i=0;i<n;++i)s1+=a[i]/d;
-            if (s1>t)return l;
-        }
-        assert(t-s1<=delta*2);
+		if (t-s1>delta*2){
+			s1=n; d=l-1; for (int i=0;i<n;++i)s1+=a[i]/d;
+			if (s1>t)return l;
+		}
+		assert(t-s1<=delta*2);
 		if (s1>t)return d+1;
 		reduce(&a[0],n,t+1-s1);
 		find(&a[0],min(n,t+1-s1),t+1-s1);

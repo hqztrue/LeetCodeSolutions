@@ -79,7 +79,7 @@ int _main=[](){
 		for (int i=cur+1;i<=n;++i)c[i]=c[i>>1]+(i&1);
 		cur=max(cur,n);
 		print(c,n+1);
-	} 
+	}
 	exit(0);
 	return 0;
 }();

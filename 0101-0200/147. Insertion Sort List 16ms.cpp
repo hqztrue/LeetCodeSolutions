@@ -22,7 +22,7 @@ struct List{
 	struct node{
 		node *pre,*next;int key;
 	}a[N],*head;int a1;
-	void clear(){head=a; a1=0; head->pre=head->next=0; head->key=-(1<<30);} 
+	void clear(){head=a; a1=0; head->pre=head->next=0; head->key=-(1<<30);}
 	List(){clear();}
 	void insert(node *x,int key){
 		node *y=a+(++a1);y->key=key;
@@ -73,5 +73,4 @@ public:
 		return head;
 	}
 };
-
 

@@ -392,6 +392,7 @@ struct BitSet{
 		if (res==S+1)res=0;
 		return res;
 	}
+	int _Find_first(){return ffs();}
 	uint to_uint(){
 		correction();
 		return a[0];
@@ -450,9 +451,8 @@ int _main=[](){
 	while (1){
 		if (!read_next('['))break;
 		
-	} 
+	}
 	exit(0);
 	return 0;
 }();
-
 
