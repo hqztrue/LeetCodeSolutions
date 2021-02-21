@@ -1,0 +1,2 @@
+greedily match using kmp. O(n).
+

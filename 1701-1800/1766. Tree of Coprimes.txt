@@ -1,0 +1,2 @@
+dfs, for each number mark the closest ancestor with value being this number. O(nU), or O(nU log w/w) using bit packing.
+Let f[i] be a sorted array containing the levels of all ancestors of the current node with value having i as a factor. Use binary search and inclusion-exclusion to find the first coprime ancestor. O(n*2^{O(log U/log log U)}*log n).

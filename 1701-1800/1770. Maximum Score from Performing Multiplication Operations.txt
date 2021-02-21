@@ -1,0 +1,2 @@
+DP, let f[i][j] denote the optimal solution when the remaining interval is [i..j]. O(m^2).
+

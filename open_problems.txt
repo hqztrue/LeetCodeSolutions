@@ -36,6 +36,7 @@ Problem ID marked with leading ~ indicates there's good evidences that the algor
 1659 Maximize Grid Happiness  
 ~1681 Minimum Incompatibility  
 ~1707 Maximum XOR With an Element From Array  
+1766 Tree of Coprimes  
 
 
 DP/counting:  
@@ -58,5 +59,7 @@ DP/counting:
 1575 Count All Possible Routes  
 1690 Stone Game VII  
 1751 Maximum Number of Events That Can Be Attended II  
+1770 Maximum Score from Performing Multiplication Operations  
+
 
 

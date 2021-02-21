@@ -1,0 +1,2 @@
+It is almost equivalent to the single string case. see 516. Longest Palindromic Subsequence. O(n^2/polylog n).
+

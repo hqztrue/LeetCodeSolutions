@@ -16,6 +16,9 @@ int _IO=[](){
 namespace Read{
 	const int S=1000000;
 	char _str[S],*p=_str;
+	inline void read(char &c){while (*p<'!'||*p>'~')p++; c=*p++;}
+	inline bool read_next(char c){while (*p!=c&&*p)++p; return *p!=0;}
+	inline bool read_next_digit(){while (*p&&(*p<'0'||*p>'9'))++p; return *p!=0;}
 	inline void read(int &x){
 		bool sign=0; x=0; while (*p<'0'||*p>'9')if (*p++=='-')sign=1;
 		while (*p>='0'&&*p<='9')x=x*10+*p++-48;if (sign)x=-x;
@@ -44,6 +47,13 @@ namespace Read{
 			if (sign)a[n++]=-x; else a[n++]=x;
 		}
 	}
+	inline void read_double_arr(double a[],int &n){
+		n=0; while (*p++!='[');
+		while (1){
+			if (*p==']'){++p; return;}
+			double v=0; read(v); a[n++]=v;
+		}
+	}
 	inline void read_char_arr(char a[],int &n){
 		n=0; while (*p++!='[');
 		while (1){
@@ -53,8 +63,23 @@ namespace Read{
 			while (*p>='A'&&*p<='Z'||*p>='a'&&*p<='z')*p++;
 		}
 	}
-	inline bool read_next(char c){while (*p!=c&&*p)++p; return *p!=0;}
-	inline bool read_next_digit(){while (*p&&(*p<'0'||*p>'9'))++p; return *p!=0;}
+	vector<int> read_int_vec(){
+		vector<int> res;
+		read_next('['); ++p;
+		while (*p!=']'){
+			int t; read(t);
+			res.push_back(t);
+		}
+		++p; return res;
+	}
+	vector<vector<int> > read_int_vec2D(){
+		vector<vector<int> > res;
+		read_next('['); ++p;
+		while (*p!=']'){
+			res.emplace_back(read_int_vec());
+		}
+		return res;
+	}
 	void read_init(){fread(p,1,S,stdin);}
 	
 	const int S1=1000000;
@@ -68,7 +93,7 @@ namespace Read{
 		if (c)*o++=c;
 	}
 	inline void print(char c){*o++=c;}
-	inline void print(char *s){while (*s)*o++=*s++;}
+	inline void print(const char *s){while (*s)*o++=*s++;}
 	inline void print(int a[],int n){
 		print('[');
 		for (int i=0;i<n;++i){
