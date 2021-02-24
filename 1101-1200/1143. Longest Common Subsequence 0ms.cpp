@@ -1,3 +1,9 @@
+/***************************************************
+Author: hqztrue
+https://github.com/hqztrue/LeetCodeSolutions
+Complexity: O(n^2/w)
+If you find this solution helpful, plz give a star:)
+***************************************************/
 const int N=1005;
 template<int S>
 struct BitSet{
@@ -189,19 +195,16 @@ unordered_map<int,vector<int> > S;
 unordered_map<int,BitSet<N> > match;
 class Solution {
 public:
-	int longestPalindromeSubseq(string s) {
-		int n=s.size(),m=n;
+	int longestCommonSubsequence(const string &s, const string &t) {
+		int n=s.size(),m=t.size();
 		S.clear();match.clear();row[1].reset();
-		for (int i=0;i<n;++i)a[i]=int(s[i]),S[a[i]].push_back(i);
-		for (int i=0;i<m;++i)b[i]=int(s[n-1-i]);
-		for (int i=0;i<m;++i)if (match.find(b[i])==match.end()){
-			unordered_map<int,BitSet<N> >::iterator x=match.insert(make_pair(b[i],BitSet<N>())).first;
-			for (vector<int>::iterator j=S[b[i]].begin();j!=S[b[i]].end();++j)x->second.set(*j,1);
+		for (int i=0;i<n;++i)S[s[i]].push_back(i);
+		for (int i=0;i<m;++i)if (match.find(t[i])==match.end()){
+			unordered_map<int,BitSet<N> >::iterator x=match.insert(make_pair(t[i],BitSet<N>())).first;
+			for (vector<int>::iterator j=S[t[i]].begin();j!=S[t[i]].end();++j)x->second.set(*j,1);
 		}
-		for (int i=0,now=0;i<m;++i,now^=1){
-			X=(row[now^1]|match[b[i]]).set(n,1);
-			row[now]=(X&((X-(row[now^1]<<1).set(0,1))^X)).set(n,0);
-		}
+		for (int i=0,now=0;i<m;++i,now^=1)
+			X=(row[now^1]|match[t[i]]).set(n,1),row[now]=(X&((X-(row[now^1]<<1).set(0,1))^X)).set(n,0);
 		return row[(m-1)&1].count();
 	}
 };

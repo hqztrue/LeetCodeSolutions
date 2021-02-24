@@ -1,3 +1,5 @@
 This is hdu 5340 Three Palindromes. http://bestcoder.hdu.edu.cn/contests/contest_showproblem.php?cid=611&pid=1002
-O(n) using palindromic tree.
+1. O(kn)=O(n) \cite{kosolobov2015pal}, where k=3.
+2. O(n) \cite{rubinchik2020palindromic}.
+3. use palindromic tree \cite{rubinchik2018eertree}, O(n log |Σ|) or O(n) by hashing.
 
