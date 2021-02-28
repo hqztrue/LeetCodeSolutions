@@ -1,0 +1,2 @@
+This problem is a variant of subset sum, and is NPC.
+

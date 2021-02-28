@@ -16,8 +16,8 @@ struct BitSet{
 		if (y)a[X]|=1ull<<Y;else a[X]&=~(1ull<<Y);
 		return *this;
 	}
-	int find(int x){int X=x>>W,Y=x&mask;return (a[X]>>Y)&1ull;}
-	int operator [](int x){return find(x);}
+	int find(int x)const{int X=x>>W,Y=x&mask;return (a[X]>>Y)&1ull;}
+	int operator [](int x)const{return find(x);}
 	BitSet& operator =(const BitSet &y){
 		memcpy(a,y.a,sizeof(uint)*size);
 		return *this;
@@ -102,7 +102,7 @@ struct BitSet{
 		uint t=0,*p=a,*end=a+size; const uint *q=y.a;
 		while (p!=end){
 			uint p1=*p; *p=p1+*q+t;
-			t=(*p<p1)||(p1+t<t);
+			t=(*p<p1)||(*q+t<t);
 			++p; ++q;
 		}
 		return *this;
@@ -111,12 +111,12 @@ struct BitSet{
 		uint t=0,*p=a,*end=a+size; const uint *q=y.a;
 		while (p!=end){
 			uint p1=*p; *p=p1-*q-t;
-			t=(*p>p1)||(p1+t<t);
+			t=(*p>p1)||(*q+t<t);
 			++p; ++q;
 		}
 		return *this;
 	}
-	operator bool(){return count()>0;}
+	operator bool()const{return count()>0;}
 	BitSet<S>& flip(){
 		//for (uint *start=a,*end=a+size;start!=end;*start=~*start,++start);
 		uint *p0=a,*p1=p0+1,*p2=p0+2,*p3=p0+3,*pend=a+((size>>2)<<2);
@@ -131,12 +131,12 @@ struct BitSet{
 	}
 	//void flip(){*this=~*this;}
 	void flip(int x){a[x>>W]^=1ull<<(x&mask);}
-	int popcount(uint x)const{
+	/*inline friend int popcount(uint x){
 		x-=(x&0xaaaaaaaaaaaaaaaaull)>>1;
 		x=((x&0xccccccccccccccccull)>>2)+(x&0x3333333333333333ull);
 		x=((x>>4)+x)&0x0f0f0f0f0f0f0f0full;
 		return (x*0x0101010101010101ull)>>56;
-	}
+	}*/
 	int count(){
 		int res=0;
 		correction();
@@ -173,7 +173,7 @@ struct BitSet{
 		correction();
 		return a[0];
 	}
-	void print(){
+	void print()const{
 		for (int i=0;i<size;++i)
 			for (int j=0;j<=mask&&(i<<W)+j+1<=S;++j)printf("%I64d",(a[i]>>j)&1ull);
 		printf("\n");

@@ -1,0 +1,2 @@
+Only a single point in a connected component can left. (Imagine arbitrarily find a spanning tree and delete from the leaves.) O(n).
+

@@ -52,6 +52,7 @@ DP/counting:
 1039 Minimum Score Triangulation of Polygon  
 1043 Partition Array for Maximum Sum  
 1269 Number of Ways to Stay in the Same Place After Some Steps  
+1278 Palindrome Partitioning III  
 1397 Find All Good Strings  
 1444 Number of Ways of Cutting a Pizza  
 1467 Probability of a Two Boxes Having The Same Number of Distinct Balls  

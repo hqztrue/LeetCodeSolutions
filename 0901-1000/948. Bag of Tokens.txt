@@ -1,0 +1,2 @@
+Buy the cheapest ones and sell the most expensive ones. Use median finding, O(n).
+

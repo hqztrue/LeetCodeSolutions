@@ -1,0 +1,2 @@
+Each part should have the same number of 1's. O(n).
+
