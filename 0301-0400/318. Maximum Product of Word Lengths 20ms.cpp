@@ -115,7 +115,7 @@ struct BitSet{
 		register uint t=0,*p=a,*end=a+size; const register uint *q=y.a;
 		while (p!=end){
 			register uint p1=*p; *p=p1+*q+t;
-			t=(*p<p1)||(p1+t<t);
+			t=(*p<p1)||(*q+t<t);
 			++p; ++q;
 		}
 		return *this;
@@ -124,7 +124,7 @@ struct BitSet{
 		register uint t=0,*p=a,*end=a+size; const register uint *q=y.a;
 		while (p!=end){
 			register uint p1=*p; *p=p1-*q-t;
-			t=(*p>p1)||(p1+t<t);
+			t=(*p>p1)||(*q+t<t);
 			++p; ++q;
 		}
 		return *this;
