@@ -1,4 +1,4 @@
-static const int N=405,L=5005,CH=26;  //160005
+const int N=405,L=5005,CH=26;  //160005
 struct node{
 	node *son[CH];int sum;
 };

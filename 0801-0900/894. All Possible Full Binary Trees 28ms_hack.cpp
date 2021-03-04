@@ -9,9 +9,9 @@
  *	   TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
  * };
  */
-const int N=50005,M=25;
+const int N=50005;
 TreeNode a[N]; int a1,n;
-TreeNode *newnode(TreeNode *l=nullptr,TreeNode *r=nullptr){a[a1].left=l; a[a1].right=r; return a+(a1++);}
+inline TreeNode *newnode(TreeNode *l=nullptr,TreeNode *r=nullptr){a[a1].left=l; a[a1].right=r; return a+(a1++);}
 vector<TreeNode*> dfs(int n) {
 	vector<TreeNode*> ans;
 	if (n<1||n%2==0)return ans;
@@ -62,6 +62,7 @@ public:
 struct Serializer{
 	string serialize(const vector<TreeNode*> &v){return "";}
 }ser;
-#define _ser_ ser
+#define _ser_ ser  //LC-US
+#define __Serializer__ Serializer  //LC-CN
 #define endl serialize(dfs(n))
 

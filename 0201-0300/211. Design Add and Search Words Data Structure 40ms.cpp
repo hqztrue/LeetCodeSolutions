@@ -1,4 +1,4 @@
-static const int L=150005,N=505,CH=26;
+const int L=150005,N=505,CH=26;
 struct node{
 	node *son[CH];
 	node *clear(){memset(son,0,sizeof(son));return this;}
