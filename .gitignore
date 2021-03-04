@@ -16,7 +16,7 @@
 *.synctex.gz
 materials
 others
-tmp
+/tmp
 template*
 !template.cpp
 cite_test*
