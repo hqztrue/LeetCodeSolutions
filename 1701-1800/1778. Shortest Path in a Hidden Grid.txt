@@ -1,0 +1,2 @@
+first use dfs to find the map, then bfs. O(nm).
+

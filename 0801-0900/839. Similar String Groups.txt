@@ -1,0 +1,3 @@
+Let n denote the number of strings.
+1. Enumerate each pair of strings, and use LCP to detect whether they are similar in O(1) time. O(n^2+L).
+

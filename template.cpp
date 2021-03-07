@@ -108,6 +108,31 @@ namespace Read{
 }
 using namespace Read;
 
+//fast hash
+namespace Hash{
+	typedef unsigned int uint;
+	const uint S=24,S1=32-S,M=1996090921,_inf=~0u>>1;
+	struct node{
+		int x,y,t;
+	}h[(1<<S)+1005];
+	int T=1;
+	inline void insert(int x,int y){
+		node *p=h+((uint)x*M>>S1);
+		for (;p->t==T;++p)
+			if (p->x==x){p->y=y; return;}
+		p->t=T; p->x=x; p->y=y;
+	}
+	inline int* find(int x){
+		for (node *p=h+((uint)x*M>>S1);p->t==T;++p)
+			if (p->x==x)return &p->y;
+		return 0;
+	}
+	inline void erase(int x){
+		for (node *p=h+((uint)x*M>>S1);p->t==T;++p)
+			if (p->x==x){p->x=_inf; return;}
+	}
+} using namespace Hash;
+
 //hash
 template<class T>
 struct Gethash{
@@ -164,23 +189,29 @@ struct Hash{
 	};
 	iterator begin(){return iterator(0,v[0],this);}
 	iterator end(){return iterator(P,0,this);}
-	//void operator =(const Hash &y){}
+	void operator =(const Hash<Tkey,Tvalue,_Hash> &y){
+		free(); len=y.len; P=y.P; max_size=y.max_size;
+		key=new node[max_size+1]; memcpy(key,y.key,sizeof(node)*(len+1));
+		ptrdiff_t d=key-y.key;
+		for (int i=0;i<=len;++i)if (key[i].next)key[i].next+=d;
+		v=new node*[P]; for (int i=0;i<P;++i)v[i]=y.v[i]?y.v[i]+d:y.v[i];
+	}
 	void Grow(){
-		static double rate=1.7;Hash<Tkey,Tvalue,_Hash> res(max_size*2,size_t(rate*max_size*2));
+		static double rate=1.7; Hash<Tkey,Tvalue,_Hash> res(max_size*2,size_t(rate*max_size*2));
 		for (size_t i=0;i<P;++i)
 			for (node *j=v[i];j;j=j->next)res.insert(j->first,j->second);
-		free();*this=res;
+		free(); memcpy(this,&res,sizeof(Hash<Tkey,Tvalue,_Hash>));
 	}
 	void build(size_t L,size_t p){
 		P=p;len=0;max_size=L;++L;key=new node[L];
-		v=new node*[p];memset(v,0,sizeof(node*)*p);
+		v=new node*[P];memset(v,0,sizeof(node*)*P);
 	}
 	Hash(size_t len=3,size_t p=5){build(len,p);}
 	void clear(){len=0;memset(v,0,sizeof(node*)*P);}
 	//void clear(){free();build(3,5);}
 	Tvalue& insert(const Tkey &x,const Tvalue &y=Tvalue()){
 		//if (&find_(x)){Tvalue *null=NULL;return *null;}
-		if (len==max_size)Grow();size_t x1=gethash(x)%P;
+		if (len==max_size)Grow(); size_t x1=gethash(x)%P;
 		key[++len]=node(x,y,v[x1]);v[x1]=key+len;
 		return key[len].second;
 	}
@@ -192,10 +223,13 @@ struct Hash{
 		key[++len]=node(x,y,v[x1]);v[x1]=key+len;
 	}
 	Tvalue& insert(const pair<Tkey,Tvalue> &p){return insert(p.first,p.second);}
-	void erase(const Tkey &x){
+	int erase(const Tkey &x){
 		size_t x1=gethash(x)%P;
-		for (node *i=v[x1],*pre=0;i;pre=i,i=i->next)if (i->first==x)
+		for (node *i=v[x1],*pre=0;i;pre=i,i=i->next)if (i->first==x){
 			if (!pre)v[x1]=i->next;else pre->next=i->next;
+			return 1;
+		}
+		return 0;
 	}
 	void erase(iterator x){
 		if (x.j==v[x.i])v[x.i]=x->next;
@@ -220,33 +254,12 @@ struct Hash{
 	size_t size(){return len;}
 	size_t count(const Tkey &x){return find_(x)?1:0;}
 	void free(){delete[] key;delete[] v;}
-	~Hash(){}
+	~Hash(){}  //free();
 	/*void print(){
 		for (size_t i=0;i<P;++i)
 			for (node *j=v[i];j;j=j->next)printf("H[%d]=%d\n",j->first,j->second);
 	}*/
 };
-
-//fast hash
-namespace Hash{
-	typedef unsigned int uint;
-	const uint S=24,S1=32-S,M=1996090921;
-	struct node{
-		int x,y,t;
-	}h[(1<<S)+1005];
-	int T=1;
-	inline void insert(int x,int y){
-		node *p=h+((uint)x*M>>S1);
-		for (;p->t==T;++p)
-			if (p->x==x){p->y=y; return;}
-		p->t=T; p->x=x; p->y=y;
-	}
-	inline int* find(int x){
-		for (node *p=h+((uint)x*M>>S1);p->t==T;++p)
-			if (p->x==x)return &p->y;
-		return 0;
-	}
-} using namespace Hash;
 
 template<int S>
 struct BitSet{

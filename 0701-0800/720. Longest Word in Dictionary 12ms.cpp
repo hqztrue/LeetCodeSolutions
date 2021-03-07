@@ -1,7 +1,7 @@
 const int N=1005,L=30,CH=26,mul=131;
 namespace Hash{
 	typedef unsigned int uint;
-	const uint S=10,S1=32-S,M=1996090921;
+	const uint S=12,S1=32-S,M=1996090921;
 	struct node{
 		int x,t;
 	}h[(1<<S)+1005];
@@ -43,6 +43,7 @@ public:
 				}
 			}
 			if (i%4==0)m*=mul;
+			if (ans->size()<i)break;
 		}
 		return *ans;
 	}

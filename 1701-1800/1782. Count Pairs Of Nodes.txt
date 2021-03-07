@@ -1,0 +1,2 @@
+Sort the queries in O(m+q) time using radix sort. For each edge, compute cnt in O(1) time. Then we only need to consider pairs of vertices that are not adjacent. We can either use FFT (independent from the number of queries), or use 2SUM for each query in O(n) time. O(min{m log m,qn}+n+m+q).
+

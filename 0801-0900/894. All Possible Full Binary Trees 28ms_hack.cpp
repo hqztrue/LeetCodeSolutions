@@ -60,7 +60,7 @@ public:
 };
 
 struct Serializer{
-	string serialize(const vector<TreeNode*> &v){return "";}
+	static string serialize(const vector<TreeNode*> &v){return "";}
 }ser;
 #define _ser_ ser  //LC-US
 #define __Serializer__ Serializer  //LC-CN

@@ -1,0 +1,2 @@
+First use undirected weighted SSSP to compute distanceToLastNode(*) in O(n+m) time \cite{thorup1999undirected}, then DP on a DAG. O(n+m).
+
