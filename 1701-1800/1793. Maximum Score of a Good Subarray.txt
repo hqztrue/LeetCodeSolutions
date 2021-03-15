@@ -1,0 +1,3 @@
+1. sorting, inserting the numbers in increasing order, and use union find. O(sort(n)+nα(n)).
+2. monotone queue/greedily expand towards left or right. O(n).
+

@@ -1,0 +1,3 @@
+1. dfs, O(n).
+2. hashing, O(n). (works even if the node values are not unique)
+

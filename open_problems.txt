@@ -62,6 +62,6 @@ DP/counting:
 1690 Stone Game VII  
 1751 Maximum Number of Events That Can Be Attended II  
 1770 Maximum Score from Performing Multiplication Operations  
-
+1787 Make the XOR of All Segments Equal to Zero  
 
 

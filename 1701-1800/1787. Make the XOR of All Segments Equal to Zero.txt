@@ -1,0 +1,2 @@
+We must have a[i+k]=a[i] for all i. Let bin i contain all indices j that satisfies j=i (mod k), count the frequency inside each bin, and compute (max,^)-convolution using DP. O(k*n/k*U)=O(nU).
+

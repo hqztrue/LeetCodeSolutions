@@ -1,0 +1,3 @@
+This is NPC.
+subset sum. DP/meet in the middle.
+
