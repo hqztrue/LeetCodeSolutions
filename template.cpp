@@ -115,7 +115,7 @@ namespace Hash{
 	#define H(x) ((uint)x*M>>S1)
 	struct node{
 		int x,y,t;
-	}h[(1<<S)+1005];
+	}h[(1<<S)+105];
 	int T=1;
 	inline void insert(int x,int y){
 		node *p=h+H(x);

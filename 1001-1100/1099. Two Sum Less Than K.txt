@@ -1,2 +1,3 @@
-reduce to sorting. see 001. Two Sum.
+1. reduce to sorting. see 001. Two Sum. O(sort(n)).
+2. we can solve the decision problem in O(n) time, then apply a randomized optimization technique \cite{chan1999geometric}. expected O(n). see my article \url{https://leetcode-cn.com/problems/max-sum-of-rectangle-no-larger-than-k/solution/onm2-c-16ms-beats-100-by-hqztrue-wlyz/}.
 

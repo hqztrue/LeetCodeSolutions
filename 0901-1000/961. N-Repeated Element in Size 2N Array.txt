@@ -1,0 +1,2 @@
+expected O(1) after reading the input, using sampling.
+

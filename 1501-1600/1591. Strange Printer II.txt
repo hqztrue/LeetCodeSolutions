@@ -1,0 +1,2 @@
+Let c denote the total number of colors. If there's a colored j point inside the bounding box of color i, then i must be painted before j. Use 2D orthogonal ranged emptiness to check each pair of colors, and use topological sort in O(c^2) time. O~(nm+c^2).
+

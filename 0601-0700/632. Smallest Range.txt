@@ -1,1 +1,0 @@
-can reduce to 23. Merge k Sorted Lists. after merging the lists, use sliding window by double pointers in O(n) time.

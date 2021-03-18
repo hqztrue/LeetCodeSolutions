@@ -1,6 +1,0 @@
-wlog assume n<=m.
-enumerate the top edge and the bottom edge in O(n^2). then we need to solve an 1D problem, by prefix sum and sorting in O(sort(m)). the total running time is O(n^2*sort(m)).
-
-lower bound: the finding maximum sum rectangle problem can be reduced to this problem, so it is hard to solve this in O(n^{3-eps}).
-https://en.wikipedia.org/wiki/Maximum_subarray_problem
-

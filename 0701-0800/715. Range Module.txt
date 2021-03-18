@@ -1,2 +1,0 @@
-reduce to predecessor search. for addRange, merge intervals by enumerating them, an amortized analysis shows there are only O(n) pred searches. O(n*pred(n)).
-

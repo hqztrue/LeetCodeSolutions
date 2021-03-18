@@ -1,1 +1,3 @@
-dfs.
+dfs/set-based DP. O~(2^n).
+This is a special case of computing the permanent (counting the number of perfect bipartite matchings), so it's in #P.
+

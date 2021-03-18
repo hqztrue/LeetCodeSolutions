@@ -13,6 +13,7 @@
 *.bat
 *.htm
 *.html
+*.in
 *.synctex.gz
 materials
 others

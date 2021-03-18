@@ -1,2 +1,0 @@
-By the law of diminishing returns, greedily assign the brilliant students to the class with the current smallest pass ratio. O(n) using median selection.
-
