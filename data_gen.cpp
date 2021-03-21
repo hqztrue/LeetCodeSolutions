@@ -19,22 +19,17 @@ namespace data_gen{
 		return res;
 	}
 	template<class T>
-	void print(const T &a){
-		cout<<a;
+	void print(const T &a){cout<<a;}
+	template<> void print<string>(const string &s){
+		printf("\"%s\"",s.c_str());
 	}
-	template<> void print<vector<int>>(const vector<int> &v){
-		printf("[");
-		for (int i=0;i<v.size();++i)printf("%d%c",v[i],i+1==v.size()?']':',');
-	}
-	template<> void print<vector<vector<int>>>(const vector<vector<int>> &v){
+	template<class T>
+	void print(const vector<T> &v){
 		printf("[");
 		for (int i=0;i<v.size();++i){
 			print(v[i]);
 			printf("%c",i+1==v.size()?']':',');
 		}
-	}
-	template<> void print<string>(const string &s){
-		printf("\"%s\"",s.c_str());
 	}
 	template<class T>
 	void println(const T &a){

@@ -1,0 +1,2 @@
+We only need to check substrings with length 1. O(n).
+

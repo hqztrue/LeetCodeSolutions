@@ -1,0 +1,3 @@
+1. O(log n).
+2. repeatedly choose a random number A. O(n^c) for some constant c. (c=1-log_10 8≈0.097. dependency issues: pick the lower bits first, so that the lower bits of B=n-A doesn't depend on the higher bits of A.)
+

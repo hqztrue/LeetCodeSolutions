@@ -38,6 +38,8 @@ Problem ID marked with leading ~ indicates there's good evidences that the algor
 ~1681 Minimum Incompatibility  
 ~1707 Maximum XOR With an Element From Array  
 1766 Tree of Coprimes  
+1799 Maximize Score After N Operations  
+
 
 
 DP/counting:  

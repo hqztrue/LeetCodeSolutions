@@ -1,2 +1,2 @@
-the output complexity may be exponentially large. if we only want the length of the sequence, see 127. Word Ladder.
+the output complexity may be exponentially large. if we only want the length of the sequence, see 127. Word Ladder. O(output+L).
 
