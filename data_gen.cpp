@@ -41,9 +41,10 @@ int main()
 	freopen("1.in","w",stdout);
 	srand(time(0));
 	int n=50,m=50,U=10000;
-	//println(rand_vec(n,U));
-	println(rand_vec2D(n,m,U));
-	println(-Rand()%U);
+	vector<int> a;
+	println(rand_vec(n,U));
+	//println(rand_vec2D(n,m,U));
+	println(Rand()%U);
 	//system("pause");for (;;);
 	return 0;
 }
