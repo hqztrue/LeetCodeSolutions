@@ -1,0 +1,2 @@
+After evaluating * and /, each value is a power of x. greedy. O(log n).
+

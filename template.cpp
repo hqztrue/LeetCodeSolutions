@@ -493,6 +493,9 @@ void radix_sort(int A[],int l,int r){  //a[i]>=0
 	if (a!=A)for (int i=1;i<=r;++i)A[i]=a[i];
 }
 
+__attribute__((no_sanitize_address,no_sanitize_memory))
+__attribute__((target("avx,avx512bw")))
+
 //main
 int _main=[](){
 	//FILE *fout=fopen("./user.out","w");

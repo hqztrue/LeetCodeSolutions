@@ -1,0 +1,4 @@
+1. simulation. O(n^2) (the cycle length <=n).
+2. find the cycle lengths and take the lcm. O(n).
+3. index i will transform to 2*i mod (n-1), so we can use Fermat's little theorem and compute phi(n-1) by factorization. O(factor(n)).
+
