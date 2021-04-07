@@ -1,0 +1,2 @@
+dfs, for each node record the min&max value in its subtree. O(n).
+

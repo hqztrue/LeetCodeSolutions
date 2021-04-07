@@ -1,0 +1,2 @@
+reduce to shortest path in unweighted directed graphs. use bfs. O(n+m).
+

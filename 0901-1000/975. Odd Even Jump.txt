@@ -1,0 +1,2 @@
+Sorting + monotone queue. O(n).
+

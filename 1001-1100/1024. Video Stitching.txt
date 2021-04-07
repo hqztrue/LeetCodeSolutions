@@ -1,0 +1,2 @@
+This is the interval set cover problem. greedy after sorting. O(sort(n)).
+

@@ -1,0 +1,3 @@
+max: O(n).
+min: find the sliding window with length n that contains the most number of points. We can divide into bins with size n and use radix sort. O(sort(n))=O(n).
+

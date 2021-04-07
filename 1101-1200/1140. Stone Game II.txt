@@ -1,0 +1,2 @@
+DP, let f[i][j][0..1] denote the optimal solution when player 0/1 takes i stones and M=j. O(1) transition using RMQ. O(n^2).
+

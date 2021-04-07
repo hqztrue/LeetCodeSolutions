@@ -1,0 +1,2 @@
+greedily match prefix and suffix. O(n).
+

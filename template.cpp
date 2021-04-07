@@ -151,6 +151,7 @@ struct Gethash{
 template<> size_t Gethash<int>::operator ()(const int &x)const{return x;}
 template<> size_t Gethash<long long>::operator ()(const long long &x)const{return x^(x>>32);}
 template<> size_t Gethash<float>::operator ()(const float &x)const{static Gethash<int> h; return h(*((int*)&x));}  //assert(sizeof(float)==sizeof(int));
+//template<> size_t Gethash<double>::operator ()(const double &x)const{long long t=*((long long*)&x); return (t>>32)^(t>>17);}
 template<> size_t Gethash<double>::operator ()(const double &x)const{static Gethash<long long> h; return h(*((long long*)&x));}
 template<> size_t Gethash<char*>::operator ()(char *const &_str)const{
 	const size_t seed=131;size_t hash=0;char *str=_str;

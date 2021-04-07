@@ -1,0 +1,4 @@
+This is NP-hard, because we can reduce the k-partition problem to it.
+Let k=batchSize and n=groups.length.
+Greedily use the single groups with size being a multiple of k, and greedily use two groups with total size being a multiple of k, then perform DP on the remaining groups. O^*(C(n+k/2,k/2))=O(2n/k)^{k/2}.
+
