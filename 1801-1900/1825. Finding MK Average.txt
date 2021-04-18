@@ -1,0 +1,3 @@
+priority queue. O(sort(n)).
+lower bound: Omega(sort(n)), because we can reduce sorting to this problem.
+

@@ -28,8 +28,9 @@ namespace data_gen{
 		printf("[");
 		for (int i=0;i<v.size();++i){
 			print(v[i]);
-			printf("%c",i+1==v.size()?']':',');
+			printf("%s",i+1==v.size()?"":",");
 		}
+		printf("]");
 	}
 	template<class T>
 	void println(const T &a){

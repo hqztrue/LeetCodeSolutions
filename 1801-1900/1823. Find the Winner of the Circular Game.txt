@@ -1,0 +1,3 @@
+This is the Josephus problem. O(n) or O(k log n).
+https://en.wikipedia.org/wiki/Josephus_problem
+
