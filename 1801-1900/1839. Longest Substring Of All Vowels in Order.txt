@@ -1,2 +1,2 @@
-DP, LIS. O(n).
+scan from left to right, simulation. O(n).
 
