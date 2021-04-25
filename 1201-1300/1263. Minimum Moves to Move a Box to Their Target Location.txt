@@ -1,0 +1,2 @@
+bfs. Only the number of pushes counts, so we can wlog assume the person is always adjacent to the box. Find strongly connected components using Tarjan's algorithm. O(nm).
+

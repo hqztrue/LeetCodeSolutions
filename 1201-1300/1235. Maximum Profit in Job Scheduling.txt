@@ -1,0 +1,2 @@
+DP, discretize the endpoints by sorting. O(sort(n)).
+

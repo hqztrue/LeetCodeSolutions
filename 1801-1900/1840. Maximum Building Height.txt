@@ -1,0 +1,2 @@
+After sorting, scan from left to right and maintain the restrictions. Similarly scan from right to left. O(sort(n)).
+

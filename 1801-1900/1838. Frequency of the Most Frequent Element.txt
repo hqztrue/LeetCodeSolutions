@@ -1,0 +1,2 @@
+sorting+sliding window. we can use radix sort, because two numbers differ by >k cannot affect each other. O(n+k) or O(sort(n)).
+

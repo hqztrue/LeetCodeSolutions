@@ -8,7 +8,7 @@ struct radix_heap{
 	vector<pair<uint,int> > c[W+1];
 	int d[N],n; uint last;
 	radix_heap():last(0){}
-	int getbit(uint x){return x?32-__builtin_clz(x):0;} 
+	int getbit(uint x){return x?32-__builtin_clz(x):0;}
 	void push(uint k,int v){c[getbit(k^last)].emplace_back(k,v);}
 	pair<uint,int> pop(){
 		if (c[0].empty()){
