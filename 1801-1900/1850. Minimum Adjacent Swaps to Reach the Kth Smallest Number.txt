@@ -1,0 +1,2 @@
+We can find the k-th next permutation in O(n) time (for constant |Σ|). greedily match the characters from left to right in O(n|Σ|^2) time (the pointers for each character are monotone increasing). O(n).
+

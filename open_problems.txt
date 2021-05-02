@@ -40,7 +40,7 @@ Problem ID marked with leading ~ indicates there's good evidences that the algor
 1766 Tree of Coprimes  
 1799 Maximize Score After N Operations  
 1819 Number of Different Subsequences GCDs  
-
+~1849 Splitting a String Into Descending Consecutive Values  
 
 
 

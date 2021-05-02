@@ -1,2 +1,0 @@
-use heap to maintain the first non-empty and the first non-full stacks. O(sort(n)).
-

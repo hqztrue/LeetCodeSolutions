@@ -1,0 +1,2 @@
+offline, sort the intervals according to size in increasing order, then use union-find (wlog assume U=O(n) after sorting). O(sort(n)).
+

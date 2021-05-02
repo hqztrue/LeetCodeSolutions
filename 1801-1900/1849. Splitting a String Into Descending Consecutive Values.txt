@@ -1,0 +1,2 @@
+Enumerate the ending position of the first number, then we can repeatedly find the ending position of the next number in O(1) time (after removing leading zeros, the ending position is fixed, and we can verify the difference using hashing). O(\sum_i n/i)=O(n log n).
+
