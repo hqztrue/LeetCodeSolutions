@@ -588,7 +588,7 @@ namespace wTrie{
 } using namespace wTrie;
 
 __attribute__((no_sanitize_address,no_sanitize_memory))
-__attribute__((target("avx,avx512bw")))
+__attribute__((target("avx,avx2,avx512bw")))
 
 //main
 int _main=[](){
