@@ -27,6 +27,7 @@ Problem ID marked with leading ~ indicates there's good evidences that the algor
 ~1334 Find the City With the Smallest Number of Neighbors at a Threshold Distance  
 ~1335 Minimum Difficulty of a Job Schedule  
 1439 Find the Kth Smallest Sum of a Matrix With Sorted Rows  
+1452 People Whose List of Favorite Companies Is Not a Subset of Another List  
 1510 Stone Game IV  
 1538 Guess the Majority in a Hidden Array  
 1542 Find Longest Awesome Substring  
@@ -41,6 +42,8 @@ Problem ID marked with leading ~ indicates there's good evidences that the algor
 1799 Maximize Score After N Operations  
 1819 Number of Different Subsequences GCDs  
 ~1849 Splitting a String Into Descending Consecutive Values  
+1857 Largest Color Value in a Directed Graph  
+
 
 
 
@@ -59,6 +62,7 @@ DP/counting:
 1269 Number of Ways to Stay in the Same Place After Some Steps  
 1278 Palindrome Partitioning III  
 1397 Find All Good Strings  
+1420 Build Array Where You Can Find The Maximum Exactly K Comparisons  
 1444 Number of Ways of Cutting a Pizza  
 1467 Probability of a Two Boxes Having The Same Number of Distinct Balls  
 1563 Stone Game V  

@@ -1,0 +1,2 @@
+There are O(log n) groups. For each group, we can compute its size using DP. O(log^2 n).
+

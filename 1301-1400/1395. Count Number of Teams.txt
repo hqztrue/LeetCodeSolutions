@@ -1,0 +1,2 @@
+For each j count the number of i's and k's. offline, use 2D orthogonal range counting. O(n*sqrt{\log n}) \cite{chan2010counting}.
+

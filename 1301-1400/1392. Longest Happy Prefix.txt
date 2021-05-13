@@ -1,0 +1,2 @@
+hashing/kmp. O(n).
+

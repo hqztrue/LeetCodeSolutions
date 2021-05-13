@@ -1,3 +1,0 @@
-We only need to consider the top m most frequent integers. Let f[i][j] denote whether the first i most frequent integers can satisfy customer set j. O(n+3^m*m).
-2. Let f[i][j] denote the maximum number of copies of integer i remaining after using the first i most frequent integers to satisfy customer set j. O(n+2^m*m^2).
-

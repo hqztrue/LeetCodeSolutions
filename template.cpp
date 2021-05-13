@@ -494,6 +494,99 @@ void radix_sort(int A[],int l,int r){  //a[i]>=0
 	if (a!=A)for (int i=1;i<=r;++i)A[i]=a[i];
 }
 
+namespace wTrie{
+	typedef unsigned int uint;
+	const int N=1<<20,W=32;  //[0,2^20)
+	uint a1[N/W+5],a2[N/W/W+5],a3[N/W/W/W+5],a4;
+	#define max_bit(x) 31-__builtin_clz(x)
+	#define min_bit(x) __builtin_ctz(x)
+	#define get_bit(x) (1u<<((x)&31u))
+	#define get_bit1(x) (1u<<(x))
+	void init(int n=N){
+		memset(a1,0,sizeof(uint)*(n/W+1));
+		memset(a2,0,sizeof(uint)*(n/W/W+1));
+		memset(a3,0,sizeof(uint)*(n/W/W/W+1));
+		a4=0;
+	}
+	inline bool find(uint x){
+		return (a1[x>>5]>>(x&31))&1;
+	}
+	inline void add(uint x){
+		a1[x>>5]|=get_bit(x);
+		a2[x>>10]|=get_bit(x>>5);
+		a3[x>>15]|=get_bit(x>>10);
+		a4|=get_bit1(x>>15);
+	}
+	inline void del(uint x){
+		if (a1[x>>5]&get_bit(x))
+			if (!(a1[x>>5]-=get_bit(x)))
+				if (!(a2[x>>10]-=get_bit(x>>5)))
+					if (!(a3[x>>15]-=get_bit(x>>10)))
+						a4-=get_bit1(x>>15);
+	}
+	inline int get_min(){
+		if (!a4)return -1;
+		uint x=min_bit(a4);
+		x=(x<<5)+min_bit(a3[x]);
+		x=(x<<5)+min_bit(a2[x]);
+		return (x<<5)+min_bit(a1[x]);
+	}
+	inline int get_max(){
+		if (!a4)return -1;
+		uint x=max_bit(a4);
+		x=(x<<5)+max_bit(a3[x]);
+		x=(x<<5)+max_bit(a2[x]);
+		return (x<<5)+max_bit(a1[x]);
+	}
+	inline int pred(uint x){
+		#define P(x) ((x)&0xFFFFFFFE0u)
+		#define pred_bit(x,y) ((x)&get_bit(y)-1)
+		if (pred_bit(a1[x>>5],x))return P(x)+max_bit(pred_bit(a1[x>>5],x));
+		x>>=5;
+		if (pred_bit(a2[x>>5],x)){
+			x=P(x)+max_bit(pred_bit(a2[x>>5],x));
+			return (x<<5)+max_bit(a1[x]);
+		}
+		x>>=5;
+		if (pred_bit(a3[x>>5],x)){
+			x=P(x)+max_bit(pred_bit(a3[x>>5],x));
+			x=(x<<5)+max_bit(a2[x]);
+			return (x<<5)+max_bit(a1[x]);
+		}
+		x>>=5;
+		if (pred_bit(a4,x)){
+			x=max_bit(pred_bit(a4,x));
+			x=(x<<5)+max_bit(a3[x]);
+			x=(x<<5)+max_bit(a2[x]);
+			return (x<<5)+max_bit(a1[x]);
+		}
+		return -1;
+	}
+	inline int succ(uint x){
+		#define succ_bit(x,y) ((x)>>((y)&31))
+		if (succ_bit(a1[x>>5],x)>1)return x+1+min_bit(succ_bit(a1[x>>5],x+1));
+		x>>=5;
+		if (succ_bit(a2[x>>5],x)>1){
+			x=x+1+min_bit(succ_bit(a2[x>>5],x+1));
+			return (x<<5)+min_bit(a1[x]);
+		}
+		x>>=5;
+		if (succ_bit(a3[x>>5],x)>1){
+			x=x+1+min_bit(succ_bit(a3[x>>5],x+1));
+			x=(x<<5)+min_bit(a2[x]);
+			return (x<<5)+min_bit(a1[x]);
+		}
+		x>>=5;
+		if (succ_bit(a4,x)>1){
+			x=x+1+min_bit(succ_bit(a4,x+1));
+			x=(x<<5)+min_bit(a3[x]);
+			x=(x<<5)+min_bit(a2[x]);
+			return (x<<5)+min_bit(a1[x]);
+		}
+		return -1;
+	}
+} using namespace wTrie;
+
 __attribute__((no_sanitize_address,no_sanitize_memory))
 __attribute__((target("avx,avx512bw")))
 

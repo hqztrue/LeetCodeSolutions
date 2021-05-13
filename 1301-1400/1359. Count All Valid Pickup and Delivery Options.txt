@@ -1,0 +1,2 @@
+The solution is (2n)!/2^n. We can compute factorial mod P in O(sqrt(n) log n) time, by dividing into blocks and using FFT. O(sqrt(n) log n).
+

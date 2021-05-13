@@ -1,0 +1,2 @@
+enumerate the minimum value, use monotone stack to maintain the left and right boundaries. O(n).
+

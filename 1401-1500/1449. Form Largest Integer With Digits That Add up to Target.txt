@@ -1,0 +1,2 @@
+knapsack, DP. O(t*|Σ|).
+

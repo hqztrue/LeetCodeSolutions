@@ -1,2 +1,0 @@
-heap. use vEB tree, O(q log log n).
-
