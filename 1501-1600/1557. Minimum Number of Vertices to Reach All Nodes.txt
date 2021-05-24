@@ -1,0 +1,2 @@
+return the set of nodes with zero indegree. O(n+m).
+

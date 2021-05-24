@@ -1,0 +1,2 @@
+Enumerate each pair. O(n^2).
+

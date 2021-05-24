@@ -1,0 +1,2 @@
+math. The answer is n^2/4. O(1).
+

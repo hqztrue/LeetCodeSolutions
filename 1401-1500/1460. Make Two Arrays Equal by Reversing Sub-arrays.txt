@@ -1,0 +1,2 @@
+We can arbitrarily arrange the array using the operation. O(n).
+

@@ -1,5 +1,5 @@
 const int L=9005,M=7,CH=26;  //L=14005
-int Q[L*CH],q,*chg[L]; int c1;
+int Q[L*CH],q,*chg[L],c1;
 inline bool insert(char *s,int l){
 	int x=0; int _q=q;
 	for (char *s1=s+l-1;s1>=s;--s1){
