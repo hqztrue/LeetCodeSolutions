@@ -43,7 +43,7 @@ Problem ID marked with leading ~ indicates there's good evidences that the algor
 1819 Number of Different Subsequences GCDs  
 ~1849 Splitting a String Into Descending Consecutive Values  
 1857 Largest Color Value in a Directed Graph  
-
+~1878 Get Biggest Three Rhombus Sums in a Grid  
 
 
 
@@ -71,5 +71,7 @@ DP/counting:
 1751 Maximum Number of Events That Can Be Attended II  
 1770 Maximum Score from Performing Multiplication Operations  
 1787 Make the XOR of All Segments Equal to Zero  
+1883 Minimum Skips to Arrive at Meeting On Time  
+
 
 

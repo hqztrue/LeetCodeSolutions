@@ -1,0 +1,2 @@
+prefix sum, enumerate all O(n^3) rhombuses. O(n^3).
+

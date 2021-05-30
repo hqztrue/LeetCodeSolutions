@@ -1,0 +1,2 @@
+heap. O(n log n).
+
