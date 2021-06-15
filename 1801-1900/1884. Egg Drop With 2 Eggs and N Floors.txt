@@ -1,0 +1,2 @@
+math, solve \sum_{i=1}^x i<=n. O(1).
+

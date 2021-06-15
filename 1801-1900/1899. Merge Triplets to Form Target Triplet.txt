@@ -1,0 +1,2 @@
+Use all triplets with a_i<=x, b_i<=y, c_i<=z. O(n).
+

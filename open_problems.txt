@@ -44,6 +44,9 @@ Problem ID marked with leading ~ indicates there's good evidences that the algor
 ~1849 Splitting a String Into Descending Consecutive Values  
 1857 Largest Color Value in a Directed Graph  
 ~1878 Get Biggest Three Rhombus Sums in a Grid  
+1898 Maximum Number of Removable Characters  
+
+
 
 
 
@@ -53,6 +56,7 @@ DP/counting:
 375 Guess Number Higher or Lower II  
 514 Freedom Trail  
 546 Remove Boxes  
+576 Out of Boundary Paths  
 629 K Inverse Pairs Array  
 688 Knight Probability in Chessboard  
 730 Count Different Palindromic Subsequences  
@@ -72,6 +76,8 @@ DP/counting:
 1770 Maximum Score from Performing Multiplication Operations  
 1787 Make the XOR of All Segments Equal to Zero  
 1883 Minimum Skips to Arrive at Meeting On Time  
+1895 Largest Magic Square  
+
 
 
 

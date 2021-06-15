@@ -1,0 +1,7 @@
+1. DP. O(n^4).
+2. greedy. O(1).
+https://leetcode.com/problems/the-earliest-and-latest-rounds-where-players-compete/discuss/1271531/Greedy-log(N)-solution
+https://leetcode.com/problems/the-earliest-and-latest-rounds-where-players-compete/discuss/1272828/20-lines-%2B-0ms-bit-counting-solution-O(1)-time-O(1)-space
+
+todo: prove correctness
+

@@ -1,0 +1,2 @@
+divide the grid evenly into two parts using a vertical/horizontal line in the middle, then recurse on one side. O(n+m).
+

@@ -3,7 +3,7 @@ int D[N];
 class Solution {
 public:
 	int coinChange(vector<int>& v, int t) {
-		v.erase(remove_if(v.begin(),v.end(),[=](int x){return x > t;}),v.end());
+		v.erase(remove_if(v.begin(),v.end(),[=](int x){return x>t;}),v.end());
 		sort(v.begin(),v.end(),greater<int>());
 		int n=v.size(),u=n?v[0]:0;
 		D[0]=0;

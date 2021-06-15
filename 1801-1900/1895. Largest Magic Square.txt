@@ -1,0 +1,4 @@
+1. enumerate each square and check in O(1) time, using prefix sum. O(n^3).
+
+remark. without the constraint on the diagonals, we can solve in O(\sum_i n\cdot n/i)=O(n^2 log n) time, using polynomial identity testing.
+

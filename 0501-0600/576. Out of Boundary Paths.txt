@@ -1,0 +1,6 @@
+wlog assume n>=m. Let N=maxMove.
+1. DP. O(nm*N).
+2. DP. Consider the 1D problem, let f[i][j] denote the number of ways to move out of boundary using j steps, starting at position i. This can be computed in O(n*N) time. Then combine the two dimensions in O(N) time. O(n*N).
+
+use binomials?
+
