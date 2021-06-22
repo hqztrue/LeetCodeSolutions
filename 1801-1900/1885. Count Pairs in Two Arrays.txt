@@ -1,0 +1,2 @@
+separate the variables, then counting inversions. O(n*\sqrt{\log n}) \cite{chan2010counting}.
+

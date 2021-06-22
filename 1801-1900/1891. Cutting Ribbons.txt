@@ -1,0 +1,2 @@
+see 1283. Find the Smallest Divisor Given a Threshold. O(n).
+

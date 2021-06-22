@@ -1,1 +1,3 @@
-see 279. Perfect Squares.
+see 279. Perfect Squares. O(factor(n)).
+https://en.wikipedia.org/wiki/Sum_of_two_squares_theorem
+

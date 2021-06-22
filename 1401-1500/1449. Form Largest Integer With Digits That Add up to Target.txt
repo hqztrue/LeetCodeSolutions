@@ -1,2 +1,2 @@
-knapsack, DP. O(t*|Σ|).
+knapsack, DP. O(t*|Σ|), where |Σ|=10.
 

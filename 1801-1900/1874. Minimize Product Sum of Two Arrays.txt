@@ -1,0 +1,2 @@
+rearrangement inequality. O(sort(n)).
+
