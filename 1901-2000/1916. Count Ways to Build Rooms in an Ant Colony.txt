@@ -1,0 +1,2 @@
+The ant colony forms a tree. DP on the tree, merge the results for the subtrees using binomials. O(n).
+

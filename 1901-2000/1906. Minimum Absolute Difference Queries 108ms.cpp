@@ -1,9 +1,3 @@
-/***************************************************
-Author: hqztrue
-https://github.com/hqztrue/LeetCodeSolutions
-Complexity: O(n*U/w+q*(U/w*log w+log^{(c)} n))
-If you find this solution helpful, plz give a star:)
-***************************************************/
 const int N=100015,U=100,L=10,D=14;
 inline int gap(__int128 x){
 	int s=1; __int128 y=x;
