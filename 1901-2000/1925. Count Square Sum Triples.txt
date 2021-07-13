@@ -1,0 +1,4 @@
+1. brute force. O(n^2).
+2. O(n). https://en.wikipedia.org/wiki/Pythagorean_triple
+3. O(n^{2/3} log n). see my solution https://leetcode-cn.com/problems/count-square-sum-triples/solution/gei-yi-ge-on23-log-n-de-suan-fa-by-hqztr-p91c/.
+

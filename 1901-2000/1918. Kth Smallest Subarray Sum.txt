@@ -1,0 +1,2 @@
+Form an n\times n row and column sorted matrix, where A_{ij} denote the subarray sum of [i,j], and reduce to 378. Kth Smallest Element in a Sorted Matrix. O(n).
+

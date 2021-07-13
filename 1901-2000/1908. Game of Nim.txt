@@ -1,0 +1,2 @@
+game of nim, use xor. O(n).
+

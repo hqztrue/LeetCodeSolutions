@@ -77,7 +77,7 @@ DP/counting:
 1787 Make the XOR of All Segments Equal to Zero  
 1883 Minimum Skips to Arrive at Meeting On Time  
 1895 Largest Magic Square  
-
+1925 Count Square Sum Triples  
 
 
 

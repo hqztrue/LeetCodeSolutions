@@ -1,0 +1,3 @@
+1. suffix tree. for each path (string) s_i, (implicitly) find the nodes of the suffix tree that contain a suffix of s_i as its descendant, using O(n)-O(1) LCA. O(n).
+2. binary search+hashing. O(n log n).
+

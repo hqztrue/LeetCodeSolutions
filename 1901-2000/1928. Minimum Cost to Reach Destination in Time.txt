@@ -1,0 +1,2 @@
+replace each node with T+1 nodes, and use shortest path/DP. O((n+m)T).
+

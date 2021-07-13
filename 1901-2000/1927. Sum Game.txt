@@ -1,0 +1,2 @@
+case-by-case analysis. count the sum and the number of ?'s in the left&right side. O(n).
+

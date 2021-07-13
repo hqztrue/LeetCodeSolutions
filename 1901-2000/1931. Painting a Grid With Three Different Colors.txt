@@ -1,0 +1,7 @@
+see 1411. Number of Ways to Paint N × 3 Grid.
+let k denote the number of colors.
+1. DP, matrix multiplication. O(log n) for constant m (k^O(m)*log n).
+
+remark. algorithm for small n*m and large k: for fixed n and m, observe that the answer is a polynomial in k of degree <=n*m+1.
+https://codeforces.com/blog/entry/62216
+
