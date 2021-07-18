@@ -1,0 +1,3 @@
+1. offline, trie (or persistent trie). O(nw).
+2. log n-ary trie. O(nw/log log n).
+
