@@ -17,6 +17,7 @@ Problem ID marked with leading ~ indicates there's good evidences that the algor
 ~741 Cherry Pickup  
 ~762 Prime Number of Set Bits in Binary Representation  
 787 Cheapest Flights Within K Stops  
+818 Race Car  
 837 New 21 Game  
 839 Similar String Groups  
 ~898 Bitwise ORs of Subarrays  

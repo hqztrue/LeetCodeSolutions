@@ -1,0 +1,2 @@
+each round the length of the string will decrease from n to O(log n). O(n).
+

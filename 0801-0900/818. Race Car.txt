@@ -1,0 +1,5 @@
+1. DP/bfs. O(t log t).
+2. O(t^{log_2 \phi})≈O(t^0.695). The exponent is improvable. see my solution https://leetcode-cn.com/problems/race-car/solution/onfu-za-du-de-dfsyi-ji-yi-xie-xing-zhi-z-1i47/
+
+greedy, O(log n)?
+
