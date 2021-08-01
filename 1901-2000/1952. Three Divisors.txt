@@ -1,0 +1,2 @@
+test whether n=p^2, where p is a prime (using Miller-Rabin). O(log 1/ε*log n) with error probability ε.
+

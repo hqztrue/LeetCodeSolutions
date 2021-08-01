@@ -1,10 +1,3 @@
-//IO
-int _IO=[](){
-	std::ios::sync_with_stdio(0);
-	cin.tie(0); //cout.tie(0);
-	return 0;
-}();
-
 template<class T>
 struct Gethash{
 	size_t operator ()(const T &x)const{return x;}
@@ -156,7 +149,7 @@ class Solution {
 		return 0;
 	}
 public:
-	vector<string> findAllConcatenatedWordsInADict(vector<string>& w) {
+	vector<string> findAllConcatenatedWordsInADict(vector<string>& w) {  //worst case O(nl^3)
 		H.clear();
 		sort(w.begin(),w.end(),[](const string &l,const string &r){return l.size()<r.size();});
 		lmin=max(1,(int)w.front().size());
@@ -166,3 +159,9 @@ public:
 	}
 };
 
+//IO
+int _IO=[](){
+	std::ios::sync_with_stdio(0);
+	cin.tie(0); //cout.tie(0);
+	return 0;
+}();

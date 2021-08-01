@@ -1,0 +1,2 @@
+greedy, find the project with the maximum number of milestones. O(n).
+

@@ -1,0 +1,2 @@
+solve equation/binary search. O(1).
+
