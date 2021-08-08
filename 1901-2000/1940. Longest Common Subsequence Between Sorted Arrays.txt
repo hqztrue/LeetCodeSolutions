@@ -1,0 +1,2 @@
+For each number count whether it occurs in all the arrays, using hashing. O(L).
+

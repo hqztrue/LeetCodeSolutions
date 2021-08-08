@@ -1,0 +1,2 @@
+This is the minimum enclosing circle problem. Randomized incremental construction. O(n).
+

@@ -51,6 +51,7 @@ Problem ID marked with leading ~ indicates there's good evidences that the algor
 
 
 
+
 DP/counting:  
 087 Scramble String  
 312 Burst Balloons  
@@ -79,6 +80,8 @@ DP/counting:
 1883 Minimum Skips to Arrive at Meeting On Time  
 1895 Largest Magic Square  
 1925 Count Square Sum Triples  
+1959 Minimum Total Space Wasted With K Resizing Operations  
+
 
 
 
