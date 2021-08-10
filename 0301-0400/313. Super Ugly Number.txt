@@ -1,3 +1,5 @@
 see 264. Ugly Number II.
 1. O(nk).
-2. \tilde{O}(n^{1-1/k}) for constant k.
+2. O(n log n). https://leetcode-cn.com/problems/super-ugly-number/solution/fu-za-du-wei-zhen-onlognde-suan-fa-by-li-uu9h/
+3. \tilde{O}(n^{1-1/k}) for constant k.
+

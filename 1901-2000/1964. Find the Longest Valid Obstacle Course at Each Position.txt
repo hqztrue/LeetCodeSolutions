@@ -1,2 +1,0 @@
-LIS. O(n log log n) \cite{crochemore2010fast}.
-

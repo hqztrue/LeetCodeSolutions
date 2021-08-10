@@ -1,2 +1,0 @@
-greedy, selection. O(n).
-
