@@ -1,0 +1,3 @@
+1. offline, divide and conquer, shrink the connected components. O(nm).
+2. add the lands in reverse order, and use dfs to find the new component. O(nm).
+

@@ -1,0 +1,2 @@
+Aho-Corasick automaton. O(L).
+

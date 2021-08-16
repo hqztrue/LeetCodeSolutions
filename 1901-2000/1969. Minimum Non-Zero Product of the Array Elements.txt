@@ -1,0 +1,2 @@
+greedy. the answer is (2^p-1)*(2^p-2)^{2^{p-1}-1}. O(p).
+

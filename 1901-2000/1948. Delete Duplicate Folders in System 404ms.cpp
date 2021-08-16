@@ -1,4 +1,4 @@
-const int N=200005,CH=27,P=1000000007;
+const int N=200005,CH=27,P=1000000007,Q=1700000003,R=1274329421;
 namespace Hash{
 	typedef unsigned int uint;
 	const uint S=15,S1=32-S,M=1996090921,_inf=~0u>>1;
@@ -36,7 +36,7 @@ struct node{
 			uint t=m&-m; m-=t;
 			h=h*P+c[LOG2(t)]->dfs()+t;
 		}
-		h=h*P+flag;
+		h=(h*P+flag+R)%Q;
 		if (flag)insert(h);
 		return h;
 	}
@@ -76,7 +76,7 @@ public:
 		int n=p.size(); a1=a; ++T; ans.clear();
 		for (int i=0;i<n;++i)ins(p[i]);
 		a->dfs(); dfs1(a);
-		memset(a,0,sizeof(node)*(a1-a+1));
+		memset(a,0,sizeof(node)*(a1-a+1));  //can be improved to O(L)
 		return ans;
 	}
 };
