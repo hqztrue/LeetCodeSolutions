@@ -1,0 +1,5 @@
+1. binary search, then reduce to finding (<=k)-levels of axis-aligned squares. we can replace the log U by log n using standard techniques (the possible values are entries in an implicit row and column sorted matrix). O~(nk log n).
+2. after binary search, we only need to find the maximum depth of a set of unit squares (more generally, rectangles), which can be solved using sweep line + segment tree. O(n log^2 n).
+
+remark. shave log factors?
+

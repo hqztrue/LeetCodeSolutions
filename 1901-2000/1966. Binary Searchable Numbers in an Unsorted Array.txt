@@ -1,0 +1,2 @@
+The function is correct for element x iff all numbers before x are smaller than x, and all numbers after x are larger than x. prefix max. O(n).
+

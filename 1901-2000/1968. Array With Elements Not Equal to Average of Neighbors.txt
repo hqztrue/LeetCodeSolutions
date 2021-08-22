@@ -1,3 +1,4 @@
-For a fixed prefix, there's at most one number that we cannot add at the tail. O(n).
+1. For a fixed prefix, there's at most one number that we cannot add at the tail. O(n).
 https://leetcode-cn.com/problems/array-with-elements-not-equal-to-average-of-neighbors/solution/ongou-zao-by-hqztrue-ukge/
+2. we can use 324. Wiggle Sort II. O(n).
 

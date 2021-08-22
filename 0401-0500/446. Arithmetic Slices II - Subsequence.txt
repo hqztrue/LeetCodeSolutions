@@ -1,1 +1,4 @@
 DP. O(n^2).
+
+remark. There's an Omega(n^{2-o(1)}) lower bound, since this problem is 3SUM-hard. We can reduce 3SUM average to this problem \cite{dudek2020all}.
+

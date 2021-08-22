@@ -1,1 +1,2 @@
-see 280. Wiggle Sort.
+use nth_element to find the median. see 280. Wiggle Sort.
+

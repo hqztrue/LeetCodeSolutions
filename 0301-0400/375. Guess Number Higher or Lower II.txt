@@ -2,3 +2,4 @@ DP.
 1. f[i][j] denote the result when the number is within [i,j]. f[i][j]=min_k max{f[i][k-1],f[k+1][j]}+k. O(n^3).
 2. use monotone property to optimize. O(n^2).
 https://artofproblemsolving.com/community/c296841h1273742s3_leetcode_guess_number_higher_or_lower_ii
+
