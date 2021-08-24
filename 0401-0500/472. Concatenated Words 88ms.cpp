@@ -1,3 +1,4 @@
+//TLE now
 template<class T>
 struct Gethash{
 	size_t operator ()(const T &x)const{return x;}

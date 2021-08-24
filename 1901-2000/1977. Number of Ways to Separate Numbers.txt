@@ -1,0 +1,2 @@
+DP, let f[i][j] denote the number of ways when the last interval is [i,j]. Use LCP to determine whether we can transit from the previous interval of the same length. Use prefix sum for the smaller lengths. O(n^2).
+
