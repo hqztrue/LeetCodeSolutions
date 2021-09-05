@@ -1,0 +1,2 @@
+set-based DP. let f[i][j] denote the minimum (#sessions, length of last session) to complete subset j. O(2^n*n).
+

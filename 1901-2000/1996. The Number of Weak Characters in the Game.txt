@@ -1,0 +1,3 @@
+1. sorting. O(sort(n)).
+2. It suffices to compute the maxima of a set of 2D points. deterministic O(n log log_{n/h} n), where h is the number of maxima points \cite{afshani2014fast} (this result holds in 3D).
+

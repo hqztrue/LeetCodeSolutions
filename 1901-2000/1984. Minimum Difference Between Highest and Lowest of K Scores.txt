@@ -1,0 +1,4 @@
+sorting. O(sort(n)).
+
+remark. is there an O(n) time algorithm? (RIC for k=1)
+

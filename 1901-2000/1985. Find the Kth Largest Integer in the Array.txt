@@ -1,0 +1,3 @@
+1. Reduce to sorting strings. O(L+n log log n) \cite{han2002integer}.
+2. Use LCP to compare two numbers, and use linear time selection. O(L+n).
+
