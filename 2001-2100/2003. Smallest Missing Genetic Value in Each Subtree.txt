@@ -1,0 +1,2 @@
+Since the genetic values are distinct, only the ancestors of 1 will have answer >1, and those nodes form a path with non-decreasing solution from bottom to top. Use dfs. O(n).
+
