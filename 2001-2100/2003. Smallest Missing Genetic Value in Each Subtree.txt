@@ -1,2 +1,4 @@
 Since the genetic values are distinct, only the ancestors of 1 will have answer >1, and those nodes form a path with non-decreasing solution from bottom to top. Use dfs. O(n).
 
+remark. when there can have duplicate genetic values, we can still get O(n). see my solution https://leetcode-cn.com/problems/smallest-missing-genetic-value-in-each-subtree/solution/jin-jie-zhi-ke-zhong-fu-de-xian-xing-sua-o6ml/
+

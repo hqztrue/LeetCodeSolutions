@@ -1,0 +1,2 @@
+hashing, form chains of the form 2^i*x. O(n).
+

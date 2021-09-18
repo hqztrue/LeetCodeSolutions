@@ -1,0 +1,2 @@
+weighted maximum independent set for intervals. O(sort(n)).
+

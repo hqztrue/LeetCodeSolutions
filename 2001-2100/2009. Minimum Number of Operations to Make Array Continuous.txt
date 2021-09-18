@@ -1,0 +1,2 @@
+sorting, sliding window. the sliding window has length <n, so we can first use counting sort to sort a[i] mod n, and then use hashing to put a[i] in a sorted bucket with index a[i]/n. O(n).
+
