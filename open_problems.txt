@@ -46,7 +46,7 @@ Problem ID marked with leading ~ indicates there's good evidences that the algor
 1857 Largest Color Value in a Directed Graph  
 ~1878 Get Biggest Three Rhombus Sums in a Grid  
 1898 Maximum Number of Removable Characters  
-
+2013 Detect Squares  
 
 
 
