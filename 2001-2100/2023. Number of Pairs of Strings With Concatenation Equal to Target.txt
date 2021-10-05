@@ -1,0 +1,2 @@
+check whether each string is a prefix/suffix. O(L).
+

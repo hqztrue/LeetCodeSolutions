@@ -1,0 +1,5 @@
+1. dfs.
+2. DP, O~(k).
+
+number theory?
+

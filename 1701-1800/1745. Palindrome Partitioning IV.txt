@@ -2,4 +2,6 @@ This is hdu 5340 Three Palindromes. http://bestcoder.hdu.edu.cn/contests/contest
 1. O(kn)=O(n) \cite{kosolobov2015pal}, where k=3.
 2. O(n) \cite{rubinchik2020palindromic}.
 3. use palindromic tree \cite{rubinchik2018eertree}, O(n log |Σ|) or O(n) by hashing.
+4. manacher, O(n). https://leetcode-cn.com/problems/palindrome-partitioning-iv/solution/manacherxian-xing-shi-jian-fu-za-du-by-h-sj24/
+https://www.luogu.com.cn/blog/user25308/proof-cf1081h
 

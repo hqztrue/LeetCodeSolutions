@@ -1,2 +1,4 @@
-Sort the queries in O(m+q) time using radix sort. For each edge, compute cnt in O(1) time. Then we only need to consider pairs of vertices that are not adjacent. We can either use FFT (independent from the number of queries), or use 2SUM for each query in O(n) time. O(min{m log m,qn}+n+m+q).
+1. Sort the queries in O(m+q) time using radix sort. For each edge, compute cnt in O(1) time. Then we only need to consider pairs of vertices that are not adjacent. We can either use FFT (independent from the number of queries), or use 2SUM for each query in O(n) time. O(min{m log m,qn}+n+m+q).
+2. There are only O(sqrt(m)) distinct degrees, so we can use O(m) time to count the number of vertex pairs (u,v) s.t. d(u)+d(v)=i for each i. O(n+m+q).
+https://leetcode-cn.com/problems/count-pairs-of-nodes/solution/geng-duo-cha-xun-ci-shu-q-105shi-de-zuo-si929/
 

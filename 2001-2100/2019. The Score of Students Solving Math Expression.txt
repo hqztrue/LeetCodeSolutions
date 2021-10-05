@@ -1,0 +1,3 @@
+Let W denote the maximum possible answer.
+DP, let f[i][j][k] denote whether we can get value k using interval [i,j]. Merging two intervals using multiplication takes O(W log W) time by harmonic series. O(n^3*W log W).
+

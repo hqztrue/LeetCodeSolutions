@@ -1,3 +1,2 @@
 greedily let the substring length be minSize. O(n).
 
-

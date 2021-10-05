@@ -1,0 +1,2 @@
+Colon Principle. n%6!=1. O(1).
+

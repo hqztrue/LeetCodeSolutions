@@ -1,0 +1,2 @@
+The second robot always either take the entire first row or take the entire second row. The first robot balances the two terms. O(n).
+

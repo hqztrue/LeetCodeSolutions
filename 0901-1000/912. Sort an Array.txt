@@ -1,2 +1,0 @@
-O(sort(n)). we can use counting sort here.
-
