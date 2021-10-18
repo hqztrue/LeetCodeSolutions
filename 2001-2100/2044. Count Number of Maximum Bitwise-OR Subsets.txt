@@ -1,0 +1,5 @@
+The optimal solution must be a[1] or ... or a[n].
+1. brute force. O(2^n).
+
+Remark. the problem is NP-hard, via reduction from counting set cover.
+

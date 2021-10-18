@@ -1,0 +1,2 @@
+The total time is uniquely determined by the number of edges on the path. bfs. O(n+m).
+
