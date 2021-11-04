@@ -1,2 +1,4 @@
 meet in the middle. O(2^n).
 
+remark. this is equivalent to subset sum, and O(2^n) is conjectured to be almost tight.
+

@@ -63,6 +63,7 @@ DP/counting:
 629 K Inverse Pairs Array  
 688 Knight Probability in Chessboard  
 730 Count Different Palindromic Subsequences  
+813 Largest Sum of Averages  
 903 Valid Permutations for DI Sequence  
 1039 Minimum Score Triangulation of Polygon  
 1043 Partition Array for Maximum Sum  

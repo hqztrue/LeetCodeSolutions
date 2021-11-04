@@ -1,0 +1,2 @@
+There are only a few possible combinations of the numbers. After fixing a combination, we can then use greedy to find the smallest possible number.
+
