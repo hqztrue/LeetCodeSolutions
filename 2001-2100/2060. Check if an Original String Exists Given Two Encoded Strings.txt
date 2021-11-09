@@ -1,0 +1,2 @@
+DP. Let f[i][j][k] denote whether we can match s1[1..i] with s2[1..j] with length difference k. O(n^2*L), where L is the maximum length of the original string.
+
