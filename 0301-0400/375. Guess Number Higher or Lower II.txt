@@ -3,3 +3,5 @@ DP.
 2. use monotone property to optimize. O(n^2).
 https://artofproblemsolving.com/community/c296841h1273742s3_leetcode_guess_number_higher_or_lower_ii
 
+remark. can we use a continuous function to approximate f(l,r) with low (additive) error? e.g. c*l*log(r-l).
+Can we get O(n^2/2^{Omega(log n/log log n)}) running time, by performing dfs on the top few levels of the recursion tree, each node having branching factor O(polylog n)?
