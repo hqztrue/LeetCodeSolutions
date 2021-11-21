@@ -1,0 +1,2 @@
+1. persistent array/build a vEB for each value. O(log log n) per query.
+
