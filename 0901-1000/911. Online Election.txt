@@ -1,2 +1,0 @@
-sort according to time and precompute the solution. for each query, use predecessor search. O(sort(n)+n log log W).
-
