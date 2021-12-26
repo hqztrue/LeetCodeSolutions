@@ -1,0 +1,2 @@
+for each index, record the (continuous after /2) range of possible prefix sums at that index. O(n).
+

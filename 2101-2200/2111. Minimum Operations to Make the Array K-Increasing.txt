@@ -1,0 +1,2 @@
+find LIS in each subarray containing all indices with the same remainder modulo k. O(n log log n).
+

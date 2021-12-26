@@ -1,0 +1,2 @@
+In the optimal solution, we will change direction at most once. use monotone pointers. O(n).
+

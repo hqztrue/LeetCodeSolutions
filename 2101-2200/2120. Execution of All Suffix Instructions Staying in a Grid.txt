@@ -1,0 +1,2 @@
+Add the instructions in reverse order. Consider each direction L/R/U/D separately, for each direction d record an array a, where a[i+offset_d] denote the first index such that we will move i steps towards that direction. offset will only change by 1 when we add a new instruction at the front. O(m).
+
