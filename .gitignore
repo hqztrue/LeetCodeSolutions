@@ -25,4 +25,7 @@ template*
 cite_test*
 *.tex
 *.sav
+codes.h
+tmp12345.out.txt
+
 
