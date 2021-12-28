@@ -1,5 +1,4 @@
 //credit to @XYShaoKang
-const website = 'leetcode'
 {
   void (async function main() {
     // 配置需要获取的题目索引,从 1 开始,想要获取哪题就添加哪一题的索引
@@ -7,21 +6,29 @@ const website = 'leetcode'
     const questions = [4]
     // 需要获取的页数,指定要获取哪几页的
     // 可以是数字,或者是用一个数组表示的区间,如 [3,6] 表示从 3 页到第 6 页
-    const pages = [1]
-	//const pages = [1,2,3,4,5,6,7,8,9,10,11,12]
+    //const pages = [10,11,12]
+    const pages = [1,2,3,4,5,6,7,8,9,10,11,12]
     // 需要获取的竞赛 ID,可以通过每个比赛的链接处获取
     // 比如 https://leetcode-cn.com/contest/biweekly-contest-68/ 这是第 68 场双周赛的链接,其中 biweekly-contest-68 就是需要的部分
-	const contestId = 'biweekly-contest-68'
+    const contestId = 'biweekly-contest-68'
+    // 如果只获取国服的数据填 local,如果要获取全球的数据填 global
+    const region = 'global'
+    //const region = 'local'
+    // 指定要获取的语言
+    // 如果要获取所有语言,在数组中包含星号`*`
+    // 如果只要获取某几种语言的,则去掉星号`*`,填入要获取的语言,比如['java','cpp']
+    //const lang = ['*']
+    const lang = ['cpp']
 
     let res = `` //`# ${contestId}\n`
     try {
       for (const page of pages) {
         if (Array.isArray(page)) {
           for (let i = page[0]; i <= page[1]; i++) {
-            res += await getContest(questions, contestId, i)
+            res += await getContest(lang, region, questions, contestId, i)
           }
         } else {
-          res += await getContest(questions, contestId, page)
+          res += await getContest(lang, region, questions, contestId, page)
         }
       }
       download(res, `codes.h`)
@@ -33,20 +40,22 @@ const website = 'leetcode'
 
   /**
    *
+   * @param data_region 所属的地区,"CN"或者"US"
    * @param submissionId 提交id
    * @returns {{code:string,contest_submission:number,id:number,lang:string}}
    */
-  function getCode(submissionId, retry = 1) {
-    return fetch(`https://`+website+`.com/api/submissions/${submissionId}/`, {
+  function getCode(data_region, submissionId, retry = 1) {
+    const regionApi = data_region === 'CN' ? 'leetcode-cn.com' : 'leetcode.com'
+    return fetch(`https://${regionApi}/api/submissions/${submissionId}/`, {
       headers: {
         'content-type': 'application/json',
       },
-      referrer: 'https://'+website+'.com/contest/',
+      referrer: 'https://leetcode-cn.com/contest/',
       referrerPolicy: 'strict-origin-when-cross-origin',
       body: null,
       method: 'GET',
       mode: 'cors',
-      credentials: 'include',
+      credentials: 'omit',
     }).then((res) => {
       if (res.status === 429) {
         console.log(`超出接口限制,休息一下,等待第${retry}次重试...`)
@@ -56,7 +65,7 @@ const website = 'leetcode'
           )
         }
         // 请求太频繁的限制
-        return sleep(3000).then(() => getCode(submissionId, retry + 1))
+        return sleep(3000).then(() => getCode(data_region, submissionId, retry + 1))
       }
       return res.json()
     })
@@ -64,6 +73,7 @@ const website = 'leetcode'
 
   /**
    * 获取比赛的数据
+   * @param region 所属的地区: 国服:"local";外服:"global"
    * @param contestId 比赛Id
    * @param page 页数
    * @returns {{
@@ -108,19 +118,20 @@ const website = 'leetcode'
    *    user_num: number
    * }}
    */
-  function getRankData(contestId, page = 1) {
+  function getRankData(region = 'local', contestId, page = 1) {
+    if (region !== 'local' && region !== 'global') region = 'local'
     return fetch(
-      `https://`+website+`.com/contest/api/ranking/${contestId}/?pagination=${page}&region=local`,
+      `https://leetcode-cn.com/contest/api/ranking/${contestId}/?pagination=${page}&region=${region}`,
       {
         headers: {
           'content-type': 'application/json',
         },
-        referrer: 'https://'+website+'.com/contest/',
+        referrer: 'https://leetcode-cn.com/contest/',
         referrerPolicy: 'strict-origin-when-cross-origin',
         body: null,
         method: 'GET',
         mode: 'cors',
-        credentials: 'include',
+        credentials: 'omit',
       }
     ).then((res) => res.json())
   }
@@ -149,10 +160,12 @@ const website = 'leetcode'
     })
   }
 
-  async function getContest(questionsArr, contestId, page) {
+  async function getContest(lang, region, questionsArr, contestId, page) {
+    lang = new Set(lang)
     console.log(`正在下载第 ${page} 页`)
     const questionSelect = new Set(questionsArr)
     const { submissions, total_rank, questions } = await getRankData(
+      region,
       contestId,
       page
     )
@@ -174,39 +187,64 @@ const website = 'leetcode'
           continue
         }
 
-        const { submission_id, lang } = submission[questionId]
+        const { submission_id, data_region } = submission[questionId]
 
-        const code = await getCode(submission_id)
-        if (lang==`cpp`) {
-			let id = (page-1)*25+i+1;
-			res += `//-----*****-----
-//${real_name}\n`
-			res += `namespace space${id}{\n`
-			let s = code.code
-			pos = s.indexOf(`class Solution`)
-			if (pos==-1){throw new Error('no class')}
-			s = s.substring(0,pos) + `class Solution${id}: public Solution` + s.substring(pos+14,s.length)
+        const code = await getCode(data_region, submission_id)
+        if (lang.has('*') || lang.has(code.lang)) {
+            let id = (page-1)*25+i+1;
+            res += `//-----*****-----\n`
+            res += `//${real_name} || ${username}\n`
+            //res += `//${code.lang}\n`
+            res += `namespace space${id}{\n`
+            let s = code.code
+            pos = s.indexOf(`class Solution`)
+            if (pos==-1){throw new Error('no class')}
+            s = s.substring(0,pos) + `class Solution${id}: public Solution` + s.substring(pos+14,s.length)
+            
+			//undef
+            let tail = ``
+            let l = s.length
+            pos = -1
+            while (1){
+                pos = s.indexOf(`define`, pos+1)
+                if (pos==-1)break;
+				let pos1 = pos-1
+				while (pos1>=0&&(s[pos1]==' '||s[pos1]=='\t'))--pos1;
+				if (pos1<0||s[pos1]!='#')continue;
+                pos1 = pos+6
+				if (s[pos1]!=' '&&s[pos1]!='\t')continue;
+                while (pos1<l&&(s[pos1]==' '||s[pos1]=='\t')&&s[pos1]!='\n')++pos1;
+                if (pos1>=l||s[pos1]=='\n')continue;
+                let pos2 = pos1
+                while (pos2<l&&s[pos2]!=' '&&s[pos2]!='\t'&&s[pos2]!='\n'&&s[pos2]!='\r'&&s[pos2]!='(')++pos2;
+                tail += `#undef `+s.substring(pos1,pos2)+`\n`
+            }
 			
-			let tail = ``
-			let l = s.length
-			pos = -1
-			while (1){
-				pos = s.indexOf(`#define`, pos+1)
-				if (pos==-1)break;
-				let pos1 = pos+7
-				while (pos1<l&&s[pos1]==' '&&s[pos1]!='\n')++pos1;
-				if (pos1>=l||s[pos1]=='\n')break;
-				let pos2 = pos1
-				while (pos2<l&&s[pos2]!=' '&&s[pos2]!='\n'&&s[pos2]!='(')++pos2;
-				tail += `#undef `+s.substring(pos1,pos2)+`\n`
-			}
+			//pragma
+            pos = -1
+            while (1){
+                pos = s.indexOf(`pragma`, pos+1)
+                if (pos==-1)break;
+				let pos1 = pos-1
+				while (pos1>=0&&(s[pos1]==' '||s[pos1]=='\t'))--pos1;
+				if (pos1<0||s[pos1]!='#')continue;
+				if (pos+6>=s.length||s[pos+6]!=' '&&s[pos+6]!='\t')continue;
+                s = s.substring(0,pos1)+'//'+s.substring(pos1,s.length)
+				pos += 2
+            }
 			
-			res += `${s}\n`
-			res += tail+`int _init${id}=[](){ptr[${id}] = new Solution${id}(); return 0;}();\n`+`}\n\n`
-		}
+            res += `${s}\n`
+            res += tail+`int _init${id}=[](){ptr[${id}] = new Solution${id}(); return 0;}();\n`+`}\n\n`
+        }
+        else {
+          // res += `\n### 第${j + 1}题\n\n该题代码语言为\`${
+          //   code.lang
+          // }\`,不在需要的语言类型中\n`
+        }
       }
       // await sleep(100)
     }
     return res
   }
 }
+
