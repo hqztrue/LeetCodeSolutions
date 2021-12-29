@@ -6,14 +6,14 @@
     const questions = [4]
     // 需要获取的页数,指定要获取哪几页的
     // 可以是数字,或者是用一个数组表示的区间,如 [3,6] 表示从 3 页到第 6 页
-    //const pages = [10,11,12]
-    const pages = [1,2,3,4,5,6,7,8,9,10,11,12]
+    const pages = [1]
+    //const pages = [1,2,3,4,5,6,7,8,9,10,11,12]
     // 需要获取的竞赛 ID,可以通过每个比赛的链接处获取
     // 比如 https://leetcode-cn.com/contest/biweekly-contest-68/ 这是第 68 场双周赛的链接,其中 biweekly-contest-68 就是需要的部分
     const contestId = 'biweekly-contest-68'
     // 如果只获取国服的数据填 local,如果要获取全球的数据填 global
-    const region = 'global'
-    //const region = 'local'
+    //const region = 'global'
+    const region = 'local'
     // 指定要获取的语言
     // 如果要获取所有语言,在数组中包含星号`*`
     // 如果只要获取某几种语言的,则去掉星号`*`,填入要获取的语言,比如['java','cpp']
@@ -159,6 +159,50 @@
       setTimeout(resolve, time)
     })
   }
+  
+  function process_cpp(s, id){
+    let res = ''
+    res += `namespace space${id}{\n`
+    pos = s.indexOf(`class Solution`)
+    if (pos==-1){throw new Error('no class')}
+    s = s.substring(0,pos) + `class Solution${id}: public Solution` + s.substring(pos+14,s.length)
+    
+    //undef
+    let tail = ``
+    let l = s.length
+    pos = -1
+    while (1){
+        pos = s.indexOf(`define`, pos+1)
+        if (pos==-1)break;
+        let pos1 = pos-1
+        while (pos1>=0&&(s[pos1]==' '||s[pos1]=='\t'))--pos1;
+        if (pos1<0||s[pos1]!='#')continue;
+        pos1 = pos+6
+        if (s[pos1]!=' '&&s[pos1]!='\t')continue;
+        while (pos1<l&&(s[pos1]==' '||s[pos1]=='\t')&&s[pos1]!='\n')++pos1;
+        if (pos1>=l||s[pos1]=='\n')continue;
+        let pos2 = pos1
+        while (pos2<l&&s[pos2]!=' '&&s[pos2]!='\t'&&s[pos2]!='\n'&&s[pos2]!='\r'&&s[pos2]!='(')++pos2;
+        tail += `#undef `+s.substring(pos1,pos2)+`\n`
+    }
+    
+    //pragma
+    pos = -1
+    while (1){
+        pos = s.indexOf(`pragma`, pos+1)
+        if (pos==-1)break;
+        let pos1 = pos-1
+        while (pos1>=0&&(s[pos1]==' '||s[pos1]=='\t'))--pos1;
+        if (pos1<0||s[pos1]!='#')continue;
+        if (pos+6>=s.length||s[pos+6]!=' '&&s[pos+6]!='\t')continue;
+        s = s.substring(0,pos1)+'//'+s.substring(pos1,s.length)
+        pos += 2
+    }
+    
+    res += `${s}\n`
+    res += tail+`int _init${id}=[](){ptr[${id}] = new Solution${id}(); return 0;}();\n`+`}\n\n`
+    return res
+  }
 
   async function getContest(lang, region, questionsArr, contestId, page) {
     lang = new Set(lang)
@@ -195,46 +239,7 @@
             res += `//-----*****-----\n`
             res += `//${real_name} || ${username}\n`
             //res += `//${code.lang}\n`
-            res += `namespace space${id}{\n`
-            let s = code.code
-            pos = s.indexOf(`class Solution`)
-            if (pos==-1){throw new Error('no class')}
-            s = s.substring(0,pos) + `class Solution${id}: public Solution` + s.substring(pos+14,s.length)
-            
-			//undef
-            let tail = ``
-            let l = s.length
-            pos = -1
-            while (1){
-                pos = s.indexOf(`define`, pos+1)
-                if (pos==-1)break;
-				let pos1 = pos-1
-				while (pos1>=0&&(s[pos1]==' '||s[pos1]=='\t'))--pos1;
-				if (pos1<0||s[pos1]!='#')continue;
-                pos1 = pos+6
-				if (s[pos1]!=' '&&s[pos1]!='\t')continue;
-                while (pos1<l&&(s[pos1]==' '||s[pos1]=='\t')&&s[pos1]!='\n')++pos1;
-                if (pos1>=l||s[pos1]=='\n')continue;
-                let pos2 = pos1
-                while (pos2<l&&s[pos2]!=' '&&s[pos2]!='\t'&&s[pos2]!='\n'&&s[pos2]!='\r'&&s[pos2]!='(')++pos2;
-                tail += `#undef `+s.substring(pos1,pos2)+`\n`
-            }
-			
-			//pragma
-            pos = -1
-            while (1){
-                pos = s.indexOf(`pragma`, pos+1)
-                if (pos==-1)break;
-				let pos1 = pos-1
-				while (pos1>=0&&(s[pos1]==' '||s[pos1]=='\t'))--pos1;
-				if (pos1<0||s[pos1]!='#')continue;
-				if (pos+6>=s.length||s[pos+6]!=' '&&s[pos+6]!='\t')continue;
-                s = s.substring(0,pos1)+'//'+s.substring(pos1,s.length)
-				pos += 2
-            }
-			
-            res += `${s}\n`
-            res += tail+`int _init${id}=[](){ptr[${id}] = new Solution${id}(); return 0;}();\n`+`}\n\n`
+            res += process_cpp(code.code, id)
         }
         else {
           // res += `\n### 第${j + 1}题\n\n该题代码语言为\`${
