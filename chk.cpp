@@ -27,7 +27,7 @@ struct TreeNode {
 };
 #define cerr __out
 //#include"codes_US.h"
-//#include"codes_CN.h"
+#include"codes_CN.h"
 #undef cerr
 void count(){int T=0; for (int i=0;i<nsols;++i)if (ptr[i])++T; cerr<<"#="<<T<<endl;}
 void check(vector<int> a, int t, int res){

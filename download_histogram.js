@@ -1,9 +1,3 @@
-//credit to @XYShaoKang
-var targetLang = 'cpp';
-//const questionSlug = 'abbreviating-the-product-of-a-range'
-var func_str = 'string run(int left, int right)';
-var func_name = 'abbreviateProduct';
-var func_arg = 'left, right';
 var __assign = (this && this.__assign) || function () {
     __assign = Object.assign || function(t) {
         for (var s, i = 1, n = arguments.length; i < n; i++) {
@@ -51,6 +45,15 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
         if (op[0] & 5) throw op[1]; return { value: op[0] ? op[1] : void 0, done: true };
     }
 };
+//credit to @XYShaoKang
+var func_str = 'string run(int left, int right)';
+var func_name = 'abbreviateProduct';
+var func_arg = 'left, right';
+//const targetLang = 'cpp'
+//const questionSlug = 'abbreviating-the-product-of-a-range'
+//todo:
+//constructor: Solution()
+//Solution::
 function sleep(time) {
     return new Promise(function (resolve) {
         setTimeout(resolve, time);
@@ -422,20 +425,43 @@ function download(str, filename) {
             });
         });
     })();
+    function is_comment(s) {
+        var n = s.length;
+        var i = 0;
+        while (i < n - 1) {
+            if (s[i] == '/' && s[i + 1] == '/') {
+                while (i < n && s[i] != '\r' && s[i] != '\n')
+                    ++i;
+                if (++i >= n)
+                    return 1;
+            }
+            else if (s[i] == '/' && s[i + 1] == '*') {
+                i += 3;
+                while (i < n && (s[i - 1] != '*' || s[i] != '/'))
+                    ++i;
+                if (++i >= n)
+                    return 1;
+            }
+            else
+                ++i;
+        }
+        return 0;
+    }
     function process_cpp(s, id) {
         var res = '';
         res += "namespace space".concat(id, "{\n");
         //s = s.replaceAll(/class\s+Solution/g, 'class Solution')
         var pos = s.indexOf("class Solution");
         while (pos != -1) {
-            var flag = 1;
-            var pos1 = pos;
-            while (pos1 >= 0 && s[pos1] != '\n') {
-                if (s[pos1] == '/' && s[pos1 + 1] == '/')
-                    flag = 0;
+            /*let flag=1
+            let pos1 = pos
+            while (pos1>=0&&s[pos1]!='\n'){
+                if (s[pos1]=='/'&&s[pos1+1]=='/')flag=0;
                 --pos1;
             }
-            if (flag)
+            if (flag)break;*/
+            var pos1 = pos + 14;
+            if (pos1 < s.length && [' ', '\t', '\n', '\r', '{'].includes(s[pos1]) && !is_comment(s.substring(0, pos + 1)))
                 break;
             pos = s.indexOf("class Solution", pos + 1);
         }
