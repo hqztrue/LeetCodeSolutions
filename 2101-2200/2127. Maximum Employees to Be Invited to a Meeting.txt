@@ -1,1 +1,2 @@
-The answer is the longest cycle on cactus, or two nodes pointing to each other + 2 paths. O(n).
+The answer is the longest cycle on cactus, or several chains of the form two nodes pointing to each other + 2 paths pointing to them. O(n).
+

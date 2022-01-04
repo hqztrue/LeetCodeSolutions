@@ -1,1 +1,2 @@
-hashing+rejection sampling. O(1) per operation.
+hashing+rejection sampling. expected O(1) per operation.
+
