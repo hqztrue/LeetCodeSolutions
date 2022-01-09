@@ -1,0 +1,4 @@
+greedy, hashing. O(n).
+
+
+

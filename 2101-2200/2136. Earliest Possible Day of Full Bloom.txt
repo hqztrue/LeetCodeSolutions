@@ -1,0 +1,2 @@
+sort by the blossom date, and greedy. O(sort(n)).
+

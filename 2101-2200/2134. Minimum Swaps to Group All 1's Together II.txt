@@ -1,0 +1,2 @@
+sliding window, prefix sum. O(n).
+

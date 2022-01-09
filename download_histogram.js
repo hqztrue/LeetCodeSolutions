@@ -1,3 +1,7 @@
+//credit to @XYShaoKang
+var func_str = 'string run(int left, int right)';
+var func_name = 'abbreviateProduct';
+var func_arg = 'left, right';
 var __assign = (this && this.__assign) || function () {
     __assign = Object.assign || function(t) {
         for (var s, i = 1, n = arguments.length; i < n; i++) {
@@ -45,10 +49,6 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
         if (op[0] & 5) throw op[1]; return { value: op[0] ? op[1] : void 0, done: true };
     }
 };
-//credit to @XYShaoKang
-var func_str = 'string run(int left, int right)';
-var func_name = 'abbreviateProduct';
-var func_arg = 'left, right';
 //const targetLang = 'cpp'
 //const questionSlug = 'abbreviating-the-product-of-a-range'
 //todo:

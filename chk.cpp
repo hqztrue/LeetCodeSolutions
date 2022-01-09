@@ -29,6 +29,26 @@ struct TreeNode {
 //#include"codes_US.h"
 #include"codes_CN.h"
 #undef cerr
+namespace cerrIO{
+	template<class T>
+	void print(const T &a){cerr<<a;}
+	template<> void print<string>(const string &s){
+		cerr<<"\""<<s<<"\"";
+	}
+	template<class T>
+	void print(const vector<T> &v){
+		cerr<<"[";
+		for (int i=0;i<v.size();++i){
+			print(v[i]);
+			cerr<<(i+1==v.size()?"":",");
+		}
+		cerr<<"]";
+	}
+	template<class T>
+	void println(const T &a){
+		print(a); cerr<<"\n";
+	}
+} using namespace cerrIO;
 void count(){int T=0; for (int i=0;i<nsols;++i)if (ptr[i])++T; cerr<<"#="<<T<<endl;}
 void check(vector<int> a, int t, int res){
 	for (int i=0;i<nsols;++i)
