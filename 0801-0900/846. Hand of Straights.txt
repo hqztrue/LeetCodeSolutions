@@ -1,5 +1,0 @@
-1. reducing to sorting, greedily extend the smallest number. O(sort(n)).
-2. repeatedly find a maximal chain, and delete the first k numbers. O(n).
-
-remark. the testcases are weak.
-

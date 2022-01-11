@@ -1,7 +1,9 @@
 #include<bits/stdc++.h>
 using namespace std;
 const char* tmp_file="tmp12345.out.txt";
-ofstream ofile(tmp_file),__out;
+namespace std{ 
+	ofstream ofile(tmp_file),__out;
+}
 streambuf *cerrbuf=cerr.rdbuf();
 class Solution {
 public:
@@ -68,6 +70,8 @@ int main()
 	freopen(tmp_file,"w",stdout);
 	//srand(time(0));
 	//count();
+	vector<int> arr = {};
+	for (auto t:arr)ptr[t]=0;
 	//check({5,1,7,1,1,5,2,7,6,1},4,1);
 	for (int T=0;;++T){
 		if (T%1000==0)cerr<<"T="<<T<<endl;
