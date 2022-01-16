@@ -1,0 +1,2 @@
+solve the decision version, divide and conquer. O(n).
+

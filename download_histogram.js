@@ -54,6 +54,7 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
 //todo:
 //constructor: Solution()
 //Solution::
+//#if 0
 function sleep(time) {
     return new Promise(function (resolve) {
         setTimeout(resolve, time);
@@ -450,25 +451,21 @@ function download(str, filename) {
     function process_cpp(s, id) {
         var res = '';
         res += "namespace space".concat(id, "{\n");
-        //s = s.replaceAll(/class\s+Solution/g, 'class Solution')
-        var pos = s.indexOf("class Solution");
+        s = s.replaceAll(' ', ' ');
+        var pos = s.search(/\b(class|struct)\s+Solution(\b|{)/g), pos1;
         while (pos != -1) {
-            /*let flag=1
-            let pos1 = pos
-            while (pos1>=0&&s[pos1]!='\n'){
-                if (s[pos1]=='/'&&s[pos1+1]=='/')flag=0;
-                --pos1;
-            }
-            if (flag)break;*/
-            var pos1 = pos + 14;
-            if (pos1 < s.length && [' ', '\t', '\n', '\r', '{'].includes(s[pos1]) && !is_comment(s.substring(0, pos + 1)))
+            pos1 = pos + 1;
+            while (s[pos1] != 'n')
+                ++pos1;
+            if (!is_comment(s.substring(0, pos + 1)))
                 break;
-            pos = s.indexOf("class Solution", pos + 1);
+            pos = s.substring(pos1 + 1, s.length).search(/\b(class|struct)\s+Solution(\b|{)/g) + pos1 + 1;
         }
         if (pos == -1) {
+            console.log("".concat(s));
             throw new Error('no class');
         }
-        s = s.substring(0, pos) + "class Solution".concat(id, ": public Solution") + s.substring(pos + 14, s.length);
+        s = s.substring(0, pos) + "class Solution".concat(id, ": public Solution") + s.substring(pos1 + 1, s.length);
         //run
         pos = s.indexOf('{', pos);
         s = s.substring(0, pos + 1) + '\n\t' + func_str + " {auto *p = new Solution".concat(id, "(); auto ans = p->").concat(func_name, "(").concat(func_arg, "); delete p; return ans;}\n") + s.substring(s[pos + 1] == '\n' ? pos + 2 : pos + 1, s.length);
@@ -480,22 +477,22 @@ function download(str, filename) {
             pos = s.indexOf("define", pos + 1);
             if (pos == -1)
                 break;
-            var pos1 = pos - 1;
-            while (pos1 >= 0 && (s[pos1] == ' ' || s[pos1] == '\t'))
-                --pos1;
-            if (pos1 < 0 || s[pos1] != '#')
+            var pos1_1 = pos - 1;
+            while (pos1_1 >= 0 && (s[pos1_1] == ' ' || s[pos1_1] == '\t'))
+                --pos1_1;
+            if (pos1_1 < 0 || s[pos1_1] != '#')
                 continue;
-            pos1 = pos + 6;
-            if (s[pos1] != ' ' && s[pos1] != '\t')
+            pos1_1 = pos + 6;
+            if (s[pos1_1] != ' ' && s[pos1_1] != '\t')
                 continue;
-            while (pos1 < l && (s[pos1] == ' ' || s[pos1] == '\t') && s[pos1] != '\n')
-                ++pos1;
-            if (pos1 >= l || s[pos1] == '\n')
+            while (pos1_1 < l && (s[pos1_1] == ' ' || s[pos1_1] == '\t') && s[pos1_1] != '\n')
+                ++pos1_1;
+            if (pos1_1 >= l || s[pos1_1] == '\n')
                 continue;
-            var pos2 = pos1;
+            var pos2 = pos1_1;
             while (pos2 < l && s[pos2] != ' ' && s[pos2] != '\t' && s[pos2] != '\n' && s[pos2] != '\r' && s[pos2] != '(')
                 ++pos2;
-            tail += "#undef " + s.substring(pos1, pos2) + "\n";
+            tail += "#undef " + s.substring(pos1_1, pos2) + "\n";
         }
         //pragma
         pos = -1;
@@ -503,14 +500,14 @@ function download(str, filename) {
             pos = s.indexOf("pragma", pos + 1);
             if (pos == -1)
                 break;
-            var pos1 = pos - 1;
-            while (pos1 >= 0 && (s[pos1] == ' ' || s[pos1] == '\t'))
-                --pos1;
-            if (pos1 < 0 || s[pos1] != '#')
+            var pos1_2 = pos - 1;
+            while (pos1_2 >= 0 && (s[pos1_2] == ' ' || s[pos1_2] == '\t'))
+                --pos1_2;
+            if (pos1_2 < 0 || s[pos1_2] != '#')
                 continue;
             if (pos + 6 >= s.length || s[pos + 6] != ' ' && s[pos + 6] != '\t')
                 continue;
-            s = s.substring(0, pos1) + '//' + s.substring(pos1, s.length);
+            s = s.substring(0, pos1_2) + '//' + s.substring(pos1_2, s.length);
             pos += 2;
         }
         res += "".concat(s, "\n");

@@ -11,6 +11,7 @@ public:
 };
 Solution *ptr[100005]; int nsols=sizeof(ptr)/sizeof(Solution*);
 #define exp10(x) pow(10.,x)
+auto reduce(auto a,auto b,int c=0){return accumulate(a,b,0);}
 typedef unsigned int uint;
 struct ListNode {
   int val;

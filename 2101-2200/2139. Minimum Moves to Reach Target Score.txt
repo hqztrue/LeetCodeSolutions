@@ -1,0 +1,2 @@
+greedy. O(1) using bit operations.
+
