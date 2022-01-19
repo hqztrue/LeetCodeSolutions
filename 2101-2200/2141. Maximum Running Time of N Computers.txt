@@ -1,2 +1,2 @@
-solve the decision version, divide and conquer. O(n).
+solve the decision version, using divide and conquer (similar to weighted median). O(n).
 
