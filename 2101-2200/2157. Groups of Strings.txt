@@ -1,0 +1,2 @@
+Finding connected components after building the graph. We don't need to consider operation 1, and opeartion 3 can be handled by building an auxiliary vertex for each possible deletions. Use hashing, O(L).
+

@@ -1,3 +1,5 @@
 this problem is NPC (for unbounded alphabet size).
 use bitmask DP on the target characters.
 
+remark. for random inputs, average case analysis?
+

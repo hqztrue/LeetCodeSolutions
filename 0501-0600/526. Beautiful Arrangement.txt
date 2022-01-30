@@ -1,3 +1,4 @@
-dfs/set-based DP. O~(2^n).
-This is a special case of computing the permanent (counting the number of perfect bipartite matchings), so it's in #P.
+dfs/set-based DP. $O^*(2^n)$.
+This is a special case of computing the permanent (counting the number of perfect bipartite matchings), so it's in #P. We can slightly improve the running time to $O^*(2^{(1-1/O(\Delta\log \Delta))n})$ \cite{izumi2012new}, where $\Delta=O(\log n)$ is the average degree.
+Since there are $O(n/\log n)$ primes in $[\frac{n}{2},n)$ (where the correspondence is fixed), we can improve the running time to $O^*(2^{(1-1/O(\log n))n})$.
 

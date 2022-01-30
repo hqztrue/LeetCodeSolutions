@@ -53,13 +53,13 @@ namespace cerrIO{
 	}
 } using namespace cerrIO;
 void count(){int T=0; for (int i=0;i<nsols;++i)if (ptr[i])++T; cerr<<"#="<<T<<endl;}
-void check(vector<int> a, int t, int res){
+void check(vector<int> a, int t, int res=-2){
 	for (int i=0;i<nsols;++i)
 		if (ptr[i]){
 			//cerr<<"chk"<<i<<endl;
 			auto _a=a;
 			auto ans=ptr[i]->run(_a,t);
-			if (ans!=res){
+			if (res!=-2&&ans!=res){
 				ptr[i]=0;
 				cerr<<"del "<<i<<endl;
 			}

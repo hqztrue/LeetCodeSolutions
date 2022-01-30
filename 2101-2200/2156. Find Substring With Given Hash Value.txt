@@ -1,0 +1,2 @@
+rolling hash. O(n).
+

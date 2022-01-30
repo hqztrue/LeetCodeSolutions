@@ -1,2 +1,0 @@
-solve the decision version, using divide and conquer (similar to weighted median). O(n).
-

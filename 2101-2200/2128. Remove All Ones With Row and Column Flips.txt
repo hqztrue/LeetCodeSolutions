@@ -1,0 +1,2 @@
+After guessing the status of the first row, the states of the rest rows and columns are determined. O(nm).
+
