@@ -50,6 +50,7 @@ Problem ID marked with leading ~ indicates there's good evidences that the algor
 2002 Maximum Product of the Length of Two Palindromic Subsequences  
 2013 Detect Squares  
 2076 Process Restricted Friend Requests  
+~2093 Minimum Cost to Reach City With Discounts  
 2101 Detonate the Maximum Bombs  
 2122 Recover the Original Array  
 

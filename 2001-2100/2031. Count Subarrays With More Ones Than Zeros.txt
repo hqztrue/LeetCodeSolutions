@@ -1,0 +1,2 @@
+prefix sum. O(n).
+

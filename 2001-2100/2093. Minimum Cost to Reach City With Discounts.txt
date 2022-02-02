@@ -1,0 +1,3 @@
+let k denote the number of discounts.
+copy the graph k times. shortest path. O(SSSP(n*k,m*k)).
+

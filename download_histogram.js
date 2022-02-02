@@ -52,8 +52,6 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
 //const targetLang = 'cpp'
 //const questionSlug = 'abbreviating-the-product-of-a-range'
 //todo:
-//constructor: Solution()
-//Solution::
 //#if 0
 function sleep(time) {
     return new Promise(function (resolve) {
@@ -452,6 +450,10 @@ function download(str, filename) {
         var res = '';
         res += "namespace space".concat(id, "{\n");
         s = s.replaceAll(' ', ' ');
+        //Solution::
+        s = s.replaceAll('Solution::', "Solution".concat(id, "::"));
+        //constructor: Solution()
+        s = s.replaceAll('Solution()', "Solution".concat(id, "()"));
         var pos = s.search(/\b(class|struct)\s+Solution(\b|{)/g), pos1;
         while (pos != -1) {
             pos1 = pos + 1;

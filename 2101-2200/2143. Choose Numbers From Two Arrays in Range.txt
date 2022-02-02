@@ -1,0 +1,3 @@
+This is not easier than subset sum.
+DP. let f[i][j] denote the number of intervals that end at i, such that the sum of numbers picked in nums1-the sum of numbers picked in nums2=k. O(n^2U).
+
