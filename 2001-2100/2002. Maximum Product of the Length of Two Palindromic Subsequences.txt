@@ -1,4 +1,0 @@
-bitmask DP. O^*(2^n).
-
-Is there a polynomial time algorithm?
-

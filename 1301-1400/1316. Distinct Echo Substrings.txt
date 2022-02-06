@@ -6,6 +6,7 @@ case 1. small+small. we bound the running time by O(ab), and charge to the minim
 case 2. small+large. we bound the running time by O(an/w). for each element in the small subtree, this case can happen at most once. so the total running time in this case is O(n^2/w).
 case 3. large+large. we bound the running time by O(n log n). there are only O(w) of these merges, so in total O(nw log n).
 in conclusion, the total running time is O(n^2/w).
+4. suffix tree. O(). https://leetcode-cn.com/problems/distinct-echo-substrings/solution/geng-kuai-de-onlog2n-jie-fa-hou-zhui-shu-8wby/
 
 remark. can we improve case 2 by a special case of (min,+)-convolution, and get truly subquadratic time?
 

@@ -1,0 +1,2 @@
+there are only two cases. O(1).
+

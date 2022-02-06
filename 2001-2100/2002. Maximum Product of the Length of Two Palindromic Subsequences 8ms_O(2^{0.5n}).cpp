@@ -26,10 +26,13 @@ public:
 			for (I=1;I<(1<<n0);++I){
 				int m=__builtin_popcount(I);
 				if (m<=(n/2+1)/2){
-					++T0; n1=31-__builtin_clz(I);
 					for (int i=1,i0=I;i<=m;++i,i0-=i0&-i0)b[i]=a[__builtin_ctz(i0)];
-					ans=max(ans,m*2*f(0,n-1,1,m));
-					ans=max(ans,(m*2-1)*f(0,n-1,1,m-1));
+					int j=m-1; ++T0; n1=31-__builtin_clz(I);
+					for (int i=n1+1;i<n&&j;++i)
+						if (b[j]==a[i])--j;
+					if (j)continue;
+					if (m*2*(n-m*2)>ans)ans=max(ans,m*2*f(0,n-1,1,m));
+					if ((m*2-1)*(n-m*2+1)>ans)ans=max(ans,(m*2-1)*f(0,n-1,1,m-1));
 				}
 			}
 			reverse(s.begin(),s.end());

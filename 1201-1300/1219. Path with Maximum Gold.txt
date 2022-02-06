@@ -1,3 +1,0 @@
-dfs.
-This problem is NPC, because we can reduce hamiltonian path on grids to it.
-
