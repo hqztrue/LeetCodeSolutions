@@ -70,17 +70,16 @@ int main()
 {
 	//freopen("1.in","r",stdin);
 	freopen(tmp_file,"w",stdout);
-	//srand(time(0));
+	srand(time(0));
 	//count();
 	vector<int> arr = {};
 	for (auto t:arr)ptr[t]=0;
-	//check({5,1,7,1,1,5,2,7,6,1},4,1);
+	//check({},4,1);
 	for (int T=0;;++T){
 		if (T%1000==0)cerr<<"T="<<T<<endl;
-		int n=3,m=100,t;
+		int n=3,m=100,t=rand()%10;
 		vector<int> a(n);
 		for (int i=0;i<n;++i)a[i]=rand()%m;
-		t=rand()%10;
 		Solution* std_ptr=0;
 		int std=-1;
 		for (int i=0;i<nsols;++i)

@@ -1,0 +1,2 @@
+count frequency. O(n).
+
