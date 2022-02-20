@@ -1,0 +1,2 @@
+greedy. O(1) for computation and O(sqrt(n)) for outputting the values.
+

@@ -1,0 +1,2 @@
+This is edge dominating set on bipartite graphs, which is NPC.
+

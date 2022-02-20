@@ -1,0 +1,2 @@
+1. count the number of valid substrings on each edge of the suffix tree, by representing the difference of the prefix sums of each character as a hashing value. we need to check 1+#new digits values on each edge. query the frequencies offline. O(n*|Σ| log n) or O(n).
+

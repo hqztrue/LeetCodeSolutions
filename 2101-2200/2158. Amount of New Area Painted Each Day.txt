@@ -1,0 +1,4 @@
+1. linear union-find. O(n+U).
+2. segment tree. O(n log n).
+3. offline sorting. O(sort(n)).
+
