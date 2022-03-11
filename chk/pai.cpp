@@ -1,3 +1,5 @@
+#include<bits/stdc++.h>
+using namespace std;
 class Solution {
 public:
     int pivotIndex(vector<int>& nums) {
@@ -19,7 +21,7 @@ public:
         
         return ret;
     }
-}A;
+};
 
 class Solution1 {
 public:
@@ -39,19 +41,21 @@ public:
         }
         return -1;
     }
-}A1;
+};
 int main()
 {
 	//freopen(".in","r",stdin);
 	//freopen(".out","w",stdout);
 	//srand(time(0));
-	for (int T=1;T<2;++T){
+	for (int T=1;;++T){
+		//if (T%1000==0)printf("T=%d\n",T);
 		int n=10,m=10;
 		vector<int> a(n);
 		for (int i=0;i<n;++i)a[i]=rand()%m*(rand()%2?1:-1);
-        printf("[");
+		printf("[");
 		for (int i=0;i<n;++i)printf("%d%s",a[i],i==n-1?"]\n":",");
-		vector<int> b=a,c=a;
+		auto b=a,c=a;
+		Solution A; Solution1 A1;
 		if (A.pivotIndex(b)!=A1.pivotIndex(c)){
 			puts("err");
 			printf("[");

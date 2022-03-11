@@ -1,1 +1,1 @@
-hashing+radix sort. O(n) expected.
+hashing+counting sort. O(n) expected.

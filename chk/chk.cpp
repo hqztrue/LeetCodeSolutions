@@ -12,6 +12,15 @@ public:
 Solution *ptr[100005]; int nsols=sizeof(ptr)/sizeof(Solution*);
 #define exp10(x) pow(10.,x)
 #define u_int uint
+#define __int8_t int8_t
+#define __uint8_t uint8_t
+#define __int16_t int16_t
+#define __uint16_t uint16_t
+#define __int32_t int32_t
+#define __uint32_t uint32_t
+#define __countr_zero __builtin_ctz
+#define __popcount __builtin_popcount
+#define getchar_unlocked _getchar_nolock
 auto reduce(auto a,auto b,int c=0){return accumulate(a,b,0);}
 typedef unsigned int uint;
 struct ListNode {
@@ -55,14 +64,17 @@ namespace cerrIO{
 } using namespace cerrIO;
 void count(){int T=0; for (int i=0;i<nsols;++i)if (ptr[i])++T; cerr<<"#="<<T<<endl;}
 void check(vector<int> a, int t, int res=-2){
+	static int T0=0; cerr<<"chk"<<++T0<<endl;
 	for (int i=0;i<nsols;++i)
 		if (ptr[i]){
 			//cerr<<"chk"<<i<<endl;
-			auto _a=a;
+			auto _a=a; int t1=clock();
 			auto ans=ptr[i]->run(_a,t);
-			if (res!=-2&&ans!=res){
+			if (res!=-2&&ans!=res||clock()-t1>1000){
 				ptr[i]=0;
-				cerr<<"del "<<i<<endl;
+				cerr<<"del "<<i;
+				if (res==-2||ans==res)cerr<<"(TLE: "<<clock()-t1<<")";
+				cerr<<endl;
 			}
 		}
 }
@@ -85,14 +97,14 @@ int main()
 		for (int i=0;i<nsols;++i)
 			if (ptr[i]){
 				//cerr<<"i="<<i<<endl;
-				auto _a=a;
+				auto _a=a; int t1=clock();
 				auto ans=ptr[i]->run(_a,t);
 				if (std_ptr==0)std_ptr=ptr[i],std=ans;
-				else if (std!=ans){
-					cerr<<"[";
-					for (int i=0;i<n;++i)cerr<<a[i]<<(i==n-1?"]\n":",");
+				if (std!=ans||clock()-t1>1000){
+					println(a);
 					cerr<<t<<endl;
-					cerr<<"err"<<i<<" "<<std<<" "<<ans<<endl;
+					if (std!=ans)cerr<<"err: "<<i<<" "<<std<<" "<<ans<<endl;
+					else cerr<<"TLE: "<<i<<" time="<<clock()-t1<<endl;
 					ptr[i]=0;
 				}
 				//cerr<<i<<" "<<ans<<endl;

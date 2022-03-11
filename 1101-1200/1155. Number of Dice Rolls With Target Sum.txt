@@ -1,2 +1,0 @@
-generating function, polynomial exp. O(t log t).
-

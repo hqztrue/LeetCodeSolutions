@@ -10,6 +10,7 @@ Problem ID marked with leading ~ indicates there's good evidences that the algor
 368 Largest Divisible Subset  
 395 Longest Substring with At Least K Repeating Characters  
 ~403 Frog Jump  
+411 Minimum Unique Word Abbreviation  
 ~464 Can I Win  
 ~483 Smallest Good Base  
 548 Split Array with Equal Sum  
