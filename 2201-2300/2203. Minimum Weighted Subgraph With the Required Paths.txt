@@ -1,0 +1,2 @@
+The optimal solution must have the form src1->u, src2->u, u->dest. O(SSSP(n,m)).
+
