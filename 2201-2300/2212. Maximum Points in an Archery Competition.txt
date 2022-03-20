@@ -1,0 +1,5 @@
+Let u=11 denote the range.
+0/1 knapsack with small weights.
+1. subset enumeration. O(2^u).
+2. O(u^3) \cite{eisenbrand2018proximity}.
+

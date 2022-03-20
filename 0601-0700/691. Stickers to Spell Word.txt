@@ -1,4 +1,4 @@
-this problem is NPC (for unbounded alphabet size).
+this problem is NPC (for unbounded alphabet size), by reduction from set cover. Let t denote the target length, it is conjectured that O^*(2^t) is optimal.
 use bitmask DP on the target characters.
 
 remark. for random inputs, average case analysis?

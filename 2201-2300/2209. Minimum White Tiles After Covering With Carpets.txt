@@ -1,0 +1,2 @@
+1. the function is monotone in the number of carpets used. wqs binary search. O(n log n).
+

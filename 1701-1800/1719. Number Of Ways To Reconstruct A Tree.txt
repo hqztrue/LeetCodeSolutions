@@ -1,2 +1,2 @@
-a decendent's neighbors in the array pairs is a subset of the ancestor's neighbors in pairs, so we can order two nodes according to their degree in pairs. if two nodes have the same set of neighbors, then there are multiple solutions. use topological sort to construct the tree. finally check whether the tree we get is valid. O(n).
+a decendent's neighbors in the array pairs is a subset of the ancestor's neighbors in pairs, so we can order two nodes according to their degree in pairs. if two nodes have the same set of neighbors, then there are multiple solutions. use topological sort to construct the tree. finally check whether the tree we get is valid. O(n+#pairs).
 

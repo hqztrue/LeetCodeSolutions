@@ -1,2 +1,0 @@
-Similar to 875. Koko Eating Bananas. O(n).
-

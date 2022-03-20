@@ -1,0 +1,4 @@
+similar to the partition function.
+1. DP. O(n^{3/2}).
+2. can we get O~(n) or O(n^{1/2+eps}) \cite{johansson2012efficient}?
+
