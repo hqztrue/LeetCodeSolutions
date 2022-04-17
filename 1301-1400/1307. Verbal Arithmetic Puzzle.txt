@@ -1,2 +1,3 @@
-dfs.
+1. dfs.
+2. meet in the middle. https://leetcode-cn.com/problems/verbal-arithmetic-puzzle/solution/yi-chong-ke-neng-geng-kuai-de-zuo-fa-by-h0svh/
 

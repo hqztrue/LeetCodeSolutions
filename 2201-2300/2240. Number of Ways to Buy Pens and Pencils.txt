@@ -1,0 +1,3 @@
+Euclidean algorithm. O(log n).
+https://oi-wiki.org/math/number-theory/euclidean/
+

@@ -20,8 +20,11 @@ Solution *ptr[100005]; int nsols=sizeof(ptr)/sizeof(Solution*);
 #define __uint32_t uint32_t
 #define __countr_zero __builtin_ctz
 #define __popcount __builtin_popcount
+#define ffs __builtin_ffs
 #define getchar_unlocked _getchar_nolock
-auto reduce(auto a,auto b,int c=0){return accumulate(a,b,0);}
+namespace std{
+	auto reduce(auto a,auto b,int c=0){return accumulate(a,b,0);}
+}
 typedef unsigned int uint;
 struct ListNode {
   int val;
@@ -63,7 +66,7 @@ namespace cerrIO{
 	}
 } using namespace cerrIO;
 void count(){int T=0; for (int i=0;i<nsols;++i)if (ptr[i])++T; cerr<<"#="<<T<<endl;}
-void check(vector<int> a, int t, int res=-2){
+void check(vector<int> a,int t,int res=-2){
 	static int T0=0; cerr<<"chk"<<++T0<<endl;
 	for (int i=0;i<nsols;++i)
 		if (ptr[i]){

@@ -1,2 +1,4 @@
-precompute a table.
+Let N=10^n.
+1. precompute a table.
+2. enumerate the palindromic integers and verify. we need to test roughly O(sqrt(N)) numbers.
 

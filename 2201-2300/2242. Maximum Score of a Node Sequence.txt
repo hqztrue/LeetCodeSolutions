@@ -1,0 +1,2 @@
+Enumerate the middle two vertices on the path, then greedily choose the two endpoints. O(n+m).
+

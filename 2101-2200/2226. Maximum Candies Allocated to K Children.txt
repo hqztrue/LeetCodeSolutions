@@ -1,0 +1,2 @@
+similar to 2187. Minimum Time to Complete Trips, divide and conquer. O(n).
+

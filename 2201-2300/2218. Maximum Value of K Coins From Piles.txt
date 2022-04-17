@@ -1,0 +1,3 @@
+knapsack with groups. let s denote the total length of the piles.
+1. DP. O(ks).
+
