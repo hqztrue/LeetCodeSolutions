@@ -1,0 +1,4 @@
+break each circle into row segments. O(nU).
+
+remark. when U is large, can we use the algorithm for counting the number of points inside a single circle?
+

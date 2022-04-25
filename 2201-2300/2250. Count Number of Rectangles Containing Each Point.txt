@@ -1,0 +1,4 @@
+offline orthogonal range counting. O(n*sqrt(log n)) \cite{chan2010counting}.
+
+remark. the height is small.
+
