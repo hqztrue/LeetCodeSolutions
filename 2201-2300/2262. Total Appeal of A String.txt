@@ -1,0 +1,2 @@
+maintain the last occurrence of each character. O(n).
+

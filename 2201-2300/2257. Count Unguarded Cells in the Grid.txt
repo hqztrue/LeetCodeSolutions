@@ -1,0 +1,2 @@
+brute force. O(nm).
+

@@ -1,0 +1,2 @@
+let the result have the form a(b+c)d, the optimal solution will satisfy ||b|-|c||=O(1) (apart from the edge cases). O(n).
+
