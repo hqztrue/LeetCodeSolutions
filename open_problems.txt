@@ -87,8 +87,8 @@ DP/counting:
 1895 Largest Magic Square  
 1925 Count Square Sum Triples  
 1959 Minimum Total Space Wasted With K Resizing Operations  
-1999 Smallest Greater Multiple Made of Two Digits
-
+1999 Smallest Greater Multiple Made of Two Digits  
+2267 Check if There Is a Valid Parentheses String Path  
 
 
 

@@ -1,0 +1,2 @@
+Guess the character with the maximum occurrence and the character with the minimum occurrence, then perform DP in O(n) time. O(n*|\Sigma|).
+

@@ -1,0 +1,2 @@
+DP, let f[i][j][k] denote whether we can reach (i,j) with the number of "(" - the number of ")" =k. use bitset. O(nm*(n+m)/w).
+

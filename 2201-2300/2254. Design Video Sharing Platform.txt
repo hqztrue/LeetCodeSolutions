@@ -1,2 +1,2 @@
-O(L) for upload and watch and O(1) for other operations.
+O(L+sort(n)/n) for upload using priority queue, O(L) for watch and O(1) for other operations.
 
