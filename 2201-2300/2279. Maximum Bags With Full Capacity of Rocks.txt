@@ -1,0 +1,2 @@
+divide and conquer. O(n).
+

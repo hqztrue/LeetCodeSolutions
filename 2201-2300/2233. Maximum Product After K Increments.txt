@@ -1,2 +1,0 @@
-greedy, similar to median finding. O(n).
-
