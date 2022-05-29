@@ -1,0 +1,2 @@
+greedy, sorting by degree. O(n).
+

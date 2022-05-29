@@ -1,0 +1,2 @@
+simulation using linked list. O(n).
+
