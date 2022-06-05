@@ -295,7 +295,7 @@ var LeetCodeApi = /** @class */ (function () {
             return __generator(this, function (_b) {
                 switch (_b.label) {
                     case 0:
-                        if (!/leetcode-cn\.com/.test(this.REGION_URL)) return [3 /*break*/, 3];
+                        if (!/leetcode\.cn/.test(this.REGION_URL)) return [3 /*break*/, 3];
                         return [4 /*yield*/, this.getSubmissionDetailByLocal(submissionId)];
                     case 1:
                         data = _b.sent();
