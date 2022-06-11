@@ -1,2 +1,2 @@
-divide into bins of size O(k), and greedily choose from small to large. O(n).
+divide into bins of size $O(k)$, and greedily choose from small to large. $O(n)$.\\
 
