@@ -1,0 +1,2 @@
+Use FFT for each character. O(\sigma*n log n).
+

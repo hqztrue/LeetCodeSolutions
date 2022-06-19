@@ -1,0 +1,2 @@
+for each pair of characters c and d, count the number of suffices s such that cs exists and ds does not exist. O(n*l+n*\sigma).
+

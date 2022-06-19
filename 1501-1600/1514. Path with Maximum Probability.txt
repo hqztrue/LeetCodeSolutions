@@ -2,4 +2,5 @@ take log in the probability, find shortest path. O(n log n+m).
 
 
 remark. if we need to output the optimal path, then there could be precision problems.
+The checker may have precision issues when the error is very close to 1e-5.
 

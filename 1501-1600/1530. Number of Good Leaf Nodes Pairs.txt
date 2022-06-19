@@ -1,4 +1,4 @@
 poj 1741, unweighted. CF161D Distance in Tree.
 O(n), longest chain decomposition?
-see my zhihu article.
+see my zhihu article (to be updated).
 

@@ -1,0 +1,2 @@
+Use monotone queue to build the graph, then run shortest path on the DAG. O(n).
+
