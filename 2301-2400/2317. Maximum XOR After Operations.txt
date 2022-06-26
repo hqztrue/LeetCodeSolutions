@@ -1,0 +1,2 @@
+0 can only become 0, 1 can become 1 or 0. O(n).
+

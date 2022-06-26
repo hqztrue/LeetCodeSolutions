@@ -54,6 +54,8 @@ Problem ID marked with leading ~ indicates there's good evidences that the algor
 ~2093 Minimum Cost to Reach City With Discounts  
 2101 Detonate the Maximum Bombs  
 2122 Recover the Original Array  
+2322 Minimum Score After Removals on a Tree  
+
 
 
 

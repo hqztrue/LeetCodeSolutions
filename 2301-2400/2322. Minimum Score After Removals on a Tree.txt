@@ -1,0 +1,4 @@
+1. O(n log^2 U). see my article https://leetcode.cn/problems/minimum-score-after-removals-on-a-tree/solution/bi-on2geng-kuai-de-yi-xie-suan-fa-by-hqz-lew0/
+
+better running time?
+
