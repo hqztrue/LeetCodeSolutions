@@ -1,1 +1,2 @@
-greedy, always select a whole input string. use suffix tree to verify containment. O(L).
+greedy, always select a whole input string. verify containment by brute force. O(n^2*l).
+

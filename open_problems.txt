@@ -13,6 +13,7 @@ Problem ID marked with leading ~ indicates there's good evidences that the algor
 411 Minimum Unique Word Abbreviation  
 ~464 Can I Win  
 ~483 Smallest Good Base  
+522 Longest Uncommon Subsequence II  
 548 Split Array with Equal Sum  
 727 Minimum Window Subsequence  
 ~741 Cherry Pickup  
