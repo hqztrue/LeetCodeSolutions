@@ -6,7 +6,7 @@ struct node{
 		:_l(_l),_r(_r),min(_min),max(_max),v(-1){}
 	node *l(){return _l;}
 	node *r(){return _r;}
-}Pool[N*L*10],*p,*root;
+}Pool[N*L*5],*p,*root;
 node *t1[N],*t2[N],*t3[N],*t4[N];  //bottom, up, prefix, suffix
 inline node* newnode(node *l=0,node *r=0,int x=-1){
 	p->_l=l; p->_r=r;
@@ -33,6 +33,9 @@ void print(node *x,int key=0,int d=L){
 	if (!x->_l&&!x->_r)printf("%d %d d=%d\n",key,x->v,d);
 	else print(x->_l,key*2,d-1),print(x->_r,key*2+1,d-1);
 }
+int D(node *x){
+	return !x?-1:max(D(x->_l),D(x->_r))+1;
+}
 struct node3;
 node3* newnode3(node *a0,node *a1,node *a2);
 struct node3{
@@ -48,16 +51,13 @@ struct node3{
 	}
 	node3 *l(){return newnode3(a[0]?a[0]->_l:0,a[1]?a[1]->_l:0,a[2]?a[2]->_l:0);}
 	node3 *r(){return newnode3(a[0]?a[0]->_r:0,a[1]?a[1]->_r:0,a[2]?a[2]->_r:0);}
-}Pool3[N*L*10],*p3;
+}Pool3[N*L*5],*p3;
 inline node3* newnode3(node *a0,node *a1,node *a2){
 	*p3=node3(a0,a1,a2);
 	return p3++;
 }
 inline bool exist(node *x){return x;}
 inline bool exist(node3 *x){return x&&(x->a[0]||x->a[1]||x->a[2]);}
-int D(node *x){
-	return !x?-1:max(D(x->_l),D(x->_r))+1;
-}
 inline int get(int x,int i){return (x>>i)&1;}
 inline int msb(int x){return x?31-__builtin_clz(x):-1;}
 int s_below[N],s,ans,*a;
@@ -182,10 +182,9 @@ public:
 				}
 			}
 			if (i>d)break;
-			Tnode *_cur=cur;
 			// 1.3. ((A,B),C), A&B good. enumerate A
 			if (!get(v,d)){
-				cur=_cur->l();
+				cur=cur->l();
 				if (!exist(cur)||cur->max<v)break;
 				for (i=d-1;i>=0;--i){
 					if (get(v,i))cur=cur->r();
@@ -208,7 +207,7 @@ public:
 			}
 			// 1.4. (A,(B,C)), B&C good. enumerate C
 			else {
-				cur=_cur->r();
+				cur=cur->r();
 				if (!exist(cur)||cur->min>v)break;
 				for (i=d-1;i>=0;--i){
 					if (!get(v,i))cur=cur->l();
@@ -233,9 +232,7 @@ public:
 	}
 	void dfs(int x,int fa){  // Compute the solution.
 		for (int y:e[x])
-			if (y!=fa){
-				dfs(y,x);
-			}
+			if (y!=fa)dfs(y,x);
 		// Case 1. enumerate above x
 		solve(x,s_below[x],x?t1[x]:0);
 		// Case 2. enumerate below x
