@@ -1,5 +1,3 @@
-#include<bits/stdc++.h>
-using namespace std;
 #define double long double
 const double PI=atan((double)1)*4,E=exp((double)1),
   B[]={1,1./2,1./6,0,-1./30,0,1./42,0,-1./30,0,5./66,0,-691./2730,0,7./6,0,-3617./510,0,43867./798,0,-174611./330};
