@@ -1,0 +1,2 @@
+add the numbers in increasing order (using bucket sort with n buckets), use doubly linked list to maintain the size of connected components. O(n).
+
