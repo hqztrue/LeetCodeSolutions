@@ -56,6 +56,7 @@ Problem ID marked with leading ~ indicates there's good evidences that the algor
 2101 Detonate the Maximum Bombs  
 2122 Recover the Original Array  
 2322 Minimum Score After Removals on a Tree  
+~2338 Count the Number of Ideal Arrays  
 
 
 

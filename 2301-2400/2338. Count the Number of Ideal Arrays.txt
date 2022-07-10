@@ -1,0 +1,5 @@
+1. O(U), multiplicative function.
+2. O~(U^{2/3}). see my article https://leetcode.cn/problems/count-the-number-of-ideal-arrays/solution/ling-yi-chong-xian-xing-zuo-fa-by-hqztru-5w9f/.
+
+This is similar to 1735. Count Ways to Make Array With Product.
+
