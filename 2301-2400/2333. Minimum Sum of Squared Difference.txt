@@ -1,2 +1,0 @@
-greedy, weighted median. O(n).
-

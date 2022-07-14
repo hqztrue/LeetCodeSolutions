@@ -1,2 +1,4 @@
-DP, let f[i][j] denote the minimal number of characters to change such that s[1..i] can be divided into j palindromes. O(n^2k).
+DP, let f[i][j] denote the minimal number of characters to change such that s[1..i] can be divided into j palindromes. O(n^2*k).
+
+remark. use more properties of palindromes?
 

@@ -1,3 +1,4 @@
 1. For each substring compute in O(1) time. O(n^2).
 2. Compute the frequency vector for each prefix with dimension σ, then use dominance range counting. O(n*(log n/log log n)^σ) for constant σ.
+We can also use this \cite{chan2019orthogonal} for moderately large σ.
 

@@ -230,13 +230,19 @@ public:
 			}
 		}
 	}
+	int lb(int x){  //lower bound
+		int v=s^x,k=msb(v);
+		if (k<=0)return 0;
+		int l=msb(~v&((1<<k)-1));
+		return max(l>=0?1<<l:0,x&(1<<k)?x&((1<<k)-1):(1<<k)-(x&((1<<k)-1)));
+	}
 	void dfs(int x,int fa){  // Compute the solution.
 		for (int y:e[x])
 			if (y!=fa)dfs(y,x);
 		// Case 1. enumerate above x
-		solve(x,s_below[x],x?t1[x]:0);
+		if (lb(s^s_below[x])<ans)solve(x,s_below[x],x?t1[x]:0);
 		// Case 2. enumerate below x
-		solve(x,s^s_below[x],newnode3(t2[x],t3[x],t4[x]));
+		if (lb(s_below[x])<ans)solve(x,s^s_below[x],newnode3(t2[x],t3[x],t4[x]));
 	}
 	int minimumScore(vector<int>& _a, vector<vector<int>>& edges) {
 		int n=_a.size();
