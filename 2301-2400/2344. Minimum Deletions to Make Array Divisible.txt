@@ -1,0 +1,2 @@
+take the gcd of numsDivide. O(n+log U).
+
