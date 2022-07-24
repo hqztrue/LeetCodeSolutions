@@ -1,0 +1,2 @@
+greedy, repeatedly find the first occurrences of 1~k. O(n).
+

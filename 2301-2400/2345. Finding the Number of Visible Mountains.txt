@@ -1,0 +1,2 @@
+compute a staircase boundary. O(sort(n)).
+

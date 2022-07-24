@@ -1,0 +1,2 @@
+Notice that for each bit, (a|b)+(a&b)=a+b. O(n).
+
