@@ -1,0 +1,2 @@
+counting the number of distinct elements. O(n).
+

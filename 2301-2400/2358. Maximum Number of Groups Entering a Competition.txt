@@ -1,0 +1,2 @@
+We can construct the optimal solution by sorting the array and assign i students to group i. O(1) (assuming sqrt takes O(1) time).
+
