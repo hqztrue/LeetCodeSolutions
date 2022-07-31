@@ -1,2 +1,2 @@
-bfs. O(n+m).
+bfs. O(n).
 
