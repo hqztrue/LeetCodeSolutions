@@ -1,0 +1,2 @@
+greedy/simulation. O(n).
+

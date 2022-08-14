@@ -1,0 +1,3 @@
+divide into "II...DD..." type of groups, use greedy on each group. O(n).
+see 484. Find Permutation.
+

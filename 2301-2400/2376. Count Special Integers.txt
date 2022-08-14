@@ -1,0 +1,3 @@
+DP on digits. O(log n).
+see 1012. Numbers With Repeated Digits.
+

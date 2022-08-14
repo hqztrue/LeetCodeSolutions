@@ -1,0 +1,3 @@
+The string is a nested parentheses instance, and can be transformed into a tree. The question is to find the minimal representation.
+O(n) using bit packing. see my article https://www.zhihu.com/question/55484468/answer/991551284.
+
