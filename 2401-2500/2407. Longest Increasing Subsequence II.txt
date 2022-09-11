@@ -1,0 +1,2 @@
+DP, use segment tree for dynamic range max. O(n log n).
+
