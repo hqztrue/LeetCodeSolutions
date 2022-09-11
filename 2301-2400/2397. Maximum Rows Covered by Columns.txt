@@ -1,0 +1,3 @@
+This problem is NP-hard, by NP-hardness proof of a special case of the set-union knapsack problem \cite{arulselvan2014note}. see my article https://leetcode.cn/problems/maximum-rows-covered-by-columns/solution/zhe-ge-wen-ti-shi-npcde-by-hqztrue-2zvs/.
+We can also reduce from the minimum k-union problem \cite{vinterbo2002note}.
+

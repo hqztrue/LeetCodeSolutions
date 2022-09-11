@@ -1,0 +1,2 @@
+There are no solution. O(1).
+

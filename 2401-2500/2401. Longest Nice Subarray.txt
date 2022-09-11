@@ -1,0 +1,2 @@
+The subarray cannot have two 1s on the same bit. two pointers + bit operation, O(n).
+
