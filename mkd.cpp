@@ -1,5 +1,7 @@
 #include<bits/stdc++.h>
 using namespace std;
+#define For(i,n) for (int i=0;i<n;++i)
+#define rep(i,l,r) for (int i=l;i<=r;++i)
 namespace data_gen{
 	inline int Rand(){return ((rand()&1)<<30)+(rand()<<15)+rand();}
 	inline int Rand(int U,bool flag=0){return Rand()%U*(flag&&Rand()%2?-1:1);}

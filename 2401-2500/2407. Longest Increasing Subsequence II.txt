@@ -1,2 +1,3 @@
-DP, use segment tree for dynamic range max. O(n log n).
+1. DP, use segment tree for dynamic range max. $O(n \log n)$.\\
+2. $O(n \log \log n)$ by pred search. see my article \url{https://leetcode.cn/problems/longest-increasing-subsequence-ii/solution/by-hqztrue-yusp/}.
 
