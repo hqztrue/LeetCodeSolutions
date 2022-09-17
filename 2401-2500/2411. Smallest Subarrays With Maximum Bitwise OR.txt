@@ -1,0 +1,3 @@
+two pointers+deque. O(n).
+https://leetcode.cn/problems/smallest-subarrays-with-maximum-bitwise-or/solution/onsuan-fa-by-hqztrue-shr4/
+

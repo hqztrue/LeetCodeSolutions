@@ -1,0 +1,2 @@
+greedy, two pointers. O(sort(n)).
+

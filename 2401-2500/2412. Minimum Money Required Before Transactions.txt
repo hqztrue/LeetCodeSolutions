@@ -1,0 +1,2 @@
+enumerate the critical transaction, and then greedily arrange the transactions with cost>cashback before it. O(n).
+
