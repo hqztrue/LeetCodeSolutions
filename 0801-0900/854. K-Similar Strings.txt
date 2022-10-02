@@ -1,2 +1,2 @@
-This problem is NP-hard \cite{amir2007cost}.
+This problem is NP-hard \cite{amir2007cost} for unbounded alphabet size. But this problem is FPT when we treat the alphabet size as a parameter, so for constant alphabet size we can get poly(n) (or O(n) when |Σ|<=6).
 

@@ -1,5 +1,7 @@
 see 264. Ugly Number II.
+let k denote the number of primes.
 1. O(nk).
-2. O(n log n). https://leetcode-cn.com/problems/super-ugly-number/solution/fu-za-du-wei-zhen-onlognde-suan-fa-by-li-uu9h/
+2. O(n log n) or O(n log k). https://leetcode-cn.com/problems/super-ugly-number/solution/fu-za-du-wei-zhen-onlognde-suan-fa-by-li-uu9h/
 3. \tilde{O}(n^{1-1/k}) for constant k.
+4. o(n) when n>>k? see my article https://leetcode.cn/problems/super-ugly-number/solution/yi-chong-ke-neng-bi-ongeng-kuai-de-zuo-f-ji2u/
 

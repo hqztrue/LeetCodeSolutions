@@ -1,0 +1,3 @@
+greedy. O(log U).
+the running time can be further improved by bit operations (similar to popcount).
+

@@ -1,0 +1,2 @@
+monotone pointer. O(n).
+

@@ -69,6 +69,7 @@ DP/counting:
 546 Remove Boxes  
 576 Out of Boundary Paths  
 629 K Inverse Pairs Array  
+664 Strange Printer  
 688 Knight Probability in Chessboard  
 730 Count Different Palindromic Subsequences  
 813 Largest Sum of Averages  

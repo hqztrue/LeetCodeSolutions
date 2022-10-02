@@ -1,0 +1,5 @@
+1. DP. let f[i][j] denote the minimum number of steps to color interval [i,j]. O(n^3).
+by (min,+)-convolution we should be able to shave some polylog factor.
+
+Q: better than O(n^3)?
+

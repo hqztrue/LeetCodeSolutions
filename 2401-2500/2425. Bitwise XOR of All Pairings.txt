@@ -1,0 +1,2 @@
+each integer in nums1 will be copied |nums2| times among all pairings of xor sums. O(n).
+

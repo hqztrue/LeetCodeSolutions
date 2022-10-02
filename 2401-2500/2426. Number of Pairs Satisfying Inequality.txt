@@ -1,0 +1,2 @@
+separate the variables, and sort. O(sort(n)).
+
