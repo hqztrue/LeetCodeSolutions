@@ -1,0 +1,2 @@
+simulation. O(n log U) (n*the running time for reversal).
+

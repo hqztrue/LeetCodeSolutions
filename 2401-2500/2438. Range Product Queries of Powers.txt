@@ -1,0 +1,2 @@
+There are only O(log^2 U) different queries. O(n+log^2 U).
+

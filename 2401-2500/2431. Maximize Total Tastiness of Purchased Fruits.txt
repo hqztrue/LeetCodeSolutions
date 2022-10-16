@@ -1,0 +1,2 @@
+knapsack. DP. O(n*maxAmount*maxCoupons).
+

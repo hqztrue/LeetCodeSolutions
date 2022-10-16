@@ -1,0 +1,2 @@
+greedy. if head not equal to tail (wlog assume head>tail), then we have to merge tail. O(n).
+

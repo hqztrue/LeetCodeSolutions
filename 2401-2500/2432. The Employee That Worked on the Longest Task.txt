@@ -1,0 +1,3 @@
+O(n).
+remark. if the array is not sorted, we can still solve in O(n) time by finding the largest gap.
+

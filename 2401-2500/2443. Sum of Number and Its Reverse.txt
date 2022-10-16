@@ -1,0 +1,2 @@
+DP, the state depend on the current index i (and l-i), the (2?) digits before position i, and whether we have borrowed 1 at position l-i. O(log n) (even when n is large).
+

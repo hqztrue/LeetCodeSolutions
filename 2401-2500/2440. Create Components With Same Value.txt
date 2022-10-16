@@ -1,0 +1,4 @@
+Let S denote the total value.
+1. Enumerate each factor of S, verify in O(n) time. O(2^{O(log S/log log S)}*n).
+2. Enumerate each factor of S, verify in O(S/i) time. O(S log S).
+
