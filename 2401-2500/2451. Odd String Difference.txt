@@ -1,0 +1,2 @@
+Let l denote the length of each string. O(n*l).
+

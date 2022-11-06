@@ -1,0 +1,2 @@
+Suppose we want to find the k-th greater integer, we can maintain k monotone queues. O(nk)=O(n) for k=2.
+

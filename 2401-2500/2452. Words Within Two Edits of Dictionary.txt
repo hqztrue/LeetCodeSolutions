@@ -1,0 +1,3 @@
+Let n denote the number of queries, m denote the size of the dictionary. L denote the total input length.
+for each pair of strings in queries and the dictionary, greedily find LCP and compare in O(1) time. O(L+nm).
+

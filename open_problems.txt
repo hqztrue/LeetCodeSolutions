@@ -58,7 +58,7 @@ Problem ID marked with leading ~ indicates there's good evidences that the algor
 2322 Minimum Score After Removals on a Tree  
 ~2338 Count the Number of Ideal Arrays  
 2440 Create Components With Same Value  
-
+2462 Total Cost to Hire K Workers  
 
 
 
