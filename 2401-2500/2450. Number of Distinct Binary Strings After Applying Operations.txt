@@ -1,0 +1,2 @@
+2^{n-k+1}. O(n) (for reading the input).
+

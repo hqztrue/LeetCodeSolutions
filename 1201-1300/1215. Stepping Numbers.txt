@@ -1,2 +1,3 @@
 dfs. O(#output).
+The size of output is n^{O(1)}.
 

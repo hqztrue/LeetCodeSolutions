@@ -1,0 +1,3 @@
+Similar to 2447. Number of Subarrays With GCD Equal to K.
+two pointers, use ST or double-ended queue (implement by two stacks) to maintain. O(n log U).
+

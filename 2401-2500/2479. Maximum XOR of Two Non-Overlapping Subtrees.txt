@@ -1,0 +1,2 @@
+dfs, dynamically maintain a w-ary trie containing all subtree values we have visited, except the ancestors of the current node. O(n log U/log log U).
+

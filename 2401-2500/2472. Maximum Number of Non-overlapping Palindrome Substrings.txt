@@ -1,0 +1,2 @@
+Greedily choose length=k or k+1. manacher. O(n).
+

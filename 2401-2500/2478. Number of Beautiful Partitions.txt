@@ -1,0 +1,2 @@
+DP. Let f[i][j] denote the number of ways to partition a[1..i] into j parts. prefix sum. O(nk).
+

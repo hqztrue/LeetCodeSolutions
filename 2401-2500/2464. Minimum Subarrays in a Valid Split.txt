@@ -1,0 +1,4 @@
+This is LCP 14. 切分数组.
+Adding numbers from left to right, let f[p] denote the minimum number of partitions such that the endpoint contain prime p as a factor.
+O(n log U/log log U+U) (there are other tradeoffs).
+

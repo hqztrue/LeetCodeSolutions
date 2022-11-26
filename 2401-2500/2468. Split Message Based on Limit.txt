@@ -1,0 +1,4 @@
+Enumerate i, binary search on [10^i,10^{i+1}). O(polylog n) for computing the solution, and O(n) for reading the input and constructing the output.
+
+remark. many binary search implementations are incorrect.
+

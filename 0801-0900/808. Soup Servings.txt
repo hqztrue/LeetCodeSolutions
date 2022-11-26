@@ -1,5 +1,4 @@
 DP. O(n^2).
 notice that the result is monotone increasing in n. Therefore fix the error threshold, if n is large enough the result is 1.
-
-
+By Chernoff bound, we only need to calculate up to n=O(log 1/eps), where eps is the precision requirement.
 

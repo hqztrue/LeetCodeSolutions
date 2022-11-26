@@ -1,0 +1,2 @@
+sorting, simulation. O(sort(n)).
+

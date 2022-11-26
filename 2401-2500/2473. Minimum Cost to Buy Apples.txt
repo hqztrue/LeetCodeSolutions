@@ -1,0 +1,2 @@
+create a super node S, add an edge from S to each city i with weight equal to the apple cost at i. O(SSSP(n,m)).
+

@@ -1,0 +1,2 @@
+flatten to 1D array. O(sort(n)).
+
