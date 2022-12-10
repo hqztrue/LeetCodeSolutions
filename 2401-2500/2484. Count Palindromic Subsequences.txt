@@ -1,0 +1,2 @@
+DP, let f[i][c1][c2] and g[i][c1][c2] denote the number of subsequences (c1,c2) in the prefix [1,i] and the suffix [i,n] (reversed), respectively. We need to compute \sum_i \sum_{c1} \sum_{c2} f[i-1][c1][c2]*g[i+1][c1][c2]. When i increase by 1, update f, g and the sum of the product in O(|Σ|) time. O(n*|Σ|).
+

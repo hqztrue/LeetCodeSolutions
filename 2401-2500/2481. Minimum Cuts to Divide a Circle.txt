@@ -1,0 +1,2 @@
+even and odd. O(1).
+
