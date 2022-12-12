@@ -1,0 +1,2 @@
+prefix sum, match the number of <k and >k elements. O(n).
+

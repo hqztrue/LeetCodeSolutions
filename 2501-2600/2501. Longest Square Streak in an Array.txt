@@ -1,0 +1,2 @@
+finding the longest chain. Build the chain by hashing. O(n).
+

@@ -1,0 +1,5 @@
+1. sorting + union-find. O(sort(nm)).
+2. We can use the solution for the undirected (integer-)weighted single-source bottleneck shortest path problem, which can be solved in O(nm) time. But outputting the answer still requires O(sort(nm)).
+
+LB: we can reduce sorting to this problem, by placing the numbers on the even rows, and put 0 on odd rows and the first column. So this problem requires Omega(sort(nm)) time.
+

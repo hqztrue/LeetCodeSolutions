@@ -1,0 +1,2 @@
+The best strategy is to jump to i+2 from i. O(n).
+
