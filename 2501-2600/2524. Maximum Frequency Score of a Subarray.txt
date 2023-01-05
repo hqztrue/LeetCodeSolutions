@@ -1,0 +1,2 @@
+sliding window, maintain the power of integers. O(n).
+

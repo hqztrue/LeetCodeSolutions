@@ -1,0 +1,2 @@
+The answer is the or of all input numbers and all prefix sums. O(n). see my article https://leetcode.cn/problems/bitwise-or-of-all-subsequence-sums/solutions/2021539/zhi-shang-ti-by-wcy23-goa5/
+

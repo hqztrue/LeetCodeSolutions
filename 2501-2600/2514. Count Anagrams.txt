@@ -1,0 +1,2 @@
+counting, binomial. O(n).
+

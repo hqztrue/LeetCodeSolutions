@@ -1,0 +1,2 @@
+factoring. O(n+U) (improvable when U>>n).
+

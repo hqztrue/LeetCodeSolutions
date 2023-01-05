@@ -1,0 +1,2 @@
+set hashing (or bit operation for small |Σ|). O(L).
+

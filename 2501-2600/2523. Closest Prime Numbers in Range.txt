@@ -1,0 +1,7 @@
+1. sieve. O(U).
+
+can we do faster, say, using properties of twin prime? the maximum gap between consecutive twin primes is probably O(log^3 n) (unproven).
+https://arxiv.org/pdf/1301.2242.pdf
+https://arxiv.org/pdf/1309.4053.pdf
+https://oeis.org/A113274
+

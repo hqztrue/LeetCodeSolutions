@@ -1,0 +1,2 @@
+The possible number of 1s that a valid path can pass is continuous. O(nm).
+
