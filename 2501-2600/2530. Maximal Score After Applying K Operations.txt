@@ -1,0 +1,3 @@
+1. priority queue. O(sort(n+k)).
+2. divide into bins, then use nth_element from the largest bin to the smaller ones. O(n+k).
+

@@ -1,0 +1,2 @@
+binary search, scan from left to right, greedily assign the power stations to the rightmost possible place. O(n log U).
+

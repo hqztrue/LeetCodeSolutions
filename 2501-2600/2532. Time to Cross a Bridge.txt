@@ -1,0 +1,2 @@
+simulation, priority queue. O(n log k).
+
