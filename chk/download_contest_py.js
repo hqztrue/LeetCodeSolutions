@@ -12,13 +12,28 @@ var id = 0;
     const contestId = 'weekly-contest-327'
 
     let res = `# ${contestId}\n`
-		res += `import sys,os,time,random,math,functools,bisect,collections,heapq,numpy,re,copy
-from typing import List, Dict
-from functools import cache, lru_cache
-from math import *
-from itertools import *
+		res += `from string import *
+from re import *
+from datetime import *
 from collections import *
-from bisect import bisect_left, bisect_right, insort
+from heapq import *
+from bisect import *
+from copy import *
+from math import *
+from random import *
+from statistics import *
+from itertools import *
+from functools import *
+from operator import *
+from io import *
+from sys import *
+from json import *
+from builtins import *
+
+import sys,os,string,re,datetime,time,collections,heapq,bisect,copy, \\
+    numpy,math,random,statistics,itertools,functools,operator,io,json
+
+from typing import *
 _copy=copy; _random=random; _time=time; _bisect=bisect\n\n`;
 
     try {

@@ -361,9 +361,8 @@ function download(str, filename) {
                         res = "# ".concat(question === null || question === void 0 ? void 0 : question.title, " - ").concat(lang, "\n\n");
                         cache = new Set();
                         id = 0;
-                        if (location.origin.search('cn') != -1)
-                            id += 1000;
-                        res += "import sys,os,time,random,math,functools,bisect,collections,heapq,numpy,re,copy\nfrom typing import List, Dict\nfrom functools import cache, lru_cache\nfrom math import *\nfrom itertools import *\nfrom collections import *\nfrom bisect import bisect_left, bisect_right, insort\n_copy=copy; _random=random\n";
+                        //if (location.origin.search('cn')!=-1)id+=1000
+                        res += "from string import *\nfrom re import *\nfrom datetime import *\nfrom collections import *\nfrom heapq import *\nfrom bisect import *\nfrom copy import *\nfrom math import *\nfrom random import *\nfrom statistics import *\nfrom itertools import *\nfrom functools import *\nfrom operator import *\nfrom io import *\nfrom sys import *\nfrom json import *\nfrom builtins import *\n\nimport sys,os,string,re,datetime,time,collections,heapq,bisect,copy, \\\n    numpy,math,random,statistics,itertools,functools,operator,io,json\n\nfrom typing import *\n_copy=copy; _random=random; _time=time; _bisect=bisect\n\n";
                         time = data.runtimeDistribution;
                         res += "\n# time\n\n";
                         if (!time) return [3 /*break*/, 6];
@@ -412,8 +411,7 @@ function download(str, filename) {
                         _a++;
                         return [3 /*break*/, 7];
                     case 10:
-                        if (location.origin.search('cn') != -1)
-                            id -= 1000;
+                        //if (location.origin.search('cn')!=-1)id-=1000
                         res += "NUM_CODES=".concat(id, "\n");
                         download(res, "codes.py");
                         return [2 /*return*/];
