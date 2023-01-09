@@ -1,22 +1,20 @@
 
 
 
+copy=_copy; random=_random; time=_time; bisect=_bisect
+sys.setrecursionlimit(10**6)
 def _print(*args): pass
-print1=print
-print=_print
+print1=print; print=_print
 
 bad=set([])
 T=0
 while True:
     T+=1
     if T%1000==0: print1('T=',T)
-    n=random.randint(1,1000000000)
+    n=random.randint(1,100)
     #s=""
-    #for i in range(random.randint(1,n)): s+=chr(97+random.randint(0,3))
+    #for i in range(n): s+=chr(97+random.randint(0,3))
     #a=[random.randint(0,100000) for i in range(n)]
-    #l=random.randint(1,1000000)
-    #r=random.randint(1,1000000)
-    #if l>r: l,r=r,l
     std=None
     for i in range(1001,NUM_CODES+1001):
         if i not in bad:

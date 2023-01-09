@@ -363,13 +363,7 @@ function download(str, filename) {
                         id = 0;
                         if (location.origin.search('cn') != -1)
                             id += 1000;
-                        res += "import time,random,math,functools\n";
-                        res += "from typing import List\n";
-                        res += "from functools import cache, lru_cache\n";
-                        res += "from math import *\n";
-                        res += "from bisect import *\n";
-                        res += "from itertools import *\n";
-                        res += "from collections import *\n";
+                        res += "import sys,os,time,random,math,functools,bisect,collections,heapq,numpy,re,copy\nfrom typing import List, Dict\nfrom functools import cache, lru_cache\nfrom math import *\nfrom itertools import *\nfrom collections import *\nfrom bisect import bisect_left, bisect_right, insort\n_copy=copy; _random=random\n";
                         time = data.runtimeDistribution;
                         res += "\n# time\n\n";
                         if (!time) return [3 /*break*/, 6];

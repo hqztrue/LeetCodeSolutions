@@ -526,13 +526,14 @@ function download(str: string, filename = 'contest.md'): void {
 		let id = 0
 		if (location.origin.search('cn')!=-1)id+=1000
 		
-		res += `import time,random,math,functools\n`
-		res += `from typing import List\n`
-		res += `from functools import cache, lru_cache\n`
-		res += `from math import *\n`
-		res += `from bisect import *\n`
-		res += `from itertools import *\n`
-		res += `from collections import *\n`
+		res += `import sys,os,time,random,math,functools,bisect,collections,heapq,numpy,re,copy
+from typing import List, Dict
+from functools import cache, lru_cache
+from math import *
+from itertools import *
+from collections import *
+from bisect import bisect_left, bisect_right, insort
+_copy=copy; _random=random; _time=time; _bisect=bisect\n\n`
 		
     {
       const time = data.runtimeDistribution
