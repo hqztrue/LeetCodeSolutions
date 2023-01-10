@@ -25,7 +25,7 @@ def check(*args):
             A=globals()['Solution%d'%i]()
             t=time.time()
             print=_print
-            ans=getattr(A,func_name)(*args)
+            ans=getattr(A,func_name)(*copy.deepcopy(args))
             print=print1
             t=time.time()-t
             if t>1:
