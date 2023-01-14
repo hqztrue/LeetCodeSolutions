@@ -3,10 +3,10 @@ var id = 0;
   void (async function main() {
     // 配置需要获取的题目索引,从 1 开始,想要获取哪题就添加哪一题的索引
     // 比如只想获取第三题和第四题,那就写 [3,4],要获取全部题目的提交的话,就写 [1,2,3,4]
-    const questions = [3]
+    const questions = [4]
     // 需要获取的页数,指定要获取哪几页的
     // 可以是数字,或者是用一个数组表示的区间,如 [3,6] 表示从 3 页到第 6 页
-    const pages = 20
+    const pages = 30
     // 需要获取的竞赛 ID,可以通过每个比赛的链接处获取
     // 比如 https://leetcode.cn/contest/biweekly-contest-68/ 这是第 68 场双周赛的链接,其中 biweekly-contest-68 就是需要的部分
     const contestId = 'weekly-contest-327'
@@ -41,7 +41,8 @@ _copy=copy; _random=random; _time=time; _bisect=bisect\n\n`;
           res += await getContest(questions, contestId, i)
       }
 			res += "NUM_CODES=".concat(id, "\n");
-      download(res, `codes_CN.py`)
+      //download(res, `codes_CN.py`)
+			download(res, `${contestId}_P${questions[0]}.py`)
     } catch (error) {
       console.log(error.message)
       download(res, `${contestId} - 目前已完成部分.md`)
