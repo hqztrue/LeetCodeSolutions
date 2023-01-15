@@ -15,8 +15,23 @@ print1=print
 func_name=dir(Solution1())[-1]
 
 bad=set([])
+#seed(0)
 
-def check(*args):
+def print_name():
+    print()
+    file=open(__file__,"r",encoding="utf-8")
+    lines=file.readlines()
+    user_name=[]
+    for i in range(len(lines)):
+        if lines[i]=='# -----*****-----\n':
+            user_name.append(lines[i+1])
+    for x in sorted(bad):
+        print(user_name[x-1][2:],end='')
+    file.close()
+    print()
+#print_name()
+
+def _check(*args):
     global print
     std=args[-1]
     args=args[:-1]
@@ -37,7 +52,7 @@ def check(*args):
                 print('WA: ',i,'ans=',ans,'std=',std)
     print("check end")
 
-#check("1762",593445230,1)
+#_check("1762",593445230,1)
 
 T=0
 while True:
@@ -49,6 +64,7 @@ while True:
     std=None
     for i in range(1,NUM_CODES+1):
         if i not in bad:
+            #print(i)
             A=globals()['Solution%d'%i]()
             t=time.time()
             #_a=copy.deepcopy(a)

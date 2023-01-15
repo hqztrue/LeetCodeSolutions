@@ -1,1 +1,1 @@
-greedy. O(n).
+greedy. We only need to scan the array once. O(n).
