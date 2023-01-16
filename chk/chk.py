@@ -14,9 +14,7 @@ def _print(*args): pass
 print1=print
 func_name=dir(Solution1())[-1]
 
-bad=set([])
-#seed(0)
-
+bad=None
 def print_name():
     print()
     file=open(__file__,"r",encoding="utf-8")
@@ -29,7 +27,6 @@ def print_name():
         print(user_name[x-1][2:],end='')
     file.close()
     print()
-#print_name()
 
 def _check(*args):
     global print
@@ -51,6 +48,10 @@ def _check(*args):
                 bad.add(i)
                 print('WA: ',i,'ans=',ans,'std=',std)
     print("check end")
+
+bad=set([])
+#print_name()
+#seed(0)
 
 #_check("1762",593445230,1)
 
