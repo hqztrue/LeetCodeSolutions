@@ -19,6 +19,7 @@
 *.synctex.gz
 materials
 others
+chk_all
 /tmp
 template*
 !template.cpp
