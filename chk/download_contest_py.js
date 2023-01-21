@@ -1,10 +1,10 @@
 var id = new Array();
 {
   void (async function main() {
-    const questions = [3,4]
+    const questions = [4]
     const pages = 2
     const contestId = 'weekly-contest-328'
-		const region = 'global'  //'local', 'global'
+		const region = 'local'  //'local', 'global'
 		// 指定要获取的语言. 如果要获取所有语言,在数组中包含星号'*'
     // 如果只要获取某几种语言的,则去掉星号'*',填入要获取的语言,比如['java','cpp']
     const lang = ['python3']
@@ -177,7 +177,7 @@ _copy=copy; _random=random; _time=time; _bisect=bisect\n\n`;
   }
 
   async function getContest(lang, region, questionsArr, contestId, page) {
-		lang = new Set(lang)
+		lang_set = new Set(lang)
     console.log(`正在下载第 ${page} 页`)
     const { submissions, total_rank, questions } = await getRankData(
 		  region,
@@ -201,17 +201,27 @@ _copy=copy; _random=random; _time=time; _bisect=bisect\n\n`;
           continue
         }
 
-        const { submission_id, data_region } = submission[questionId]
-				const code = await getCode(data_region, submission_id)
-				if (lang.has('*') || lang.has(code.lang)) {
+				var cur_lang=''
+				var code=''
+				var cur_submission_id=''
+        if (region=='local'){
+					const { submission_id, lang } = submission[questionId]
+					cur_submission_id=submission_id
+					cur_lang = lang
+				}
+				else {
+					const { submission_id, data_region } = submission[questionId]
+					code = await getCode(data_region, submission_id)
+					cur_lang=code.lang
+				}
+				if (lang_set.has('*') || lang_set.has(cur_lang)) {
+					if (region=='local')code = await getCode('CN', cur_submission_id)
 					id[k] += 1
 					code1 = process_py(code.code, id[k])
 					res[k] += `# -----*****-----\n`
 					res[k] += `# ${real_name}, ${(page-1)*25+i+1}\n`
 					res[k] += `${code1}\n\n`
-				} else {
-          // res[k] += `\n### 代码语言为\`${code.lang}\`,不在需要的语言类型中\n`
-        }
+				}
       }
       // await sleep(100)
     }
