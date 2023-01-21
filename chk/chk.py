@@ -58,7 +58,7 @@ bad=set([])
 T=0
 while True:
     T+=1
-    if T%1000==0: print('T=',T)
+    if T%1==0: print('T=',T)
     n=randint(1,100)
     #s=rand_str(n,3)
     #a=rand_arr(n,10000)

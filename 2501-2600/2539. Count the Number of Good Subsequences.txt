@@ -1,0 +1,2 @@
+Let n_i denote the number of occurrences of character i. Enumerate the frequency t in the subsequence, the answer is \sum_t \prod_i (C(p_i,t)+1). O(n).
+

@@ -1,0 +1,42 @@
+<!--
+Note - Any content mentioned below in `<!-- ->` blocks are just comments
+to help you fill-up the issue. It won't be visible in the actual issue after
+you click on submit.
+-->
+
+#### Your LeetCode username
+<!-- Your LeetCode username -->
+hqztrue
+
+#### Category of the bug
+- [ ] Question
+- [ ] Solution
+- [ ] Language
+- [x] Missing Test Cases 
+
+
+#### Description of the bug
+<!-- A clear and concise description of what the bug is. -->
+An accepted solution gets  on the following testcase:
+
+
+#### Code you used for Submit/Run operation
+<!-- 
+Please make sure you wrap your code with ``` tags. 
+Otherwise we may reject your request. 
+-->
+
+```
+
+```
+
+#### Language used for code
+<!-- C++ -->
+Python3
+
+#### Expected behavior
+<!-- A clear and concise description of what you expected to happen in
+contrast with what actually happened. -->
+The code gets TLE.
+Output: 
+Expected: 
