@@ -4,10 +4,6 @@ var id = new Array();
     const questions = [3,4]
     const pages = 2
     const contestId = 'weekly-contest-328'
-		const region = 'global'  //'local', 'global'
-		// 指定要获取的语言. 如果要获取所有语言,在数组中包含星号'*'
-    // 如果只要获取某几种语言的,则去掉星号'*',填入要获取的语言,比如['java','cpp']
-    const lang = ['python3']
 
 		var codes=new Array();
 		let n = questions.length;
@@ -40,14 +36,13 @@ _copy=copy; _random=random; _time=time; _bisect=bisect\n\n`;
 		for (let i = 0; i < n; i++)id[i]=0;
 		try {
 			for (let i = 1; i <= pages; i++) {
-					res = await getContest(lang, region, questions, contestId, i)
+					res = await getContest(questions, contestId, i)
 					for (let j = 0; j < n; j++)codes[j] += res[j];
 			}
 			for (let j = 0; j < n; j++){
 				codes[j] += "NUM_CODES=".concat(id[j], "\n");
 				download(codes[j], `${contestId}_P${questions[j]}.py`)
 			}
-			console.log(`finished`)
 		} catch (error) {
 			console.log(error.message)
 			//download(codes[0], `${contestId} - 目前已完成部分.md`)
@@ -56,13 +51,11 @@ _copy=copy; _random=random; _time=time; _bisect=bisect\n\n`;
 
   /**
    *
-	 * @param data_region 所属的地区,"CN"或者"US"
    * @param submissionId 提交id
    * @returns {{code:string,contest_submission:number,id:number,lang:string}}
    */
-  function getCode(data_region, submissionId, retry = 1) {
-		const regionApi = data_region === 'CN' ? 'leetcode.cn' : 'leetcode.com'
-    return fetch(`https://${regionApi}/api/submissions/${submissionId}/`, {
+  function getCode(submissionId, retry = 1) {
+    return fetch(`https://leetcode.cn/api/submissions/${submissionId}/`, {
       headers: {
         'content-type': 'application/json',
       },
@@ -71,7 +64,7 @@ _copy=copy; _random=random; _time=time; _bisect=bisect\n\n`;
       body: null,
       method: 'GET',
       mode: 'cors',
-      credentials: 'omit',
+      credentials: 'include',
     }).then((res) => {
       if (res.status === 429) {
         console.log(`超出接口限制,休息一下,等待第${retry}次重试...`)
@@ -89,7 +82,6 @@ _copy=copy; _random=random; _time=time; _bisect=bisect\n\n`;
 
   /**
    * 获取比赛的数据
-	 * @param region 所属的地区: 国服:"local";外服:"global"
    * @param contestId 比赛Id
    * @param page 页数
    * @returns {{
@@ -134,10 +126,9 @@ _copy=copy; _random=random; _time=time; _bisect=bisect\n\n`;
    *    user_num: number
    * }}
    */
-  function getRankData(region = 'local', contestId, page = 1) {
-    if (region !== 'local' && region !== 'global') region = 'local'
+  function getRankData(contestId, page = 1) {
     return fetch(
-      `https://leetcode.cn/contest/api/ranking/${contestId}/?pagination=${page}&region=${region}`,
+      `https://leetcode.cn/contest/api/ranking/${contestId}/?pagination=${page}&region=local`,
       {
         headers: {
           'content-type': 'application/json',
@@ -147,7 +138,7 @@ _copy=copy; _random=random; _time=time; _bisect=bisect\n\n`;
         body: null,
         method: 'GET',
         mode: 'cors',
-        credentials: 'omit',
+        credentials: 'include',
       }
     ).then((res) => res.json())
   }
@@ -176,11 +167,9 @@ _copy=copy; _random=random; _time=time; _bisect=bisect\n\n`;
     })
   }
 
-  async function getContest(lang, region, questionsArr, contestId, page) {
-		lang = new Set(lang)
+  async function getContest(questionsArr, contestId, page) {
     console.log(`正在下载第 ${page} 页`)
     const { submissions, total_rank, questions } = await getRankData(
-		  region,
       contestId,
       page
     )
@@ -201,17 +190,16 @@ _copy=copy; _random=random; _time=time; _bisect=bisect\n\n`;
           continue
         }
 
-        const { submission_id, data_region } = submission[questionId]
-				const code = await getCode(data_region, submission_id)
-				if (lang.has('*') || lang.has(code.lang)) {
+        const { submission_id, lang } = submission[questionId]
+				
+				if (lang=='python3'){ // || lang=='python'
+					const code = await getCode(submission_id)
 					id[k] += 1
 					code1 = process_py(code.code, id[k])
 					res[k] += `# -----*****-----\n`
 					res[k] += `# ${real_name}, ${(page-1)*25+i+1}\n`
 					res[k] += `${code1}\n\n`
-				} else {
-          // res[k] += `\n### 代码语言为\`${code.lang}\`,不在需要的语言类型中\n`
-        }
+				}
       }
       // await sleep(100)
     }
