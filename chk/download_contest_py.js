@@ -1,18 +1,15 @@
-var id = 0;
+var id = new Array();
 {
   void (async function main() {
-    // 配置需要获取的题目索引,从 1 开始,想要获取哪题就添加哪一题的索引
-    // 比如只想获取第三题和第四题,那就写 [3,4],要获取全部题目的提交的话,就写 [1,2,3,4]
-    const questions = [4]
-    // 需要获取的页数,指定要获取哪几页的
-    // 可以是数字,或者是用一个数组表示的区间,如 [3,6] 表示从 3 页到第 6 页
-    const pages = 30
-    // 需要获取的竞赛 ID,可以通过每个比赛的链接处获取
-    // 比如 https://leetcode.cn/contest/biweekly-contest-68/ 这是第 68 场双周赛的链接,其中 biweekly-contest-68 就是需要的部分
-    const contestId = 'weekly-contest-327'
+    const questions = [3,4]
+    const pages = 2
+    const contestId = 'weekly-contest-328'
 
-    let res = `# ${contestId}\n`
-		res += `from string import *
+		var codes=new Array();
+		let n = questions.length;
+		for (let i = 0; i < n; i++)
+			codes[i]=`# ${contestId} P${questions[i]}
+from string import *
 from re import *
 from datetime import *
 from collections import *
@@ -36,17 +33,20 @@ import sys,os,string,re,datetime,time,collections,heapq,bisect,copy, \\
 from typing import *
 _copy=copy; _random=random; _time=time; _bisect=bisect\n\n`;
 
-    try {
-      for (let i = 1; i <= pages; i++) {
-          res += await getContest(questions, contestId, i)
-      }
-			res += "NUM_CODES=".concat(id, "\n");
-      //download(res, `codes_CN.py`)
-			download(res, `${contestId}_P${questions[0]}.py`)
-    } catch (error) {
-      console.log(error.message)
-      download(res, `${contestId} - 目前已完成部分.md`)
-    }
+		for (let i = 0; i < n; i++)id[i]=0;
+		try {
+			for (let i = 1; i <= pages; i++) {
+					res = await getContest(questions, contestId, i)
+					for (let j = 0; j < n; j++)codes[j] += res[j];
+			}
+			for (let j = 0; j < n; j++){
+				codes[j] += "NUM_CODES=".concat(id[j], "\n");
+				download(codes[j], `${contestId}_P${questions[j]}.py`)
+			}
+		} catch (error) {
+			console.log(error.message)
+			//download(codes[0], `${contestId} - 目前已完成部分.md`)
+		}
   })()
 
   /**
@@ -169,26 +169,24 @@ _copy=copy; _random=random; _time=time; _bisect=bisect\n\n`;
 
   async function getContest(questionsArr, contestId, page) {
     console.log(`正在下载第 ${page} 页`)
-    const questionSelect = new Set(questionsArr)
     const { submissions, total_rank, questions } = await getRankData(
       contestId,
       page
     )
     const questionIds = questions.map(({ question_id }) => question_id)
 
-    let res = ``
+    var res=new Array();
+		for (let i = 0; i < questionsArr.length; i++) res[i]= ``
     for (let i = 0; i < submissions.length; i++) {
       const { username, real_name } = total_rank[i]
 
       const submission = submissions[i]
 
-      for (let j = 0; j < questionIds.length; j++) {
-        if (!questionSelect.has(j + 1)) continue
-
+      for (let k = 0; k < questionsArr.length; k++) {
+				let j=questionsArr[k]-1
         const questionId = questionIds[j]
-
         if (!submission[questionId]) {
-          //res += '\n无\n\n'
+          //res[j] += '\n# empty\n\n'
           continue
         }
 
@@ -196,11 +194,11 @@ _copy=copy; _random=random; _time=time; _bisect=bisect\n\n`;
 				
 				if (lang=='python3'){ // || lang=='python'
 					const code = await getCode(submission_id)
-					id += 1
-					code1 = process_py(code.code, id)
-					res += `# -----*****-----\n`
-					res += `# ${real_name}, ${(page-1)*25+i+1}\n`
-					res += `${code1}\n\n`
+					id[k] += 1
+					code1 = process_py(code.code, id[k])
+					res[k] += `# -----*****-----\n`
+					res[k] += `# ${real_name}, ${(page-1)*25+i+1}\n`
+					res[k] += `${code1}\n\n`
 				}
       }
       // await sleep(100)
