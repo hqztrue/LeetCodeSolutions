@@ -1,0 +1,2 @@
+return true iff gcd(x,y) is a power of 2. O(log U).
+

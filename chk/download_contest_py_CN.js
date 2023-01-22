@@ -1,8 +1,8 @@
 var id = new Array();
 {
   void (async function main() {
-    const questions = [3,4]
-    const pages = 2
+    const questions = [1,2,3,4]
+    const pages = 50
     const contestId = 'weekly-contest-328'
 
 		var codes=new Array();

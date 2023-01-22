@@ -1,0 +1,2 @@
+We can use 1 to flip other bits. O(n).
+

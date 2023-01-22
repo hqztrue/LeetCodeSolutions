@@ -81,7 +81,7 @@ _copy=copy; _random=random; _time=time; _bisect=bisect\n\n`;
           )
         }
         // 请求太频繁的限制
-        return sleep(3000).then(() => getCode(submissionId, retry + 1))
+        return sleep(3000).then(() => getCode(data_region, submissionId, retry + 1))
       }
       return res.json()
     })
