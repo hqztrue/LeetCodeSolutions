@@ -1,5 +1,5 @@
 1. enumerate j and k. O(n^2).
-
+2. divide into blocks. O~(n^{3/2}). see my article https://leetcode.cn/problems/count-increasing-quadruplets/solution/geng-kuai-de-on15-by-hqztrue-ij92/
 
 can we do better?
 
