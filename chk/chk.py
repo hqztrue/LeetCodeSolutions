@@ -4,9 +4,9 @@
 copy=_copy; random=_random; time=_time; bisect=_bisect
 sys.setrecursionlimit(10**6)
 sys.set_int_max_str_digits(10**7)
-def rand_str(n,U):
+def rand_str(n,U=26):
     s=""
-    for i in range(n): s+=chr(97+randint(0,U))
+    for i in range(n): s+=chr(97+randint(0,U-1))
     return s
 def rand_arr(n,L,R=-1): return rand_arr(n,0,L) if R==-1 else [randint(L,R) for i in range(n)]
 
@@ -62,6 +62,10 @@ while True:
     n=randint(1,100)
     #s=rand_str(n,3)
     #a=rand_arr(n,10000)
+    
+    #fout=open("1.txt","w")
+    #print(a,file=fout)
+    #fout.close()
     std=None
     for i in range(1,NUM_CODES+1):
         if i not in bad:
@@ -81,5 +85,6 @@ while True:
             elif ans!=std:
                 bad.add(i)
                 print('WA: ',i,'ans=',ans,'std=',std)
+                print(n)
                 #print('\"'+s+'\"')
                     

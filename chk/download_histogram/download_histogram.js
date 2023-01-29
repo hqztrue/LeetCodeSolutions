@@ -367,7 +367,7 @@ function download(str, filename) {
                     case 2:
                         allQuestions = _b.sent();
                         questionId = data.questionId, lang = data.lang;
-                        question = allQuestions.find(function (q) { return q.questionId === questionId; });
+                        question = allQuestions["questions"].find(function (q) { return q.questionId === questionId; });
                         res = "//".concat(question === null || question === void 0 ? void 0 : question.title, " - ").concat(lang, "\n\n");
                         cache = new Set();
                         id = 0;

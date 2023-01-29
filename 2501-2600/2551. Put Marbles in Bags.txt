@@ -1,0 +1,2 @@
+greedy. select the k-1 largest split point (using nth_element). O(n).
+

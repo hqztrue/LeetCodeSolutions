@@ -520,7 +520,7 @@ function download(str: string, filename = 'contest.md'): void {
     )
     const allQuestions = await leetCodeApi.getAllQuestions()
     const { questionId, lang } = data
-    const question = allQuestions.find(q => q.questionId === questionId)
+    const question = allQuestions["questions"].find(q => q.questionId === questionId)
     let res = `# ${question?.title} - ${lang}\n\n`
 		const cache = new Set<string>()
 		let id = 0

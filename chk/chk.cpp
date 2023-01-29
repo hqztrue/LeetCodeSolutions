@@ -65,6 +65,25 @@ namespace cerrIO{
 		print(a); cerr<<"\n";
 	}
 } using namespace cerrIO;
+namespace data_gen{
+	inline int Rand(){return ((rand()&1)<<30)+(rand()<<15)+rand();}
+	inline int Rand(int U,bool flag=0){return Rand()%U*(flag&&Rand()%2?-1:1);}
+	vector<int> rand_vec(int n,int U,bool flag=0){
+		vector<int> res(n);
+		for (int i=0;i<n;++i)res[i]=Rand(U,flag);
+		return res;
+	}
+	vector<vector<int>> rand_vec2D(int n,int m,int U,bool flag=0){
+		vector<vector<int> > res(n);
+		for (int i=0;i<n;++i)res[i]=rand_vec(m,U,flag);
+		return res;
+	}
+	string rand_str(int n,int U=26,char c='a'){
+		string res;
+		for (int i=0;i<n;++i)res+=(char)(c+Rand()%U);
+		return res;
+	}
+} using namespace data_gen;
 void count(){int T=0; for (int i=0;i<nsols;++i)if (ptr[i])++T; cerr<<"#="<<T<<endl;}
 void check(vector<int> a,int t,int res=-2){
 	static int T0=0; cerr<<"chk"<<++T0<<endl;

@@ -1,0 +1,5 @@
+1. enumerate j and k. O(n^2).
+
+
+can we do better?
+

@@ -1,0 +1,2 @@
+Each day, the number x can generate x-1. O(1).
+

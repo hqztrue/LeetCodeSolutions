@@ -43,6 +43,7 @@ _copy=copy; _random=random; _time=time; _bisect=bisect\n\n`;
 				codes[j] += "NUM_CODES=".concat(id[j], "\n");
 				download(codes[j], `${contestId}_P${questions[j]}.py`)
 			}
+			console.log(`finished`)
 		} catch (error) {
 			console.log(error.message)
 			//download(codes[0], `${contestId} - 目前已完成部分.md`)

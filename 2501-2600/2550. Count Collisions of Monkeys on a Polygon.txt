@@ -1,0 +1,2 @@
+There are only 2 ways that don't have collision. The answer is 2^n-2. O(log n).
+
