@@ -9,6 +9,7 @@ def rand_str(n,U=26):
     for i in range(n): s+=chr(97+randint(0,U-1))
     return s
 def rand_arr(n,L,R=-1): return rand_arr(n,0,L) if R==-1 else [randint(L,R) for i in range(n)]
+def rand_arr2D(n,m,L,R=-1): return [rand_arr(m,L,R) for i in range(n)]
 
 def _print(*args): pass
 print1=print

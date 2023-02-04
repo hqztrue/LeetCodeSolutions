@@ -1,0 +1,3 @@
+finding cut vertices. O(nm).
+for this special case, the algorithm can be simplified.
+

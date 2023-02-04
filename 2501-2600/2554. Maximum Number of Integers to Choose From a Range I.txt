@@ -1,0 +1,4 @@
+Let m denote banned.length.
+1. sorting. O(sort(m)) or O(n+m).
+2. divide and conquer. O(m).
+
