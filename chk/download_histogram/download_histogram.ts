@@ -528,13 +528,14 @@ function download(str: string, filename = 'contest.md'): void {
 		const data = await leetCodeApi.getSubmissionDetail(
       pathnames[pathnames.length - 1]
     )
+		const isCN=location.origin.search('cn')!=-1
     const allQuestions = await leetCodeApi.getAllQuestions()
     const { questionId, lang } = data
-    const question = allQuestions["questions"].find(q => q.questionId === questionId)
+    const question = (isCN?allQuestions["questions"]:allQuestions).find(q => q.questionId === questionId)
     let res = `//${question?.title} - ${lang}\n\n`
 		const cache = new Set<string>()
 		let id = 0
-		if (location.origin.search('cn')!=-1)id+=1000
+		if (isCN)id+=1000
 		
     {
       const time = data.runtimeDistribution

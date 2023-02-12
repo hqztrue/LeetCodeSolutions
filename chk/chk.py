@@ -11,7 +11,7 @@ def rand_str(n,U=26):
 def rand_arr(n,L,R=-1): return rand_arr(n,0,L) if R==-1 else [randint(L,R) for i in range(n)]
 def rand_arr2D(n,m,L,R=-1): return [rand_arr(m,L,R) for i in range(n)]
 
-def _print(*args): pass
+def _print(*args,end=''): pass
 print1=print
 func_name=dir(Solution1())[-1]
 
@@ -72,15 +72,15 @@ while True:
         if i not in bad:
             #print(i)
             A=globals()['Solution%d'%i]()
-            t=time.time()
+            t1=time.time()
             #_a=copy.deepcopy(a)
             print=_print
             ans=getattr(A,func_name)(n)
             print=print1
-            t=time.time()-t
-            if t>1:
+            t1=time.time()-t1
+            if t1>1:
                 bad.add(i)
-                print('TLE: %d %f'%(i,t))
+                print('TLE: %d %f'%(i,t1))
                 continue
             if std==None: std=ans
             elif ans!=std:

@@ -1,0 +1,2 @@
+linear time selection. O(n+k) (there are other tradeoffs).
+

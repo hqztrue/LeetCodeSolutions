@@ -1,0 +1,2 @@
+we can concatenate in O(1) time. O(n).
+

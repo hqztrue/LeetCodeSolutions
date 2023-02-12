@@ -353,7 +353,7 @@ function download(str, filename) {
 {
     void (function main() {
         return __awaiter(this, void 0, void 0, function () {
-            var autoCreateSubmission, pathnames, leetCodeApi, data, allQuestions, questionId, lang, question, res, cache, id, time, lang_1, distribution, _i, distribution_1, t, code, memory, lang_2, distribution, _a, distribution_2, m, code;
+            var autoCreateSubmission, pathnames, leetCodeApi, data, isCN, allQuestions, questionId, lang, question, res, cache, id, time, lang_1, distribution, _i, distribution_1, t, code, memory, lang_2, distribution, _a, distribution_2, m, code;
             return __generator(this, function (_b) {
                 switch (_b.label) {
                     case 0:
@@ -363,15 +363,16 @@ function download(str, filename) {
                         return [4 /*yield*/, leetCodeApi.getSubmissionDetail(pathnames[pathnames.length - 1])];
                     case 1:
                         data = _b.sent();
+                        isCN = location.origin.search('cn') != -1;
                         return [4 /*yield*/, leetCodeApi.getAllQuestions()];
                     case 2:
                         allQuestions = _b.sent();
                         questionId = data.questionId, lang = data.lang;
-                        question = allQuestions["questions"].find(function (q) { return q.questionId === questionId; });
+                        question = (isCN ? allQuestions["questions"] : allQuestions).find(function (q) { return q.questionId === questionId; });
                         res = "//".concat(question === null || question === void 0 ? void 0 : question.title, " - ").concat(lang, "\n\n");
                         cache = new Set();
                         id = 0;
-                        if (location.origin.search('cn') != -1)
+                        if (isCN)
                             id += 1000;
                         time = data.runtimeDistribution;
                         res += "//time\n\n";

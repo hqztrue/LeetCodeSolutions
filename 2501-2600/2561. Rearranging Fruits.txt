@@ -1,0 +1,2 @@
+either directly swap, or use the minimum element as an intermediate step. use nth_element to find the smallest n/2 values. O(n).
+
