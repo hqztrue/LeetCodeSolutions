@@ -1,0 +1,2 @@
+segment tree. O(n+q log n).
+

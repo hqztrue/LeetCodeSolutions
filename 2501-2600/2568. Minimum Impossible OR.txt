@@ -1,0 +1,2 @@
+find the first all-zero bit. O(n).
+

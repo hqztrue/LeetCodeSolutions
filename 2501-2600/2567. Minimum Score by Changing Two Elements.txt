@@ -1,0 +1,2 @@
+greedily modify the smallest/largest element. O(n).
+
