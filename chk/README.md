@@ -22,13 +22,15 @@ LeetCode 代码自动对拍系统
 ## 文件描述
 
 ### download_contest_py_CN.js
-用来下载周赛/双周赛的 Python 代码。可在国服使用。开头的参数 questions 表示要下载的题目编号，pages 表示要下载的页数，contestId 表示周赛编号。
+用来下载周赛/双周赛的 Python 代码。可在国服使用。下载文件存储于形如 weekly-contest-333_P4.py。  
+开头的参数 questions 表示要下载的题目编号，pages 表示要下载的页数，contestId 表示周赛编号。
 
 ### download_contest_py.js
-用来下载周赛/双周赛的 Python 代码。可在国服或美服使用。region 参数设置为 local 表示国服，global 表示美服。
+用来下载周赛/双周赛的 Python 代码。可在国服或美服使用。下载文件存储于形如 weekly-contest-333_P4.py。  
+region 参数设置为 local 表示国服，global 表示美服。
 
 ### download_contest.js
-用来下载周赛/双周赛的 C++ 代码。可在国服或美服使用。
+用来下载周赛/双周赛的 C++ 代码。可在国服或美服使用。下载文件存储于 codes_CN.h 或 codes_US.h。
 
 ### download_histogram_py.js
 用来下载题库中题目的 Python 代码。可在国服或美服使用。
