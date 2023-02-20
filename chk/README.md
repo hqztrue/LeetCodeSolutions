@@ -39,15 +39,15 @@ LeetCode 代码自动对拍系统
 由 [download_histogram.ts](https://github.com/hqztrue/LeetCodeSolutions/tree/master/chk/download_histogram/download_histogram.ts) 编译得到。
 
 ### chk.py
-用来对拍 Python 代码的文件，包含测试数据生成器(需要手动修改)。
-其中的 _check 函数可以用指定数据测试所有的代码。
-print_name 函数可以输出所有当前被 hack 掉的用户名称。
-bad=set([]) 为已被 hack 掉的代码编号，可手动添加进去。
-代码运行超时会显示 TLE，但运行时间过长时不会自动终止，需手动结束。
+用来对拍 Python 代码的文件，包含测试数据生成器(需要手动修改)。  
+其中的 _check 函数可以用指定数据测试所有的代码。  
+print_name 函数可以输出所有当前被 hack 掉的用户名称。  
+bad=set([]) 为已被 hack 掉的代码编号，可手动添加进去。  
+代码运行超时会显示 TLE，但运行时间过长时不会自动终止，需手动结束。  
 默认将第一份代码的输出作为基准值。
 
 ### chk.cpp
-用来对拍 C++ 代码的文件，包含测试数据生成器(需要手动修改)。
-其中的 check 函数可以用指定数据测试所有的代码。
+用来对拍 C++ 代码的文件，包含测试数据生成器(需要手动修改)。  
+其中的 check 函数可以用指定数据测试所有的代码。  
 vector<int> arr 包含了已被 hack 掉的代码编号，可手动添加进去。
 
