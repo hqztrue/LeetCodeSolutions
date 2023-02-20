@@ -2,7 +2,7 @@ var id = new Array();
 {
   void (async function main() {
     const questions = [1,2,3,4]
-    const pages = 50
+    const pages = 150
     const contestId = 'weekly-contest-328'
 
 		var codes=new Array();

@@ -1,0 +1,2 @@
+greedy construction. assuming the LCP array is correct, we can know whether a pair of indices are the same or different. verify the LCP at the end. O(n^2).
+

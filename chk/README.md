@@ -1,0 +1,37 @@
+LeetCode 代码自动对拍系统
+========
+
+## 使用方式
+
+### Python 版
+1. 在 [download_contest_py_CN.js](https://github.com/hqztrue/LeetCodeSolutions/blob/master/download_contest_py_CN.js) 中，将第 6 行的 contestId 修改为要下载的周赛编号。将 pages 设置为要下载的页数。
+2. 在网页上按 F12，在弹出的 Console 界面中把之前的 JS 代码粘贴进去。按回车运行。
+3. 等待几分钟。完成后会下载形如 weekly-contest-333_P4.py 的文件。
+4. 在等待过程中可以修改 chk.py，随机生成一些你想用来对拍的数据。
+5. 将下载的 weekly-contest-333_P4.py 粘贴到 chk.py 的头部，并运行 chk.py (在 windows 上可方便地使用 run.bat)。
+6. 观察输出结果中是否有 WA/TLE/RE。如果异常退出则可能出了一些其他问题。
+7. (建议)将对拍得到的测试数据及对应的代码在 LC 官网上测试，并提交至 [LeetCode-Feedback](https://github.com/LeetCode-Feedback/LeetCode-Feedback/issues)。
+
+### C++ 版
+1. 在 [download_contest.js](https://github.com/hqztrue/LeetCodeSolutions/blob/master/download_contest.js) 中，设置前 3 行的参数。func_str 为函数声明(需将函数名替换为 run)。func_name 为实际函数名，func_arg 为函数参数。
+2. 运行 download_contest.js(方法类似)。
+3. 修改 chk.cpp，用来随机生成一些数据。
+4. 将下载的 codes.h 文件复制到 chk.cpp 同目录下。运行 chk.cpp。
+5. 得到对拍数据。
+
+### download_contest_py_CN.js
+用来下载周赛/双周赛的 python 代码。可在国服使用。
+
+### download_contest_py.js
+用来下载周赛/双周赛的 python 代码。可在国服或美服使用。
+
+### download_contest.js
+用来下载周赛/双周赛的 C++ 代码。可在国服或美服使用。
+
+### chk.py
+用来对拍 python 代码的文件，包含测试数据生成器(需要手动修改)。
+
+### chk.cpp
+用来对拍 C++ 代码的文件，包含测试数据生成器(需要手动修改)。
+
+
