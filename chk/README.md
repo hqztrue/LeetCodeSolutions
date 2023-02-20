@@ -31,11 +31,11 @@ LeetCode 代码自动对拍系统
 用来下载周赛/双周赛的 C++ 代码。可在国服或美服使用。
 
 ### download_histogram_py.js
-用来下载周赛/双周赛的 Python 代码。可在国服或美服使用。
+用来下载题库中题目的 Python 代码。可在国服或美服使用。
 由 [download_histogram_py.ts](https://github.com/hqztrue/LeetCodeSolutions/tree/master/chk/download_histogram/download_histogram_py.ts) 编译得到。
 
 ### download_histogram.js
-用来下载周赛/双周赛的 C++ 代码。可在国服或美服使用。
+用来下载题库中题目的 C++ 代码。可在国服或美服使用。
 由 [download_histogram.ts](https://github.com/hqztrue/LeetCodeSolutions/tree/master/chk/download_histogram/download_histogram.ts) 编译得到。
 
 ### chk.py
