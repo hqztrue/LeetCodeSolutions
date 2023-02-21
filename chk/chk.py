@@ -11,7 +11,7 @@ def rand_str(n,U=26):
 def rand_arr(n,L,R=-1): return rand_arr(n,0,L) if R==-1 else [randint(L,R) for i in range(n)]
 def rand_arr2D(n,m,L,R=-1): return [rand_arr(m,L,R) for i in range(n)]
 
-def _print(*args,end=''): pass
+def _print(*args,**kwargs): pass
 def Print(*args,file=sys.stdout,end=''):
     if len(args)==1 and isinstance(args[0],str): print1('\"'+args[0]+'\"',file=file)
     else: print1(*args,file=file)

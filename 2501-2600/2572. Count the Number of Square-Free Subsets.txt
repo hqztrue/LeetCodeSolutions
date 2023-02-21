@@ -2,3 +2,5 @@ see 1994. The Number of Good Subsets.
 1. count the number of independent sets, where the nodes are the values. O(n+indep-set(U)).
 2. DP. Let f[i][j] denote the number of ways to use the first i numbers and used the set of primes j. O(m*2^m), where m=O(log U/log log U) is the number of primes.
 
+see my article https://leetcode.cn/problems/count-the-number-of-square-free-subsets/solution/shu-zhi-fan-wei-zai-da-yi-dian-de-hua-ze-56w3/.
+
