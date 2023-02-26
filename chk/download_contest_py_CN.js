@@ -31,7 +31,12 @@ import sys,os,string,re,datetime,time,collections,heapq,bisect,copy, \\
     numpy,math,random,statistics,itertools,functools,operator,io,json
 
 from typing import *
-_copy=copy; _random=random; _time=time; _bisect=bisect\n\n`;
+_copy=copy; _random=random; _time=time; _bisect=bisect
+def empty_func(*args,**kwargs): pass
+print1=print
+print=empty_func
+os.system=empty_func
+\n`;
 
 		for (let i = 0; i < n; i++)id[i]=0;
 		try {

@@ -1,0 +1,2 @@
+sorting, greedily match the left half with the right half. O(sort(n)).
+
