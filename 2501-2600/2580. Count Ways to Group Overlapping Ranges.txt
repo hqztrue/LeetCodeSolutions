@@ -1,0 +1,2 @@
+merge segments. O(sort(n)).
+

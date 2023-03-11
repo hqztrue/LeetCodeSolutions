@@ -1,0 +1,2 @@
+DP, knapsack. Use prefix sum. O(n*t).
+

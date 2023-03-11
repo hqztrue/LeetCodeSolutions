@@ -1,6 +1,7 @@
 
 
 
+from builtins import *
 copy=_copy; random=_random; time=_time; bisect=_bisect
 sys.setrecursionlimit(10**6)
 sys.set_int_max_str_digits(10**7)

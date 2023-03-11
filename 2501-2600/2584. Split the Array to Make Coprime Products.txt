@@ -1,0 +1,2 @@
+Maintain an interval for each prime factor. Preprocess the prime factors of each number in [U]. O(U+n*log U/log log U).
+

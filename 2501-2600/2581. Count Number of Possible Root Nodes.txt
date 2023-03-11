@@ -1,0 +1,2 @@
+dfs, update the count when we traverse an edge. O(n).
+
