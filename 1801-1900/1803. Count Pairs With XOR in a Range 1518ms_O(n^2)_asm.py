@@ -7,7 +7,6 @@ def translate(s):
     res=b''
     for l in s.split('\n'):
         if (not ':' in l) or (not '   ' in l): continue
-        #l=l[l.find(':')+1:l.find('   ')].strip()
         l=l[l.find(':')+1:].strip()
         l=l[:l.find('   ')].strip()
         for b in l.split(' '):

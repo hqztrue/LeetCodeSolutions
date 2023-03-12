@@ -1,0 +1,3 @@
+same as LCP 32.
+sorting, sweepline. O(sort(n)).
+

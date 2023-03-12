@@ -14,8 +14,9 @@ d1=c_int(d)
 def translate(s):
     res=b''
     for l in s.split('\n'):
-        if (not ':' in l) or (not '   ' in l): continue
-        l=l[l.find(':')+1:l.find('   ')].strip()
+        if not ':' in l or '>:' in l: continue
+        l=l[l.find(':')+1:].strip()
+        l=l[:l.find('   ')].strip()
         for b in l.split(' '):
             res+=int(b,16).to_bytes(1,byteorder='little')
     return res
@@ -49,7 +50,7 @@ for i in range(10000):
     #t=sum(a)
     t=asm_sum(a1,n1)
     #print(t)
-print('time sum=',time.time()-t1) #4633 vs 446
+print('time sum=',time.time()-t1) #4633 vs 446ms
 
 
 #sum parallel 4
@@ -72,7 +73,69 @@ c:  41 ba 00 00 00 00       mov    r10d,0x0
 3a: 44 01 d0                add    eax,r10d
 3d: 44 01 d8                add    eax,r11d
 40: c3                      ret
-''',CFUNCTYPE(c_int,POINTER(c_int),c_int))
+''',CFUNCTYPE(c_int,POINTER(c_int),c_int)) #189ms
+
+
+#sum -Ofast
+asm_sum_Ofast=compile_asm('''
+0:  85 f6                   test   esi,esi
+2:  0f 8e 83 00 00 00       jle    8b <L7>
+8:  8d 46 ff                lea    eax,[rsi-0x1]
+b:  83 f8 03                cmp    eax,0x3
+e:  76 7f                   jbe    8f <L8>
+10: 89 f2                   mov    edx,esi
+12: 48 89 f8                mov    rax,rdi
+15: 66 0f ef c0             pxor   xmm0,xmm0
+19: c1 ea 02                shr    edx,0x2
+1c: 48 c1 e2 04             shl    rdx,0x4
+20: 48 01 fa                add    rdx,rdi
+0000000000000023 <L5>:
+23: f3 0f 6f 10             movdqu xmm2,XMMWORD PTR [rax]
+27: 48 83 c0 10             add    rax,0x10
+2b: 66 0f fe c2             paddd  xmm0,xmm2
+2f: 48 39 d0                cmp    rax,rdx
+32: 75 ef                   jne    23 <L5>
+34: 66 0f 6f c8             movdqa xmm1,xmm0
+38: 89 f2                   mov    edx,esi
+3a: 66 0f 73 d9 08          psrldq xmm1,0x8
+3f: 83 e2 fc                and    edx,0xfffffffc
+42: 66 0f fe c1             paddd  xmm0,xmm1
+46: 66 0f 6f c8             movdqa xmm1,xmm0
+4a: 66 0f 73 d9 04          psrldq xmm1,0x4
+4f: 66 0f fe c1             paddd  xmm0,xmm1
+53: 66 0f 7e c0             movd   eax,xmm0
+57: 40 f6 c6 03             test   sil,0x3
+5b: 74 31                   je     8e <L10>
+000000000000005d <L3>:
+5d: 48 63 ca                movsxd rcx,edx
+60: 03 04 8f                add    eax,DWORD PTR [rdi+rcx*4]
+63: 8d 4a 01                lea    ecx,[rdx+0x1]
+66: 39 ce                   cmp    esi,ecx
+68: 7e 23                   jle    8d <L1>
+6a: 48 63 c9                movsxd rcx,ecx
+6d: 03 04 8f                add    eax,DWORD PTR [rdi+rcx*4]
+70: 8d 4a 02                lea    ecx,[rdx+0x2]
+73: 39 ce                   cmp    esi,ecx
+75: 7e 16                   jle    8d <L1>
+77: 48 63 c9                movsxd rcx,ecx
+7a: 83 c2 03                add    edx,0x3
+7d: 03 04 8f                add    eax,DWORD PTR [rdi+rcx*4]
+80: 39 d6                   cmp    esi,edx
+82: 7e 09                   jle    8d <L1>
+84: 48 63 d2                movsxd rdx,edx
+87: 03 04 97                add    eax,DWORD PTR [rdi+rdx*4]
+8a: c3                      ret
+000000000000008b <L7>:
+8b: 31 c0                   xor    eax,eax
+000000000000008d <L1>:
+8d: c3                      ret
+000000000000008e <L10>:
+8e: c3                      ret
+000000000000008f <L8>:
+8f: 31 d2                   xor    edx,edx
+91: 31 c0                   xor    eax,eax
+93: eb c8                   jmp    5d <L3>
+''',CFUNCTYPE(c_int,POINTER(c_int),c_int)) #129ms
 
 
 #sum x//d where x in a
@@ -97,11 +160,11 @@ for i in range(1000):
     #t=sum(x//d for x in a)
     t=asm_sum_div(a1,n1,d1)
     #print(t)
-print('time sum div=',time.time()-t1) #3788 vs 173
+print('time sum div=',time.time()-t1) #3788 vs 173ms
 
 
 #count x in a s.t. x xor y in [l,r]
-asm_xor_in=compile_asm('''
+asm_xor_in_count=compile_asm('''
 0:  89 f0                   mov    eax,esi
 2:  41 89 ca                mov    r10d,ecx
 5:  89 d6                   mov    esi,edx

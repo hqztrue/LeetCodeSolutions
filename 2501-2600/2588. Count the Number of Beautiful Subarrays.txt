@@ -1,0 +1,2 @@
+interval xor=0. prefix xor sum. O(n).
+
