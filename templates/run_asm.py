@@ -2,15 +2,6 @@ import time
 from ctypes import *
 import mmap
 
-n=100000
-a=[i%100 for i in range(n)]
-a1=(c_int*n)()
-for i in range(n): a1[i]=a[i]
-n1=c_int(n)
-d=7
-d1=c_int(d)
-
-#https://defuse.ca/online-x86-assembler.htm#disassembly2
 def translate(s):
     res=b''
     for l in s.split('\n'):
@@ -24,11 +15,27 @@ def translate(s):
 def compile_asm(s,ftype):
     global buf
     buf=mmap.mmap(-1,mmap.PAGESIZE,prot=mmap.PROT_READ|mmap.PROT_WRITE|mmap.PROT_EXEC)
-    fpointer=c_void_p.from_buffer(buf)
     buf.write(translate(s))
-    return ftype(addressof(fpointer))
+    return ftype(addressof(c_void_p.from_buffer(buf)))
 
+asm_func=compile_asm('''
+
+''',CFUNCTYPE(c_int,POINTER(c_int),c_int))
+
+
+#https://defuse.ca/online-x86-assembler.htm#disassembly2
+#https://defuse.ca/online-x86-assembler.htm
 #order: edi,esi,edx,ecx,r8d
+#-Ofast -mavx -mavx2
+
+n=100000
+a=[i%100 for i in range(n)]
+a1=(c_int*n)()
+for i in range(n): a1[i]=a[i]
+n1=c_int(n)
+d=7
+d1=c_int(d)
+
 #sum x in a
 asm_sum=compile_asm('''
 0:  b9 00 00 00 00          mov    ecx,0x0
