@@ -12,9 +12,8 @@ def translate(s):
             res+=int(b,16).to_bytes(1,byteorder='little')
     return res
 
+buf=mmap.mmap(-1,mmap.PAGESIZE,prot=mmap.PROT_READ|mmap.PROT_WRITE|mmap.PROT_EXEC)
 def compile_asm(s,ftype):
-    global buf
-    buf=mmap.mmap(-1,mmap.PAGESIZE,prot=mmap.PROT_READ|mmap.PROT_WRITE|mmap.PROT_EXEC)
     buf.write(translate(s))
     return ftype(addressof(c_void_p.from_buffer(buf)))
 
@@ -23,7 +22,7 @@ asm_func=compile_asm('''
 ''',CFUNCTYPE(c_int,POINTER(c_int),c_int))
 
 
-#https://defuse.ca/online-x86-assembler.htm#disassembly2
+#https://gcc.godbolt.org/
 #https://defuse.ca/online-x86-assembler.htm
 #order: edi,esi,edx,ecx,r8d
 #-Ofast -mavx -mavx2
