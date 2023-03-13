@@ -144,6 +144,83 @@ e:  76 7f                   jbe    8f <L8>
 ''',CFUNCTYPE(c_int,POINTER(c_int),c_int)) #129ms
 
 
+#sum -Ofast -mavx -mavx2
+asm_sum_Ofast_avx=compile_asm('''
+0:  49 89 f8                mov    r8,rdi
+3:  89 f2                   mov    edx,esi
+5:  85 f6                   test   esi,esi
+7:  0f 8e b5 00 00 00       jle    c2 <L7>
+d:  8d 46 ff                lea    eax,[rsi-0x1]
+10: 83 f8 06                cmp    eax,0x6
+13: 0f 86 b0 00 00 00       jbe    c9 <L8>
+19: 89 f1                   mov    ecx,esi
+1b: 48 89 f8                mov    rax,rdi
+1e: c5 f1 ef c9             vpxor  xmm1,xmm1,xmm1
+22: c1 e9 03                shr    ecx,0x3
+25: 48 c1 e1 05             shl    rcx,0x5
+29: 48 01 f9                add    rcx,rdi
+000000000000002c <L4>:
+2c: c5 f5 fe 08             vpaddd ymm1,ymm1,YMMWORD PTR [rax]
+30: 48 83 c0 20             add    rax,0x20
+34: 48 39 c8                cmp    rax,rcx
+37: 75 f3                   jne    2c <L4>
+39: c5 f9 6f c1             vmovdqa xmm0,xmm1
+3d: c4 e3 7d 39 c9 01       vextracti128 xmm1,ymm1,0x1
+43: 89 d1                   mov    ecx,edx
+45: c5 f9 fe c1             vpaddd xmm0,xmm0,xmm1
+49: 83 e1 f8                and    ecx,0xfffffff8
+4c: c5 f1 73 d8 08          vpsrldq xmm1,xmm0,0x8
+51: c5 f9 fe c1             vpaddd xmm0,xmm0,xmm1
+55: c5 f1 73 d8 04          vpsrldq xmm1,xmm0,0x4
+5a: c5 f9 fe c1             vpaddd xmm0,xmm0,xmm1
+5e: c5 f9 7e c0             vmovd  eax,xmm0
+62: f6 c2 07                test   dl,0x7
+65: 74 5e                   je     c5 <L12>
+67: c5 f8 77                vzeroupper
+000000000000006a <L3>:
+6a: 48 63 f9                movsxd rdi,ecx
+6d: 48 8d 34 bd 00 00 00    lea    rsi,[rdi*4+0x0]
+74: 00
+75: 41 03 04 b8             add    eax,DWORD PTR [r8+rdi*4]
+79: 8d 79 01                lea    edi,[rcx+0x1]
+7c: 39 fa                   cmp    edx,edi
+7e: 7e 44                   jle    c4 <L1>
+80: 8d 79 02                lea    edi,[rcx+0x2]
+83: 41 03 44 30 04          add    eax,DWORD PTR [r8+rsi*1+0x4]
+88: 39 fa                   cmp    edx,edi
+8a: 7e 38                   jle    c4 <L1>
+8c: 8d 79 03                lea    edi,[rcx+0x3]
+8f: 41 03 44 30 08          add    eax,DWORD PTR [r8+rsi*1+0x8]
+94: 39 fa                   cmp    edx,edi
+96: 7e 2c                   jle    c4 <L1>
+98: 8d 79 04                lea    edi,[rcx+0x4]
+9b: 41 03 44 30 0c          add    eax,DWORD PTR [r8+rsi*1+0xc]
+a0: 39 fa                   cmp    edx,edi
+a2: 7e 20                   jle    c4 <L1>
+a4: 8d 79 05                lea    edi,[rcx+0x5]
+a7: 41 03 44 30 10          add    eax,DWORD PTR [r8+rsi*1+0x10]
+ac: 39 fa                   cmp    edx,edi
+ae: 7e 14                   jle    c4 <L1>
+b0: 83 c1 06                add    ecx,0x6
+b3: 41 03 44 30 14          add    eax,DWORD PTR [r8+rsi*1+0x14]
+b8: 39 ca                   cmp    edx,ecx
+ba: 7e 08                   jle    c4 <L1>
+bc: 41 03 44 30 18          add    eax,DWORD PTR [r8+rsi*1+0x18]
+c1: c3                      ret
+00000000000000c2 <L7>:
+c2: 31 c0                   xor    eax,eax
+00000000000000c4 <L1>:
+c4: c3                      ret
+00000000000000c5 <L12>:
+c5: c5 f8 77                vzeroupper
+c8: c3                      ret
+00000000000000c9 <L8>:
+c9: 31 c9                   xor    ecx,ecx
+cb: 31 c0                   xor    eax,eax
+cd: eb 9b                   jmp    6a <L3>
+''',CFUNCTYPE(c_int,POINTER(c_int),c_int)) #59ms
+
+
 #sum x//d where x in a
 asm_sum_div=compile_asm('''
 0:  89 d3                   mov    ebx,edx
