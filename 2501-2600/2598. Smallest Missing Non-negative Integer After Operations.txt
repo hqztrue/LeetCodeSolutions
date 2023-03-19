@@ -1,0 +1,2 @@
+divide into equivalent classes modulo value. greedy. O(n).
+

@@ -1,4 +1,4 @@
-import time
+import time,random
 from ctypes import *
 import mmap
 
@@ -27,10 +27,10 @@ asm_func=compile_asm('''
 #order: edi,esi,edx,ecx,r8d
 #-Ofast -mavx -mavx2
 
+random.seed(1)
 n=100000
-a=[i%100 for i in range(n)]
-a1=(c_int*n)()
-for i in range(n): a1[i]=a[i]
+a=[randint(0,1000) for i in range(n)]
+a1=(c_int*n)(*a)
 n1=c_int(n)
 d=7
 d1=c_int(d)
@@ -56,7 +56,7 @@ for i in range(10000):
     #t=sum(a)
     t=asm_sum(a1,n1)
     #print(t)
-print('time sum=',time.time()-t1) #4633 vs 446ms
+print('time sum=',time.time()-t1) #7726ms vs 647ms
 
 
 #sum parallel 4
@@ -79,7 +79,7 @@ c:  41 ba 00 00 00 00       mov    r10d,0x0
 3a: 44 01 d0                add    eax,r10d
 3d: 44 01 d8                add    eax,r11d
 40: c3                      ret
-''',CFUNCTYPE(c_int,POINTER(c_int),c_int)) #189ms
+''',CFUNCTYPE(c_int,POINTER(c_int),c_int)) #223ms
 
 
 #sum -Ofast
@@ -141,7 +141,7 @@ e:  76 7f                   jbe    8f <L8>
 8f: 31 d2                   xor    edx,edx
 91: 31 c0                   xor    eax,eax
 93: eb c8                   jmp    5d <L3>
-''',CFUNCTYPE(c_int,POINTER(c_int),c_int)) #129ms
+''',CFUNCTYPE(c_int,POINTER(c_int),c_int)) #169ms
 
 
 #sum -Ofast -mavx -mavx2
@@ -218,7 +218,7 @@ c8: c3                      ret
 c9: 31 c9                   xor    ecx,ecx
 cb: 31 c0                   xor    eax,eax
 cd: eb 9b                   jmp    6a <L3>
-''',CFUNCTYPE(c_int,POINTER(c_int),c_int)) #59ms
+''',CFUNCTYPE(c_int,POINTER(c_int),c_int)) #98ms
 
 
 #sum x//d where x in a

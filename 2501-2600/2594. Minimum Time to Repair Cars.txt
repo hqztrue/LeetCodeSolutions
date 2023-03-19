@@ -1,0 +1,2 @@
+Similar to 875. Koko Eating Bananas. O(n) (assuming sqrt takes O(1) time).
+
