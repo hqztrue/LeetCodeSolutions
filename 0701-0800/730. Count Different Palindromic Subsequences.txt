@@ -1,3 +1,4 @@
 1. Let f[i][j] denote the number of different non-empty palindromic subsequences in s[i..j]. If a palindromic subsequence in s[i..j] starts with character c, then we can remove the first and the last occurrence of c in s[i..j] (call them i1 and j1, respectively), and transit from s[i1..j1]. O(n^2*|∑|).
 2. O(n^2). https://leetcode-cn.com/problems/count-different-palindromic-subsequences/solution/zong-he-ji-da-ti-jie-de-li-jie-by-jincun-9glh/
+https://leetcode.cn/problems/count-different-palindromic-subsequences/solution/bu-xu-yao-da-liang-fen-lei-tao-lun-de-ji-1dub/
 

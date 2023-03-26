@@ -1,0 +1,2 @@
+greedy. sieve. O(n+U/log log U).
+

@@ -1,2 +1,3 @@
-sorting. O(sort(n)).
+1. sorting. O(sort(n)).
+2. divide into monotone decreasing subintervals. O(n).
 
