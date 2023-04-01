@@ -1,0 +1,2 @@
+The resulting array must be periodic, a[i]=a[i+k]. Find the connected components (index differ by gcd(n,k)) and find the median in each component. O(n).
+

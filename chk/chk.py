@@ -18,6 +18,19 @@ def rand_tree(n):
     for i in range(n-1):
         if randint(0,1): a[i][0],a[i][1]=a[i][1],a[i][0]
     return a
+def rand_graph(n,m,directed=1,self_loop=1):
+    s=set()
+    e=[]
+    for i in range(m):
+        while 1:
+            x=randint(0,n-1)
+            y=randint(0,n-1)
+            if not directed and x>y: x,y=y,x
+            if (not self_loop and x==y) or (x,y) in s: continue
+            s.add((x,y))
+            e.append([x,y])
+            break
+    return e
 
 def Print(*args,file=sys.stdout,end=''):
     if len(args)==1 and isinstance(args[0],str): print1('\"'+args[0]+'\"',file=file)

@@ -1,0 +1,5 @@
+O(nm) or O(n^\omega).
+open problem: find faster algorithms.
+
+conditional lower bound: Omega(m^{2\omega/3-o(1)}) \cite{lincoln2018tight}.
+
