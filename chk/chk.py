@@ -49,6 +49,7 @@ def print_name():
         if lines[i]=='# -----*****-----\n':
             user_name.append(lines[i+1])
     for x in sorted(bad):
+        #print1(user_name[x-1][2:].split(',')[0],end=' | ')
         print1(user_name[x-1][2:],end='')
     file.close()
     print()

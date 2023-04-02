@@ -1,0 +1,4 @@
+the possible next position always forms a contiguous range (even/odd).
+1. union find. O(n).
+2. linked list, O(n)?
+
