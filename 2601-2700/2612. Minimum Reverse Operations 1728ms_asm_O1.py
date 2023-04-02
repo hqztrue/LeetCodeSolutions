@@ -146,5 +146,4 @@ class Solution:
         m=len(_b)
         b=(c_int*m)(*_b)
         asm_calc(a,n,p,b,m,k)
-        ans=[a[i] for i in range(n)]
-        return ans
+        return list(a)
