@@ -357,12 +357,12 @@ function download(str, filename) {
                     case 2:
                         allQuestions = _b.sent();
                         questionId = data.questionId, lang = data.lang;
-                        question = allQuestions["questions"].find(function (q) { return q.questionId === questionId; });
+                        question = allQuestions.find(function (q) { return q.questionId === questionId; });
                         res = "# ".concat(question === null || question === void 0 ? void 0 : question.title, " - ").concat(lang, "\n\n");
                         cache = new Set();
                         id = 0;
                         //if (location.origin.search('cn')!=-1)id+=1000
-                        res += "from string import *\nfrom re import *\nfrom datetime import *\nfrom collections import *\nfrom heapq import *\nfrom bisect import *\nfrom copy import *\nfrom math import *\nfrom random import *\nfrom statistics import *\nfrom itertools import *\nfrom functools import *\nfrom operator import *\nfrom io import *\nfrom sys import *\nfrom json import *\nfrom builtins import *\n\nimport sys,os,string,re,datetime,time,collections,heapq,bisect,copy, \\\n    numpy,math,random,statistics,itertools,functools,operator,io,json\n\nfrom typing import *\n_copy=copy; _random=random; _time=time; _bisect=bisect\n\n";
+                        res += "from string import *\nfrom re import *\nfrom datetime import *\nfrom collections import *\nfrom heapq import *\nfrom bisect import *\nfrom copy import *\nfrom math import *\nfrom random import *\nfrom statistics import *\nfrom itertools import *\nfrom functools import *\nfrom operator import *\nfrom io import *\nfrom sys import *\nfrom json import *\nfrom builtins import *\n\nimport sys,os,string,re,datetime,time,collections,heapq,bisect,copy, \\\n    numpy,math,random,statistics,itertools,functools,operator,io,json\n\nfrom typing import *\n_copy=copy; _random=random; _time=time; _bisect=bisect\ndef empty_func(*args,**kwargs): pass\nprint1=print\nprint=empty_func\nos.system=empty_func\n\n";
                         time = data.runtimeDistribution;
                         res += "\n# time\n\n";
                         if (!time) return [3 /*break*/, 6];

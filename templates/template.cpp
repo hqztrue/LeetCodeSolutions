@@ -389,7 +389,7 @@ struct BitSet{
 		}
 		return *this;
 	}
-	operator bool()const{return count()>0;}
+	operator bool(){return count()>0;}
 	BitSet<S>& flip(){
 		//for (uint *start=a,*end=a+size;start!=end;*start=~*start,++start);
 		uint *p0=a,*p1=p0+1,*p2=p0+2,*p3=p0+3,*pend=a+((size>>2)<<2);
@@ -442,6 +442,18 @@ struct BitSet{
 		return res;
 	}
 	int _Find_first(){return ffs();}
+	int _Find_next(int x){
+		correction();
+		if (x<0){
+			if (a[0]&1)return 0;
+			x=0;
+		}
+		int d=(x&mask)+1;
+		if (d<=mask&&a[x>>W]>>d)return __builtin_ctzll(a[x>>W]>>d)+d+(x&~mask);
+		for (int i=(x>>W)+1;i<size;++i)
+			if (a[i])return (i<<W)+__builtin_ctzll(a[i]);
+		return S;
+	}
 	uint to_uint(){
 		correction();
 		return a[0];

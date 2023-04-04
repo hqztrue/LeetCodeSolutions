@@ -520,7 +520,8 @@ function download(str: string, filename = 'contest.md'): void {
     )
     const allQuestions = await leetCodeApi.getAllQuestions()
     const { questionId, lang } = data
-    const question = allQuestions["questions"].find(q => q.questionId === questionId)
+		//allQuestions["questions"]
+    const question = allQuestions.find(q => q.questionId === questionId)
     let res = `# ${question?.title} - ${lang}\n\n`
 		const cache = new Set<string>()
 		let id = 0
@@ -548,7 +549,11 @@ import sys,os,string,re,datetime,time,collections,heapq,bisect,copy, \\
     numpy,math,random,statistics,itertools,functools,operator,io,json
 
 from typing import *
-_copy=copy; _random=random; _time=time; _bisect=bisect\n\n`
+_copy=copy; _random=random; _time=time; _bisect=bisect
+def empty_func(*args,**kwargs): pass
+print1=print
+print=empty_func
+os.system=empty_func\n\n`
 		
     {
       const time = data.runtimeDistribution

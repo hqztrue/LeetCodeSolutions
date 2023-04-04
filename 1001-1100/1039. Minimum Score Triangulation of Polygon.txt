@@ -1,1 +1,4 @@
 DP. let f[i][j] denote the optimal solution to triangulate A[i..j]. O(n^3).
+
+conditional LB? relate to (min,+)-conv?
+
