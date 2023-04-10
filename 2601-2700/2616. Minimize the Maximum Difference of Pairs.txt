@@ -1,0 +1,2 @@
+The pairs we choose will not intersect. divide and conquer, similar to nth_element. O(n).
+

@@ -60,6 +60,7 @@ def _check(*args):
     args=args[:-1]
     for i in range(1,NUM_CODES+1):
         if i not in bad:
+            #print(i)
             A=globals()['Solution%d'%i]()
             t=time.time()
             print=empty_func
