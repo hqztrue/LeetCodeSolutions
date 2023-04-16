@@ -1,0 +1,2 @@
+prefix sum, find LCA. O(n+q).
+

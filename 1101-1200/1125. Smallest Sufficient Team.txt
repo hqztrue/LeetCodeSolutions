@@ -1,4 +1,7 @@
+This is the set cover problem.
+
 let n be the number of people, and m be the number of skills.
 state compression DP. O(2^m*n).
 
+There are also FPT hardness results \cite{cygan2009exponential}.
 

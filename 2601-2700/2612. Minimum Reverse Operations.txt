@@ -1,4 +1,5 @@
 the possible next position always forms a contiguous range (even/odd).
 1. union find. O(n).
 2. linked list, O(n)?
+3. O(n). https://leetcode.cn/problems/minimum-reverse-operations/solution/fu-za-du-wei-onde-jie-fa-by-ling-jian-20-pgu7/
 
