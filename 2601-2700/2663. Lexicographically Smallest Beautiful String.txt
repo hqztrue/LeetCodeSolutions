@@ -1,0 +1,2 @@
+greedy, we can locally check whether a string is valid. O(n).
+

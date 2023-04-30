@@ -1,0 +1,2 @@
+find the shortest interval with gcd=1. O(n log U).
+

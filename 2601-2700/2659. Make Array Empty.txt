@@ -1,0 +1,2 @@
+If the next deleted element is before the current one, then we need to traverse the array once more. O(sort(n)).
+

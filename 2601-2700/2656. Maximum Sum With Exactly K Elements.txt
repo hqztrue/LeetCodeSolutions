@@ -1,0 +1,2 @@
+greedily use the maximum value. O(n).
+

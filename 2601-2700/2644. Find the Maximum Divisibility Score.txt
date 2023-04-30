@@ -1,2 +1,4 @@
 O(nm).
 
+conditional lower bound: we can reduce dominance range counting in high dimensions to this problem (by multiplying primes), so it requires n^{2-o(1)} time.
+
