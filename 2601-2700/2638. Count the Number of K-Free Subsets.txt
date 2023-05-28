@@ -1,0 +1,3 @@
+The same as 2597. The Number of Beautiful Subsets.
+counting the number of independent set, where the graph is a set of disjoint chains. O(n).
+

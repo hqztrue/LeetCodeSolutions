@@ -1,0 +1,3 @@
+1. DP. Let f[i][j] denote the minimum cost to make the prefix 0~i equal to j, using only the first operation. Similarly define g[i][j] for suffices, using only the second operation. The first operations and the second operations shall not intersect. O(n).
+2. greedy. for each a[i] neq a[i+1], need to flip between them. O(n).
+

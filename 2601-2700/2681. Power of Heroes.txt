@@ -1,0 +1,2 @@
+Enumerate the maximum value, maintain the number of cases for each possible minimum value. O(sort(n)).
+

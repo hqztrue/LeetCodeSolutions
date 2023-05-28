@@ -1,0 +1,4 @@
+1. binary search. O(n log U).
+
+O(n)?
+

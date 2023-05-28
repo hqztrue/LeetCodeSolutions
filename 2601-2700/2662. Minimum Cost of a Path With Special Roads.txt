@@ -1,3 +1,4 @@
-let m=specialRoads.length.
-SSSP. O(m^2).
+let n=specialRoads.length.
+1. SSSP. O(n^2).
+2. O(n log^3 n), by range tree. see my article https://leetcode.cn/problems/minimum-cost-of-a-path-with-special-roads/solution/n-polylog-nde-zuo-fa-by-hqztrue-xt5d/.
 

@@ -1,0 +1,2 @@
+Sorting. Add an edge from a cell v to the cell w within the same row as v, where w is the largest value <v. Similarly add edges for the columns. O(sort(nm)).
+

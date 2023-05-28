@@ -1,0 +1,2 @@
+We can locally compute the change after each update. O(n).
+

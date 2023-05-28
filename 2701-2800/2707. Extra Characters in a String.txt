@@ -1,0 +1,3 @@
+Let n denote the length of s, and m denote the total size of the strings in dictionary.
+Optimal O(nm^{1/3}+m). See my paper \cite{chan2020more}.
+

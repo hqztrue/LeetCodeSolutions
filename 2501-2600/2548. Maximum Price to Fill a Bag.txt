@@ -1,0 +1,2 @@
+greedy, linear time selection. O(n).
+
