@@ -343,7 +343,7 @@ function download(str, filename) {
 {
     void (function main() {
         return __awaiter(this, void 0, void 0, function () {
-            var autoCreateSubmission, pathnames, leetCodeApi, data, allQuestions, questionId, lang, question, res, cache, id, time, lang_1, distribution, _i, distribution_1, t, code, memory, lang_2, distribution, _a, distribution_2, m, code;
+            var autoCreateSubmission, pathnames, leetCodeApi, data, isCN, allQuestions, questionId, lang, question, res, cache, id, time, lang_1, distribution, _i, distribution_1, t, code, memory, lang_2, distribution, _a, distribution_2, m, code;
             return __generator(this, function (_b) {
                 switch (_b.label) {
                     case 0:
@@ -353,15 +353,16 @@ function download(str, filename) {
                         return [4 /*yield*/, leetCodeApi.getSubmissionDetail(pathnames[pathnames.length - 1])];
                     case 1:
                         data = _b.sent();
+                        isCN = location.origin.search('cn') != -1;
                         return [4 /*yield*/, leetCodeApi.getAllQuestions()];
                     case 2:
                         allQuestions = _b.sent();
                         questionId = data.questionId, lang = data.lang;
-                        question = allQuestions.find(function (q) { return q.questionId === questionId; });
+                        question = (isCN ? allQuestions["questions"] : allQuestions).find(function (q) { return q.questionId === questionId; });
                         res = "# ".concat(question === null || question === void 0 ? void 0 : question.title, " - ").concat(lang, "\n\n");
                         cache = new Set();
                         id = 0;
-                        //if (location.origin.search('cn')!=-1)id+=1000
+                        //if (isCN)id+=1000
                         res += "from string import *\nfrom re import *\nfrom datetime import *\nfrom collections import *\nfrom heapq import *\nfrom bisect import *\nfrom copy import *\nfrom math import *\nfrom random import *\nfrom statistics import *\nfrom itertools import *\nfrom functools import *\nfrom operator import *\nfrom io import *\nfrom sys import *\nfrom json import *\nfrom builtins import *\n\nimport sys,os,string,re,datetime,time,collections,heapq,bisect,copy, \\\n    numpy,math,random,statistics,itertools,functools,operator,io,json\n\nfrom typing import *\n_copy=copy; _random=random; _time=time; _bisect=bisect\ndef empty_func(*args,**kwargs): pass\nprint1=print\nprint=empty_func\nos.system=empty_func\n\n";
                         time = data.runtimeDistribution;
                         res += "\n# time\n\n";
