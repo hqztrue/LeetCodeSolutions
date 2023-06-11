@@ -1,0 +1,2 @@
+Pretend the robots will cross each other. sorting, prefix sum. O(sort(n)).
+

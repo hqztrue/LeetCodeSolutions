@@ -1,0 +1,2 @@
+For m<=5, it suffices to use <=2 rows. O(nm+2^m).
+

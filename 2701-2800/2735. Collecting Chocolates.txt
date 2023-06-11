@@ -1,0 +1,2 @@
+the answer has the form kx+b, merge intervals. O(n).
+

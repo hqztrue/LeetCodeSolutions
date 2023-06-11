@@ -3,4 +3,5 @@ this is NPC?
 solution table: http://int-e.eu/~bf3/squares/
 
 related paper: Walters M. Rectangles as sums of squares[J]. Discrete mathematics, 2009, 309(9): 2913-2921.
+Monaci, Michele, and André Gustavo dos Santos. "Minimum tiling of a rectangle by squares." Annals of Operations Research 271 (2018): 831-851.
 

@@ -1,0 +1,3 @@
+let n=len(num2).
+DP on digits. O(max_sum*n).
+

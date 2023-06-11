@@ -1,0 +1,2 @@
+range searching. O((n+q) log n).
+

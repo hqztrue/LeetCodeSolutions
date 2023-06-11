@@ -1,0 +1,2 @@
+O(n) or O(1) (ignoring reading the inputs).
+
