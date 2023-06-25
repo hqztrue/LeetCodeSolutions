@@ -1,0 +1,2 @@
+counting hamiltonian path. O(n^2*2^n).
+

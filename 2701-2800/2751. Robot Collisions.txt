@@ -1,0 +1,2 @@
+sorting + stack. O(sort(n)).
+

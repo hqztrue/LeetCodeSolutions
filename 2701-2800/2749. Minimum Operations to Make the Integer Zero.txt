@@ -1,0 +1,2 @@
+enumerate the number of steps, which is O(log n). O(log n).
+

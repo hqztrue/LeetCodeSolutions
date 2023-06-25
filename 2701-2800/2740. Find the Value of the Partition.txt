@@ -1,0 +1,2 @@
+closest pair. O(n).
+

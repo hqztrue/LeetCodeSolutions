@@ -1,0 +1,3 @@
+1. binary search. O(n^2 log U).
+2. dijkstra twice. proof: https://leetcode.cn/problems/modify-graph-edge-weights/solution/xiu-gai-tu-zhong-de-bian-quan-by-leetcod-66bg/
+

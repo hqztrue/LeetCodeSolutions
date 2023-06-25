@@ -1,0 +1,2 @@
+Divide into cases. O(1).
+
