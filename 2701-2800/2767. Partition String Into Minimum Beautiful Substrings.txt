@@ -1,0 +1,2 @@
+(near) O(n): https://leetcode.cn/problems/partition-string-into-minimum-beautiful-substrings/solution/jie-jin-onde-zuo-fa-by-hqztrue-sf50/
+

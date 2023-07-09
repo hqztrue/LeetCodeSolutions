@@ -1,1 +1,3 @@
-serialize to () string, O(n) string matching.
+1. serialize to () string, then run string matching. O(n).
+2. brute force, only check the subtrees that have the same size as the target. Those checked subtrees are disjoint. O(n).
+

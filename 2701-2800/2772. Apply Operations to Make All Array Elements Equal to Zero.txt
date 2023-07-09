@@ -1,0 +1,2 @@
+greedy, difference array. O(n).
+
