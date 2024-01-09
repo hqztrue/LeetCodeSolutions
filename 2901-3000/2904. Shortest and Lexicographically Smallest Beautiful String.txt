@@ -1,0 +1,2 @@
+suffix array. O(n).
+

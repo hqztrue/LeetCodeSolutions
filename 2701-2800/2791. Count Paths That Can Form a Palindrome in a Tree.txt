@@ -1,0 +1,4 @@
+It suffices to look at the path from a node x to the root of the tree. O(n*|Σ|).
+
+faster?
+

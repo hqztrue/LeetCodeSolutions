@@ -1,0 +1,2 @@
+The dominant element of both parts equals to the global dominant element. O(n).
+

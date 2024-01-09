@@ -1,0 +1,3 @@
+sort then greedy. O(n).
+
+

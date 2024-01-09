@@ -107,6 +107,7 @@ while True:
             if t1>1:
                 bad.add(i)
                 print('TLE: %d %f'%(i,t1))
+                #f=open("1.txt","w"); print(a,file=f); f.close()
                 continue
             if std==None: std=ans
             elif ans!=std:
