@@ -1,0 +1,3 @@
+1. O(n^2*|Σ|). Can pass using python+asm.
+2. O(n). Key observation: process from left to right and from right to left will yield the same result.
+See https://leetcode.cn/problems/maximize-the-number-of-partitions-after-operations/solutions/2595072/ji-yi-hua-sou-suo-jian-ji-xie-fa-pythonj-6g5z/.
