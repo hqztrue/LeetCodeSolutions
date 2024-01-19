@@ -21,7 +21,6 @@ def compile_asm(s,ftype):
 #https://defuse.ca/online-x86-assembler.htm
 #order: edi,esi,edx,ecx,r8d
 
-#sum x in a
 asm_calc=compile_asm('''
 0:  85 f6                   test   esi,esi
 2:  0f 8e 99 00 00 00       jle    a1 <L8>
