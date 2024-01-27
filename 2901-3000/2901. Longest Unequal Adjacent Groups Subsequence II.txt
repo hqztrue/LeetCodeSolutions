@@ -1,0 +1,2 @@
+DP + hashing, O(L). See my article https://leetcode.cn/problems/longest-unequal-adjacent-groups-subsequence-ii/solutions/2615168/xian-xing-zuo-fa-dphash-by-hqztrue-dvdg/.
+
