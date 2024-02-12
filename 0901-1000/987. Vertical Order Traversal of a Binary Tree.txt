@@ -1,2 +1,2 @@
-O(n).
+In worst case there could be Omega(n) nodes at the same position. O(sort(n)).
 

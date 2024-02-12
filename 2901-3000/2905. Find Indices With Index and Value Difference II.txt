@@ -1,0 +1,2 @@
+maintain min/max. O(n).
+
