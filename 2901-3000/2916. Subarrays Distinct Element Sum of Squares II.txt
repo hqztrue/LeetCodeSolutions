@@ -1,0 +1,2 @@
+range tree, range add/sum. O(n log n).
+

@@ -1,0 +1,2 @@
+Similar to LIS, dynamic predecessor search. O(n log log U).
+

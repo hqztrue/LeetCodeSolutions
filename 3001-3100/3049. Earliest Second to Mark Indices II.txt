@@ -1,0 +1,3 @@
+1. binary search+greedy. O(m log^2 m). See my article https://leetcode.cn/problems/earliest-second-to-mark-indices-ii/solutions/2653134/er-fen-tan-xin-om-log2-m-by-hqztrue-7s62/.
+2. DP. O(nm). See https://leetcode.cn/problems/earliest-second-to-mark-indices-ii/solutions/2653049/dp-by-tsreaper-3ks9/.
+

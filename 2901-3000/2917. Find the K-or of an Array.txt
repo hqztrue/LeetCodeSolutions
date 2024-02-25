@@ -1,0 +1,2 @@
+O(n), by counting the number of occurrences on each digit. See 477. Total Hamming Distance.
+

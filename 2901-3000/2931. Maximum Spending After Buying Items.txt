@@ -1,0 +1,2 @@
+greedy. O(sort(nm)) or O(nm log m).
+

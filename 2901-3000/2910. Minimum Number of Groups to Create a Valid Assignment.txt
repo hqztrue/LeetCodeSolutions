@@ -1,0 +1,2 @@
+Assign the indices with the same value into a part. Suppose there are k parts, and the minimum size among them is m. Enumerate the result t, which must be <=m. For a fixed t, we can verify in O(k) time. O(mk)=O(n).
+

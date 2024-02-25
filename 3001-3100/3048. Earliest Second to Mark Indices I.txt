@@ -1,0 +1,2 @@
+binary search, greedy, determine backwards. O(m log m).
+

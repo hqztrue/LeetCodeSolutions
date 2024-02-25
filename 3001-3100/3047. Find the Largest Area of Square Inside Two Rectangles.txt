@@ -1,0 +1,2 @@
+Binary search for the sidelength r, enumerate the bottom-left corner (x0,y0), use high-dimensional orthogonal range emptiness to determine whether there exists a rectangle containing (x0,y0,x0+r,y0+r). O(n polylog n).
+
