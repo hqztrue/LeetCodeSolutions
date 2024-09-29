@@ -1,0 +1,2 @@
+greedy, median selection. O(n).
+

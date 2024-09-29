@@ -1,0 +1,2 @@
+Enumerate the value of x1^x2. O(nk).
+

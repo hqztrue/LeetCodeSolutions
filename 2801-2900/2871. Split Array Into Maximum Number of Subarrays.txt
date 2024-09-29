@@ -1,0 +1,2 @@
+greedy, create a new part whenever the AND of the current part is zero. O(n).
+

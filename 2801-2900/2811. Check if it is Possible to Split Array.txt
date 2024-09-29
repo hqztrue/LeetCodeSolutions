@@ -1,0 +1,2 @@
+Return true iff there are two consecutive elements whose sum >=m. O(n).
+

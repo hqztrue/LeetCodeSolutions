@@ -1,0 +1,2 @@
+Let f(x) denote the result after removing the square factors from x. For square-free i=1,...,n, core(i*j^2)=i for each j. O(\sum_{i=1}^n n/i^2)=O(n).
+

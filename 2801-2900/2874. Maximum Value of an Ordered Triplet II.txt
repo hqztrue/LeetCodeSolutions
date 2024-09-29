@@ -1,0 +1,2 @@
+enumerate j, maintain the optimal i and k. O(n).
+

@@ -1,0 +1,2 @@
+It suffices to consider #vowels mod k'=0. Hashing, use (#vowels mod k',#vowels-#consonants) as the key for prefix 1~i. O(n).
+

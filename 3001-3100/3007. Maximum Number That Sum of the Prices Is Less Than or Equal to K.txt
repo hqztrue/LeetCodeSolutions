@@ -1,0 +1,3 @@
+1. Construct digit by digit, counting. O(log k).
+2. Each round consider x bits as a batch. O((log k)/x).
+

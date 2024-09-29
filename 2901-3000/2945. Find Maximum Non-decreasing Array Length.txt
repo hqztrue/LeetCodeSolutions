@@ -1,0 +1,2 @@
+DP. Let f[i] denote the (maximum length, minimum last number when the length is maximized) for prefix 1~i. monotone queue. O(n).
+

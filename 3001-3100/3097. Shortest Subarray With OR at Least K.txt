@@ -1,0 +1,2 @@
+Similar to 1521. Find a Value of a Mysterious Function Closest to Target, simulate queue using two stacks. O(n).
+

@@ -1,0 +1,2 @@
+count the subtrees with sum mod k=0. O(n).
+

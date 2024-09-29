@@ -1,0 +1,2 @@
+dfs, separate the tree using the primes and count the component sizes. O(n).
+

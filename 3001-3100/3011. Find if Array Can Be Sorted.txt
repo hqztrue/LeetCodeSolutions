@@ -1,0 +1,2 @@
+Divide the array into consecutive blocks, within each block can arbitrarily permute. Compute the min&max in each block. O(n).
+

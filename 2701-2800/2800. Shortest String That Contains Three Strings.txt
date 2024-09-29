@@ -1,0 +1,2 @@
+greedy, extend-kmp. O(L).
+

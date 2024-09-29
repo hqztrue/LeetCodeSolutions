@@ -1,0 +1,2 @@
+precompute the prime scores in O(U) time. use monotone queue to find the covering range of each element. use fast exponentiation to compute the solution. O(n+U+n log (k/n)).
+

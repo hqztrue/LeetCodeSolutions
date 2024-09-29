@@ -1,0 +1,2 @@
+1. DP. Let f[i][j] (resp., g[i][j]) denote the minimum strength to pick j subarrays in prefix 1~i, where the last subarray can (resp., cannot) be extended. O(nk).
+

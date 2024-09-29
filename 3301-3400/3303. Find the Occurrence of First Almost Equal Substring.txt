@@ -1,0 +1,2 @@
+Greedily match until find the first different position. extend-kmp. O(n).
+

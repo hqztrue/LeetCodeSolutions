@@ -1,0 +1,3 @@
+1. Let f[i][j] denote the number of subsets with size i and sum j. Convolution. O(nk).
+2. formal power series. O(n+k log k). See my article https://leetcode.cn/problems/find-the-sum-of-the-power-of-all-subsequences/solutions/2691515/onk-log-kde-zuo-fa-by-hqztrue-t8vx/
+

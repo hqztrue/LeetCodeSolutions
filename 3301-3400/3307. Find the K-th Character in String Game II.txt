@@ -1,0 +1,2 @@
+Let n denote the number of operations. Recursion. O(log k) after reading the input in O(n).
+
