@@ -17,6 +17,7 @@
 *.class
 
 *.synctex.gz
+*.synctex
 materials
 others
 chk_all
