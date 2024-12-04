@@ -1,0 +1,7 @@
+DP. See my article https://leetcode.cn/problems/find-the-maximum-sequence-value-of-array/solutions/2919556/geng-kuai-de-onu-log-ude-suan-fa-by-hqzt-kh38/.
+1. O(nkU+nU^2).
+2. O(nU log U).
+3. O(nU).
+4. O(nU log log U/log U).
+5. O(U^{log_2 3} log U)<=O(U^{1.59}).
+

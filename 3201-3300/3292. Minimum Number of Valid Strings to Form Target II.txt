@@ -1,0 +1,5 @@
+1. Aho-Corasick automaton. O(n+m).
+2. Suffix array. O(n+m).
+3. DP+monotone pointers. O(m+n log m) or O(n+m).
+See my article https://leetcode.cn/problems/minimum-number-of-valid-strings-to-form-target-ii/solutions/2918986/xian-xing-suan-fa-by-hqztrue-dn77/.
+

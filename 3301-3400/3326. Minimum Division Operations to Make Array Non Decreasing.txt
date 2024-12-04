@@ -1,0 +1,2 @@
+Greedy, process from right to left. Each number will only be divided at most once. O(n+U).
+

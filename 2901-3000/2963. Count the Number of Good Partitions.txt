@@ -1,0 +1,3 @@
+1. DP, prefix sum. Maintain the nearest pair of same numbers. O(n).
+2. Merge intervals. The final answer is 2^{#intervals}. O(n).
+

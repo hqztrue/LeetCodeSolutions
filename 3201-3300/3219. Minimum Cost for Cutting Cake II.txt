@@ -1,0 +1,2 @@
+Greedy, cut from low to high. Prove using an exchange argument. O(sort(n)+sort(m)).
+

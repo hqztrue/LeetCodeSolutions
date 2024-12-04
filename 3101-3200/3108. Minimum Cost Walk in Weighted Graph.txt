@@ -1,0 +1,4 @@
+We should greedily visit the whole connected component. O(n+m+q).
+
+
+

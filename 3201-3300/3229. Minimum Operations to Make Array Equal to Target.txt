@@ -1,0 +1,2 @@
+Consider the differential array. O(n).
+

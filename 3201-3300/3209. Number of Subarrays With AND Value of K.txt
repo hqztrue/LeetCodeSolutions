@@ -1,0 +1,2 @@
+Two pointers, simulate deque using two stacks. O(n).
+

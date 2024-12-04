@@ -1,0 +1,3 @@
+Enumerate all cases. O(1).
+For n numbers, this is similar to 179. Largest Number.
+

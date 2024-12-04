@@ -1,0 +1,4 @@
+1. Binary search, inclusion-exclusion. We can remove coins that are a multiple of another coin. O(2^min{n,U/2} log k).
+2. The number of different LCMs of subsets is only 2^{O(U/log U)}. O~(2^{O(U/log U)}*log k).
+https://leetcode.cn/problems/kth-smallest-amount-with-single-denomination-combination/solutions/2739305/ya-zhi-shu-jie-fa-dong-tai-gui-hua-you-h-an2c/
+

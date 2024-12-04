@@ -1,0 +1,2 @@
+Always mark the minimum element. O(n).
+

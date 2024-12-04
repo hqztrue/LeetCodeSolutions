@@ -1,0 +1,3 @@
+DP, case analysis+greedy+prefix max. O(n^2).
+https://leetcode.cn/problems/maximum-score-from-grid-operations/solutions/2852362/tu-jie-dp-ji-qi-you-hua-by-endlesscheng-pco6/
+

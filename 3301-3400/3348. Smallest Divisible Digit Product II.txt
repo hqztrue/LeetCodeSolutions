@@ -1,0 +1,2 @@
+dfs from left to right, and maintain the minimum number of digits required to get a multiple of the remaining product t'. O(n+polylog t).
+

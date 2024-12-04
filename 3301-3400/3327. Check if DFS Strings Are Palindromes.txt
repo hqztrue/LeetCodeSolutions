@@ -1,0 +1,2 @@
+dfs+manacher/hashing. O(n).
+

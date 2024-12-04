@@ -1,0 +1,2 @@
+Find all contiguous increasing subarrays. O(n).
+

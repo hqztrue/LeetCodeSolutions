@@ -1,0 +1,2 @@
+Enumerate the outlier, then the sum of the special numbers is half the remaining sum. O(n).
+

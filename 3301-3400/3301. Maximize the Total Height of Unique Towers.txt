@@ -1,0 +1,3 @@
+Enumerate the heights in arbitrary order. Greedily fill from high to low, and skip intervals that already been set. O(n).
+See my article https://leetcode.cn/problems/maximize-the-total-height-of-unique-towers/solutions/2938116/xian-xing-suan-fa-by-hqztrue-rr3a/.
+

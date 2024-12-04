@@ -1,0 +1,2 @@
+Repeatedly find the first row using degree 2 and 3 vertices. O(n).
+

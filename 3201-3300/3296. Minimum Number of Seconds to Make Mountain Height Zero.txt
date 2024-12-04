@@ -1,0 +1,3 @@
+Greedy. First find an approximate solution using binary search, then use median finding techniques to handle the remaining O(n) steps. O(n).
+See my article https://leetcode.cn/problems/minimum-number-of-seconds-to-make-mountain-height-zero/solutions/2936685/onsuan-fa-by-hqztrue-j4j3/.
+

@@ -1,0 +1,2 @@
+It suffices to count the number of nodes in the tree with distance <k for each node v. Divide and conquer using tree centroids. O(n log n).
+

@@ -1,0 +1,2 @@
+Only prime squares counts. Prime counting. O~(sqrt(sqrt(U)))=O~(U^{1/4}).
+

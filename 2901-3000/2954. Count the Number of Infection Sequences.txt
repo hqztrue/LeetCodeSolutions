@@ -1,0 +1,2 @@
+Handle each interval separately. An interval with length k has 2^{k-1} possibilities. Merge using binomials. O(n).
+

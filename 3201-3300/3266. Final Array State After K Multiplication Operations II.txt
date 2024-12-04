@@ -1,0 +1,3 @@
+1. O(n). See my article https://leetcode.cn/problems/final-array-state-after-k-multiplication-operations-ii/solutions/2892649/xian-xing-suan-fa-by-hqztrue-30fk/.
+2. O(n), grouping into bins using powers of m. https://leetcode.cn/problems/final-array-state-after-k-multiplication-operations-ii/solutions/2893250/wan-quan-xian-xing-de-tong-jie-fa-by-vcl-aqnh/
+

@@ -1,0 +1,2 @@
+Alice wins iff there is any vowel. O(n).
+

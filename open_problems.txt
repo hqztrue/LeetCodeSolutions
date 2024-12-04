@@ -99,6 +99,8 @@ DP/counting:
 2466 Count Ways To Build Good Strings  
 2478 Number of Beautiful Partitions  
 2916 Subarrays Distinct Element Sum of Squares II  
+3234 Count the Number of Substrings With Dominant Ones  
+
 
 
 

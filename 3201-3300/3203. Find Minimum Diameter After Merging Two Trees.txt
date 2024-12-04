@@ -1,0 +1,2 @@
+We must connect two centers. O(n).
+

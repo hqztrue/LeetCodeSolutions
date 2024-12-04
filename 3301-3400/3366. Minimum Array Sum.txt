@@ -1,0 +1,3 @@
+1. DP. O(n^3).
+2. greedy. O(sort(n)) or O(n). See my article https://leetcode.cn/problems/minimum-array-sum/solutions/2999321/on-log-ntan-xin-by-hqztrue-to7m/.
+

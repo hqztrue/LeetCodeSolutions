@@ -1,0 +1,2 @@
+Generating functions, divide and conquer. O(n log^2 n). See my article https://leetcode.cn/problems/count-k-reducible-numbers-less-than-n/solutions/2984326/on-log2-nde-suan-fa-sheng-cheng-han-shu-nanus/.
+

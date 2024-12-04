@@ -1,0 +1,2 @@
+The cost for each pair is a piecewise linear function with 3 pieces. O(sort(n,k)).
+

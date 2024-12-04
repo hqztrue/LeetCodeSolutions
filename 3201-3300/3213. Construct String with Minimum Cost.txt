@@ -1,0 +1,2 @@
+minimum cost word break. AC automaton. O(n*sqrt(L)).
+

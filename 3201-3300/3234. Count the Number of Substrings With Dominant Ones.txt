@@ -1,0 +1,4 @@
+1. Fix an endpoint and enumerate how many 0's there are in the substring. The number of 0's is at most O(sqrt(n)). O(n*sqrt(n)).
+2. Divide and conquer. O(n log n).
+See my article https://leetcode.cn/problems/count-the-number-of-substrings-with-dominant-ones/solutions/2940848/on-log-nde-fen-zhi-suan-fa-by-hqztrue-0twt/.
+

@@ -1,0 +1,2 @@
+Greedily move from left to right. O(n).
+

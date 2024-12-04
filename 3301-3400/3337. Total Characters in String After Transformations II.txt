@@ -1,0 +1,2 @@
+Linear recurrence, matrix multiplication. O(log t) for constant |∑|.
+
