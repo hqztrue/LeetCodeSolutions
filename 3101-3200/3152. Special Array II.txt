@@ -1,0 +1,2 @@
+maintain maximal subarrays. O(n).
+

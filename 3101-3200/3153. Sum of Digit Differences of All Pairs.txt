@@ -1,0 +1,2 @@
+count for each digit. O(n log U).
+

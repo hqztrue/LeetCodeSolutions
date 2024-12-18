@@ -1,2 +1,3 @@
-weighted bipartite matching. O~(n^2).
+1. weighted bipartite matching. O~(n^2).
+2. greedy?
 

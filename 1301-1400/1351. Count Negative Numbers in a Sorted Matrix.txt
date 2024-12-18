@@ -1,1 +1,4 @@
-monotone pointer. O(n+m).
+1. monotone pointer. O(n+m) (ignoring the time for reading the input).
+2. Wlog assume n<=m, exponential search on each column. O(n log (m/n)) by convexity.
+Similar: https://hyper-meta.blogspot.com/2023/06/m1318-description-given-3-positives.html
+

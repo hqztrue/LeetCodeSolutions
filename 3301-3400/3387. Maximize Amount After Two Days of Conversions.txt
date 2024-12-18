@@ -1,0 +1,3 @@
+The input for each day is a forest. dfs. O(n).
+note: the precision issue is handled by the judge.
+
