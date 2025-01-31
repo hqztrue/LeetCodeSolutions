@@ -1,0 +1,2 @@
+Consider the rows and cols separately. O(sort(hBars.length+vBars.length)).
+

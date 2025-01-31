@@ -1,0 +1,3 @@
+Divide and conquer + FFT. O(n log^2 n).
+See my article https://leetcode.cn/problems/count-the-number-of-winning-sequences/solutions/3038597/fen-zhi-ffton-log2-n-by-hqztrue-d3cv/
+

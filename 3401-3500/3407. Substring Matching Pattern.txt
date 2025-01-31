@@ -1,0 +1,2 @@
+kmp, greedy. O(n+m).
+

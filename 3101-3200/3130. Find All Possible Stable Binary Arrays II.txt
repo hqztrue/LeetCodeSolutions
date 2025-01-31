@@ -1,0 +1,4 @@
+1. Generating function, inversion of polynomials. O(n log^2 n).
+See my article https://leetcode.cn/problems/find-all-possible-stable-binary-arrays-ii/solutions/2758768/on15de-suan-fa-zu-he-ji-shu-by-hqztrue-3c8r/
+2. O(n^2/limit).
+

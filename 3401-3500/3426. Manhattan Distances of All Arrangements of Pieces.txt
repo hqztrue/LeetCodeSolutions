@@ -1,0 +1,2 @@
+math formula, count the number of pairs on x and y direction separately. The bottleneck is computing C(nm-2,k-2). O(n+m+k) or O~(\sqrt{nm}).
+

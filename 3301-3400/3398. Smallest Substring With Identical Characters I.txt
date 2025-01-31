@@ -1,0 +1,2 @@
+O(n). See 3399. Smallest Substring With Identical Characters II.
+

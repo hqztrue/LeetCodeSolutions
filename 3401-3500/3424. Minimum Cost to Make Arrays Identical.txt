@@ -1,0 +1,2 @@
+greedy, sort and match. O(sort(n)).
+

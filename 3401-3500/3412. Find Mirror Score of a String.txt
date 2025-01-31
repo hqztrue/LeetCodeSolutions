@@ -1,0 +1,2 @@
+Maintain a stack for each character. O(n).
+

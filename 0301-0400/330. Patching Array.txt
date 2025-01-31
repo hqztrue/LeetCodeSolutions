@@ -1,2 +1,4 @@
 let n' be the length of the array.
 greedy. suppose we can form any integer in [0,m) using the first j numbers, let x be the (j+1)-th number. if x<=m, we can expand [0,m) to [0,m)+[x,x+m)=[0,x+m), otherwise greedily add a new number m, and expand to [0,2m). using O(log n) integers are sufficient, so time O(n'+log n).
+We can get O(n') using bit tricks.
+

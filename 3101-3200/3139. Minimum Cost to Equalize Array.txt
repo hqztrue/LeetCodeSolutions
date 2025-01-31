@@ -1,0 +1,2 @@
+Enumerate the target, then greedy. The cost is close to a piecewise linear function. O(n).
+

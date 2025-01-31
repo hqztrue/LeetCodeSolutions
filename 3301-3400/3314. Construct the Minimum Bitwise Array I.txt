@@ -1,0 +1,2 @@
+Count rightmost contiguous 1's. O(1).
+

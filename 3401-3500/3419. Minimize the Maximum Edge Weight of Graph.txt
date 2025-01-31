@@ -1,0 +1,4 @@
+bottleneck directed spanning tree rooted at node 0.
+1. sorting+dfs. O(sort(m)).
+2. divide and conquer, shrink the graph. O(n+m).
+

@@ -1,0 +1,2 @@
+Group the consecutive intervals with the same length together. There are only m=O(sqrt(n)) distinct lengths. Then we can solve in O(m) time using the algorithm of 875. Koko Eating Bananas (or O(m log n) by simple binary search). O(n).
+

@@ -1,0 +1,3 @@
+greedy + bit tricks. O(1).
+pdep: https://leetcode.cn/problems/minimum-array-end/solutions/2759297/o1jie-fa-li-yong-bmizhi-ling-by-vclip-pe09/
+

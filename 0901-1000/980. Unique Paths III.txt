@@ -1,4 +1,4 @@
-Hamiltonian path.
+Counting Hamiltonian path on grid.
 1. dfs.
-2. state-compressed DP.
+2. state-compressed DP using connectivity on the boundary. 2^{O(min{n,m})}.
 

@@ -2,6 +2,7 @@ let the range of the numbers be O(U).
 1. O(n^2) by double pointers, enumerate one number.
 2. we can reduce this problem to the tripartite version of 259. 3Sum Smaller, wlog assume a[i]<=a[j]<=a[k], can form a triangle iff a[i]+a[j]>a[k], i.e. a[i]+a[j]-a[k]>0. use a counting argument. O(n+U log U).
 
-note. is this problem 3sum-hard?
-if we allow negative edge weights (which doesn't make sense in geometry), we can reduce the tripartite version of 3sum to the tripartite version of this problem.
+note. this problem is 3sum-hard.
+1. If we allow negative edge weights (which doesn't make sense in geometry), we can reduce the tripartite version of 3sum to the tripartite version of this problem.
+2. We can reduce 3sum to this problem, by first count the number of solutions once, then add each number by eps and count again. If the count differs then there's a 3sum solution.
 

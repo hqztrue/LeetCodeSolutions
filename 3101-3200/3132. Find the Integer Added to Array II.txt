@@ -1,0 +1,2 @@
+Enumerate the minimum number after removal (must be within the top-3 smallest numbers), then test. O(n).
+

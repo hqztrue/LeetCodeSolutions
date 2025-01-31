@@ -1,0 +1,2 @@
+Consider each prime factor of the form p^q_i. We have sum(q)=min(q)+max(q). If the length of the subarray >2 then the numbers are pairwise coprime. Two pointers. O(n log U) (for small enough U).
+

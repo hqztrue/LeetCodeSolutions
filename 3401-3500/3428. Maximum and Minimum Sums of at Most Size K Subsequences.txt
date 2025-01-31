@@ -1,0 +1,2 @@
+sort and counting, prefix sum for C(n,i). O(sort(n)).
+

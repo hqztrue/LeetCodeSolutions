@@ -1,0 +1,2 @@
+inclusion-exclusion, counting. O(n).
+https://leetcode.cn/problems/subsequences-with-a-unique-middle-mode-i/solutions/3026877/zheng-nan-ze-fan-fen-lei-tao-lun-qian-ho-f7cd/

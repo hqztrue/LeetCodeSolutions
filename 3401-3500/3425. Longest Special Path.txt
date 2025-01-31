@@ -1,0 +1,2 @@
+dfs, maintain a stack for each type. O(n).
+

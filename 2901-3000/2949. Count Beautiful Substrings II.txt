@@ -1,2 +1,2 @@
-It suffices to consider #vowels mod k'=0. Hashing, use (#vowels mod k',#vowels-#consonants) as the key for prefix 1~i. O(n).
+It suffices to consider #vowels mod k'=0, where k=\prod p_i^q_i and k'=\prod p_i^{ceil(q_i/2)}. Hashing, use (#vowels mod k',#vowels-#consonants) as the key for prefix 1~i. Since only k<=n^2 is meaningful, we can ignore the time complexity for factoring k. O(n).
 

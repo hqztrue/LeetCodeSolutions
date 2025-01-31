@@ -1,0 +1,2 @@
+Similar to 4-sum. hashing fraction/real numbers. O(n^2).
+

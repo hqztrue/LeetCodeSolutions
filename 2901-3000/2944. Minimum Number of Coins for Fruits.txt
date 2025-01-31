@@ -1,0 +1,2 @@
+DP. Let f[i] denote the optimal cost to buy items i~n. monotone queue. O(n).
+

@@ -1,0 +1,4 @@
+This problem is called pattern matching with mismatches. high-low trick+FFT. O(n^1.5 sqrt{log n}).
+\cite{abrahamson1987generalized} \cite{gawrychowski2017optimal}
+
+

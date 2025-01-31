@@ -1,0 +1,2 @@
+counting, monotone stack. O(n).
+

@@ -1,0 +1,2 @@
+We cannot use operation 1 too often. binomial. O~(sqrt(log n)).
+

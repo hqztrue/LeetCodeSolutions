@@ -1,0 +1,2 @@
+sorting, divide into groups. O(sort(n)).
+

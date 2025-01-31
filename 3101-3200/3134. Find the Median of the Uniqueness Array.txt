@@ -1,0 +1,4 @@
+1. binary search+sliding window. O(n log n).
+2. kth-element in monotone matrix. O(n log n).
+O(n)?
+

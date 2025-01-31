@@ -1,0 +1,3 @@
+DP, let f[i][j][k] denote the optimal cost when we have colored 1~i and n-i+1~n, the i-th house is colored j, and the (n-i+1)-th house is colored k. O(n).
+
+

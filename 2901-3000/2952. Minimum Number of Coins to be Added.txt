@@ -1,0 +1,5 @@
+Similar to 330. Patching Array, except that now the values are not sorted.
+1. Add the coins from small to large, and maintain the interval [0,x] where the coins can form. If the next coin >x+1, greedily add x+1. O(sort(n)).
+2. group the coins into bins. O(n).
+https://leetcode.cn/problems/minimum-number-of-coins-to-be-added/solutions/3052162/xian-xing-suan-fa-by-hqztrue-rf5n/
+
